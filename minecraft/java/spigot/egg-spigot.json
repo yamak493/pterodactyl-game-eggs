@@ -7,7 +7,7 @@
     "exported_at": "2025-01-12T08:12:41+00:00",
     "name": "Spigot",
     "author": "support@pterodactyl.io",
-    "description": "Spigot is the most widely-used modded Minecraft server software in the world. It powers many of the top Minecraft server networks around to ensure they can cope with their huge player base and ensure the satisfaction of their players. Spigot works by reducing and eliminating many causes of lag, as well as adding in handy features and settings that help make your job of server administration easier.",
+    "description": "Spigotは世界で最も広く使われている改造版Minecraftサーバーソフトウェアです。多くの大規模Minecraftサーバーネットワークで採用されており、大量のプレイヤーを処理しつつ満足度を高めるために利用されています。Spigotはラグの原因を削減・排除し、サーバー管理を容易にする便利な機能と設定を追加します。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Path",
-            "description": "A URL to use to download Spigot rather than building it on the server. This is not user viewable. Use <code>{{DL_VERSION}}</code> in the URL to automatically insert the assigned version into the URL. If you do not enter a URL Spigot will build directly in the container (this will fail on low memory containers).",
+            "name": "ダウンロードパス",
+            "description": "サーバー上でビルドする代わりにSpigotをダウンロードするためのURLです。この項目はユーザーには表示されません。URL内に<code>{{DL_VERSION}}</code>を使用すると、指定したバージョンを自動挿入できます。URLを入力しない場合、Spigotはコンテナ内で直接ビルドされます（低メモリのコンテナでは失敗する可能性があります）。",
             "env_variable": "DL_PATH",
             "default_value": "",
             "user_viewable": false,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Spigot Version",
-            "description": "The version of Spigot to download (using the --rev tag from https://hub.spigotmc.org/versions). Use \"latest\" for latest.",
+            "name": "Spigotバージョン",
+            "description": "ダウンロードするSpigotのバージョンです（https://hub.spigotmc.org/versions の --rev タグを使用）。最新を使用する場合は\"latest\"を指定してください。",
             "env_variable": "DL_VERSION",
             "default_value": "latest",
             "user_viewable": true,

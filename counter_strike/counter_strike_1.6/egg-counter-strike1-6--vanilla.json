@@ -7,7 +7,7 @@
     "exported_at": "2025-02-04T15:41:42+01:00",
     "name": "Counter Strike 1.6 - Vanilla",
     "author": "ptero@redbananaofficial.com",
-    "description": "Counter Strike 1.6 - Vanilla\r\n\r\nCounter-Strike: 1.6 is a multiplayer first-person shooter video game developed by Valve Corporation.",
+    "description": "Counter Strike 1.6 - Vanilla\r\n\r\nCounter-Strike: 1.6 は Valve Corporation が開発したマルチプレイ対応の一人称シューティングゲームです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/games:source": "ghcr.io\/ptero-eggs\/games:source"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Hostname",
-            "description": "This sets the hostname of the server. Example: \"My Custom CS 1.6 Server\"",
+            "name": "サーバーホスト名",
+            "description": "サーバーのホスト名を設定します。例: \"My Custom CS 1.6 Server\"",
             "env_variable": "HOSTNAME",
             "default_value": "Counter-Strike 1.6 Server",
             "user_viewable": true,
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players (Slots)",
+            "name": "最大プレイヤー数（スロット）",
             "description": "",
             "env_variable": "SRV_SLOTS",
             "default_value": "32",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Startmap",
+            "name": "開始マップ",
             "description": "",
             "env_variable": "SRV_STARTMAP",
             "default_value": "de_dust2",
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using HLDS.\r\n\r\nThe HLDS server ID is 90. This should not be changed.",
+            "name": "ゲーム ID",
+            "description": "HLDS を使用してダウンロード・実行するゲームに対応する ID です。\r\n\r\nHLDS サーバー ID は 90 です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "90",
             "user_viewable": false,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch",
-            "description": "Leave empty for the public branch, for the legacy version select steam_legacy.",
+            "name": "ベータブランチ",
+            "description": "公開ブランチを使う場合は空欄、レガシーバージョンを使う場合は steam_legacy を選択します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Username",
-            "description": "Username associated wanted to be used. Not needed.",
+            "name": "Steam ユーザー名",
+            "description": "使用したい Steam ユーザー名です。通常は不要です。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam Password for account. Not needed.",
+            "name": "Steam パスワード",
+            "description": "Steam アカウントのパスワードです。通常は不要です。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam authenticator code for the account. Not Needed.",
+            "name": "Steam 認証コード",
+            "description": "アカウントの Steam 認証コードです。通常は不要です。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -119,7 +119,7 @@
             "field_type": "text"
         },
         {
-            "name": "Secure or Insecure",
+            "name": "Secure / Insecure",
             "description": "",
             "env_variable": "SRV_SECURE",
             "default_value": "secure",

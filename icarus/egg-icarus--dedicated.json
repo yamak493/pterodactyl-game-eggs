@@ -7,7 +7,7 @@
     "exported_at": "2026-01-19T21:39:06+01:00",
     "name": "Icarus-Dedicated",
     "author": "bolverblitz@ebg.pw",
-    "description": "Icarus is a survival game that with dedicated servers as a public beta",
+    "description": "Icarus は、専用サーバー機能がパブリックベータとして提供されているサバイバルゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "[REQUIRED] Server Query Port",
-            "description": "UDP port for Steam server list features.",
+            "name": "[必須] サーバークエリポート",
+            "description": "Steam サーバー一覧機能で使用する UDP ポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "IcarusServer",
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install Flag",
-            "description": "Required for windows game server installs",
+            "name": "Windows インストールフラグ",
+            "description": "Windows ゲームサーバーをインストールするために必要です",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -62,7 +62,7 @@
         },
         {
             "name": "WINETRICKS_RUN",
-            "description": "Run installs on software that is required by the server",
+            "description": "サーバーに必要なソフトウェアのインストール処理を実行します",
             "env_variable": "WINETRICKS_RUN",
             "default_value": "vcrun2022 corefonts",
             "user_viewable": false,
@@ -72,7 +72,7 @@
         },
         {
             "name": "SRCDS_APPID",
-            "description": "steam app id found here - https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Servers_List",
+            "description": "Steam App ID 一覧: https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Servers_List",
             "env_variable": "SRCDS_APPID",
             "default_value": "2089300",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "AUTO_UPDATE",
-            "description": "Disabling or enabling automated updates on boot",
+            "name": "自動更新",
+            "description": "起動時の自動更新を有効化／無効化します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

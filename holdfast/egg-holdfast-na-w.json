@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Config Name",
-            "description": "Tells the server which config to load in the configs folder. Put .txt at the end of the config name or else the server will not launch.",
+            "name": "設定ファイル名",
+            "description": "configs フォルダ内で読み込む設定ファイルを指定します。設定名の末尾に .txt を付けないとサーバーは起動しません。",
             "env_variable": "SERVER_CONFIG_PATH",
             "default_value": "serverconfig_default.txt",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Server name that shows up on the server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザーに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Server Hosted by BMGHosting.com",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Welcome Message",
-            "description": "Welcome Message in text chat.",
+            "name": "ウェルカムメッセージ",
+            "description": "テキストチャットに表示するウェルカムメッセージです。",
             "env_variable": "MOTD",
             "default_value": "Welcome!",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Region",
-            "description": "Region of the world the server is located in. \r\nOptions: europe \/ usa \/ australia \/ brazil \/ china \/ japan \/ russia \/ southkorea",
+            "name": "サーバー地域",
+            "description": "サーバーの設置地域です。\r\n選択肢: europe \/ usa \/ australia \/ brazil \/ china \/ japan \/ russia \/ southkorea",
             "env_variable": "REGION",
             "default_value": "europe",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password for Admin Login (F1).",
+            "name": "管理者パスワード",
+            "description": "管理者ログイン（F1）用パスワードです。",
             "env_variable": "ADMIN_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server Password to lock the server. Leave blank if you want the server public.",
+            "name": "サーバーパスワード",
+            "description": "サーバーをロックするパスワードです。公開したい場合は空欄にしてください。",
             "env_variable": "SERVER_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max Players",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数です",
             "env_variable": "PLAYERS",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Comm Port",
-            "description": "Server Comm Port",
+            "name": "サーバー通信用ポート",
+            "description": "サーバー通信用ポートです",
             "env_variable": "SERVER_COMM_PORT",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Query Port",
-            "description": "Server Query Port",
+            "name": "サーバークエリポート",
+            "description": "サーバークエリポートです",
             "env_variable": "SERVER_QUERY_PORT",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server FPS",
-            "description": "Server FPS",
+            "name": "サーバー FPS",
+            "description": "サーバー FPS です",
             "env_variable": "FPSMAX",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Log Archive",
-            "description": "Server Log Archive",
+            "name": "サーバーログアーカイブ",
+            "description": "サーバーログアーカイブです",
             "env_variable": "SERVER_LOG_ARCHIVE_PATH",
             "default_value": "logs_archive",
             "user_viewable": false,
@@ -142,7 +142,7 @@
         },
         {
             "name": "Steam App ID",
-            "description": "Steam CMD App ID",
+            "description": "SteamCMD App ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "1424230",
             "user_viewable": false,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Holdfast Build",
-            "description": "To apply a beta branch, do -beta.\r\nIf you are wanting to specify a beta branch, do -beta <betaname>.\r\nIf the beta branch has a password, do -beta <betaname> -betapassword <password>.",
+            "name": "Holdfast ビルド",
+            "description": "ベータブランチを適用するには -beta を指定します。\r\n特定のベータブランチを指定するには -beta <betaname> を指定します。\r\nベータブランチにパスワードがある場合は -beta <betaname> -betapassword <password> を指定します。",
             "env_variable": "EXTRA_FLAGS",
             "default_value": "",
             "user_viewable": true,

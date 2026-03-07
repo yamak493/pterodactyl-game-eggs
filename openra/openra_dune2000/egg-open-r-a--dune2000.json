@@ -7,7 +7,7 @@
     "exported_at": "2024-12-27T15:45:15+00:00",
     "name": "OpenRA - Dune2000",
     "author": "patz.michael@gmail.com",
-    "description": "OpenRA is a project that recreates and modernizes the classic Command & Conquer real time strategy games. We have developed a flexible open source game engine (the OpenRA engine) that provides a common platform for rebuilding and reimagining classic 2D and 2.5D RTS games (the OpenRA mods).",
+    "description": "OpenRAは、クラシックなCommand & Conquerリアルタイムストラテジー作品を再現し、現代化するプロジェクトです。柔軟なオープンソースゲームエンジン（OpenRA engine）を開発し、クラシックな2D/2.5D RTSゲーム（OpenRA mods）を再構築・再創造するための共通基盤を提供しています。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:mono_latest": "ghcr.io\/ptero-eggs\/yolks:mono_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The Name of the Server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "OpenRAServer",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public Server",
-            "description": "Shall this server be public",
+            "name": "公開サーバー",
+            "description": "このサーバーを公開にするかどうかです。",
             "env_variable": "PUBLIC",
             "default_value": "false",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Singleplayer",
-            "description": "Enable Singleplayer ?",
+            "name": "シングルプレイヤー有効化",
+            "description": "シングルプレイヤーを有効化しますか？",
             "env_variable": "SINGLEPLAYER",
             "default_value": "false",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Require Authentification",
-            "description": "Enable Authentification",
+            "name": "認証を必須化",
+            "description": "認証を有効化します。",
             "env_variable": "AUTH",
             "default_value": "false",
             "user_viewable": true,
@@ -70,7 +70,7 @@
         },
         {
             "name": "PASSWORD",
-            "description": "Server Password",
+            "description": "サーバーパスワード",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "GEOIP",
-            "description": "Enable GEOIP",
+            "name": "GEO IP",
+            "description": "GEOIPを有効化します。",
             "env_variable": "GEOIP",
             "default_value": "false",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Anonymized IPs",
-            "description": "Hide IPs",
+            "name": "IP匿名化",
+            "description": "IPを非表示にします。",
             "env_variable": "ANONYMOUS",
             "default_value": "true",
             "user_viewable": true,

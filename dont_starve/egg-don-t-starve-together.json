@@ -7,7 +7,7 @@
     "exported_at": "2023-01-07T09:58:40-05:00",
     "name": "Don't Starve Together",
     "author": "parker@parkervcp.com",
-    "description": "Don\u2019t Starve Together is an uncompromising wilderness survival game full of science and magic.",
+    "description": "Don\u2019t Starve Together は、科学と魔法に満ちた妥協なしのサバイバルゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "Set the maximum number of players that will be allowed to join the game. This option overrides the [GAMEPLAY] \/ max_players setting in cluster.ini.\r\n\r\ndefault is 16",
+            "name": "最大プレイヤー数",
+            "description": "ゲームに参加できる最大プレイヤー数を設定します。このオプションは cluster.ini の [GAMEPLAY] \/ max_players 設定を上書きします。\r\n\r\n既定値は 16 です",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Token",
-            "description": "Required to run a public server. This needs to be generated from in game.\r\n\r\nGet your token here:\r\nhttps:\/\/accounts.klei.com\/account\/game\/servers?game=DontStarveTogether",
+            "name": "サーバートークン",
+            "description": "公開サーバーの運用に必要です。ゲーム内で生成する必要があります。\r\n\r\nトークン取得先:\r\nhttps:\/\/accounts.klei.com\/account\/game\/servers?game=DontStarveTogether",
             "env_variable": "SERVER_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "App ID",
-            "description": "Steam Server App ID",
+            "description": "Steam サーバー App ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "343050",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "This is to enable auto-updating for servers.\r\n\r\nDefault is 0. Set to 1 to update",
+            "name": "サーバー自動更新",
+            "description": "サーバーの自動更新を有効化します。\r\n\r\n既定値は 0 です。更新するには 1 に設定してください",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game mode",
-            "description": "Valid values are survival, endless or wilderness",
+            "name": "ゲームモード",
+            "description": "有効な値は survival、endless、wilderness です",
             "env_variable": "GAME_MODE",
             "default_value": "survival",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Cluster Name",
-            "description": "This is the name that will show up in server browser.",
+            "name": "クラスター名",
+            "description": "サーバーブラウザーに表示される名前です。",
             "env_variable": "CLUSTER_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Cluster Description",
-            "description": "This will show up in the server details area on the \u201cBrowse Games\u201d screen.",
+            "name": "クラスター説明",
+            "description": "\u300cBrowse Games\u300d画面のサーバー詳細欄に表示されます。",
             "env_variable": "CLUSTER_DESC",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -102,7 +102,7 @@
         },
         {
             "name": "Master Worldgen Override",
-            "description": "Link to the lua file used to generate the master server map. Only used during the install phase.",
+            "description": "マスターサーバーマップ生成に使用する lua ファイルのリンクです。インストール時のみ使用されます。",
             "env_variable": "MASTER_WORLDGEN",
             "default_value": "https:\/\/raw.githubusercontent.com\/ptero-eggs\/game-eggs\/main\/dont_starve\/worldgenoverride.master.lua",
             "user_viewable": false,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Master Worldgen Override",
-            "description": "Link to the lua file used to generate the caves server map. Only used during the install phase.\r\n\r\nDefault generates a cave map",
+            "name": "Caves Worldgen Override",
+            "description": "洞窟サーバーマップ生成に使用する lua ファイルのリンクです。インストール時のみ使用されます。\r\n\r\n既定では洞窟マップを生成します",
             "env_variable": "CAVES_WORLDGEN",
             "default_value": "https:\/\/raw.githubusercontent.com\/ptero-eggs\/game-eggs\/main\/dont_starve\/worldgenoverride.caves.lua",
             "user_viewable": false,

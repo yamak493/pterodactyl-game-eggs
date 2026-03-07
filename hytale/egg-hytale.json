@@ -7,7 +7,7 @@
     "exported_at": "2026-01-13T05:17:28+00:00",
     "name": "Hytale",
     "author": "hello@pterodactyl.io",
-    "description": "Set out on an adventure built for both creation and play. Hytale blends the freedom of a sandbox with the momentum of an RPG: explore a procedurally generated world full of dungeons, secrets, and a variety of creatures, then shape it block by block.",
+    "description": "創造と冒険の両方を楽しめる世界へ旅立ちましょう。Hytale はサンドボックスの自由さと RPG の躍動感を融合し、ダンジョンや秘密、さまざまな生き物に満ちた自動生成ワールドを探索した後、ブロック単位で世界を作り上げられます。",
     "features": [
         "java_version"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Accept Early Plugins",
-            "description": "Hytale warns that loading early plugins is unsupported and may cause stability issues.",
+            "name": "早期プラグインを許可",
+            "description": "Hytale は、早期プラグインの読み込みは非サポートで安定性問題を引き起こす可能性があると警告しています。",
             "env_variable": "HYTALE_ACCEPT_EARLY_PLUGINS",
             "default_value": "0",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auth Mode",
-            "description": "Authentication mode.",
+            "name": "認証モード",
+            "description": "認証モードです。",
             "env_variable": "HYTALE_AUTH_MODE",
             "default_value": "authenticated",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Patchline",
-            "description": "The branch of Hytale to install.",
+            "name": "パッチライン",
+            "description": "インストールする Hytale のブランチです。",
             "env_variable": "HYTALE_PATCHLINE",
             "default_value": "release",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Sentry",
-            "description": "Hytale uses Sentry to track crashes. Disable Sentry during active plugin development.",
+            "name": "Sentry を無効化",
+            "description": "Hytale はクラッシュ追跡に Sentry を使用します。プラグイン開発中は Sentry の無効化を検討してください。",
             "env_variable": "DISABLE_SENTRY",
             "default_value": "0",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use Ahead-of-Time Cache",
-            "description": "Hytale provides a pre-trained AOT Java cache which can significantly improve boot times.",
+            "name": "Ahead-of-Time キャッシュを使用",
+            "description": "Hytale には事前学習済みの AOT Java キャッシュがあり、起動時間を大幅に改善できる場合があります。",
             "env_variable": "USE_AOT_CACHE",
             "default_value": "1",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow operators",
-            "description": "Allow operators",
+            "name": "オペレーターを許可",
+            "description": "オペレーターを許可します",
             "env_variable": "HYTALE_ALLOW_OP",
             "default_value": "0",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Install Source Query plugin",
-            "description": "Installs the Soruce Query plugin, so that your server responds to Source Query A2S requests (player count, server name, etc.)",
+            "name": "Source Query プラグインをインストール",
+            "description": "Source Query プラグインをインストールし、Source Query A2S リクエスト（プレイヤー数、サーバー名など）へ応答できるようにします",
             "env_variable": "INSTALL_SOURCEQUERY_PLUGIN",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Source Query Port",
-            "description": "The port that the Source Query plugin will use to respond to A2S requests. This should be different from the main server port. Defaults to the game port + 1.",
+            "name": "Source Query ポート",
+            "description": "Source Query プラグインが A2S リクエスト応答に使用するポートです。メインサーバーポートとは別にしてください。既定値はゲームポート + 1 です。",
             "env_variable": "QUERY_PORT",
             "default_value": "",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:06:25+02:00",
     "name": "GoMint",
     "author": "parker@parkervcp.com",
-    "description": "A performant and stable Minecraft server software for the Bedrock Edition that comes with a modern API and support for Java 11 LTS.",
+    "description": "Bedrock Edition向けの高性能かつ安定したMinecraftサーバーソフトウェアです。モダンなAPIとJava 11 LTSサポートを備えています。",
     "features": [
         "eula",
         "java_version",

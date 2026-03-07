@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:38:04+02:00",
     "name": "Left 4 Dead",
     "author": "pterodactyl@mazoyer.eu",
-    "description": "An outbreak of a highly contagious pathogen nicknamed the \"Green Flu\" begins in Pennsylvania. Two weeks after the first infection, four immune survivors, Bill, Zoey, Louis, and Francis make their way out of the city of Fairfield, only to discover that the infection is creating dangerous mutations in some of its hosts.",
+    "description": "ペンシルベニアで「Green Flu（グリーン・フルー）」と呼ばれる高感染性病原体の流行が始まります。最初の感染から2週間後、免疫を持つ4人の生存者 Bill、Zoey、Louis、Francis は Fairfield を脱出しますが、感染が一部宿主に危険な変異を引き起こしていることを知ります。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲーム ID",
+            "description": "SRCDS でダウンロード・実行するゲームに対応する ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "222840",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "Default map used when starting the server.",
+            "name": "デフォルトマップ",
+            "description": "サーバー起動時に使用するデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "l4d_hospital01_apartment",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

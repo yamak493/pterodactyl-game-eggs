@@ -7,7 +7,7 @@
     "exported_at": "2023-11-13T18:49:35+01:00",
     "name": "Longvinter",
     "author": "tueye@tuworld.de",
-    "description": "Longvinter is a multiplayer, third-person sandbox game that implements Crafting, Farming, Building, Trading, and PVP.",
+    "description": "Longvinter は、クラフト、農業、建築、取引、PVP を備えたマルチプレイ三人称サンドボックスゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Name of the server, appears in Game browser.",
+            "name": "サーバー名",
+            "description": "ゲームブラウザーに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl Longvinter Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Tag",
-            "description": "It's the tag that allows for easier search of the server. Please don't use the word OFFICIAL on it. \r\nAnd only place one tag.",
+            "name": "サーバータグ",
+            "description": "サーバー検索をしやすくするタグです。OFFICIAL という単語は使用しないでください。\r\nタグは1つのみ設定してください。",
             "env_variable": "SERVER_TAG",
             "default_value": "Pterodactyl",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum allowed players that can connect at any given time.",
+            "name": "最大プレイヤー数",
+            "description": "同時に接続できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server MOTD",
-            "description": "Server message that is on a signs around the island.",
+            "name": "サーバー MOTD",
+            "description": "島内の看板に表示されるサーバーメッセージです。",
             "env_variable": "SERVER_MOTD",
             "default_value": "Welcome to Pterodactyl Island!",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Add you password here. Use only number and letters. If left empty there is no password on the server.",
+            "name": "サーバーパスワード",
+            "description": "ここにパスワードを設定します。英数字のみ使用してください。空欄の場合、サーバーにパスワードは設定されません。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Community Website",
-            "description": "Allows you to promote a website on a same place where the server message is shown. This link can be opened in-game.",
+            "name": "コミュニティサイト",
+            "description": "サーバーメッセージと同じ場所にサイトを表示できます。このリンクはゲーム内で開けます。",
             "env_variable": "COMMUNITY_WEBSITE",
             "default_value": "pterodactyl.io",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin EOS Account ID",
-            "description": "Here you can add all the admins that you want to have in the server. If you want to add multiple separate the ID's with single space.\r\nThe ID is found in-game under Options > General.",
+            "name": "管理者 EOS アカウント ID",
+            "description": "サーバー管理者にしたい ID をここに追加できます。複数指定する場合は半角スペースで区切ってください。\r\nID はゲーム内の Options > General で確認できます。",
             "env_variable": "ADMIN_ID",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable PVP",
-            "description": "Here you write true or false if you want to enable\/disable Player versus Player fights.",
+            "name": "PVP 有効化",
+            "description": "Player versus Player 戦闘を有効／無効にするには true または false を指定します。",
             "env_variable": "ENABLE_PVP",
             "default_value": "true",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tent Decay",
-            "description": "Here you write true or false if you want to enable\/disable tent decay to make sure there isn't an abundant number of abandoned tents in the server.",
+            "name": "テント劣化",
+            "description": "放置テントが増えすぎないよう、テント劣化を有効／無効にするには true または false を指定します。",
             "env_variable": "ENABLE_TENTDECAY",
             "default_value": "true",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Tents",
-            "description": "Maximum allowed of tents that players that can place in the server",
+            "name": "最大テント数",
+            "description": "プレイヤーがサーバー内に設置できるテントの最大数です",
             "env_variable": "MAX_TENTS",
             "default_value": "2",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Updates gamefiles when reinstalling. Otherwise the server is freshly installed and you will loose your savegames.",
+            "name": "自動更新",
+            "description": "再インストール時にゲームファイルを更新します。無効の場合は新規インストール扱いとなり、セーブデータを失う可能性があります。1に設定すると、再インストール時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Query port used by steam",
+            "name": "クエリポート",
+            "description": "Steam が使用するクエリポートです",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-03-13T10:06:00+01:00",
     "name": "Dead Matter",
     "author": "josdekurk@gmail.com",
-    "description": "After a rampant viral outbreak causes global society to collapse, you must survive the harsh wilderness of the Canadian Rockies amidst vast hordes of Infected and rival survivors.",
+    "description": "猛威を振るうウイルスの大流行によって世界社会が崩壊した後、あなたはカナディアン・ロッキーの過酷な自然の中で、膨大な数の感染者と敵対する生存者に囲まれながら生き延びなければなりません。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:proton": "ghcr.io\/ptero-eggs\/steamcmd:proton"
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
+            "name": "Windows インストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "7002",
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted server",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto Update the server on start",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

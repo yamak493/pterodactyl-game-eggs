@@ -7,7 +7,7 @@
     "exported_at": "2024-12-13T16:14:15+00:00",
     "name": "Nazi Zombies: Portable",
     "author": "jordanadamsbusiness@outlook.com",
-    "description": "NZ:P (Nazi Zombies: Portable) is based off of the FTEQW (Fore Thought Engine Quake World). This egg is specifically made for use with NZ:P (just downloads assets and QuakeC from NZ:P repositories) but there is nothing stopping you from using it as a general FTEQW egg given the NZ:P fork of FTEQW only added fog to the client (and added SDL which caused issues with arguments being eaten preventing dedicated flag from being read) which is why upstream FTEQW is used.",
+    "description": "NZ:P (Nazi Zombies: Portable) は FTEQW (Fore Thought Engine Quake World) をベースにしています。このeggはNZ:P向けに作成されており、NZ:PリポジトリからアセットとQuakeCをダウンロードします。NZ:P版FTEQWはクライアントへのフォグ追加（およびSDL追加による引数処理問題）程度の変更のため、一般的なFTEQW用eggとしても利用できます。そのため上流のFTEQWを使用しています。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:ubuntu": "ghcr.io\/ptero-eggs\/yolks:ubuntu"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Protocol",
-            "description": "NZ:P Native Clients - `NZP-REBOOT`.\r\nNZ:P Web Clients - `NZP-REBOOT-WEB`.\r\n\r\nHit your \"`\/~\" key on your keyboard, this will open console, then you will type `connect ip:port` for native clients, for web clients you would type `connect ws:\/\/ip:port`. In addition, you MUST be on the HTTP version of the website you are playing the web client on, otherwise the browser will block the request",
+            "name": "プロトコル",
+            "description": "NZ:Pネイティブクライアント: `NZP-REBOOT`。\r\nNZ:P Webクライアント: `NZP-REBOOT-WEB`。\r\n\r\nキーボードの \"`\/~\" キーでコンソールを開き、ネイティブクライアントでは `connect ip:port`、Webクライアントでは `connect ws:\/\/ip:port` を入力します。さらに、Webクライアントを利用するサイトはHTTP版で開く必要があります。そうしないとブラウザによりリクエストがブロックされます。",
             "env_variable": "PROTOCOL",
             "default_value": "NZP-REBOOT",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tickrate",
-            "description": "Think of this like fps, the default value is 1 frame per 45 ms (0.045 seconds) which is ~22 fps, 30 fps is ~33.3 ms, 60 fps is ~16.6ms, the reason the tickrate is low is due to zombies being bandwidth heavy (especially in the higher rounds), take caution when changing this, but if you up the tickrate, it may fix physics bugs like zombies getting stuck on terrain.",
+            "name": "ティックレート",
+            "description": "FPSに近い概念です。デフォルト値は45msごとに1フレーム（0.045秒）で約22fpsです。30fpsは約33.3ms、60fpsは約16.6msです。ティックレートが低いのはゾンビが帯域を多く消費するため（特に高ラウンド）です。変更時は注意してください。なお、ティックレートを上げると、ゾンビが地形に引っかかるなどの物理バグが改善する場合があります。",
             "env_variable": "TICKRATE",
             "default_value": "0.045",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "The map to load, you can find a list via `listmaps`, default map is ndu otherwise known as \"Nacht der Untoten\"",
+            "name": "マップ",
+            "description": "読み込むマップです。`listmaps` で一覧を確認できます。デフォルトマップは ndu（\"Nacht der Untoten\"）です。",
             "env_variable": "MAP",
             "default_value": "ndu",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Game Arguments",
-            "description": "`+cvar value` is the format for changing the cvars",
+            "name": "追加ゲーム引数",
+            "description": "cvarを変更する形式は `+cvar value` です。",
             "env_variable": "GAME_ARGS",
             "default_value": "",
             "user_viewable": true,

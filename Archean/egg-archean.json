@@ -7,7 +7,7 @@
     "exported_at": "2025-05-27T09:12:18+00:00",
     "name": "Archean",
     "author": "willinghamnottell@gmail.com",
-    "description": "Archean invites you to unleash your creativity alone or with friends in a creative sandbox mode. Design and build vehicles, bases, rockets, space stations and much more using customizable modular blocks. Create unique configurations using components, program their behavior and explore an environment free of constraints.Test your builds, refine your designs and defy the laws of physics. Archean is a game in development focused on engineering and build.",
+    "description": "Archean は、ひとりでも友人とでも創造性を解き放てるサンドボックス体験を提供します。カスタマイズ可能なモジュラーブロックで、乗り物、基地、ロケット、宇宙ステーションなどを設計・建築できます。コンポーネントで独自構成を作り、挙動をプログラムし、制約の少ない環境を探索しましょう。作ったものを試し、設計を洗練し、物理法則に挑戦できる、工学と建築に焦点を当てた開発中のゲームです。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:ubuntu": "ghcr.io\/ptero-eggs\/yolks:ubuntu"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players that can join the server at one time.",
+            "name": "最大プレイヤー数",
+            "description": "同時にサーバーへ参加できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "The Password players need to enter to join the server",
+            "name": "パスワード",
+            "description": "サーバー参加時にプレイヤーが入力するパスワードです",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The servers name that is, among others, displayed on the public server page.",
+            "name": "サーバー名",
+            "description": "公開サーバーページなどに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Changes the servers game mode between adventure and creative.\r\nOFF = creative\r\nON = adventure",
+            "name": "ゲームモード",
+            "description": "サーバーのゲームモードを adventure と creative で切り替えます。\r\nOFF = creative\r\nON = adventure",
             "env_variable": "GAME_MODE",
             "default_value": "0",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Online Mode",
-            "description": "Whether the server is publicly discoverable or not.",
+            "name": "オンラインモード",
+            "description": "サーバーを公開一覧で発見可能にするかどうか。",
             "env_variable": "ONLINE_MODE",
             "default_value": "0",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Spawn Planet",
-            "description": "The Planet players will initially spawn on.",
+            "name": "スポーン惑星",
+            "description": "プレイヤーが最初にスポーンする惑星です。",
             "env_variable": "SPAWN_PLANET",
             "default_value": "earth",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Autosave Interval",
-            "description": "Time between automatic server saves",
+            "name": "自動保存間隔",
+            "description": "サーバーの自動保存間隔",
             "env_variable": "AUTOSAVE_INTERVAL",
             "default_value": "30",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Updates per Second",
-            "description": "This setting should only be changed by advanced users.\nChanges the amount of times the server updates per second.",
+            "name": "[高度設定] 1秒あたりの更新回数",
+            "description": "この設定は上級ユーザーのみ変更してください。\nサーバーが1秒間に更新する回数を変更します。",
             "env_variable": "UPDATES_PER_SECOND",
             "default_value": "25",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Physics steps per update",
-            "description": "This setting should only be changed by advanced users.\nChanges the amount of times the physics get calculated per game update.",
+            "name": "[高度設定] 1更新あたりの物理ステップ数",
+            "description": "この設定は上級ユーザーのみ変更してください。\nゲーム更新1回あたりの物理計算回数を変更します。",
             "env_variable": "PHYSICS_UPDATES_PER_UPDATE",
             "default_value": "8",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "World name",
-            "description": "The name of the world directory to use.",
+            "name": "ワールド名",
+            "description": "使用するワールドディレクトリ名です。",
             "env_variable": "WORLD_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "This is to auto update the server on start.\r\n\r\nOptions are 0 or 1\r\nDefault is 1",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。\r\n\r\n指定値は 0 または 1\r\n既定値は 1",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

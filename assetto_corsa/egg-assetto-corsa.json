@@ -7,7 +7,7 @@
     "exported_at": "2025-10-14T02:10:45+00:00",
     "name": "Assetto Corsa",
     "author": "admin@softwarenoob.com",
-    "description": "Assetto Corsa (Italian for \"Race Setup\") is a sim racing video game developed by the Italian video game developer Kunos Simulazioni. It is designed with an emphasis on a realistic racing experience with support for extensive customization and moddability",
+    "description": "Assetto Corsa（イタリア語で「レースセットアップ」）は、イタリアのゲーム開発会社 Kunos Simulazioni が開発したシムレーシングゲームです。リアルなレース体験を重視して設計されており、幅広いカスタマイズと MOD 対応を備えています。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Steam Username",
-            "description": "A steam username of an account that owns the game is required",
+            "name": "Steam ユーザー名",
+            "description": "ゲームを所持しているアカウントの Steam ユーザー名が必要です",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steam パスワード",
+            "description": "Steam ユーザーパスワード",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth Code",
-            "description": "Steam Auth Code required if the Steam Account is using Steam Auth. Slow installs will cause the code to expire before it can be used.",
+            "name": "Steam 認証コード",
+            "description": "Steam アカウントで Steam 認証を使用している場合に必要です。インストールに時間がかかると、使用前にコードが期限切れになる場合があります。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前",
             "env_variable": "HOSTNAME",
             "default_value": "Pterodactyl Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If enabled players must enter the password to join the server",
+            "name": "サーバーパスワード",
+            "description": "有効にすると、プレイヤーはサーバー参加時にパスワード入力が必要になります",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Used to login as server administrator, type \/help in-game for more",
+            "name": "管理者パスワード",
+            "description": "サーバー管理者としてログインする際に使用します。詳細はゲーム内で \/help と入力してください",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "HTTP Port",
-            "description": "HTTP Port",
+            "name": "HTTP ポート",
+            "description": "HTTP ポート",
             "env_variable": "HTTP_PORT",
             "default_value": "",
             "user_viewable": false,
@@ -101,7 +101,7 @@
             "field_type": "text"
         },
         {
-            "name": "SRCDS_APPID",
+            "name": "SRCDS APP ID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "302550",
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "autoupdate Server on start or restart. 1 = on; 0 = off",
+            "name": "自動更新",
+            "description": "起動時または再起動時にサーバーを自動更新します。1 = 有効、0 = 無効",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "Required to always install and update the correct version of the game.",
+            "name": "Windows インストール",
+            "description": "常に正しいゲームバージョンをインストール・更新するために必要です。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,

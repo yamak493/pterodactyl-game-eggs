@@ -7,7 +7,7 @@
     "exported_at": "2023-07-22T11:23:29+02:00",
     "name": "Risk of Rain 2",
     "author": "alex.chang-lam@protonmail.com",
-    "description": "Risk of Rain 2 dedicated server.",
+    "description": "Risk of Rain 2の専用サーバーです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Password",
-            "description": "Password to join server. Leave empty to disable.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加用パスワードです。空欄で無効になります。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Hostname",
-            "description": "The name that will be shown in the server browser.",
+            "name": "サーバーホスト名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "HOSTNAME",
             "default_value": "\"Risk of Rain 2 Dedicated Server\"",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Sets the maximum number of players.",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数を設定します。",
             "env_variable": "PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Advertise Server",
-            "description": "Display the server in the public server browser.\r\n1 = enabled\r\n0 = disabled",
+            "name": "サーバー公開",
+            "description": "公開サーバーブラウザにサーバーを表示します。\r\n1 = 有効\r\n0 = 無効",
             "env_variable": "ADVERTISE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Query Port",
+            "name": "クエリポート",
+            "description": "クエリポートです。",
             "env_variable": "QUERY",
             "default_value": "27016",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Port",
-            "description": "Steam Port is +1 query",
+            "name": "Steamポート",
+            "description": "Steamポートはクエリポート+1です。",
             "env_variable": "STEAM",
             "default_value": "27017",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

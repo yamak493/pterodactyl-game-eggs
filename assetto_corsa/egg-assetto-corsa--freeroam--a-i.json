@@ -7,7 +7,7 @@
     "exported_at": "2024-05-05T11:08:46+02:00",
     "name": "Assetto Corsa (Freeroam + AI)",
     "author": "josdekurk@gmail.com",
-    "description": "Custom Assetto Corsa server with focus on freeroam",
+    "description": "フリーローム重視のカスタム Assetto Corsa サーバーです。",
     "features": null,
     "docker_images": {
         "Dotnet_8": "ghcr.io\/ptero-eggs\/yolks:dotnet_8"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server name",
-            "description": "The name off the server",
+            "name": "サーバー名",
+            "description": "サーバー名",
             "env_variable": "SERVER_NAME",
             "default_value": "AC_Server",
             "user_viewable": true,
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Http port",
+            "name": "HTTP ポート",
             "description": "",
             "env_variable": "HTTP_PORT",
             "default_value": "",
@@ -59,7 +59,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
@@ -69,7 +69,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max clients",
+            "name": "最大クライアント数",
             "description": "",
             "env_variable": "MAX_CLIENTS",
             "default_value": "18",

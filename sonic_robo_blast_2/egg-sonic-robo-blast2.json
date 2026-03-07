@@ -7,7 +7,7 @@
     "exported_at": "2025-03-10T13:31:01+01:00",
     "name": "Sonic Robo Blast 2",
     "author": "ptero@redbananaofficial.com",
-    "description": "Sonic Robo Blast 2 Dedicated Server",
+    "description": "Sonic Robo Blast 2専用サーバーです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server name",
-            "description": "The name of your server (this will show in the master list)",
+            "name": "サーバー名",
+            "description": "サーバー名です（マスターリストに表示されます）。",
             "env_variable": "SRV_NAME",
             "default_value": "Default Name",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "The password used for joining the server",
+            "name": "パスワード",
+            "description": "サーバー参加時に使用するパスワードです。",
             "env_variable": "SRV_PW",
             "default_value": "ChangeMe",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The amount of players that can join your server at once\r\nMaximum amount of players: 32",
+            "name": "最大プレイヤー数",
+            "description": "同時に参加できるプレイヤー数です。\r\n最大プレイヤー数: 32",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Master List Room Number",
-            "description": "This advertises the server on the Master Server. ID specifies the room in which the server is hosted: 33 is the Standard room, while 28 is the Casual room.\r\n\r\nMaster List: https:\/\/ms.srb2.org\/",
+            "name": "マスターリストルーム番号",
+            "description": "サーバーをマスターサーバーで公開します。IDはホストされるルームを指定し、33はStandard、28はCasualです。\r\n\r\nMaster List: https:\/\/ms.srb2.org\/",
             "env_variable": "ROOM_NR",
             "default_value": "33",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "SRB2 Version",
-            "description": "The version of Sonic Robo Blast 2 that will be used",
+            "name": "SRB2バージョン",
+            "description": "使用するSonic Robo Blast 2のバージョンです。",
             "env_variable": "SRB2_VERSION",
             "default_value": "2.2.15",
             "user_viewable": false,

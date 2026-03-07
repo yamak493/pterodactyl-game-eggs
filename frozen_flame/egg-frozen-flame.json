@@ -7,7 +7,7 @@
     "exported_at": "2023-05-07T19:05:11+02:00",
     "name": "Frozen Flame",
     "author": "theblitzbat@gmail.com",
-    "description": "Frozen Flame Dedicated Server",
+    "description": "Frozen Flame 専用サーバー",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "App ID",
-            "description": "Frozen Flame steam app id for auto updates. Leave blank to avoid auto update.",
+            "description": "自動更新に使用する Frozen Flame の Steam App ID です。自動更新を避ける場合は空欄にしてください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1348640",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum player count",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数です",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "The query port.",
+            "name": "クエリポート",
+            "description": "クエリポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "25575",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The server name",
+            "name": "サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "My Frozen Flame Server",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "The server password",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードです",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update server software",
+            "name": "自動更新",
+            "description": "サーバーソフトウェアを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -89,7 +89,7 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Port",
+            "name": "RCON ポート",
             "description": "",
             "env_variable": "RCON_PORT",
             "default_value": "27015",
@@ -99,7 +99,7 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon password",
+            "name": "RCON パスワード",
             "description": "",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",

@@ -7,7 +7,7 @@
     "exported_at": "2025-09-05T12:44:17+10:00",
     "name": "Puck",
     "author": "ptero@redbananaofficial.com",
-    "description": "Hop on your skates and jump into a physics based hockey game. No rules, no timeouts, just get the puck in the goal. May the best team win!",
+    "description": "スケートを履いて、物理演算ベースのホッケーゲームに飛び込みましょう。ルールなし、タイムアウトなし、ただパックをゴールに入れるだけ。最高のチームが勝利します!",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "The maximum number of players allowed on the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで許可される最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Query Port of the server, Additional Allocation required.",
+            "name": "クエリポート",
+            "description": "サーバーのクエリポートです。追加割り当てが必要です。",
             "env_variable": "QUERY_PORT",
             "default_value": "7778",
             "user_viewable": true,
@@ -50,7 +50,7 @@
         },
         {
             "name": "[STEAM] Steam App ID",
-            "description": "Steam App ID",
+            "description": "SteamアプリID",
             "env_variable": "SRCDS_APPID",
             "default_value": "3481440",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SYSTEM] Auto Update",
-            "description": "Auto Update",
+            "name": "[SYSTEM] 自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "The password required to join the server.",
+            "name": "パスワード",
+            "description": "サーバー参加に必要なパスワードです。",
             "env_variable": "SRV_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Kick Timeout",
-            "description": "Time before player is kicked for AFK",
+            "name": "キックタイムアウト",
+            "description": "AFKプレイヤーをキックするまでの時間です。",
             "env_variable": "KICK_TIMEOUT",
             "default_value": "300",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Target Framerate",
-            "description": "Framerate of server, Should be 10-20 Above Tick Rate!",
+            "name": "目標フレームレート",
+            "description": "サーバーのフレームレートです。ティックレートより10〜20高くすることを推奨します!",
             "env_variable": "FRAME_RATE",
             "default_value": "120",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Target Tick rate",
-            "description": "Tick rate of Server",
+            "name": "目標ティックレート",
+            "description": "サーバーのティックレートです。",
             "env_variable": "SERVER_TICK_RATE",
             "default_value": "100",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Client Tick Rate",
-            "description": "This value should be at least double the servers tick rate, but too high may cause instabilities in some clients. Do not go above 360 even if double the Server Tick is above. Unless you understand what you are doing.",
+            "name": "クライアントティックレート",
+            "description": "この値はサーバーティックレートの少なくとも2倍が推奨です。ただし高すぎると一部クライアントで不安定になる場合があります。サーバーティックの2倍が超えていても360を上限にしてください（内容を理解している場合を除く）。",
             "env_variable": "CLIENT_TICK_RATE",
             "default_value": "360",
             "user_viewable": true,

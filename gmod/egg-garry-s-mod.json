@@ -7,7 +7,7 @@
     "exported_at": "2025-10-20T14:48:44+02:00",
     "name": "Garrys Mod",
     "author": "support@pterodactyl.io",
-    "description": "Garrys Mod, is a sandbox physics game created by Garry Newman, and developed by his company, Facepunch Studios.",
+    "description": "Garrys Mod は、Garry Newman によって制作され、彼の会社 Facepunch Studios により開発されているサンドボックス物理ゲームです。",
     "features": [
         "gsl_token",
         "steam_disk_space"
@@ -32,8 +32,8 @@
     },
     "variables": [
         {
-            "name": "Map",
-            "description": "The default map for the server.",
+            "name": "マップ",
+            "description": "サーバーのデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "gm_flatgrass",
             "user_viewable": true,
@@ -42,8 +42,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Account Token",
-            "description": "The Steam Account Token required for the server to be displayed publicly.",
+            "name": "Steam アカウントトークン",
+            "description": "サーバーを公開表示するために必要な Steam アカウントトークンです。",
             "env_variable": "STEAM_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -53,7 +53,7 @@
         },
         {
             "name": "Source AppID",
-            "description": "Required for game to update on server restart. Do not modify this.",
+            "description": "サーバー再起動時のゲーム更新に必要です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "4020",
             "user_viewable": false,
@@ -63,7 +63,7 @@
         },
         {
             "name": "Workshop ID",
-            "description": "The ID of your workshop collection (the numbers at the end of the URL)",
+            "description": "Workshop コレクションの ID（URL 末尾の数字）です",
             "env_variable": "WORKSHOP_ID",
             "default_value": "",
             "user_viewable": true,
@@ -72,8 +72,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "The gamemode of your server.",
+            "name": "ゲームモード",
+            "description": "サーバーのゲームモードです。",
             "env_variable": "GAMEMODE",
             "default_value": "sandbox",
             "user_viewable": true,
@@ -82,8 +82,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed on your game server.",
+            "name": "最大プレイヤー数",
+            "description": "ゲームサーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -92,8 +92,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tickrate",
-            "description": "The tickrate defines how fast the server will update each entity's location.",
+            "name": "ティックレート",
+            "description": "ティックレートは、サーバーが各エンティティの位置を更新する速度を決定します。",
             "env_variable": "TICKRATE",
             "default_value": "22",
             "user_viewable": true,
@@ -102,8 +102,8 @@
             "field_type": "text"
         },
         {
-            "name": "Lua Refresh",
-            "description": "0 = disable Lua refresh,\r\n1 = enable Lua refresh",
+            "name": "Lua リフレッシュ",
+            "description": "0 = Lua リフレッシュ無効\r\n1 = Lua リフレッシュ有効",
             "env_variable": "LUA_REFRESH",
             "default_value": "0",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-07-04T17:23:00-07:00",
     "name": "DayZ",
     "author": "red_thirten@yahoo.com",
-    "description": "How long can you survive a post-apocalyptic world? A land overrun with an infected \"zombie\" population, where you compete with other survivors for limited resources. Will you team up with strangers and stay strong together? Or play as a lone wolf to avoid betrayal? This is DayZ \u2013 this is your story.",
+    "description": "終末後の世界で、あなたはどれだけ生き延びられるでしょうか。感染した「ゾンビ」に支配された土地で、限られた資源を巡って他の生存者と競い合います。見知らぬ者と協力して共に生きるのか、それとも裏切りを避けるため孤高を貫くのか。これが DayZ、そしてあなた自身の物語です。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "[Host] Steam Query Port",
-            "description": "UDP port for Steam server list features. Helps the server be visible in the client server browser.",
+            "name": "[Host] Steam クエリポート",
+            "description": "Steam サーバーリスト機能で使用する UDP ポートです。クライアントのサーバーブラウザーでサーバーを表示しやすくします。",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Host] Steam Username",
-            "description": "Used for installation and updates. Account does not need to own DayZ, but MUST BE a VALID Steam account (anonymous login cannot be used). For security reasons it is recommended that you create a new Steam account just for your dedicated servers. *This info is not visible to the server owner.*",
+            "name": "[Host] Steam ユーザー名",
+            "description": "インストールと更新に使用します。DayZ の所有は不要ですが、有効な Steam アカウントが必須です（anonymous ログインは使用不可）。セキュリティ上、専用サーバー用に新しい Steam アカウントを作成することを推奨します。*この情報はサーバー所有者には表示されません。*",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Host] Steam Password",
-            "description": "Used for installation and updates. Steam Guard MUST be completely TURNED OFF for the server and mods to download efficiently. *This info is not visible to the server owner, BUT IS stored in PLAIN TEXT. It is NOT advised to use a personal account; best to use a dummy account.*",
+            "name": "[Host] Steam パスワード",
+            "description": "インストールと更新に使用します。サーバーや MOD を効率よくダウンロードするには Steam Guard を完全に OFF にする必要があります。*この情報はサーバー所有者には表示されませんが、平文で保存されます。個人アカウントではなく、専用のダミーアカウントを推奨します。*",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Host] Disable Mod Downloads\/Updates",
-            "description": "If the Steam account does not own the base DayZ game, Steam Workshop mod downloads\/updates will not work. If so, this setting allows disabling of this feature to avoid errors. (1 ON | 0 OFF)",
+            "name": "[Host] MOD ダウンロード\/更新を無効化",
+            "description": "Steam アカウントが DayZ 本体を所有していない場合、Steam Workshop の MOD ダウンロード\/更新は動作しません。その場合、この設定で機能を無効化してエラーを回避できます。（1 ON | 0 OFF）",
             "env_variable": "DISABLE_MOD_UPDATES",
             "default_value": "0",
             "user_viewable": false,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Host] Number of SteamCMD Retry Attempts",
-            "description": "How many times SteamCMD should retry downloading a server or mod after a recoverable error. (ie. A particularly large mod download times out)",
+            "name": "[Host] SteamCMD 再試行回数",
+            "description": "復旧可能なエラー発生時に、SteamCMD がサーバーや MOD のダウンロードを再試行する回数です。（例: 特に大きな MOD のダウンロードがタイムアウトした場合）",
             "env_variable": "STEAMCMD_ATTEMPTS",
             "default_value": "3",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Host] Skip Game Server Install",
-            "description": "Skips the installation of game server files via SteamCMD during the installation script. Should only be enabled if you are trying to install the server with a Steam account that has Steam Guard enabled (not recommended).",
+            "name": "[Host] ゲームサーバーのインストールをスキップ",
+            "description": "インストールスクリプト中の SteamCMD によるゲームサーバーファイルのインストールをスキップします。Steam Guard が有効な Steam アカウントでインストールする場合のみ有効化してください（非推奨）。",
             "env_variable": "SKIP_INSTALL",
             "default_value": "0",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Automatic Updates",
-            "description": "Quickly checks for any server or mod updates on startup, and updates if necessary.",
+            "name": "自動更新",
+            "description": "起動時にサーバーや MOD の更新を確認し、必要に応じて更新します。",
             "env_variable": "UPDATE_SERVER",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server that will appear in the server list.",
+            "name": "サーバー名",
+            "description": "サーバーリストに表示されるサーバー名です。",
             "env_variable": "SERVER_HOSTNAME",
             "default_value": "DayZ Server",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed to join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "64",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required to join the server. Leave blank to have no password.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。パスワードなしにする場合は空欄にしてください。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password to log in as an admin on the server.",
+            "name": "管理者パスワード",
+            "description": "サーバーで管理者としてログインするためのパスワードです。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Used by Tools or Battlemetrics to manage servers from outside. RCON Port is recommended to be at Game Port +3. For example, If the Game Port is 2302, then RCON Port should be 2305.",
+            "name": "RCON ポート",
+            "description": "外部ツールや Battlemetrics からサーバーを管理するために使用します。RCON ポートはゲームポート +3 を推奨します。例: ゲームポートが 2302 の場合、RCON ポートは 2305。",
             "env_variable": "RCON_PORT",
             "default_value": "2305",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "This password is used to authenticate third parties to access server controls via RCON.",
+            "name": "RCON パスワード",
+            "description": "RCON 経由でサーバー制御にアクセスする外部ツール認証に使用するパスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Modlist File (Exported from DayZ Launcher)",
-            "description": "Filename for an exported modlist. This file will be parsed for mod installation and loading. Upload your HTML file to the root directory (eg. \/home\/container\/modlist.html). Leave blank to disable loading mods from a modlist.",
+            "name": "MOD リストファイル（DayZ Launcher からエクスポート）",
+            "description": "エクスポートした MOD リストのファイル名です。このファイルを解析して MOD のインストールと読み込みを行います。HTML ファイルをルートディレクトリ（例: \/home\/container\/modlist.html）へアップロードしてください。MOD リストからの読み込みを無効化する場合は空欄にします。",
             "env_variable": "MOD_FILE",
             "default_value": "modlist.html",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Mods",
-            "description": "A semicolon-separated list of mod folders to load from the root directory. Useful for loading manually uploaded mods. Any mods in this list that are in \"@workshopID\" form will also be included in Automatic Updates (if enabled). NO capital letters, spaces, or folders starting with a number! (ex. myMod;@123456789;@987654321;etc;)",
+            "name": "追加 MOD",
+            "description": "ルートディレクトリから読み込む MOD フォルダをセミコロン区切りで指定します。手動アップロード MOD の読み込みに便利です。この一覧に \"@workshopID\" 形式の MOD がある場合は自動更新（有効時）の対象にもなります。大文字・スペース・数字で始まるフォルダ名は不可です。（例: myMod;@123456789;@987654321;etc;）",
             "env_variable": "MODIFICATIONS",
             "default_value": "",
             "user_viewable": true,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "Verify Signatures",
-            "description": "Ensures all clients have exactly the same version of mods or addons that the server is running. Otherwise, they will be kicked upon connection. (2 ON | 0 OFF)",
+            "name": "署名検証",
+            "description": "サーバーで使用中の MOD／アドオンとクライアント側が完全に同じバージョンであることを確認します。異なる場合は接続時にキックされます。（2 ON | 0 OFF）",
             "env_variable": "VERIFY_SIGNATURES",
             "default_value": "2",
             "user_viewable": true,
@@ -191,8 +191,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Game Version",
-            "description": "When ON, the server will allow the connection only to clients with same the version as the server.",
+            "name": "ゲームバージョンを強制",
+            "description": "ON の場合、サーバーと同じバージョンのクライアントのみ接続を許可します。",
             "env_variable": "ENFORCE_BUILD",
             "default_value": "1",
             "user_viewable": true,
@@ -201,8 +201,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable VoN",
-            "description": "When ON, will disable Voice over Network (voice chat) in the server.",
+            "name": "VoN を無効化",
+            "description": "ON の場合、サーバー内の Voice over Network（ボイスチャット）を無効化します。",
             "env_variable": "DISABLE_VON",
             "default_value": "0",
             "user_viewable": true,
@@ -211,8 +211,8 @@
             "field_type": "text"
         },
         {
-            "name": "VoN Quality",
-            "description": "Voice over Network codec quality; the higher the better. (Values 0-30)",
+            "name": "VoN 品質",
+            "description": "Voice over Network のコーデック品質です。高いほど高品質です。（値 0-30）",
             "env_variable": "VON_QUALITY",
             "default_value": "20",
             "user_viewable": true,
@@ -221,8 +221,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Third Person",
-            "description": "When ON, will disable third person view while on the server.",
+            "name": "三人称視点を無効化",
+            "description": "ON の場合、サーバー内で三人称視点を無効化します。",
             "env_variable": "DISABLE_THIRD",
             "default_value": "0",
             "user_viewable": true,
@@ -231,8 +231,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Crosshair",
-            "description": "When ON, will disable the crosshair from being visible while on the server.",
+            "name": "クロスヘアを無効化",
+            "description": "ON の場合、サーバー内でクロスヘア表示を無効化します。",
             "env_variable": "DISABLE_CROSSHAIR",
             "default_value": "0",
             "user_viewable": true,
@@ -241,8 +241,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Personal Light",
-            "description": "When ON, will disable a personal light positioned above all clients during the night time while on the server.",
+            "name": "個人ライトを無効化",
+            "description": "ON の場合、夜間に各クライアント上部へ表示される個人ライトを無効化します。",
             "env_variable": "DISABLE_PERSONAL_LIGHT",
             "default_value": "1",
             "user_viewable": true,
@@ -251,8 +251,8 @@
             "field_type": "text"
         },
         {
-            "name": "Darker Nights",
-            "description": "When ON, will make nights darker (more accurate nights, but hard to see without a light).",
+            "name": "夜を暗くする",
+            "description": "ON の場合、夜がより暗くなります（より現実的ですが、ライトなしでは視認しづらくなります）。",
             "env_variable": "LIGHTING_CONFIG",
             "default_value": "0",
             "user_viewable": true,
@@ -261,8 +261,8 @@
             "field_type": "text"
         },
         {
-            "name": "Persistent Time",
-            "description": "The actual server time is saved to storage, so when ON, the next server start will use the saved time value.",
+            "name": "時間を永続化",
+            "description": "実サーバー時間を保存します。ON の場合、次回起動時に保存済み時間を使用します。",
             "env_variable": "PERSISTENT_TIME",
             "default_value": "0",
             "user_viewable": true,
@@ -271,8 +271,8 @@
             "field_type": "text"
         },
         {
-            "name": "Time Multiplier",
-            "description": "This is a time multiplier for in-game time (ie. 12 would move a full 24-hour day in-game 12 times faster, making it last 2 hours \"in real life\"). (Values: 0-24)",
+            "name": "時間倍率",
+            "description": "ゲーム内時間の進行倍率です（例: 12 の場合、ゲーム内24時間が12倍速で進み、現実時間では約2時間になります）。（値: 0-24）",
             "env_variable": "TIME_MULT",
             "default_value": "12",
             "user_viewable": true,
@@ -281,8 +281,8 @@
             "field_type": "text"
         },
         {
-            "name": "Night Multiplier",
-            "description": "This is an additional multiplier to either speed up or slow down nights in-game. It is multiplied with the \"Time Multiplier\" variable to get it's final multiplier for night time speed. (Values: 0.1-64.0)",
+            "name": "夜間倍率",
+            "description": "ゲーム内の夜時間を速く／遅くする追加倍率です。\"時間倍率\" と乗算され、夜間進行の最終倍率になります。（値: 0.1-64.0）",
             "env_variable": "NIGHT_MULT",
             "default_value": "1",
             "user_viewable": true,
@@ -291,8 +291,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Make Mod Files Lowercase",
-            "description": "Every mod that is set to be loaded will have its folder and files changed to lowercase (to prevent errors). It is recommended to enable this for one server boot after copying a mod from a Windows machine to the server, or if mods seem to not be loading.",
+            "name": "[修復] MOD ファイル名を小文字化",
+            "description": "読み込み対象の MOD について、フォルダ名とファイル名を小文字へ変換します（エラー防止）。Windows マシンから MOD をコピーした直後の1回起動時、または MOD が読み込まれない場合に有効化を推奨します。",
             "env_variable": "MODS_LOWERCASE",
             "default_value": "0",
             "user_viewable": true,
@@ -301,8 +301,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Validate Server Files",
-            "description": "Validates all server files when Automatic Updates is ON. Note: This will significantly increase server startup times, so it is recommended to only enable this when needed.",
+            "name": "[修復] サーバーファイル検証",
+            "description": "自動更新が ON のとき、すべてのサーバーファイルを検証します。注意: 起動時間が大幅に増えるため、必要時のみ有効化を推奨します。",
             "env_variable": "VALIDATE_SERVER",
             "default_value": "0",
             "user_viewable": true,
@@ -311,8 +311,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Server-Side Only Mods",
-            "description": "Mod folders to be used with the \"-serverMods\" startup option. They only run server-side and are not required by clients if \"Verify Signatures\" is ON. Any mods in this list that are in \"@workshopID\" form will also be included in Automatic Updates (if enabled). NO capital letters, spaces, or folders starting with a number! Each folder must be followed with a semicolon (ex. @123456789;@987654321;etc;)",
+            "name": "[高度設定] サーバー専用 MOD",
+            "description": "\"-serverMods\" 起動オプションで使用する MOD フォルダです。サーバー側のみで動作し、\"署名検証\" が ON の場合クライアントには不要です。この一覧に \"@workshopID\" 形式の MOD がある場合は自動更新（有効時）の対象にもなります。大文字・スペース・数字で始まるフォルダ名は不可で、各フォルダ名末尾にセミコロンが必要です（例: @123456789;@987654321;etc;）。",
             "env_variable": "SERVERMODS",
             "default_value": "",
             "user_viewable": true,
@@ -321,8 +321,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Extra Startup Parameters",
-            "description": "See https:\/\/community.bistudio.com\/wiki\/DayZ:Server_Configuration#Launch_Parameters for more info on valid flags for this field.",
+            "name": "[高度設定] 追加起動パラメータ",
+            "description": "この項目で利用可能なフラグの詳細は https:\/\/community.bistudio.com\/wiki\/DayZ:Server_Configuration#Launch_Parameters を参照してください。",
             "env_variable": "STARTUP_PARAMS",
             "default_value": "-dologs -adminlog -netlog -freezecheck",
             "user_viewable": true,
@@ -331,8 +331,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Server Binary",
-            "description": "Cannot currently be changed. Left in case other branches with different executable names are introduced at a later date.",
+            "name": "[高度設定] サーバーバイナリ",
+            "description": "現在は変更できません。将来、別実行ファイル名のブランチが追加された場合に備えて残されています。",
             "env_variable": "SERVER_BINARY",
             "default_value": "DayZServer",
             "user_viewable": true,
@@ -341,8 +341,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] DayZ Dedicated Server App ID",
-            "description": "Used for installation and updates. Rarely needs to be changed. 223350 is for Stable branch and 1042420 is for experimental branch. Changing branches may require deleting all server files and reinstalling.",
+            "name": "[高度設定] DayZ Dedicated Server App ID",
+            "description": "インストールと更新に使用します。通常は変更不要です。223350 は Stable ブランチ、1042420 は Experimental ブランチです。ブランチ変更時はサーバーファイル全削除と再インストールが必要になる場合があります。",
             "env_variable": "STEAMCMD_APPID",
             "default_value": "223350",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2025-10-30T16:08:41+01:00",
     "name": "KSP - LMP",
     "author": "brainshead@gmail.com",
-    "description": "Dedicated server for the LunaMultiplayer (LMP) mod for Kerbal Space Program. Automatically installs the latest or specified version from GitHub. Runs on .NET 5 using the official Ptero-Eggs yolk.",
+    "description": "Kerbal Space Program 向け LunaMultiplayer（LMP）MOD の専用サーバーです。GitHub から最新または指定バージョンを自動インストールします。公式 Ptero-Eggs yolk を使用して .NET 5 で動作します。",
     "features": null,
     "docker_images": {
         "Dotnet 5 ": " ghcr.io\/ptero-eggs\/yolks:dotnet_5"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "LMP Version",
-            "description": "Leave blank to install the latest LunaMultiplayer release, or specify a version tag (e.g. 0.29.3).",
+            "name": "LMP バージョン",
+            "description": "空欄の場合は LunaMultiplayer の最新リリースをインストールします。指定する場合はバージョンタグ（例: 0.29.3）を入力してください。",
             "env_variable": "LMP_VERSION",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server. Max 30 char.",
+            "name": "サーバー名",
+            "description": "サーバー名です。最大 30 文字。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "Password for the server. Leave it empty if you want to make a public server. Max 30 chars.",
+            "name": "パスワード",
+            "description": "サーバー用パスワードです。公開サーバーにする場合は空欄にしてください。最大 30 文字。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Admin password for the server. Leave it empty if you don't want to allow server administration from KSP. Max 30 chars.",
+            "name": "管理者パスワード",
+            "description": "サーバー管理者用パスワードです。KSP からのサーバー管理を許可しない場合は空欄にしてください。最大 30 文字。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "MaxPlayers",
-            "description": "Maximum amount of players that can join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数です。",
             "env_variable": "MaxPlayers",
             "default_value": "20",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Difficulty",
-            "description": "Specify the gameplay difficulty of the server. Values: Easy, Normal, Moderate, Hard, Custom.\r\n\r\nChanging value gives an message : Your GameplaySettings file is different than your GeneralSettings - Difficulty value. \r\n\r\nSo the difficulty setting will be set as \"Custom\". In case you want to use the default setting values for the difficulty you have chosen.\r\nRemove the GameplaySettings.xml file so it's recreated again.",
+            "name": "ゲーム難易度",
+            "description": "サーバーのゲームプレイ難易度を指定します。値: Easy、Normal、Moderate、Hard、Custom。\r\n\r\n値を変更すると「GameplaySettings ファイルと GeneralSettings の Difficulty 値が異なる」というメッセージが表示される場合があります。\r\n\r\nその場合、難易度設定は \"Custom\" になります。選択した難易度の既定値を使いたい場合は、GameplaySettings.xml を削除して再生成してください。",
             "env_variable": "GameDifficulty",
             "default_value": "Easy",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Specify the game Type. Values: Sandbox, Career, Science",
+            "name": "ゲームモード",
+            "description": "ゲームタイプを指定します。値: Sandbox、Career、Science",
             "env_variable": "GameMode",
             "default_value": "Sandbox",
             "user_viewable": true,

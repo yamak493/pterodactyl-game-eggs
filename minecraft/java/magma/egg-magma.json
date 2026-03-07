@@ -7,7 +7,7 @@
     "exported_at": "2025-04-20T21:46:27+00:00",
     "name": "Magma",
     "author": "support@pterodactyl.io",
-    "description": "Magma is most powerful Forge server providing you with Forge mods and Bukkit Plugins using Spigot and Paper for Performance Optimization and Stability. Using: https:\/\/github.com\/magmamaintained",
+    "description": "Magmaは、Forge MODとBukkitプラグインを提供する高機能なForgeサーバーです。パフォーマンス最適化と安定性のためにSpigotとPaperを利用しています。使用元: https:\/\/github.com\/magmamaintained",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Minecraft Version",
-            "description": "",
+            "name": "Minecraftバージョン",
+            "description": "使用するMinecraftのバージョンです。",
             "env_variable": "MC_VERSION",
             "default_value": "1.20.1",
             "user_viewable": true,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tag Version",
-            "description": "Optional.\r\n\r\nSpecify the tag version to install. Set latest to install latest",
+            "name": "タグバージョン",
+            "description": "任意項目です。\r\n\r\nインストールするタグバージョンを指定します。最新をインストールする場合はlatestを設定してください。",
             "env_variable": "TAG_VERSION",
             "default_value": "latest",
             "user_viewable": true,

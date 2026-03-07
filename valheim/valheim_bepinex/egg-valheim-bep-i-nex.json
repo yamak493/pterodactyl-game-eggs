@@ -7,7 +7,7 @@
     "exported_at": "2025-09-03T16:07:36+00:00",
     "name": "Valheim  BepINex",
     "author": "eggs@goover.dev",
-    "description": "A brutal exploration and survival game for 1-10 players, set in a procedurally-generated purgatory inspired by viking culture incl the Plugin Framework BepInEx",
+    "description": "BepInExプラグインフレームワークを含む、ヴァイキング文化に着想を得たプロシージャル生成の煉獄世界を舞台にした1〜10人向けサバイバルゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Name that appears in server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "My Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server password.",
+            "name": "サーバーパスワード",
+            "description": "サーバーのパスワードです。",
             "env_variable": "PASSWORD",
             "default_value": "secret",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Name to load if switching between multiple saved worlds.",
+            "name": "ワールド名",
+            "description": "複数の保存済みワールドを切り替える際に読み込むワールド名です。",
             "env_variable": "WORLD",
             "default_value": "Dedicated",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public Server",
-            "description": "",
+            "name": "公開サーバー",
+            "description": "サーバーの公開可視性です。",
             "env_variable": "PUBLIC_SERVER",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "サーバー起動時の自動更新設定です。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Crossplay",
-            "description": "Enable crossplay support",
+            "name": "クロスプレイを有効化",
+            "description": "クロスプレイ対応を有効にします。",
             "env_variable": "ENABLE_CROSSPLAY",
             "default_value": "0",
             "user_viewable": true,
@@ -91,7 +91,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Branch",
+            "name": "ベータブランチ",
             "description": "",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
@@ -101,7 +101,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Password",
+            "name": "ベータパスワード",
             "description": "",
             "env_variable": "SRCDS_BETAPASS",
             "default_value": "",
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Backup Interval",
-            "description": "Change how often the world will save in seconds. Default: 1800 (30 minutes).",
+            "name": "バックアップ間隔",
+            "description": "ワールド保存の間隔（秒）を変更します。デフォルト: 1800（30分）。",
             "env_variable": "BACKUP_INTERVAL",
             "default_value": "1800",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Backup Count",
-            "description": "Sets how many automatic backups will be kept. The first is the 'short' backup length, and the rest are the 'long' backup length. When default values are used means one backup that is 2 hours old, and 3 backups that are 12 hours apart. Default: 4.",
+            "name": "バックアップ保持数",
+            "description": "保持する自動バックアップ数を設定します。最初の1つは'短期'間隔、残りは'長期'間隔で作成されます。デフォルトでは2時間前のバックアップ1つと、12時間間隔のバックアップ3つになります。デフォルト: 4。",
             "env_variable": "BACKUP_COUNT",
             "default_value": "4",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Backup Shorttime",
-            "description": "Sets the interval between the first automatic backups in seconds. Default: 7200 (2 hours).",
+            "name": "短期バックアップ間隔",
+            "description": "最初の自動バックアップ間隔（秒）を設定します。デフォルト: 7200（2時間）。",
             "env_variable": "BACKUP_SHORTTIME",
             "default_value": "7200",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Backup Longtime",
-            "description": "Sets the interval between the subsequent automatic backups in seconds. Default: 43200 (12 hours).",
+            "name": "長期バックアップ間隔",
+            "description": "2回目以降の自動バックアップ間隔（秒）を設定します。デフォルト: 43200（12時間）。",
             "env_variable": "BACKUP_LONGTIME",
             "default_value": "43200",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "[System] Console Filter",
-            "description": "Remove unwanted outputs from the console.",
+            "name": "[System] コンソールフィルター",
+            "description": "コンソールの不要な出力を除去します。",
             "env_variable": "CONSOLE_FILTER",
             "default_value": "\/^\\(Filename:.*Line:[[:space:]]+[[:digit:]]+\\)$\/d; \/^([[:space:]]+)?$\/d",
             "user_viewable": false,
@@ -162,7 +162,7 @@
         },
         {
             "name": "[System] App ID",
-            "description": "Valheim steam app id for auto updates.",
+            "description": "自動更新に使用するValheimのSteam App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "896660",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "[System] LD Library Path",
-            "description": "Required to load server libraries.",
+            "name": "[System] LDライブラリパス",
+            "description": "サーバーライブラリの読み込みに必要です。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".\/linux64",
             "user_viewable": false,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "[System] Shutdown Command",
-            "description": "",
+            "name": "[System] 停止コマンド",
+            "description": "サーバー停止に使用するコマンドです。",
             "env_variable": "STOP",
             "default_value": "kill -2 $!; wait;",
             "user_viewable": false,
@@ -192,7 +192,7 @@
         },
         {
             "name": "ModPack",
-            "description": "Enter the Dependency String name for a ModPack to automatically be installed\r\nNOTE: If the modpack Updates, you will need to update this variable with the new Dependency String. This is done to allow Old Versions to be used.\r\nCHANGING THIS REQUIRES A SERVER REINSTALL",
+            "description": "自動インストールするModPackの依存文字列名を入力してください。\r\n注意: ModPackが更新された場合、新しい依存文字列へこの変数を更新する必要があります（旧バージョン利用を可能にするため）。\r\nこれを変更するとサーバー再インストールが必要です。",
             "env_variable": "V_MODPACK",
             "default_value": "",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-07-03T21:46:20-07:00",
     "name": "Arma Reforger",
     "author": "red_thirten@yahoo.com",
-    "description": "Experience authentic Cold War combat and join friends in the struggle for a sprawling, 51 km\u00b2 mid-Atlantic island \u2014 or take on the role of Game Master and create your very own scenarios for others to enjoy.",
+    "description": "本格的な冷戦時代の戦闘を体験し、広大な 51 km2 の大西洋中部の島を舞台に仲間と戦いへ参加しましょう。あるいは Game Master となって、他のプレイヤーが楽しめる独自シナリオを作成できます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Automatic Updates",
-            "description": "Quickly checks for any server or mod updates on startup, and updates if necessary.",
+            "name": "自動更新",
+            "description": "起動時にサーバーや MOD の更新を確認し、必要に応じて更新します。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Region",
-            "description": "Region listed in the server browser. ISO 3166-1 alpha-2 codes can be used in this field.",
+            "name": "サーバー地域",
+            "description": "サーバーブラウザーに表示される地域です。この項目には ISO 3166-1 alpha-2 コードを使用できます。",
             "env_variable": "REGION",
             "default_value": "US",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name displayed in the server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザーに表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Arma Reforger Server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed to join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required for clients to enter before they can join the server. Leave empty to have no password.",
+            "name": "サーバーパスワード",
+            "description": "クライアントがサーバー参加前に入力するパスワードです。パスワードなしにする場合は空欄にします。",
             "env_variable": "SERVER_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ADMIN_PASS",
             "default_value": "",
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Scenario ID",
-            "description": "ID of scenario to run\/play. Valid IDs can be viewed in the console upon startup of the server.",
+            "name": "シナリオ ID",
+            "description": "実行するシナリオの ID です。有効な ID はサーバー起動時のコンソールで確認できます。",
             "env_variable": "SCENARIO_ID",
             "default_value": "{ECC61978EDCC2B5A}Missions\/23_Campaign.conf",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Joinable",
-            "description": "Set if the session can be selected through the auto join feature.",
+            "name": "自動参加可能",
+            "description": "自動参加機能からこのセッションを選択可能にするかを設定します。",
             "env_variable": "AUTO_JOINABLE",
             "default_value": "true",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Visible in Server Browser",
-            "description": "Set the visibility of the server in the Server Browser.",
+            "name": "サーバーブラウザーで表示",
+            "description": "サーバーブラウザーでのサーバー表示可否を設定します。",
             "env_variable": "VISIBLE",
             "default_value": "true",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable BattlEye",
-            "description": "Enables the anti-cheat engine on the server and requires all clients to be running it.",
+            "name": "BattlEye を有効化",
+            "description": "サーバーでアンチチートエンジンを有効化し、すべてのクライアントに実行を要求します。",
             "env_variable": "BATTLEYE",
             "default_value": "true",
             "user_viewable": true,
@@ -131,7 +131,7 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Third Person",
+            "name": "三人称視点を無効化",
             "description": "",
             "env_variable": "DISABLE_THIRD",
             "default_value": "false",
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Max FPS",
-            "description": "Sets a maximum FPS limit for the server, saving performance in some cases. Leave empty for no limit.",
+            "name": "[高度設定] 最大 FPS",
+            "description": "サーバーの最大 FPS 上限を設定します。場合によってはパフォーマンス改善に役立ちます。無制限にする場合は空欄にします。",
             "env_variable": "MAX_FPS",
             "default_value": "120",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Log FPS Interval",
-            "description": "How often (in seconds) to log the FPS and other debug stats to the console. Set to 0 to disable.",
+            "name": "[高度設定] FPS ログ間隔",
+            "description": "FPS などのデバッグ統計をコンソールへ出力する間隔（秒）です。0 で無効化します。",
             "env_variable": "LOG_INTERVAL",
             "default_value": "0",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Validate Server Files",
-            "description": "\"true\" to enable; empty to disable. Validates all server files when Automatic Updates is enabled. Note: This will significantly increase server startup times, so it is recommended to only enable this when needed.",
+            "name": "[修復] サーバーファイル検証",
+            "description": "\"true\" で有効、空欄で無効です。自動更新が有効な場合にすべてのサーバーファイルを検証します。注意: 起動時間が大幅に増えるため、必要時のみ有効化を推奨します。",
             "env_variable": "VALIDATE",
             "default_value": "",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Arma Reforger Dedicated Server App ID",
-            "description": "Used for installation and updates. Rarely needs to be changed.",
+            "name": "[高度設定] Arma Reforger Dedicated Server App ID",
+            "description": "インストールと更新に使用します。通常は変更不要です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1874900",
             "user_viewable": false,

@@ -7,7 +7,7 @@
     "exported_at": "2025-11-04T04:34:52+00:00",
     "name": "Forge Enhanced",
     "author": "parker@parkervcp.com",
-    "description": "Minecraft Forge Server. Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+    "description": "Minecraft Forgeサーバーです。Minecraft ForgeはMOD開発用API（Application Programming Interface）で、MODの作成を容易にし、MOD同士の互換性を確保しやすくします。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the Jarfile to use when running Forge version below 1.17.",
+            "name": "サーバーJarファイル",
+            "description": "1.17未満のForgeバージョンを実行する際に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Minecraft Version",
-            "description": "The version of minecraft you want to install for.\r\n\r\nLeaving latest will install the latest recommended version.",
+            "name": "Minecraftバージョン",
+            "description": "インストール対象のMinecraftバージョンです。\r\n\r\nlatestのままにすると、推奨される最新バージョンがインストールされます。",
             "env_variable": "MC_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Build Type",
-            "description": "The type of server jar to download from forge.\r\n\r\nValid types are \"recommended\" and \"latest\".",
+            "name": "ビルドタイプ",
+            "description": "Forgeからダウンロードするサーバーjarの種類です。\r\n\r\n有効な値は\"recommended\"と\"latest\"です。",
             "env_variable": "BUILD_TYPE",
             "default_value": "recommended",
             "user_viewable": true,
@@ -68,8 +68,8 @@
             "field_type": "text"
         },
         {
-            "name": "Forge Version",
-            "description": "Gets an exact version.\r\n\r\nEx. 1.15.2-31.2.4\r\n\r\nOverrides MC_VERSION and BUILD_TYPE. If it fails to download the server files it will fail to install.",
+            "name": "Forgeバージョン",
+            "description": "正確なバージョンを指定します。\r\n\r\n例: 1.15.2-31.2.4\r\n\r\nMC_VERSIONとBUILD_TYPEより優先されます。サーバーファイルのダウンロードに失敗した場合、インストールも失敗します。",
             "env_variable": "FORGE_VERSION",
             "default_value": "",
             "user_viewable": true,

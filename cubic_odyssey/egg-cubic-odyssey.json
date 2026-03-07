@@ -7,7 +7,7 @@
     "exported_at": "2025-10-27T22:40:22+01:00",
     "name": "Cubic Odyssey",
     "author": "ptero@redbananaofficial.com",
-    "description": "Embark on a galactic journey in Cubic Odyssey, an open-world adventure where you explore vibrant planets, craft tools, build vehicles, and fight the Red Darkness. Uncover ancient mysteries, and shape a universe full of life, danger, and limitless possibilities!",
+    "description": "Cubic Odyssey は、色彩豊かな惑星を探索し、道具をクラフトし、乗り物を作り、Red Darkness と戦うオープンワールドアドベンチャーです。古代の謎を解き明かし、生命と危険、無限の可能性に満ちた宇宙を形作りましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,8 +32,8 @@
     },
     "variables": [
         {
-            "name": "Steam Username",
-            "description": "A steam username of an account that owns the server tool is required",
+            "name": "Steam ユーザー名",
+            "description": "サーバーツールを所有しているアカウントの Steam ユーザー名が必要です",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -42,8 +42,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steam パスワード",
+            "description": "Steam ユーザーパスワード",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -52,8 +52,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth Code",
-            "description": "Steam Auth Code required if the Steam Account is using Steam Auth. Slow installs will cause the code to expire before it can be used.",
+            "name": "Steam 認証コード",
+            "description": "Steam アカウントで Steam 認証を使用している場合に必要です。インストールに時間がかかると、使用前にコードが期限切れになる場合があります。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -62,8 +62,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server, this will be shown on the server-list",
+            "name": "サーバー名",
+            "description": "サーバーリストに表示されるサーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "Cubic Odyssey Server",
             "user_viewable": true,
@@ -72,8 +72,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If enabled players must enter the password to join the server",
+            "name": "サーバーパスワード",
+            "description": "有効にすると、プレイヤーはサーバー参加時にパスワード入力が必要になります",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -82,8 +82,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game port",
-            "description": "This sets the port the server will bind to",
+            "name": "ゲームポート",
+            "description": "サーバーがバインドするポートを設定します",
             "env_variable": "GAME_PORT",
             "default_value": "20000",
             "user_viewable": true,
@@ -92,8 +92,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "This will set the maximum number of allowed players",
+            "name": "最大プレイヤー数",
+            "description": "許可する最大プレイヤー数を設定します",
             "env_variable": "MAX_PLAYERS",
             "default_value": "20",
             "user_viewable": true,
@@ -102,8 +102,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Sets the desired game mode, it's adventure by default, available options: adventure, creative",
+            "name": "ゲームモード",
+            "description": "使用するゲームモードを設定します。既定値は adventure。指定可能: adventure, creative",
             "env_variable": "GAMEMODE",
             "default_value": "adventure",
             "user_viewable": true,
@@ -112,8 +112,8 @@
             "field_type": "text"
         },
         {
-            "name": "Private Server",
-            "description": "This will make the server private\/public",
+            "name": "プライベートサーバー",
+            "description": "サーバーを非公開／公開に設定します",
             "env_variable": "PRIVATE_SERVER",
             "default_value": "FALSE",
             "user_viewable": true,
@@ -122,8 +122,8 @@
             "field_type": "text"
         },
         {
-            "name": "Galaxy Seed",
-            "description": "This sets the seed used by the server",
+            "name": "銀河シード",
+            "description": "サーバーで使用するシードを設定します",
             "env_variable": "GALAXY_SEED",
             "default_value": "21945875634",
             "user_viewable": true,
@@ -132,8 +132,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "autoupdate Server on start or restart. 1 = on; 0 = off",
+            "name": "自動更新",
+            "description": "起動時または再起動時にサーバーを自動更新します。1 = 有効、0 = 無効",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -152,8 +152,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "Required to always install and update the correct version of the game.",
+            "name": "Windows インストール",
+            "description": "常に正しいゲームバージョンをインストール・更新するために必要です。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,

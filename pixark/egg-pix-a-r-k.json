@@ -7,7 +7,7 @@
     "exported_at": "2026-02-01T03:48:16+00:00",
     "name": "PixARK",
     "author": "hello@venatus.digital",
-    "description": "A simple Docker container with Wine to run PixARK using Pterodactyl Panel",
+    "description": "Pterodactyl Panel上でPixARKを実行するための、Wine入りシンプルDockerコンテナです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Password",
-            "description": "If specified, players must provide this password to join the server.",
+            "name": "サーバーパスワード",
+            "description": "指定した場合、プレイヤーはサーバー参加時にこのパスワード入力が必要です。",
             "env_variable": "ARK_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "If specified, players must provide this password (via the in-game console) to gain access to administrator commands on the server.",
+            "name": "管理者パスワード",
+            "description": "指定した場合、プレイヤーはこのパスワード（ゲーム内コンソール経由）を入力して管理者コマンド権限を取得します。",
             "env_variable": "ARK_ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
-            "description": "Specifies the maximum number of players that can play on the server simultaneously.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで同時プレイ可能な最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "The port assigned for use as query port",
+            "name": "クエリポート",
+            "description": "クエリポートとして使用する割り当てポートです。",
             "env_variable": "QPORT",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "The port assigned for use as RCON port",
+            "name": "RCONポート",
+            "description": "RCONポートとして使用する割り当てポートです。",
             "env_variable": "RCPORT",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Cube Port",
-            "description": "The port to be used for terrain",
+            "name": "Cubeポート",
+            "description": "地形処理に使用するポートです。",
             "env_variable": "CUBEPORT",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "App ID",
-            "description": "PixARK Source App ID",
+            "name": "アプリID",
+            "description": "PixARKのSource App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "824360",
             "user_viewable": false,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the Server !!!! NO SPACES ALLOWED !!!!",
+            "name": "サーバー名",
+            "description": "サーバー名です!!!! スペースは使用できません !!!!",
             "env_variable": "SRV_NAME",
             "default_value": "PteroPixARKServer",
             "user_viewable": true,

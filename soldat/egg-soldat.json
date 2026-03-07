@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T11:57:01+02:00",
     "name": "Soldat",
     "author": "eggs@goover.dev",
-    "description": "Soldat is a unique 2D (side-view) multiplayer action game. It has been influenced by the best of games such as Liero, Worms, Quake, and Counter-Strike and provides a fast-paced gaming experience with tons of blood and flesh. Soldiers fight against each other in 2D battle arenas using a deadly arsenal of military weapons, across 7 default game modes. It features 18 different weapons and 60 maps to frag away on, with full support for user created content.\r\n\r\nSteam: https:\/\/store.steampowered.com\/app\/638490\/Soldat\/",
+    "description": "Soldatはユニークな2D（横視点）マルチプレイヤーアクションゲームです。Liero、Worms、Quake、Counter-Strikeなどの名作に影響を受け、スピーディーでハードな戦闘体験を提供します。兵士たちは7つの標準ゲームモードで、2D戦場にて多彩な軍用武器を使い戦います。18種類の武器と60マップを収録し、ユーザー作成コンテンツにも完全対応しています。\r\n\r\nSteam: https:\/\/store.steampowered.com\/app\/638490\/Soldat\/",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Admin Passwort",
-            "description": "Admin Password for the Server",
+            "name": "管理者パスワード",
+            "description": "サーバー管理者用パスワードです。",
             "env_variable": "ADMIN_PASSWD",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password to join Server",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加用パスワードです。",
             "env_variable": "SRV_PWD",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the Server",
+            "name": "サーバー名",
+            "description": "サーバー名です。",
             "env_variable": "SRV_NAME",
             "default_value": "MySoldatServer",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max Players can join",
+            "name": "最大プレイヤー数",
+            "description": "参加可能な最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "ADD IP",
-            "description": "Steam APP ID",
+            "description": "Steam App ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "638500",
             "user_viewable": true,

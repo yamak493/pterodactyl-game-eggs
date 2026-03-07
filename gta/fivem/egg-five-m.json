@@ -7,7 +7,7 @@
     "exported_at": "2025-10-20T20:14:27+02:00",
     "name": "FiveM",
     "author": "parker@parkervcp.com",
-    "description": "A new FiveM \/RedM egg for the latest builds due to recent changes in FiveM",
+    "description": "FiveMの最近の変更に対応した、最新ビルド向けのFiveM \/ RedM用Eggです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "fivem license",
-            "description": "Required to start the service. Get your keys at https:\/\/portal.cfx.re\/",
+            "name": "FiveMライセンス",
+            "description": "サービス起動に必要です。キーは https:\/\/portal.cfx.re\/ で取得してください。",
             "env_variable": "FIVEM_LICENSE",
             "default_value": "",
             "user_viewable": true,
@@ -40,7 +40,7 @@
         },
         {
             "name": "Max Players",
-            "description": "Set the fivem max play count",
+            "description": "FiveMの最大プレイヤー数を設定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "48",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Hostname",
-            "description": "The name that shows up in the server browser",
+            "name": "サーバーホスト名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "SERVER_HOSTNAME",
             "default_value": "My new FXServer!",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "fivem version",
-            "description": "The fivem version that is to be installed. Invalid versions will default to recommended.\r\n\r\nAn example is `6013-d8ae399d15680da569022f57ab7f2474d307c821`\r\n\r\nYou can get the latest version from here - https:\/\/runtime.fivem.net\/artifacts\/fivem\/build_proot_linux\/master\/",
+            "name": "FiveMバージョン",
+            "description": "インストールするFiveMのバージョンです。無効な値は recommended にフォールバックします。\r\n\r\n例: `6013-d8ae399d15680da569022f57ab7f2474d307c821`\r\n\r\n最新バージョン: https:\/\/runtime.fivem.net\/artifacts\/fivem\/build_proot_linux\/master\/",
             "env_variable": "FIVEM_VERSION",
             "default_value": "recommended",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Link",
-            "description": "This is the link to download fivem from. This is only used in the install script.\r\n\r\nThe file you link to needs to be an fx.tar.zx file.\r\n\r\nExample:\r\nhttps:\/\/runtime.fivem.net\/artifacts\/fivem\/build_proot_linux\/master\/6013-d8ae399d15680da569022f57ab7f2474d307c821\/fx.tar.xz",
+            "name": "ダウンロードリンク",
+            "description": "FiveMをダウンロードするURLです。インストールスクリプトでのみ使用されます。\r\n\r\n指定ファイルは fx.tar.xz である必要があります。\r\n\r\n例:\r\nhttps:\/\/runtime.fivem.net\/artifacts\/fivem\/build_proot_linux\/master\/6013-d8ae399d15680da569022f57ab7f2474d307c821\/fx.tar.xz",
             "env_variable": "DOWNLOAD_URL",
             "default_value": "",
             "user_viewable": false,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Web Api Key",
-            "description": "Use your Steam WebApiKey or set to 'none'. Get your key at https:\/\/steamcommunity.com\/dev\/apikey\/",
+            "name": "Steam Web APIキー",
+            "description": "Steam WebAPIキーを指定するか 'none' を設定してください。キー取得: https:\/\/steamcommunity.com\/dev\/apikey\/",
             "env_variable": "STEAM_WEBAPIKEY",
             "default_value": "none",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "txAdmin Port",
-            "description": "The port for the txAdmin panel",
+            "name": "txAdminポート",
+            "description": "txAdminパネルで使用するポートです。",
             "env_variable": "TXHOST_TXA_PORT",
             "default_value": "40120",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable txadmin",
-            "description": "Enables txadmin.\r\n\r\nset to 1 to enable. (default is 0 for false)",
+            "name": "txAdminを有効化",
+            "description": "txAdminを有効化します。\r\n\r\n有効化は1を設定します。（デフォルトは0 = false）",
             "env_variable": "TXADMIN_ENABLE",
             "default_value": "0",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "Restricts to only running either FiveM or RedM servers.\r\nThe setup page will only show recipes for the game specified below !\r\nOptions are : fivem or redm",
+            "name": "ゲーム名",
+            "description": "FiveM または RedM サーバーのみ実行するよう制限します。\r\nセットアップページには、以下で指定したゲーム用レシピのみ表示されます。\r\n選択肢: fivem または redm",
             "env_variable": "TXHOST_GAME_NAME",
             "default_value": "fivem",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game type",
-            "description": "Value to be used : gta5 for FiveM and rdr3 for RedM\r\n! Dont fill in any value it reads the game name variable and set the correct value for it !",
+            "name": "ゲームタイプ",
+            "description": "使用される値: FiveMは gta5、RedMは rdr3\r\nこの項目は手動入力不要です。ゲーム名変数を読み取り自動設定されます。",
             "env_variable": "GAME_TYPE",
             "default_value": "",
             "user_viewable": false,
@@ -130,7 +130,7 @@
         },
         {
             "name": "TXHOST DATA PATH",
-            "description": "Location for TX Admin",
+            "description": "TX Admin のデータ保存先です。",
             "env_variable": "TXHOST_DATA_PATH",
             "default_value": "\/home\/container\/txData",
             "user_viewable": false,

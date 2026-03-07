@@ -7,7 +7,7 @@
     "exported_at": "2026-02-01T03:48:16+00:00",
     "name": "R5Reloaded",
     "author": "eggs@purpleflaghosting.com",
-    "description": "R5Reloaded - Modded Apex Legends server",
+    "description": "R5Reloaded - 改造版Apex Legendsサーバー",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Name",
-            "description": "Name of the server",
+            "name": "名前",
+            "description": "サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Playlist",
-            "description": "Playlist to load",
+            "name": "プレイリスト",
+            "description": "読み込むプレイリストです。",
             "env_variable": "PLAYLIST",
             "default_value": "fs_dm",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download URL",
-            "description": "URL to download R5Reloaded server build from",
+            "name": "ダウンロードURL",
+            "description": "R5ReloadedサーバービルドをダウンロードするURLです。",
             "env_variable": "DL_URL",
             "default_value": "https:\/\/r5reloaded.com\/server-download",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Args",
-            "description": "Additional arguments to append to the startup command",
+            "name": "引数",
+            "description": "起動コマンドに追加する引数です。",
             "env_variable": "ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -69,7 +69,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wineデバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",

@@ -7,7 +7,7 @@
     "exported_at": "2023-07-02T17:55:48+02:00",
     "name": "Pavlov VR",
     "author": "admin@devil.wtf",
-    "description": "Pavlov VR is a multiplayer shooter in VR with heavy focus on community features. Realistic reloading features and fast paced combat as part of the core experience. Play the #1 most popular VR shooter on PC today.",
+    "description": "Pavlov VR は、コミュニティ機能に重点を置いたVRマルチプレイシューターです。リアルなリロード要素とテンポの速い戦闘が中核体験になっています。PCで最も人気の高いVRシューターをプレイしましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "App ID",
-            "description": "Pavlov VR steam app id",
+            "name": "アプリID",
+            "description": "Pavlov VR のSteamアプリIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "622970",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "Enter a password for your RCON Configuration.",
+            "name": "RCONパスワード",
+            "description": "RCON設定用のパスワードを入力します。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "CHANGE_ME",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Port for your RCON Configuration.",
+            "name": "RCONポート",
+            "description": "RCON設定用のポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "8188",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "This is to enable auto-updating for servers.\r\n\r\nDefault is 0. Set to 1 to update",
+            "name": "サーバー自動更新",
+            "description": "サーバーの自動更新を有効化します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta id",
-            "description": "Beta branch of a steam app",
+            "name": "ベータID",
+            "description": "Steamアプリのベータブランチです。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Api key",
-            "description": "For your server to show up in the server list, there is now a requirement to have an ApiKey issued by vankrupt. This is to prevent DOS attacks against the master server.\r\nGet it here: https:\/\/pavlov-ms.vankrupt.com\/servers\/v1\/key",
+            "name": "APIキー",
+            "description": "サーバー一覧に表示するには、vankrupt が発行するApiKeyが必要です。これはマスターサーバーへのDoS攻撃対策です。\r\n取得先: https:\/\/pavlov-ms.vankrupt.com\/servers\/v1\/key",
             "env_variable": "API_KEY",
             "default_value": "",
             "user_viewable": true,

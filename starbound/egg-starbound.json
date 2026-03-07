@@ -7,7 +7,7 @@
     "exported_at": "2022-08-20T08:17:48+02:00",
     "name": "Starbound",
     "author": "parker@parkervcp.com",
-    "description": "Starbound takes place in a two-dimensional, procedurally generated universe which the player is able to explore in order to obtain new weapons, armor, and items, and to visit towns and villages inhabited by various intelligent lifeforms.",
+    "description": "Starboundは、手続き生成される2D宇宙を舞台にしたゲームです。プレイヤーは探索を通じて新たな武器・防具・アイテムを入手し、さまざまな知的生命体が暮らす町や村を訪れることができます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Steam User",
-            "description": "This is a required setting and cannot be set to anonymous.",
+            "name": "Steamユーザー",
+            "description": "必須設定です。anonymous には設定できません。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steamパスワード",
+            "description": "Steamユーザーのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲームID",
+            "description": "SRCDSでダウンロード・実行するゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "211820",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam account auth code. Required if you have 2fa enabled.",
+            "name": "Steam認証コード",
+            "description": "Steamアカウントの認証コードです。2FA有効時は必須です。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "This is to auto-update the game server.",
+            "name": "サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use Workshop content",
-            "description": "Set to true if you want to use your subscribed Workshop content",
+            "name": "Workshopコンテンツを使用",
+            "description": "購読中のWorkshopコンテンツを使用する場合は true に設定します。",
             "env_variable": "WORKSHOP",
             "default_value": "0",
             "user_viewable": true,

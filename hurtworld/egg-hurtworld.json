@@ -7,7 +7,7 @@
     "exported_at": "2025-02-12T15:57:31+01:00",
     "name": "Hurtworld",
     "author": "brycea@terrahost.cloud",
-    "description": "Hurtworld is a hardcore multiplayer survival FPS with a focus on deep survival progression that doesn't become trivial once you establish some basic needs. Built for hardcore gamers, Hurtworld aims to punish.\r\n\r\nThis egg includes the options to install Oxide\/uMod and corresponding plugins",
+    "description": "Hurtworld は、基本的な生存基盤を整えた後も簡単になりすぎない、奥深い成長要素に焦点を当てたハードコアなマルチプレイサバイバル FPS です。ハードコアゲーマー向けに、厳しい体験を提供します。\r\n\r\nこの egg には Oxide\/uMod と対応プラグインをインストールするオプションが含まれます",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲーム ID",
+            "description": "SRCDS でダウンロード・実行するゲームに対応する ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "405100",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Include Oxide",
-            "description": "This option will allow you to automatically install Oxide\/uMod on the server.\r\nDefault value is 0, change it to a 1 to install.",
+            "name": "Oxide を含める",
+            "description": "このオプションでサーバーへ Oxide\/uMod を自動インストールできます。\r\n既定値は 0 です。インストールする場合は 1 に変更してください。",
             "env_variable": "INSTALL_OXIDE",
             "default_value": "0",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Install Plugins",
-            "description": "This variable allows you to automatically install Oxide plugins. \r\nFormat example: No Build Zones,Loot Chests,HW Time Control\r\nPlugins can be found at: https:\/\/umod.org\/plugins?categories=hurtworld",
+            "name": "プラグインをインストール",
+            "description": "この変数で Oxide プラグインを自動インストールできます。\r\n形式例: No Build Zones,Loot Chests,HW Time Control\r\nプラグイン一覧: https:\/\/umod.org\/plugins?categories=hurtworld",
             "env_variable": "INSTALL_PLUGINS",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Server Query Default Port.",
+            "name": "クエリポート",
+            "description": "サーバークエリの既定ポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "13871",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max players allowed on the server at one time.",
+            "name": "最大プレイヤー数",
+            "description": "同時にサーバーへ参加できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "60",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of your server in the public server list.",
+            "name": "サーバー名",
+            "description": "公開サーバー一覧に表示されるサーバー名です。",
             "env_variable": "HOSTNAME",
             "default_value": "A Hurtworld Server",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Owner Guid",
-            "description": "Steam id of the server owner.",
+            "name": "サーバーオーナー GUID",
+            "description": "サーバーオーナーの Steam ID です。",
             "env_variable": "ADMINS",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Creative Mode",
-            "description": "Turn creative mode on and off (free build). Value as 0 for off, 1 for on.",
+            "name": "クリエイティブモード",
+            "description": "クリエイティブモード（自由建築）を ON/OFF します。0=OFF、1=ON。",
             "env_variable": "CREATIVE_MODE",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "AUTO_UPDATE",
-            "description": "Disabling or enabling automated updates on boot.",
+            "name": "自動更新",
+            "description": "起動時の自動更新を有効化／無効化します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

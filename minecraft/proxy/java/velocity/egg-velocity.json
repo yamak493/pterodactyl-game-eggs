@@ -7,7 +7,7 @@
     "exported_at": "2025-01-11T09:35:02+00:00",
     "name": "Velocity",
     "author": "parker@parkervcp.com",
-    "description": "Velocity is a Minecraft server proxy with unparalleled server support, scalability, and flexibility.",
+    "description": "Velocityは、高い互換性・拡張性・柔軟性を備えたMinecraftサーバープロキシです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Velocity Version",
-            "description": "The Velocity Proxy version to download.\r\n\r\nSet to 'latest ' the download the last stable build.",
+            "name": "Velocityバージョン",
+            "description": "ダウンロードするVelocity Proxyのバージョンです。\r\n\r\n'latest' を指定すると最新の安定ビルドを取得します。",
             "env_variable": "VELOCITY_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "Server Jarfile, by default this is set to 'velocity.jar'.\r\nSet it to otherwise if you wish to have a different jarfile name.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーJarファイル名です。デフォルトは 'velocity.jar' です。\r\n別名にしたい場合はここで変更してください。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "velocity.jar",
             "user_viewable": true,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Path",
-            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
+            "name": "ダウンロードパス",
+            "description": "インストールスクリプト既定のURLではなく server.jar を取得するためのURLです。ユーザーには表示されません。",
             "env_variable": "DL_PATH",
             "default_value": "",
             "user_viewable": false,
@@ -68,8 +68,8 @@
             "field_type": "text"
         },
         {
-            "name": "Build Number",
-            "description": "The build number for the velocity release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "ビルド番号",
+            "description": "Velocityリリースのビルド番号です。\r\n\r\nlatest のままにすると常に最新版を取得します。無効な値は latest にフォールバックします。",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-08-02T10:52:39-07:00",
     "name": "V Rising",
     "author": "red_thirten@yahoo.com",
-    "description": "Awaken as a vampire. Hunt for blood in nearby settlements to regain your strength and evade the scorching sun to survive. Raise your castle and thrive in an ever-changing open world full of mystery. Gain allies online and conquer the land of the living.",
+    "description": "吸血鬼として目覚め、近隣の集落で血を狩って力を取り戻し、灼熱の太陽を避けて生き延びましょう。城を築き、謎に満ちた変化し続けるオープンワールドで繁栄し、仲間と共に生者の世界を征服しましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -33,7 +33,7 @@
     "variables": [
         {
             "name": "[Host] Server Query Port",
-            "description": "UDP port for Steam server list features.",
+            "description": "Steamサーバーリスト機能に使用するUDPポートです。",
             "env_variable": "VR_QUERY_PORT",
             "default_value": "9877",
             "user_viewable": true,
@@ -43,7 +43,7 @@
         },
         {
             "name": "[Host] Hide IP Address",
-            "description": "When listing server on EOS server list, the IP address will not be shown\/advertised. Players will connect via relay servers.",
+            "description": "EOSサーバーリストに掲載する際、IPアドレスを非表示にします。プレイヤーはリレーサーバー経由で接続します。",
             "env_variable": "VR_HIDEIPADDRESS",
             "default_value": "false",
             "user_viewable": false,
@@ -52,8 +52,8 @@
             "field_type": "text"
         },
         {
-            "name": "Automatic Updates",
-            "description": "Quickly checks for any server updates on startup, and updates if necessary.",
+            "name": "自動更新",
+            "description": "起動時にサーバー更新を確認し、必要に応じて更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -62,8 +62,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Settings Preset",
-            "description": "What preset of game settings the server should run. Some settings may not apply after the save file is first created. Leave empty\/null if you are using a single-player uploaded save or a custom ServerGameSettings.json file in the `~\/save-data\/Settings\/` directory.",
+            "name": "ゲーム設定プリセット",
+            "description": "サーバーで使用するゲーム設定プリセットです。一部設定はセーブファイル作成後に反映されない場合があります。シングルプレイのアップロードセーブや `~\/save-data\/Settings\/` 内のカスタム ServerGameSettings.json を使う場合は空欄\/nullにしてください。",
             "env_variable": "VR_PRESET",
             "default_value": "",
             "user_viewable": true,
@@ -72,8 +72,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Difficulty Preset",
-            "description": "What preset of game difficulty the server should run. Some settings may not apply after the save file is first created. Leave empty\/null if you are using a single-player uploaded save or a custom ServerGameSettings.json file in the `~\/save-data\/Settings\/` directory.",
+            "name": "ゲーム難易度プリセット",
+            "description": "サーバーで使用する難易度プリセットです。一部設定はセーブファイル作成後に反映されない場合があります。シングルプレイのアップロードセーブや `~\/save-data\/Settings\/` 内のカスタム ServerGameSettings.json を使う場合は空欄\/nullにしてください。",
             "env_variable": "VR_DIFFICULTY_PRESET",
             "default_value": "Difficulty_Normal",
             "user_viewable": true,
@@ -82,8 +82,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server. The name that shows up in server list.",
+            "name": "サーバー名",
+            "description": "サーバー名です。サーバーリストに表示されます。",
             "env_variable": "VR_NAME",
             "default_value": "V Rising Dedicated Server",
             "user_viewable": true,
@@ -92,8 +92,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Short server description. Shows up in details panel of server list when entry is selected. Also printed in chat when connecting to server.",
+            "name": "サーバー説明",
+            "description": "サーバーの短い説明です。サーバーリストで選択時に詳細欄へ表示され、接続時にはチャットにも表示されます。",
             "env_variable": "VR_DESCRIPTION",
             "default_value": "Welcome to the server!",
             "user_viewable": true,
@@ -102,8 +102,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Connected Users",
-            "description": "Max number of concurrent players on server. The maximum number technically supported is 128.",
+            "name": "最大接続ユーザー数",
+            "description": "サーバーの同時接続プレイヤー上限です。技術的な最大値は128です。",
             "env_variable": "VR_MAX_USERS",
             "default_value": "40",
             "user_viewable": true,
@@ -112,8 +112,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Connected Admins",
-            "description": "Max number of admins to allow connection even when the server is full.",
+            "name": "最大接続管理者数",
+            "description": "サーバー満員時でも接続を許可する管理者の最大数です。",
             "env_variable": "VR_MAX_ADMINS",
             "default_value": "4",
             "user_viewable": true,
@@ -122,8 +122,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required to join the server. Leave blank to have no password.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。空欄でパスワードなしになります。",
             "env_variable": "VR_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -132,8 +132,8 @@
             "field_type": "text"
         },
         {
-            "name": "Secure Server",
-            "description": "Enable VAC protection on server. VAC banned clients will not be able to connect. (true | false)",
+            "name": "セキュアサーバー",
+            "description": "サーバーでVAC保護を有効にします。VAC BANされたクライアントは接続できません。（true | false）",
             "env_variable": "VR_SECURE",
             "default_value": "true",
             "user_viewable": true,
@@ -142,8 +142,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "Name of save file \/ directory.",
+            "name": "セーブ名",
+            "description": "セーブファイル\/ディレクトリ名です。",
             "env_variable": "VR_SAVE_NAME",
             "default_value": "world1",
             "user_viewable": true,
@@ -152,8 +152,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Count",
-            "description": "Number of autosaves to keep.",
+            "name": "自動セーブ保持数",
+            "description": "保持する自動セーブ数です。",
             "env_variable": "VR_SAVE_COUNT",
             "default_value": "20",
             "user_viewable": true,
@@ -162,8 +162,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Interval in seconds between each autosave.",
+            "name": "自動セーブ間隔",
+            "description": "自動セーブ間の間隔（秒）です。",
             "env_variable": "VR_SAVE_INTERVAL",
             "default_value": "120",
             "user_viewable": true,
@@ -172,8 +172,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Server FPS",
-            "description": "Target FPS for server.",
+            "name": "[Advanced] サーバーFPS",
+            "description": "サーバーの目標FPSです。",
             "env_variable": "VR_FPS",
             "default_value": "30",
             "user_viewable": true,
@@ -182,8 +182,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Lower FPS When Empty",
-            "description": "Run the server at a lower framerate target when no players are logged in. (true | false)",
+            "name": "[Advanced] 無人時にFPSを下げる",
+            "description": "プレイヤー未接続時に低いフレームレートで動作させます。（true | false）",
             "env_variable": "VR_LOWER_FPS_WHEN_EMPTY",
             "default_value": "false",
             "user_viewable": true,
@@ -192,8 +192,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Lower FPS When Empty Value",
-            "description": "Set the framerate target for when \"[Advanced] Lower FPS When Empty\" is active.",
+            "name": "[Advanced] 無人時FPS値",
+            "description": "\"[Advanced] 無人時にFPSを下げる\" が有効な時の目標FPSを設定します。",
             "env_variable": "VR_LOWER_FPS_WHEN_EMPTY_VALUE",
             "default_value": "10",
             "user_viewable": true,
@@ -202,8 +202,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] List On Epic",
-            "description": "Register on EOS list server or not. The client looks for servers here by default, due to additional features available. (true | false)",
+            "name": "[Advanced] Epicに掲載",
+            "description": "EOSリストサーバーへ登録するかを設定します。クライアントは追加機能のため既定でこちらを参照します。（true | false）",
             "env_variable": "VR_LIST_ON_EOS",
             "default_value": "true",
             "user_viewable": true,
@@ -212,8 +212,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] List On Steam",
-            "description": "Register on Steam list server or not. (true | false)",
+            "name": "[Advanced] Steamに掲載",
+            "description": "Steamリストサーバーへ登録するかを設定します。（true | false）",
             "env_variable": "VR_LIST_ON_STEAM",
             "default_value": "true",
             "user_viewable": true,
@@ -222,8 +222,8 @@
             "field_type": "text"
         },
         {
-            "name": "[RCON] Enable RCON",
-            "description": "Enable or disable RCON functionality. (true | false) See the following link for info on how to connect and use RCON: https:\/\/github.com\/StunlockStudios\/vrising-dedicated-server-instructions\/blob\/master\/1.0.x\/INSTRUCTIONS.md#rcon-1",
+            "name": "[RCON] RCONを有効化",
+            "description": "RCON機能を有効\/無効にします。（true | false）接続方法と使用方法: https:\/\/github.com\/StunlockStudios\/vrising-dedicated-server-instructions\/blob\/master\/1.0.x\/INSTRUCTIONS.md#rcon-1",
             "env_variable": "VR_RCON_ENABLED",
             "default_value": "false",
             "user_viewable": true,
@@ -232,8 +232,8 @@
             "field_type": "text"
         },
         {
-            "name": "[RCON] RCON Password",
-            "description": "Password required to connect to RCON if it is enabled.",
+            "name": "[RCON] RCONパスワード",
+            "description": "RCON有効時に接続に必要なパスワードです。",
             "env_variable": "VR_RCON_PASSWORD",
             "default_value": "somepassword",
             "user_viewable": true,
@@ -242,8 +242,8 @@
             "field_type": "text"
         },
         {
-            "name": "[RCON] RCON Port",
-            "description": "TCP Port used to connect to RCON. Must be allocated to the server for RCON to work.",
+            "name": "[RCON] RCONポート",
+            "description": "RCON接続に使用するTCPポートです。RCON利用にはこのポートをサーバーへ割り当てる必要があります。",
             "env_variable": "VR_RCON_PORT",
             "default_value": "25575",
             "user_viewable": true,
@@ -252,8 +252,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Validate Server Files",
-            "description": "Leave empty (no value) for OFF or set to \"true\" for ON. Validates all server files when Automatic Updates is enabled. Note: This will significantly increase server startup times, so it is recommended to only enable this when needed.",
+            "name": "[Repair] サーバーファイル検証",
+            "description": "空欄（値なし）でOFF、\"true\"でONです。自動更新が有効な場合にサーバーファイルを検証します。注意: 起動時間が大幅に増加するため、必要時のみ有効化を推奨します。",
             "env_variable": "VALIDATE",
             "default_value": "",
             "user_viewable": true,
@@ -263,7 +263,7 @@
         },
         {
             "name": "[System] V Rising Dedicated Server App ID",
-            "description": "Used for installation and updates. Rarely needs to be changed.",
+            "description": "インストールと更新に使用します。通常は変更不要です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1829350",
             "user_viewable": false,
@@ -272,8 +272,8 @@
             "field_type": "text"
         },
         {
-            "name": "[System] Use Windows Branch",
-            "description": "Tells the installer\/updater to only download the Windows branch of the server (the only branch currently available) so that it can run on Wine. Cannot be changed.",
+            "name": "[System] Windowsブランチを使用",
+            "description": "インストーラー\/アップデーターにWindows版ブランチ（現在利用可能なのはこのブランチのみ）だけをダウンロードさせ、Wine上で実行できるようにします。変更できません。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -283,7 +283,7 @@
         },
         {
             "name": "[System] WINEDEBUG",
-            "description": "Used to suppress WINE FIXME messages. Rarely needs to be changed.",
+            "description": "WINEのFIXMEメッセージ抑制に使用します。通常は変更不要です。",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
             "user_viewable": false,
@@ -293,7 +293,7 @@
         },
         {
             "name": "[System] WINEARCH",
-            "description": "Used for compatibility. Cannot be changed.",
+            "description": "互換性維持のために使用します。変更できません。",
             "env_variable": "WINEARCH",
             "default_value": "win64",
             "user_viewable": false,
@@ -303,7 +303,7 @@
         },
         {
             "name": "[System] WINEPATH",
-            "description": "Used for compatibility. Cannot be changed.",
+            "description": "互換性維持のために使用します。変更できません。",
             "env_variable": "WINEPATH",
             "default_value": "\/home\/container",
             "user_viewable": false,

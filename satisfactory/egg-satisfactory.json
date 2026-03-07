@@ -7,7 +7,7 @@
     "exported_at": "2025-04-02T17:59:04+02:00",
     "name": "Satisfactory",
     "author": "red_thirten@yahoo.com",
-    "description": "Satisfactory is a first-person open-world factory building game with a dash of exploration and combat. Play alone or with friends, explore an alien planet, create multi-story factories, and enter conveyor belt heaven!",
+    "description": "Satisfactoryは、探索と戦闘要素を備えた一人称視点のオープンワールド工場建設ゲームです。ソロでもフレンドとも遊べ、未知の惑星を探索し、多層工場を築いてコンベア天国を楽しめます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Automatic Updates",
-            "description": "Quickly checks for any server updates on startup, and updates if necessary. (1 Enable | 0 Disable)",
+            "name": "自動更新",
+            "description": "起動時にサーバー更新を確認し、必要に応じて更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Validate Server Files",
-            "description": "Leave empty (no value) for OFF or type \"true\" or \"1\" for ON. Validates all server files when Automatic Updates is enabled. Note: This will significantly increase server startup times, so it is recommended to only enable this when needed.",
+            "name": "[Repair] サーバーファイル検証",
+            "description": "OFFは空欄（値なし）、ONは \"true\" または \"1\" を入力してください。自動更新が有効なときに全サーバーファイルを検証します。注意: 起動時間が大幅に増えるため、必要時のみ有効化してください。",
             "env_variable": "VALIDATE",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Number of Rotating Autosaves",
-            "description": "Number of session auto-saves for the server to keep before the oldest save is deleted and the others are moved down the list.",
+            "name": "ローテーション自動保存数",
+            "description": "最古のセーブを削除して順に繰り下げる前に、保持するセッション自動保存数です。",
             "env_variable": "NUM_AUTOSAVES",
             "default_value": "3",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Experimental] Max Players",
-            "description": "The server and client are currently not optimized to support more than 4 players. However, you can override this value here at your own risk of poor performance.",
+            "name": "[Experimental] 最大プレイヤー数",
+            "description": "現在サーバーとクライアントは4人超のプレイに最適化されていません。自己責任でこの値を上書きできますが、性能低下の可能性があります。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Client Initial Connection Timeout",
-            "description": "Time in seconds to wait for a new client connection to be established before destroying the connection.",
+            "name": "[Advanced] クライアント初期接続タイムアウト",
+            "description": "新規クライアント接続の確立を待つ秒数です。超過すると接続を切断します。",
             "env_variable": "INIT_CONNECT_TIMEOUT",
             "default_value": "30",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Client Established Connection Timeout",
-            "description": "Time in seconds to wait before considering an established client connection timed out. Typically shorter than the time to wait on an initial connection because this connection should already have been setup and any interruption should be trapped quicker.",
+            "name": "[Advanced] クライアント接続維持タイムアウト",
+            "description": "確立済みクライアント接続をタイムアウトと見なすまでの待機秒数です。通常は初期接続より短く設定します。",
             "env_variable": "CONNECT_TIMEOUT",
             "default_value": "20",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Branch Name",
-            "description": "[Accepted Values: \"public\", \"experimental\", or leave empty to use the primary branch of the server] Used to download or switch to a non-primary branch of the game server. \"Automatic Updates\" and \"Validate Server Files\" must be set to \"1\" to switch branches if the server is already installed. NOTE: Any non-primary branches may not be fully compatible\/stable!",
+            "name": "[Advanced] ブランチ名",
+            "description": "[許可値: \"public\"、\"experimental\"、または空欄でメインブランチ] メイン以外のゲームサーバーブランチをダウンロードまたは切り替えるために使用します。既にサーバーがインストール済みの場合、切り替えには \"自動更新\" と \"サーバーファイル検証\" を \"1\" に設定する必要があります。注意: メイン以外のブランチは互換性\/安定性が不十分な場合があります。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Satisfactory Dedicated Server App ID",
-            "description": "Steam App ID used for installation and updates.",
+            "name": "[Advanced] Satisfactory専用サーバー App ID",
+            "description": "インストールと更新に使用する Steam App ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1690800",
             "user_viewable": false,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reliable Port",
-            "description": "Reliable messaging port. Required for version 1.1 or above.",
+            "name": "Reliableポート",
+            "description": "Reliableメッセージング用ポートです。バージョン1.1以上で必須です。",
             "env_variable": "RELIABLE_PORT",
             "default_value": "8888",
             "user_viewable": true,

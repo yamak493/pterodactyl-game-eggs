@@ -7,7 +7,7 @@
     "exported_at": "2024-12-13T16:11:19+00:00",
     "name": "LeagueSandbox",
     "author": "domi@imagine.team",
-    "description": "A simple egg to run LeagueSandbox server in pterodactyl",
+    "description": "Pterodactyl で LeagueSandbox サーバーを実行するためのシンプルな egg です",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:dotnet_6": "ghcr.io\/ptero-eggs\/yolks:dotnet_6"

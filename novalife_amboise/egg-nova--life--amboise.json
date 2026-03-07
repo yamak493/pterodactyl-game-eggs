@@ -7,7 +7,7 @@
     "exported_at": "2024-03-09T10:08:19+01:00",
     "name": "Nova-Life: Amboise",
     "author": "josdekurk@gmail.com",
-    "description": "Nova-Life: Amboise is a multiplayer role-play simulation video game. Create your character and start your second life!",
+    "description": "Nova-Life: Amboise はマルチプレイのロールプレイシミュレーションゲームです。キャラクターを作成して第二の人生を始めましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "App ID",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "1665030",
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto Update The server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server.\r\nMust match the one made in game and uploaded or a reinstallation is needed to auto make a new one.",
+            "name": "サーバー名",
+            "description": "サーバー名です。\r\nゲーム内で作成・アップロードしたものと一致している必要があり、一致しない場合は再インストールして新規作成が必要です。",
             "env_variable": "SERVER_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players that can join",
+            "name": "最大プレイヤー数",
+            "description": "参加できるプレイヤーの最大人数です。",
             "env_variable": "SERVER_SLOTS",
             "default_value": "25",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server List Name",
-            "description": "The name of the server in the Server List",
+            "name": "サーバー一覧表示名",
+            "description": "サーバー一覧に表示されるサーバー名です。",
             "env_variable": "SERVER_LIST_NAME",
             "default_value": "A Pterodactyl server",
             "user_viewable": true,

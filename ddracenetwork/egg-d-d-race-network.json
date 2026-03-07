@@ -7,7 +7,7 @@
     "exported_at": "2023-07-01T12:47:31+02:00",
     "name": "DDRaceNetwork",
     "author": "diedyesterdaywashere@gmail.com",
-    "description": "DDraceNetwork (DDNet) is an actively maintained version of DDRace, a Teeworlds modification with a unique cooperative gameplay.",
+    "description": "DDraceNetwork（DDNet）は、独自の協力ゲームプレイを持つ Teeworlds MOD「DDRace」を活発にメンテナンスしているバージョンです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Game Version",
-            "description": "Latest is the default, put \"nightly\" for beta, or enter the version number, for example \"17.0\".",
+            "name": "ゲームバージョン",
+            "description": "既定は latest です。ベータ版は \"nightly\"、または \"17.0\" のようにバージョン番号を指定してください。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "The name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "My DDNet server",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server password",
-            "description": "Password for joining the server, empty for no password",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加用パスワードです。不要な場合は空欄にしてください",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server map",
-            "description": "Map to start server with",
+            "name": "サーバーマップ",
+            "description": "サーバー開始時に使用するマップです",
             "env_variable": "SERVER_MAP",
             "default_value": "Tutorial",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Register server",
-            "description": "Register the server to the server list.\r\n0 is disabled\r\nipv4 is enabled listening ipv4",
+            "name": "サーバー登録",
+            "description": "サーバーをサーバーリストに登録します。\r\n0 は無効\r\nipv4 は IPv4 での登録を有効化します",
             "env_variable": "SERVER_REGISTER",
             "default_value": "0",
             "user_viewable": true,

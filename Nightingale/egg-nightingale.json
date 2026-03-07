@@ -7,7 +7,7 @@
     "exported_at": "2026-02-09T15:23:31+01:00",
     "name": "Nightingale",
     "author": "brainshead@gmail.com",
-    "description": "Nightingale is an open world survival crafting game, where you\u2019ll adventure across the mysterious and dangerous Fae Realms. As a daring Realmwalker, you\u2019ll defeat monstrous enemies, survive hostile environments, and build elaborate estates in a visually stunning Gaslamp Fantasy world.",
+    "description": "Nightingale はオープンワールドのサバイバルクラフトゲームです。神秘的で危険なフェイ・レルムを冒険し、勇敢なRealmwalkerとして怪物の敵を倒し、過酷な環境を生き抜き、幻想的なガスランプファンタジー世界で壮大な拠点を築きます。",
     "features": null,
     "docker_images": {
         "Ubuntu 24": "ghcr.io\/ptero-eggs\/steamcmd:ubuntu_24.04"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Steam User",
-            "description": "This is a required setting and cannot be set to anonymous.",
+            "name": "Steamユーザー",
+            "description": "必須設定です。anonymous には設定できません。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steamパスワード",
+            "description": "Steamユーザーのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS",
+            "name": "ゲームID",
+            "description": "SRCDSでダウンロードおよび実行するゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "3796810",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam account auth code. Required if you have 2fa enabled",
+            "name": "Steam認証",
+            "description": "Steamアカウント認証コードです。2FA有効時は必須です。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "This is to auto-update the game server",
+            "name": "サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Starting map difficulty, choose from [easy, medium, hard, extreme]. \r\nUsed for the very first map, if one is not supplied from an imported character.",
+            "name": "難易度",
+            "description": "開始マップの難易度です。[easy, medium, hard, extreme] から選択します。\r\nインポートしたキャラクター側で指定がない場合、最初のマップに適用されます。",
             "env_variable": "Difficulty",
             "default_value": "easy",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "By default the server will start with no password required for players to connect. It is\r\nrecommended to set one to ensure only players you intend can connect.",
+            "name": "パスワード",
+            "description": "デフォルトではプレイヤー接続にパスワード不要でサーバーが起動します。\r\n意図したプレイヤーのみ接続できるよう、設定することを推奨します。",
             "env_variable": "PASSWORD",
             "default_value": "changeme",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "If an admin password is set, players with the correct password can authenticate in-game in order to kick and ban other players.",
+            "name": "管理者パスワード",
+            "description": "管理者パスワードを設定すると、正しいパスワードを持つプレイヤーはゲーム内で認証し、他プレイヤーのキックやBANを実行できます。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "letmein",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
-            "description": "By default Nightingale supports a maximum of six players in a realm. This maximum can bechanged through a command-line argument.\r\nPlease note that increasing the maximum number of players past six is unsupported and may result in unintended behaviour.",
+            "name": "最大プレイヤー数",
+            "description": "Nightingale のデフォルトは1つのレルムにつき最大6人です。この上限はコマンドライン引数で変更できます。\r\nただし6人を超える設定は非サポートであり、意図しない挙動が発生する可能性があります。",
             "env_variable": "MAX_PLAYER",
             "default_value": "6",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Cheats Mode",
-            "description": "To allow use of the cheat\/debug menu and commands, add the enable cheats command-line argument. Players will need to authenticate with the admin password to use the cheats in-game.",
+            "name": "チートモード",
+            "description": "チート\/デバッグメニューとコマンドを使うには、enable cheats のコマンドライン引数を追加してください。ゲーム内でチートを使うには管理者パスワードでの認証が必要です。",
             "env_variable": "CHEATS",
             "default_value": "1",
             "user_viewable": true,

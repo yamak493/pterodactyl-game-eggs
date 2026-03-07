@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:17:05+02:00",
     "name": "Modiverse",
     "author": "admin@softwarenoob.com",
-    "description": "Modiverse provides a sandbox environment with the ability to create and play mods such as TTT, Deathrun, FortWars, RP, and more! Use the many sandbox tools to build complex worlds with props, lights, thrusters, wheels, and much much more!",
+    "description": "Modiverse は、TTT、Deathrun、FortWars、RP などのMODを作成・プレイできるサンドボックス環境を提供します。多数のサンドボックスツールを使って、プロップ、ライト、スラスター、ホイールなどで複雑な世界を構築できます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Server name as shown to players in the various server browsing windows",
+            "name": "サーバー名",
+            "description": "各種サーバーブラウザ画面でプレイヤーに表示されるサーバー名です。",
             "env_variable": "HOSTNAME",
             "default_value": "Pterodactyl Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Query Port",
+            "name": "クエリポート",
+            "description": "クエリポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of player slots, the value should be between 2 and 128.",
+            "name": "最大プレイヤー数",
+            "description": "プレイヤースロットの最大数です。値は2から128の範囲で設定してください。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "128",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto-update the game each time server is started, enter value 0 to disable.",
+            "name": "自動更新",
+            "description": "サーバー起動時にゲームを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "App ID",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "1549820",

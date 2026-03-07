@@ -7,7 +7,7 @@
     "exported_at": "2025-04-13T10:10:32+00:00",
     "name": "Abiotic Factor",
     "author": "git@robsti.dev",
-    "description": "Abiotic Factor is a survival crafting experience for 1-6 players set in the depths of an underground research facility. Caught between paranormal containment failure, a military crusade, and chaos from a dozen realms, the world\u2019s greatest minds must survive against the universe\u2019s biggest threats.",
+    "description": "Abiotic Factor は、地下研究施設の深部を舞台にした 1〜6 人向けのサバイバルクラフト体験です。超常現象の封じ込め失敗、軍事介入、そして無数の領域から押し寄せる混沌の狭間で、世界最高の頭脳たちが宇宙規模の脅威に立ち向かって生き延びなければなりません。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Auto Update",
-            "description": "Should Auto Update",
+            "name": "[STEAM] 自動更新",
+            "description": "自動更新を有効にするか",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Name",
-            "description": "Name of the server",
+            "name": "[SERVER] サーバー名",
+            "description": "サーバーの名前",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Password",
-            "description": "Server access password",
+            "name": "[SERVER] サーバーパスワード",
+            "description": "サーバー接続用パスワード",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Query Port",
-            "description": "Steam query port",
+            "name": "[SERVER] クエリポート",
+            "description": "Steam クエリポート",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Number of Players",
-            "description": "Number of allowed player connections",
+            "name": "[SERVER] プレイヤー数",
+            "description": "接続を許可するプレイヤー数",
             "env_variable": "NUM_PLAYERS",
             "default_value": "6",
             "user_viewable": true,

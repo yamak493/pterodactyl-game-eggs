@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T11:35:42+02:00",
     "name": "LAC-Online Public Server",
     "author": "jastinlt16@gmail.com",
-    "description": "To make the Los Angeles Crimes public server. Los Angeles Crimes lets you play, create, and discover a variety of immersive worlds created by a global community!",
+    "description": "Los Angeles Crimes の公開サーバーを構築するための egg です。Los Angeles Crimes では、世界中のコミュニティが作成した多彩で没入感のある世界を遊び、作り、発見できます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Version",
-            "description": "The build version is available at https:\/\/dl.lacrimesonline.com\/builds\/. Just write a numeric version like 1.6, don't use any other characters than numbers and periods. If the entered version is incorrect\/non-existent it will use version 1.6 (for now). After replacing it, then reinstall this server. [ THIS FEATURE IS STILL IN DEVELOPMENT ]",
+            "name": "バージョン",
+            "description": "ビルドバージョンは https:\/\/dl.lacrimesonline.com\/builds\/ で確認できます。1.6 のように数字とピリオドのみで入力してください。入力したバージョンが無効／存在しない場合は（現時点では）1.6 を使用します。変更後はサーバーを再インストールしてください。 [この機能は開発中です]",
             "env_variable": "VER",
             "default_value": "1.6.2",
             "user_viewable": true,

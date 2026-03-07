@@ -7,7 +7,7 @@
     "exported_at": "2025-09-25T11:15:09+00:00",
     "name": "Voyagers of Nera",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Voyagers of Nera is a cooperative survival-crafting game for up to 10 players set in a vast ocean full of ancient ruins and diverse biomes. Nera is a magical ocean world full of beauty, magic, and danger. You are an Echo, descendants of the long-extinct protectors of this world.",
+    "description": "Voyagers of Neraは、古代遺跡と多様なバイオームが広がる大海原を舞台にした、最大10人協力プレイ対応のサバイバルクラフトゲームです。Neraは美しさと魔法、そして危険に満ちた海の世界。あなたはこの世界を守っていた絶滅した守護者の末裔『Echo』です。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The public name of your server other players will see when browsing servers.",
+            "name": "サーバー名",
+            "description": "他プレイヤーがサーバー一覧で見る公開サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "The password required for players to join your game.\r\n\r\nA blank value means the server will not be password-protected and is joinable by any player.",
+            "name": "サーバーパスワード",
+            "description": "プレイヤーが参加する際に必要なパスワードです。\r\n\r\n空欄の場合、サーバーはパスワード保護されず誰でも参加できます。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum number of players allowed to be connected to your server at once.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに同時接続できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Autosave Timer",
-            "description": "How often your server will automatically save. It\u2019s not recommended to adjust this setting unless you specifically have a reason to.",
+            "name": "自動セーブタイマー",
+            "description": "サーバーが自動保存を行う頻度です。特別な理由がない限り、この設定の変更は推奨されません。",
             "env_variable": "AUTOSAVE_TIMER_SECONDS",
             "default_value": "300",
             "user_viewable": true,
@@ -70,7 +70,7 @@
         },
         {
             "name": "Steam App ID",
-            "description": "Steam App ID to install",
+            "description": "インストールに使用するSteam App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "3937860",
             "user_viewable": false,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "Install Windows version of App from steam",
+            "name": "Windowsインストール",
+            "description": "SteamからアプリのWindows版をインストールします。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
-            "description": "Disable wine debug messages",
+            "name": "Wineデバッグ",
+            "description": "Wineのデバッグメッセージを無効化します。",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
             "user_viewable": false,
@@ -100,7 +100,7 @@
         },
         {
             "name": "XVFB",
-            "description": "Disable X virtual framebuffer",
+            "description": "X virtual framebufferを無効化します。",
             "env_variable": "XVFB",
             "default_value": "0",
             "user_viewable": false,

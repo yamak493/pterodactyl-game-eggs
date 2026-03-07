@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T09:52:45+00:00",
     "name": "Resonite",
     "author": "espeon@espeon.dev",
-    "description": "Enter a novel digital universe with infinite possibilities. Whether you resonate with people around the world in a casual conversation, playing games and socializing or you riff off each other when creating anything from art to programming complex games, you'll find your place here.",
+    "description": "無限の可能性を持つ新しいデジタル宇宙へ。世界中の人々と気軽に会話したり、ゲームや交流を楽しんだり、アートから複雑なゲームプログラミングまで共創したりと、ここにはあなたの居場所があります。",
     "features": null,
     "docker_images": {
         "Mono": "ghcr.io\/ptero-eggs\/yolks:mono_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Steam Account User",
-            "description": "The username for your Steam account.",
+            "name": "Steamアカウントユーザー",
+            "description": "Steamアカウントのユーザー名です。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Account Password",
-            "description": "The password for your Steam account.",
+            "name": "Steamアカウントパスワード",
+            "description": "Steamアカウントのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Account Token\/Code",
-            "description": "The Steam Guard code or Login Token emailed to you.",
+            "name": "Steamアカウントトークン\/コード",
+            "description": "メールで届くSteam Guardコードまたはログイントークンです。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Mod Loader",
-            "description": "See: https:\/\/github.com\/resonite-modding-group\/ResoniteModLoader for more information on Resonite Mod Loader.",
+            "name": "Mod Loaderを有効化",
+            "description": "Resonite Mod Loader の詳細: https:\/\/github.com\/resonite-modding-group\/ResoniteModLoader",
             "env_variable": "ENABLE_MODLOADER",
             "default_value": "false",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Password",
-            "description": "This is the \"Beta Password\" that is only acquired by going to the Resonite Patreon, subscribing to the tier with Headless access, and then after your Resonite account shows \"Patreon Supporter\", message the Resonite bot in game with \/headlessCode, and paste that code here.",
+            "name": "ベータパスワード",
+            "description": "これは\"Beta Password\"です。Resonite PatreonでHeadlessアクセス付きティアに加入し、Resoniteアカウントが\"Patreon Supporter\"表示になった後、ゲーム内でResonite botに \/headlessCode を送信して取得したコードをここに貼り付けます。",
             "env_variable": "SRCDS_BETAPASS",
             "default_value": "",
             "user_viewable": false,
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch name",
+            "name": "ベータブランチ名",
             "description": "",
             "env_variable": "SRCDS_BETAID",
             "default_value": "headless",
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

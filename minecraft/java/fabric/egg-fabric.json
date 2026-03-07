@@ -7,7 +7,7 @@
     "exported_at": "2025-11-04T04:34:52+00:00",
     "name": "Fabric",
     "author": "accounts@bofanodes.io",
-    "description": "Fabric is a modular modding toolchain targeting Minecraft 1.14 and above, including snapshots.",
+    "description": "Fabricは、スナップショットを含むMinecraft 1.14以降を対象とした、モジュール式のMOD開発ツールチェーンです。",
     "features": [
         "eula",
         "java_version",
@@ -40,8 +40,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -50,8 +50,8 @@
             "field_type": "text"
         },
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft to install. Use \"latest\" to install the latest version, or use \"snapshot\" to install the latest snapshot.",
+            "name": "Minecraftバージョン",
+            "description": "インストールするMinecraftのバージョンです。最新バージョンをインストールするには\"latest\"、最新スナップショットをインストールするには\"snapshot\"を使用してください。",
             "env_variable": "MC_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -60,8 +60,8 @@
             "field_type": "text"
         },
         {
-            "name": "Fabric Version",
-            "description": "The version of Fabric to install.",
+            "name": "Fabricバージョン",
+            "description": "インストールするFabricのバージョンです。",
             "env_variable": "FABRIC_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -70,8 +70,8 @@
             "field_type": "text"
         },
         {
-            "name": "Fabric Loader Version",
-            "description": "The version of Fabric Loader to install.",
+            "name": "Fabricローダーバージョン",
+            "description": "インストールするFabric Loaderのバージョンです。",
             "env_variable": "LOADER_VERSION",
             "default_value": "latest",
             "user_viewable": true,

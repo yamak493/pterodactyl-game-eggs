@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:31:20+02:00",
     "name": "CryoFall",
     "author": "contact@zennodes.dk",
-    "description": "NOTE: For now you have to change SettingsServer.xml under CryoFall_Server_v(Version)_NetCore\/Data\/SettingsServer.xml\r\n\r\nCryoFall is a sci-fi multiplayer colony simulation survival game set on a forgotten planet in a distant future.\r\n\r\nJoin the vast world of CryoFall together with other survivors to rebuild your civilization from scratch. Start with primitive technology and simple tools and use them to progress towards modern industrial might and even beyond, eventually reaching space-age technology only seen in science fiction.\r\n\r\nCryoFall can be played either as a relaxed PvE experience with no competition or as a brutal and unforgiving PvP. Make your choice and join one of many available servers with different game modes or host your own and invite your friends to join you!\r\n\r\nBuild your house or a large base together with other players. Dig wells and create farms to sustain basic needs. Build vehicles to explore the world faster. Establish basics of science, all the way from medicine and chemistry to fuel creation and even lithium extraction to create electronic devices. Cook food or prepare drinks to sell them from vending machines in your store.\r\n\r\nBuild factories to produce on an industrial scale: Weapons and defense systems, bionic implants to augment yourself, even large war machines and artillery guns to use against the biggest of opponents",
+    "description": "注記: 現時点では CryoFall_Server_v(Version)_NetCore\/Data\/SettingsServer.xml 配下の SettingsServer.xml を手動で変更する必要があります。\r\n\r\nCryoFall は、遠い未来の忘れ去られた惑星を舞台にした SF マルチプレイ・コロニーシミュレーションサバイバルゲームです。\r\n\r\n他の生存者と共に CryoFall の広大な世界へ参加し、文明をゼロから再建しましょう。原始的な技術と簡素な道具から始め、現代的な工業力、さらには SF で描かれる宇宙時代の技術へと発展していきます。\r\n\r\nCryoFall は、競争のない穏やかな PvE と、過酷で容赦ない PvP のどちらでも遊べます。好みを選び、さまざまなゲームモードのサーバーへ参加するか、自分でホストして友人を招待しましょう。\r\n\r\n他プレイヤーと共に家や大型拠点を建築し、井戸や農場で生活基盤を整えます。乗り物を作って探索速度を高め、医療・化学・燃料生産・リチウム抽出など科学技術を発展させて電子機器を作りましょう。食料や飲み物を作って自分の店の自販機で販売することもできます。\r\n\r\n工場を建設して産業規模で生産を行い、武器、防衛システム、自身を強化するバイオニックインプラント、さらには大型兵器や砲撃装置まで作成し、強大な敵に対抗しましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

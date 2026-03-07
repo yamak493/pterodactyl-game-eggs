@@ -7,7 +7,7 @@
     "exported_at": "2024-06-01T19:40:16+00:00",
     "name": "Tekkit Classic",
     "author": "geoffrey@remedygaming.net",
-    "description": "Created by the Technic team, Tekkit Classic is a modpack for the record breaking sandbox construction game Minecraft. \r\nIt brings together some of the best mods from the Minecraft community for automating, industrializing and powering your worlds and bundles them into one easy download!",
+    "description": "Technicチームによって作られたTekkit Classicは、記録的ヒットを誇るサンドボックス建築ゲームMinecraft向けのModpackです。\r\n世界の自動化・工業化・動力化に役立つ、Minecraftコミュニティの優れたMODをひとつにまとめ、簡単に導入できるようにしています。",
     "features": [
         "eula",
         "java_version",
@@ -33,7 +33,7 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
+            "name": "Modpackバージョン",
             "description": "",
             "env_variable": "MODPACK_VERSION",
             "default_value": "3.1.2",

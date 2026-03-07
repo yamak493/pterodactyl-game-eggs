@@ -7,7 +7,7 @@
     "exported_at": "2022-09-23T20:11:15+02:00",
     "name": "RageCOOP",
     "author": "josdekurk@gmail.com",
-    "description": "Drive around the interstate with your buddy, enjoy GTAs environment, make own missions and events or just chill in Grove Street! \ud83c\udf10",
+    "description": "フレンドと一緒に街をドライブし、GTAの世界を楽しみ、自作ミッションやイベントを作ったり、Grove Streetでのんびり過ごしたりできる協力マルチプレイサーバーです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Version",
-            "description": "The version you want of RAGECOOP-V\r\n\r\nExample: latest, nightly , 1.5.3",
+            "name": "バージョン",
+            "description": "RAGECOOP-V の使用バージョンを指定します。\r\n\r\n例: latest, nightly, 1.5.3",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

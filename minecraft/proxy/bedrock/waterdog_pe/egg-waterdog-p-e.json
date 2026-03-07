@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T14:04:46+00:00",
     "name": "Waterdog PE",
     "author": "parker@pterodactyl.io",
-    "description": "Brand new proxy server for Minecraft: Bedrock Edition",
+    "description": "Minecraft: Bedrock Edition 向けの新しいプロキシサーバーです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Waterdog PE Version",
-            "description": "The build to pull and install. (Ex. 23), or set to latest\r\n\r\nThis is the build number on https:\/\/jenkins.waterdog.dev\/",
+            "name": "Waterdog PE バージョン",
+            "description": "取得してインストールするビルド番号です。（例: 23）または latest を指定します。\r\n\r\nこの値は https:\/\/jenkins.waterdog.dev\/ のビルド番号です。",
             "env_variable": "WATERDOG_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "The jar to run to",
+            "name": "サーバーJarファイル",
+            "description": "実行するJarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,

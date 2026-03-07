@@ -7,7 +7,7 @@
     "exported_at": "2024-12-16T11:07:44+00:00",
     "name": "Left 4 Dead 2",
     "author": "pterodactyl@mazoyer.eu",
-    "description": "Left 4 Dead 2 is set in the aftermath of a worldwide pandemic of a disease nicknamed the \"Green Flu\", which rapidly transforms humans into zombie-like creatures and mutated forms that demonstrate extreme aggression towards non-infected beings. A few humans are immune to the disease, while some of those who are infected have no symptoms. The Civil Emergency and Defense Agency (CEDA) and the U.S. military create safe zones to attempt to evacuate as many survivors as possible.",
+    "description": "Left 4 Dead 2 は、世界的流行病「Green Flu（グリーン・フルー）」の蔓延後を舞台にしています。この病は人間を急速にゾンビのような存在や、未感染者に極端な攻撃性を示す変異体へ変えてしまいます。一部の人間は免疫を持ち、感染していても無症状の者もいます。民間緊急防衛機関（CEDA）と米軍は、可能な限り多くの生存者を避難させるため安全地帯を設けます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲーム ID",
+            "description": "SRCDS でダウンロード・実行するゲームに対応する ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "222860",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "Default map used when starting the server.",
+            "name": "デフォルトマップ",
+            "description": "サーバー起動時に使用するデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "c1m1_hotel",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

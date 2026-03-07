@@ -7,7 +7,7 @@
     "exported_at": "2025-04-06T02:41:08+02:00",
     "name": "Arclight",
     "author": "chredeur@pastanetwork.com",
-    "description": "A Bukkit server implementation on common mod loaders.",
+    "description": "主要なMODローダー上で動作するBukkitサーバー実装です。",
     "features": [
         "eula",
         "java_version",
@@ -39,8 +39,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "Name of the server JAR file that will be created (e.g. server.jar).",
+            "name": "サーバーJarファイル",
+            "description": "作成されるサーバーJARファイル名です（例: server.jar）。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft to download.",
+            "name": "Minecraftバージョン",
+            "description": "ダウンロードするMinecraftバージョンです。",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "auto",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Path",
-            "description": "Optional custom download URL. Leave empty to use the Arclight API.",
+            "name": "ダウンロードパス",
+            "description": "任意のカスタムダウンロードURLです。空欄の場合はArclight APIを使用します。",
             "env_variable": "DOWNLOAD_URL",
             "default_value": "",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Arclight Channel",
-            "description": "Select the Arclight build channel (e.g. stable, beta). Use 'auto' to use the most recent one.",
+            "name": "Arclightチャンネル",
+            "description": "Arclightビルドチャンネルを選択します（例: stable, beta）。最新を使う場合は 'auto' を指定します。",
             "env_variable": "ARCLIGHT_CHANNEL",
             "default_value": "auto",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Arclight Loader",
-            "description": "Select the mod loader you want to use (forge, neoforge, fabric).",
+            "name": "Arclightローダー",
+            "description": "使用するMODローダーを選択します（forge、neoforge、fabric）。",
             "env_variable": "ARCLIGHT_LOADER",
             "default_value": "forge",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2023-01-28T11:45:54+01:00",
     "name": "Iosoccer server",
     "author": "contact-hyperbeats@protonmail.com",
-    "description": "SERVER IOSOCCER",
+    "description": "IOSOCCER サーバー",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "Game ID",
+            "name": "ゲーム ID",
+            "description": "ゲーム ID です",
             "env_variable": "SRCDS_APPID",
             "default_value": "673990",
             "user_viewable": true,
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "MAP",
+            "name": "マップ",
             "description": "",
             "env_variable": "MAP",
             "default_value": "8v8_vienna",
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "SLOTS",
+            "name": "スロット数",
             "description": "",
             "env_variable": "SLOTS",
             "default_value": "32",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "TICKRATE",
+            "name": "ティックレート",
             "description": "",
             "env_variable": "TICKRATE",
             "default_value": "100",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "MAX FPS",
+            "name": "最大 FPS",
             "description": "",
             "env_variable": "MAX_FPS",
             "default_value": "500",
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "RCON password",
+            "name": "RCON パスワード",
             "description": "",
             "env_variable": "RCON",
             "default_value": "",
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on start",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

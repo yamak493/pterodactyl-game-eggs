@@ -7,7 +7,7 @@
     "exported_at": "2023-04-24T17:42:49+02:00",
     "name": "American Truck Simulator Dedicated Server",
     "author": "chase@cstmgames.com",
-    "description": "This will set up SteamCMD and all the required files for the newly released American Truck Simulator Dedicated server.  Simply placed the exported server config from your ATS instance to the .local\/share\/American Truck Simulator\/ folder and select start.  Make sure that auto start is off on server creation to allow you to upload your config files.",
+    "description": "新しくリリースされたAmerican Truck Simulator Dedicated Server用に、SteamCMDと必要ファイル一式をセットアップします。ATS環境からエクスポートしたサーバー設定を .local\/share\/American Truck Simulator\/ フォルダに配置して起動してください。設定ファイルをアップロードできるよう、サーバー作成時は自動起動をオフにしてください。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Auto update",
-            "description": "",
+            "name": "自動更新",
+            "description": "サーバー起動時の自動更新設定です。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query port",
-            "description": "By there readme of the game the query port must be between 27015-27020, but from our testing this port can be any port",
+            "name": "クエリポート",
+            "description": "ゲームのREADMEではクエリポートは27015-27020の範囲とされていますが、テストでは任意のポートでも動作しました。",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth token",
-            "description": "By default, whenever a dedicated server is launched it is using an anonymous account. For such an account non-persistent server id is generated (used for direct search). To avoid this you can acquire a logon token on https:\/\/steamcommunity.com\/dev\/managegameservers (game ownership is required)",
+            "name": "Steam認証トークン",
+            "description": "専用サーバーはデフォルトで匿名アカウントで起動し、その場合は永続しないサーバーID（直接検索用）が生成されます。これを避けるには、https:\/\/steamcommunity.com\/dev\/managegameservers でログイントークンを取得してください（ゲーム所有が必要）。",
             "env_variable": "STEAM_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Lobby name",
+            "name": "ロビー名",
             "description": "",
             "env_variable": "LOBBY_NAME",
             "default_value": "American Truck Simulator",

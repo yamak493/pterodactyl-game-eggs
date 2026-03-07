@@ -7,7 +7,7 @@
     "exported_at": "2024-03-09T10:48:45+01:00",
     "name": "Space Engineers - Torch Server",
     "author": "eggs@goover.dev",
-    "description": "Torch is the successor to SE Server Extender and gives server admins the tools they need to keep their Space Engineers servers running smoothly. It features a user interface with live management tools and a plugin system so you can run your server exactly how you'd like. Torch is still in early development so there may be bugs and incomplete features.\r\n\r\n!!!!! DO NOT CANCEL THE FIRST START, OR YOU NEED TO DELETE THE SERVER AND CREATE FROM SCRATCH !!!!",
+    "description": "TorchはSE Server Extenderの後継で、Space Engineersサーバーを安定運用するための管理機能を提供します。ライブ管理ツール付きUIとプラグインシステムを備え、好みに合わせた運用が可能です。開発初期段階のため、バグや未実装機能が含まれる場合があります。\r\n\r\n!!!!! 初回起動を中断しないでください。中断するとサーバーを削除して作り直す必要があります !!!!",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "APP ID",
-            "description": "The ID corresponding to the game to download.",
+            "description": "ダウンロードするゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "298740",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server, appears in Steam browser.",
+            "name": "サーバー名",
+            "description": "Steamブラウザに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted Space Engineer Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Name of your world (and of your save folder) DO NOT CHANGE THIS !!!!",
+            "name": "ワールド名",
+            "description": "ワールド名（保存フォルダー名にも使用）。これは変更しないでください。",
             "env_variable": "WORLD_NAME",
             "default_value": "World",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Description of the game",
+            "name": "サーバー説明",
+            "description": "サーバーの説明文です。",
             "env_variable": "SERVER_DESC",
             "default_value": "A Pterodactyl hosted Space Engineer Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Game Mode setting: Survival, Creative",
+            "name": "ゲームモード",
+            "description": "ゲームモード設定: Survival, Creative",
             "env_variable": "SERVER_MODE",
             "default_value": "Survival",
             "user_viewable": true,
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
@@ -91,7 +91,7 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Saving",
+            "name": "保存を有効化",
             "description": "",
             "env_variable": "SAVE_ENABLED",
             "default_value": "true",
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Time between auto saves specified in minutes",
+            "name": "自動保存間隔",
+            "description": "自動保存の間隔（分）です。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "5",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Port",
-            "description": "Steam Port",
+            "name": "Steamポート",
+            "description": "Steamポートです。",
             "env_variable": "STEAM_PORT",
             "default_value": "8766",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Remote API",
-            "description": "Enable Remote API",
+            "name": "Remote APIを有効化",
+            "description": "Remote APIを有効化します。",
             "env_variable": "REMOTEAPI_ENABLE",
             "default_value": "false",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Remote API Port",
-            "description": "Remote API Port",
+            "name": "Remote APIポート",
+            "description": "Remote APIポートです。",
             "env_variable": "REMOTEAPI_PORT",
             "default_value": "8081",
             "user_viewable": true,

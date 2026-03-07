@@ -7,7 +7,7 @@
     "exported_at": "2025-09-03T17:06:25+00:00",
     "name": "Rimworld Together",
     "author": "josdekurk@gmail.com",
-    "description": "A community driven multiplayer mod, for Rimworld.",
+    "description": "RimWorld向けのコミュニティ主導マルチプレイヤーModです。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:dotnet_7": "ghcr.io\/ptero-eggs\/yolks:dotnet_7"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Version",
+            "name": "バージョン",
             "description": "",
             "env_variable": "VERSION",
             "default_value": "latest",
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players that can join. Default: 100",
+            "name": "最大プレイヤー数",
+            "description": "参加できるプレイヤーの最大人数です。デフォルト: 100",
             "env_variable": "MAX_PLAYERS",
             "default_value": "100",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Verbose",
-            "description": "If the console output should be verbose or not.",
+            "name": "詳細ログ",
+            "description": "コンソール出力を詳細表示にするかどうかを設定します。",
             "env_variable": "VERBOSE",
             "default_value": "false",
             "user_viewable": true,

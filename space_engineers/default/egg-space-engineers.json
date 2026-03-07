@@ -7,7 +7,7 @@
     "exported_at": "2024-04-03T18:32:09+02:00",
     "name": "Space Engineers",
     "author": "eggs@goover.dev",
-    "description": "Space Engineers is a voxel-based sandbox game set in space and on planets.",
+    "description": "Space Engineersは、宇宙と惑星を舞台にしたボクセルベースのサンドボックスゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "APP ID",
-            "description": "The ID corresponding to the game to download.",
+            "description": "ダウンロードするゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "298740",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server, appears in Steam browser.",
+            "name": "サーバー名",
+            "description": "Steamブラウザに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted Space Engineer Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Name of your world (and of your save folder)  !!!!! DO NOT EDIT OR SERVER WILL NOT START !!!!!",
+            "name": "ワールド名",
+            "description": "ワールド名（保存フォルダー名にも使用）。!!!!! 変更するとサーバーが起動しません !!!!!",
             "env_variable": "WORLD_NAME",
             "default_value": "World",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Description of the game",
+            "name": "サーバー説明",
+            "description": "サーバーの説明文です。",
             "env_variable": "SERVER_DESC",
             "default_value": "A Pterodactyl hosted Space Engineer Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Game Mode setting: Survival, Creative",
+            "name": "ゲームモード",
+            "description": "ゲームモード設定: Survival, Creative",
             "env_variable": "SERVER_MODE",
             "default_value": "Survival",
             "user_viewable": true,
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
@@ -91,7 +91,7 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Saving",
+            "name": "保存を有効化",
             "description": "",
             "env_variable": "SAVE_ENABLED",
             "default_value": "true",
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Time between auto saves specified in minutes",
+            "name": "自動保存間隔",
+            "description": "自動保存の間隔（分）です。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "5",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Port",
-            "description": "Steam Port",
+            "name": "Steamポート",
+            "description": "Steamポートです。",
             "env_variable": "STEAM_PORT",
             "default_value": "8766",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Remote API",
-            "description": "Enable Remote API",
+            "name": "Remote APIを有効化",
+            "description": "Remote APIを有効化します。",
             "env_variable": "REMOTEAPI_ENABLE",
             "default_value": "false",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Remote API Port",
-            "description": "Remote API Port",
+            "name": "Remote APIポート",
+            "description": "Remote APIポートです。",
             "env_variable": "REMOTEAPI_PORT",
             "default_value": "8081",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Experimental Mode",
-            "description": "Enable Experimental Mode. Must be 'true' when using mods",
+            "name": "実験モードを有効化",
+            "description": "実験モードを有効化します。Mod使用時は 'true' が必要です。",
             "env_variable": "EXPERIMENTAL_ENABLED",
             "default_value": "false",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable In-Game Scripts",
-            "description": "Allow players to run In-Game Scripts",
+            "name": "ゲーム内スクリプトを有効化",
+            "description": "プレイヤーがゲーム内スクリプトを実行できるようにします。",
             "env_variable": "INGAMESCRIPTS_ENABLED",
             "default_value": "false",
             "user_viewable": true,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "Required for auto-update",
+            "name": "Windowsインストール",
+            "description": "自動更新に必要です。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,

@@ -7,7 +7,7 @@
     "exported_at": "2025-05-14T02:34:06+02:00",
     "name": "ET Legacy",
     "author": "parker@parkervcp.com",
-    "description": "Welcome to Enemy Territory: Legacy, an open source project that aims to create a fully compatible client and server for the popular online FPS game Wolfenstein: Enemy Territory - whose gameplay is still considered unmatched by many, despite its great age.",
+    "description": "Enemy Territory: Legacyへようこそ。人気オンラインFPS『Wolfenstein: Enemy Territory』向けに、完全互換のクライアントとサーバーを構築することを目的としたオープンソースプロジェクトです。長い年月を経た今も、そのゲームプレイは多くの人に唯一無二と評価されています。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "ET Legacy Version",
-            "description": "What version of the server to install. 32 or 64 bit version.",
+            "description": "インストールするサーバーバージョンを指定します。32bitまたは64bit。",
             "env_variable": "ET_VERSION",
             "default_value": "32",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "The default map to use when starting the server.",
+            "name": "デフォルトマップ",
+            "description": "サーバー起動時に使用するデフォルトマップです。",
             "env_variable": "MAP",
             "default_value": "oasis",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Omnibot",
-            "description": "",
+            "name": "Omnibotを有効化",
+            "description": "Omnibot機能を有効または無効にします。",
             "env_variable": "OMNIBOT",
             "default_value": "0",
             "user_viewable": true,

@@ -8,7 +8,7 @@
     "name": "Midnight Ghost Hunt",
     "author": "josdekurk@gmail.com",
     "uuid": "b8327da9-c298-4e5a-9271-04c35a377ce3",
-    "description": "The chaotic multiplayer hide-and-seek game. Possess seemingly harmless objects as Ghosts or chase them down as Hunters before the clock strikes midnight! ",
+    "description": "カオスなマルチプレイかくれんぼゲーム。真夜中になる前に、ゴーストとして一見無害なオブジェクトに憑依するか、ハンターとして追い詰めましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -42,7 +42,7 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
+            "name": "Windows インストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -52,8 +52,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto Update a server on start",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -62,7 +62,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
@@ -72,8 +72,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "Changes the game name.",
+            "name": "ゲーム名",
+            "description": "ゲーム名を変更します。",
             "env_variable": "GAME_NAME",
             "default_value": "Dedicated_Server_01",
             "user_viewable": true,
@@ -82,8 +82,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Sets your server password.",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードを設定します。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -92,8 +92,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Map",
-            "description": "The map of the server.\n\nOptions:\n(Mansion, Asylum, Theatre, Museum, Ghost Ship, Carnival, School, Graveyard, Doll Factory, Mall)",
+            "name": "サーバーマップ",
+            "description": "サーバーのマップです。\n\n選択肢:\n(Mansion, Asylum, Theatre, Museum, Ghost Ship, Carnival, School, Graveyard, Doll Factory, Mall)",
             "env_variable": "MAP",
             "default_value": "Asylum",
             "user_viewable": true,
@@ -102,8 +102,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "The server gamemode.\n\nOptions:\n(4v4 Hunt, 6v6 Hunt, Darkness)",
+            "name": "ゲームモード",
+            "description": "サーバーのゲームモードです。\n\n選択肢:\n(4v4 Hunt, 6v6 Hunt, Darkness)",
             "env_variable": "GAME_MODE",
             "default_value": "4v4 Hunt",
             "user_viewable": true,
@@ -112,8 +112,8 @@
             "field_type": "text"
         },
         {
-            "name": "Region",
-            "description": "The region of dedicated server.\n\nOptions:\n(North America, South America, Western Europe, Northern Europe, Eastern Europe, Middle East, Asia, Africa, Oceania)",
+            "name": "リージョン",
+            "description": "専用サーバーのリージョンです。\n\n選択肢:\n(North America, South America, Western Europe, Northern Europe, Eastern Europe, Middle East, Asia, Africa, Oceania)",
             "env_variable": "REGION",
             "default_value": "Eastern Europe",
             "user_viewable": true,
@@ -122,8 +122,8 @@
             "field_type": "text"
         },
         {
-            "name": "Bot Difficlty",
-            "description": "The difficulty setting for bots, Auto takes the average player level in the server to determine difficulty.\n\nOptions:\n(Easy, Normal, Hard, Auto)",
+            "name": "ボット難易度",
+            "description": "ボットの難易度設定です。Auto はサーバー内プレイヤーの平均レベルで難易度を決定します。\n\n選択肢:\n(Easy, Normal, Hard, Auto)",
             "env_variable": "B_DIFFICULTY",
             "default_value": "Auto",
             "user_viewable": true,
@@ -132,8 +132,8 @@
             "field_type": "text"
         },
         {
-            "name": "Addittional Args",
-            "description": "Extra arguments like: -NoBots -NoAutobalance",
+            "name": "追加引数",
+            "description": "追加引数の例: -NoBots -NoAutobalance",
             "env_variable": "ADDITIONAL_ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -142,7 +142,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beacon Port",
+            "name": "Beacon ポート",
             "description": "",
             "env_variable": "BEACON_PORT",
             "default_value": "7787",

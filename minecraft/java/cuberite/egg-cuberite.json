@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:11:13+02:00",
     "name": "Cuberite",
     "author": "parker@parkervcp.com",
-    "description": "A lightweight, fast and extensible game server for Minecraft",
+    "description": "軽量・高速で拡張性の高いMinecraftサーバーです。",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Server Description",
-            "description": "Server Description",
+            "name": "サーバー説明",
+            "description": "サーバーの説明文です。",
             "env_variable": "SERV_DESC",
             "default_value": "Cuberite on Pterodactyl!",
             "user_viewable": true,
@@ -43,8 +43,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "The password for the webadmin panel 'admin' user",
+            "name": "管理者パスワード",
+            "description": "WebAdminパネルの 'admin' ユーザー用パスワードです。",
             "env_variable": "ADMIN_PASS",
             "default_value": "ChangeMe",
             "user_viewable": true,
@@ -53,8 +53,8 @@
             "field_type": "text"
         },
         {
-            "name": "WebAdmin Port",
-            "description": "Port for the cuberite webadmin panel.",
+            "name": "WebAdminポート",
+            "description": "Cuberite WebAdminパネル用ポートです。",
             "env_variable": "WEB_PORT",
             "default_value": "8080",
             "user_viewable": true,

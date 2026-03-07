@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T14:07:29+00:00",
     "name": "VIAaaS",
     "author": "regulad@outlook.com",
-    "description": "VIAaaS - ViaVersion as a Service - Standalone ViaVersion proxy",
+    "description": "VIAaaS - ViaVersion as a Service - 単体で動作するViaVersionプロキシです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "VIAaaS JAR File",
-            "description": "The name of the JAR file to be used when downloading & running VIAaaS.",
+            "name": "VIAaaS JARファイル",
+            "description": "VIAaaSのダウンロードと実行に使用するJARファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "VIAaaS-all.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Web Server Port",
-            "description": "The port to listen to web server connections on.",
+            "name": "Webサーバーポート",
+            "description": "Webサーバー接続を待ち受けるポートです。",
             "env_variable": "WEBSERVER_PORT",
             "default_value": "25543",
             "user_viewable": true,

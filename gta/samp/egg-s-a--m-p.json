@@ -7,7 +7,7 @@
     "exported_at": "2023-10-19T18:53:04+02:00",
     "name": "SA-MP",
     "author": "bl4ckspr4y@protonmail.com",
-    "description": "SA-MP is a free Massively Multiplayer Online game mod for the PC version of Rockstar Games Grand Theft Auto: San Andreas (tm).",
+    "description": "SA-MPは、Rockstar GamesのPC版Grand Theft Auto: San Andreas向けの無料MMOマルチプレイMODです。",
     "features": null,
     "docker_images": {
         "Samp": "ghcr.io\/ptero-eggs\/games:samp"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Version",
-            "description": "Example: if the download url is https:\/\/sampcenter.com\/download\/server\/linux\/0.3.7.tar.gz then the variable should be: `0.3.7`",
+            "name": "バージョン",
+            "description": "例: ダウンロードURLが https:\/\/sampcenter.com\/download\/server\/linux\/0.3.7.tar.gz の場合、この変数は `0.3.7` を指定します。",
             "env_variable": "Version",
             "default_value": "0.3.7",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon password",
-            "description": "The password used for rcon",
+            "name": "RCONパスワード",
+            "description": "RCONで使用するパスワードです。",
             "env_variable": "RCON_PASS",
             "default_value": "",
             "user_viewable": true,

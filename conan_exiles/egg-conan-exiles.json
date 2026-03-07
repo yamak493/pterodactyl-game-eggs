@@ -7,7 +7,7 @@
     "exported_at": "2026-02-15T14:02:35+01:00",
     "name": "Conan Exiles",
     "author": "brycea@terrahost.cloud",
-    "description": "Conan Exiles is an open-world survival game set in the brutal lands of Conan the Barbarian. Survive in a savage world, build your kingdom, and dominate your enemies in brutal combat and epic warfare.",
+    "description": "Conan Exiles は Conan the Barbarian の過酷な世界を舞台にしたオープンワールドサバイバルゲームです。苛烈な世界で生き延び、王国を築き、苛烈な戦闘と壮大な戦争で敵をねじ伏せましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "App id",
-            "description": "The ID corresponding to the game to download.",
+            "name": "App ID",
+            "description": "ダウンロードするゲームに対応する ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "443030",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Decide if you want to update your server",
+            "name": "自動更新",
+            "description": "サーバーを更新するかどうかを設定します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Server Query Port",
+            "name": "クエリポート",
+            "description": "サーバークエリポート",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SRV_NAME",
             "default_value": "Pterodactyl hosted Server",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SRV_PW",
             "default_value": "",
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon port",
-            "description": "Remote administrative access",
+            "name": "RCON ポート",
+            "description": "リモート管理アクセス用",
             "env_variable": "RCON_PORT",
             "default_value": "25575",
             "user_viewable": true,

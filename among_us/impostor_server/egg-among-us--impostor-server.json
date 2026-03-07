@@ -7,7 +7,7 @@
     "exported_at": "2025-09-17T15:53:51+02:00",
     "name": "Among Us - Impostor Server",
     "author": "eggs@goover.dev",
-    "description": "Impostor is one of the first Among Us private servers, written in C#.\r\n\r\nThere are no special features at this moment, the goal is aiming to be as close as possible to the real server, for now. In a later stage, making modifications to game logic by modifying GameData packets can be looked at.",
+    "description": "Impostor は C# で書かれた Among Us の初期からあるプライベートサーバーの1つです。\r\n\r\n現時点では特別な機能はなく、まずは公式サーバーにできるだけ近い挙動を目指しています。今後の段階では、GameData パケットを変更してゲームロジックを拡張することも検討されています。",
     "features": null,
     "docker_images": {
         "Dotnet_8": "ghcr.io\/ptero-eggs\/yolks:dotnet_8",
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Download Version",
-            "description": "Version to Download. Leave latest for the latest release.\r\n\r\nFind all releases at https:\/\/github.com\/Impostor\/Impostor\/releases\r\nNote: versions start with a v, example: v1.8.0",
+            "name": "ダウンロードバージョン",
+            "description": "ダウンロードするバージョンです。最新リリースを使う場合は latest のままにしてください。\r\n\r\n全リリース: https:\/\/github.com\/Impostor\/Impostor\/releases\r\n注: バージョンは v から始まります（例: v1.8.0）",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

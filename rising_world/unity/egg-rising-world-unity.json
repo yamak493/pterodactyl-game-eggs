@@ -7,7 +7,7 @@
     "exported_at": "2025-12-23T07:33:48+00:00",
     "name": "Rising World Unity",
     "author": "eggs@goover.dev",
-    "description": "Rising World is a voxel based open-world sandbox game, featuring a procedurally generated world, playable in single and multi-player.",
+    "description": "Rising Worldはボクセルベースのオープンワールドサンドボックスゲームで、手続き生成ワールドをシングルプレイとマルチプレイで楽しめます。",
     "features": [
         "steam_disk_space"
     ],
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Server name (shows up in server list)",
+            "name": "サーバー名",
+            "description": "サーバー名（サーバーリストに表示されます）。",
             "env_variable": "SRV_NAME",
             "default_value": "Pterodactyl hosted Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server password. If set, users are prompted to enter the pw to join the server. Leave blank for no pw",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードです。設定すると参加時に入力が必要です。空欄でパスワードなしになります。",
             "env_variable": "SRV_PW",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Default world game mode (only used when a new world is created). Either \"Survival\" or \"Creative\"",
+            "name": "ゲームモード",
+            "description": "デフォルトのワールドゲームモード（新規ワールド作成時のみ使用）。\"Survival\" または \"Creative\"。",
             "env_variable": "GAME_MODE",
             "default_value": "Survival",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Name of the world which should be loaded (if it does not exist, it will be created)",
+            "name": "ワールド名",
+            "description": "読み込むワールド名です（存在しない場合は新規作成されます）。",
             "env_variable": "WORLD_NAME",
             "default_value": "myworld",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Enable RCON",
-            "description": "Determines whether or not the RCON tool should be enabled",
+            "name": "[Advanced] RCONを有効化",
+            "description": "RCONツールを有効にするかどうかを設定します。",
             "env_variable": "RCON",
             "default_value": "false",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] RCON Password",
-            "description": "Password required for RCON login. Min 6 characters (!)",
+            "name": "[Advanced] RCONパスワード",
+            "description": "RCONログインに必要なパスワードです。最低6文字。",
             "env_variable": "RCON_PASS",
             "default_value": "somepassword",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] RCON Port",
-            "description": "Port used to connect to RCON. Must be allocated to the server for RCON to work.",
+            "name": "[Advanced] RCONポート",
+            "description": "RCON接続に使用するポートです。RCONを動作させるにはこのポートをサーバーに割り当てる必要があります。",
             "env_variable": "RCON_PORT",
             "default_value": "4253",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Update the server on start\/restart",
+            "name": "自動更新",
+            "description": "サーバーの起動\/再起動時に更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

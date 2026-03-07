@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:25:08+02:00",
     "name": "Black Mesa",
     "author": "avalongamecs@gmail.com",
-    "description": "Black Mesa is a 2020 first-person shooter game. It is a third-party remake of Half-Life (1998) made in the Source game engine.",
+    "description": "Black Mesa は 2020 年の一人称シューティングゲームです。Source エンジンで制作された Half-Life（1998）のサードパーティ製リメイクです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "nmrih id",
+            "name": "ゲーム ID",
+            "description": "ゲーム ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "346680",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "game name",
+            "name": "ゲーム名",
+            "description": "ゲーム名",
             "env_variable": "SRCDS_GAME",
             "default_value": "bms",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "default map",
+            "name": "デフォルトマップ",
+            "description": "デフォルトマップ",
             "env_variable": "SRCDS_MAP",
             "default_value": "dm_crossfire",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Client port",
-            "description": "client port",
+            "name": "クライアントポート",
+            "description": "クライアントポート",
             "env_variable": "SRCDS_CPORT",
             "default_value": "27005",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "Source TV",
-            "description": "source TV",
+            "description": "Source TV",
             "env_variable": "SRCDS_STV",
             "default_value": "27020",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed on your game server.",
+            "name": "最大プレイヤー数",
+            "description": "ゲームサーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

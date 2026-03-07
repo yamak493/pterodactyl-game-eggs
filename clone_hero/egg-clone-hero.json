@@ -7,7 +7,7 @@
     "exported_at": "2023-11-30T10:24:33+01:00",
     "name": "Clone Hero",
     "author": "josdekurk@gmail.com",
-    "description": "Clone Hero is a classic instrument based rhythm game for Windows, Mac, Linux, and Android. It's playable with any 5 or 6 fret guitar controller, any midi drum kit, any game controller and even your keyboard! Jam out with Drums, 5-fret Guitar, or 6-fret Guitar online or local!",
+    "description": "Clone Hero は、Windows、Mac、Linux、Android 向けのクラシックな楽器演奏型リズムゲームです。5フレットまたは6フレットのギターコントローラー、MIDI ドラムキット、各種ゲームコントローラー、さらにはキーボードでもプレイできます。ドラム、5フレットギター、6フレットギターで、オンラインでもローカルでも演奏を楽しめます。",
     "features": null,
     "docker_images": {
         "Debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server name",
-            "description": "The name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_DISPLAY_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server password",
-            "description": "The password of the server",
+            "name": "サーバーパスワード",
+            "description": "サーバーのパスワードです",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Log level",
-            "description": "Set max logging level",
+            "name": "ログレベル",
+            "description": "最大ログ出力レベルを設定します",
             "env_variable": "LOG_LEVEL",
             "default_value": "4",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "The version of Clone Hero you want to install.\r\nExample: V1.0.0.4080 or latest",
+            "name": "バージョン",
+            "description": "インストールする Clone Hero のバージョンです。\r\n例: V1.0.0.4080 または latest",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

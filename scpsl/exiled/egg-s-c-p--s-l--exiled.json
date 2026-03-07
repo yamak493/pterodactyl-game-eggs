@@ -7,7 +7,7 @@
     "exported_at": "2025-11-15T12:35:55+00:00",
     "name": "SCP:SL - Exiled",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Egg for SCP: Secret Laboratory Dedicated Linux Server with Exiled Plugin Framework - https:\/\/github.com\/ExMod-Team\/EXILED",
+    "description": "Exiled Plugin Framework対応のSCP: Secret Laboratory Linux専用サーバー用Eggです - https:\/\/github.com\/ExMod-Team\/EXILED",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Exiled Version",
-            "description": "Exiled version to install. \"latest\" will install the latest release of Exiled.",
+            "name": "Exiledバージョン",
+            "description": "インストールするExiledのバージョンです。\"latest\" で最新リリースをインストールします。",
             "env_variable": "EXILED_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Exiled Pre-Releases",
-            "description": "If Exiled Version is set to latest, this will cause it to include pre-release versions.\r\nThis is not required to be on when setting a specific Exiled version",
+            "name": "Exiledプレリリース",
+            "description": "Exiledバージョンを latest にした場合、プレリリース版も対象にします。\r\n特定バージョンを指定する場合は有効化不要です。",
             "env_variable": "EXILED_PRE_RELEASES",
             "default_value": "0",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "SRCDS_APPID",
-            "description": "Steam AppID to install",
+            "description": "インストールに使用する Steam App ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "996560",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Branch",
-            "description": "Installs beta branch from steam if specified. Requires a reinstall to switch branches properly.",
+            "name": "ベータブランチ",
+            "description": "指定した場合、Steamのベータブランチをインストールします。ブランチ切り替えには再インストールが必要です。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Dotnet Bundle",
-            "description": "For EXILED Framework Updater.",
+            "name": "Dotnetバンドル",
+            "description": "EXILED Framework Updater用です。",
             "env_variable": "DOTNET_BUNDLE_EXTRACT_BASE_DIR",
             "default_value": ".\/dotnet-bundle",
             "user_viewable": false,

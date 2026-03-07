@@ -7,7 +7,7 @@
     "exported_at": "2024-07-15T18:52:08+02:00",
     "name": "Palworld",
     "author": "admin@ballaual.de",
-    "description": "Fight, farm, build and work alongside mysterious creatures called \"Pals\" in this completely new multiplayer, open world survival and crafting game!",
+    "description": "\"パル\"と呼ばれる不思議な生き物と共に、戦い、農業し、建築し、働く、まったく新しいマルチプレイオープンワールドのサバイバルクラフトゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "App ID",
-            "description": "Do not edit!",
+            "name": "アプリID",
+            "description": "編集しないでください!",
             "env_variable": "SRCDS_APPID",
             "default_value": "2394010",
             "user_viewable": false,
@@ -43,8 +43,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on start.",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -53,7 +53,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
@@ -63,8 +63,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "If specified, players must provide this password (via the in-game chat or RCON) to gain access to administrator commands on the server.",
+            "name": "管理者パスワード",
+            "description": "指定した場合、プレイヤーはこのパスワード（ゲーム内チャットまたはRCON経由）を入力して管理者コマンド権限を取得します。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -73,8 +73,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public IP",
-            "description": "Set this to the server public ip address.\r\nOnly needed if the allocation is a local ip, else the allocate ip will be used automatically",
+            "name": "公開IP",
+            "description": "サーバーの公開IPアドレスを設定します。\r\n割り当てがローカルIPの場合のみ必要で、それ以外は割り当てIPが自動使用されます。",
             "env_variable": "PUBLIC_IP",
             "default_value": "",
             "user_viewable": true,
@@ -83,7 +83,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted Palworld Server",
@@ -93,8 +93,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If specified, players must provide this password to join the server.",
+            "name": "サーバーパスワード",
+            "description": "指定した場合、プレイヤーはサーバー参加時にこのパスワード入力が必要です。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -103,8 +103,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Does not need to be allocated!",
+            "name": "RCONポート",
+            "description": "割り当ては不要です!",
             "env_variable": "RCON_PORT",
             "default_value": "25575",
             "user_viewable": true,
@@ -113,8 +113,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable RCON",
-            "description": "Must Be ON",
+            "name": "RCON有効化",
+            "description": "ONである必要があります",
             "env_variable": "RCON_ENABLE",
             "default_value": "True",
             "user_viewable": false,
@@ -123,8 +123,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "The description of the server.",
+            "name": "サーバー説明",
+            "description": "サーバーの説明です。",
             "env_variable": "SERVER_DESCRIPTION",
             "default_value": "",
             "user_viewable": true,
@@ -133,8 +133,8 @@
             "field_type": "text"
         },
         {
-            "name": "Connection Platfrom",
-            "description": "The platform players will be able to connect from",
+            "name": "接続プラットフォーム",
+            "description": "プレイヤーが接続可能なプラットフォームです。",
             "env_variable": "ALLOW_CONNECT_PLATFORM",
             "default_value": "Steam",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2025-07-19T22:21:54+02:00",
     "name": "Zandronum",
     "author": "sup@libtar.de",
-    "description": "Zandronum is a multiplayer oriented port, based off Skulltag, for Doom and Doom II by id Software.\r\n\r\nThis egg uses the Freedoom WAD by default.",
+    "description": "Zandronum は、id Software の Doom / Doom II 向けに Skulltag をベースとして開発された、マルチプレイ重視のポートです。\r\n\r\nこの egg は既定で Freedoom WAD を使用します。",
     "features": null,
     "docker_images": {
         "Ubuntu": "ghcr.io\/ptero-eggs\/yolks:ubuntu"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed on your game server.",
+            "name": "最大プレイヤー数",
+            "description": "ゲームサーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -40,7 +40,7 @@
         },
         {
             "name": "IWAD",
-            "description": "An IWAD is the main resource file for a Doom-engine game, containing all the game's original sounds, levels, and graphics.",
+            "description": "IWAD は Doom エンジンゲームの主要リソースファイルで、ゲーム本来の音声・レベル・グラフィックを含みます。",
             "env_variable": "IWAD",
             "default_value": "freedoom1.wad",
             "user_viewable": true,
@@ -50,7 +50,7 @@
         },
         {
             "name": "PWADS",
-            "description": "If you wish to use multiple PWAD you can do so by separating them with spaces.\r\n\r\nA PWAD is a WAD containing lumps of data, often used as addons. They replace in-game assets.",
+            "description": "複数の PWAD を使う場合は、スペース区切りで指定してください。\r\n\r\nPWAD はデータチャンクを含む WAD で、主にアドオンとして使われます。ゲーム内アセットを置き換えます。",
             "env_variable": "PWADS",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Skill",
-            "description": "Set the difficulty of the game.",
+            "name": "難易度",
+            "description": "ゲームの難易度を設定します。",
             "env_variable": "SKILL",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "map",
-            "description": "The map the server should start with.",
+            "name": "マップ",
+            "description": "サーバー起動時に開始するマップです。",
             "env_variable": "MAP",
             "default_value": "e1m1",
             "user_viewable": true,
@@ -80,7 +80,7 @@
         },
         {
             "name": "dmflags",
-            "description": "Gameplay flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "ゲームプレイフラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "DMFLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -90,7 +90,7 @@
         },
         {
             "name": "dmflags2",
-            "description": "Gameplay flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "ゲームプレイフラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "DMFLAGS2",
             "default_value": "",
             "user_viewable": true,
@@ -100,7 +100,7 @@
         },
         {
             "name": "zadmflags",
-            "description": "Zandronum specific gameplay flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "Zandronum 固有のゲームプレイフラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "ZADMFLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -110,7 +110,7 @@
         },
         {
             "name": "compatflags",
-            "description": "Compatibility flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "互換性フラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "COMPATFLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -120,7 +120,7 @@
         },
         {
             "name": "compatflags2",
-            "description": "Compatibility flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "互換性フラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "COMPATFLAGS2",
             "default_value": "",
             "user_viewable": true,
@@ -130,7 +130,7 @@
         },
         {
             "name": "zacompatflags",
-            "description": "Zandronum specific compatibility flags. https:\/\/wiki.zandronum.com\/DMFlags",
+            "description": "Zandronum 固有の互換性フラグです。https:\/\/wiki.zandronum.com\/DMFlags",
             "env_variable": "ZACOMPATFLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable GeoIP",
-            "description": "GeoIP is used to identify the country of the client's ip address",
+            "name": "GeoIP を有効化",
+            "description": "GeoIP はクライアント IP アドレスの国判定に使用されます",
             "env_variable": "GEOIP",
             "default_value": "1",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-01-30T12:30:23+01:00",
     "name": "Necesse",
     "author": "josdekurk@gmail.com",
-    "description": "Build, quest, and conquer across an infinite procedurally generated world. Play alone or with friends as you establish a settlement and explore deep dungeons, fight monsters and bosses, mine rare ores, craft magical equipment, recruit specialists for your colony, and more!",
+    "description": "無限に自動生成される世界で建築し、冒険し、征服しましょう。ソロでもフレンドとでも、拠点を築き、深いダンジョンを探索し、モンスターやボスと戦い、希少鉱石を採掘し、魔法装備を作成し、コロニーの専門家を勧誘するなど、多彩な遊びが可能です。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Save Name",
-            "description": "Name of the save file.",
+            "name": "セーブ名",
+            "description": "セーブファイルの名前です。",
             "env_variable": "SAVE_NAME",
             "default_value": "Save1",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Player Slots",
-            "description": "Number of slots available for players to join the server.",
+            "name": "プレイヤースロット数",
+            "description": "サーバーに参加できるプレイヤースロット数です。",
             "env_variable": "SERVER_SLOTS",
             "default_value": "10",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required to enter the server.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam App ID",
-            "description": "DO NOT EDIT",
+            "name": "SteamアプリID",
+            "description": "編集しないでください",
             "env_variable": "SRCDS_APPID",
             "default_value": "1169370",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auto Update",
-            "description": "Enable or disable auto-update on startup. 0 to disable and 1 to enable.",
+            "name": "Steam自動更新",
+            "description": "起動時の自動更新を有効または無効にします。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Beta Branch",
-            "description": "Steam Beta branch to install.",
+            "name": "Steamベータブランチ",
+            "description": "インストールするSteamベータブランチです。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,

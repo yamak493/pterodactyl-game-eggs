@@ -7,7 +7,7 @@
   "exported_at": "2025-04-20T21:46:27+00:00",
   "name": "PowerNukkitX",
   "author": "powernukkitx@github.com",
-  "description": "PowerNukkitX support for Pterodactyl",
+  "description": "Pterodactyl向けPowerNukkitXサーバーEggです。",
   "features": null,
   "docker_images": {
     "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
   },
   "variables": [
     {
-      "name": "Version to install",
-      "description": "Choose between latest or dev",
+      "name": "インストールバージョン",
+      "description": "latest または dev から選択します。",
       "env_variable": "VERSION",
       "default_value": "latest",
       "user_viewable": true,
@@ -39,8 +39,8 @@
       "field_type": "text"
     },
     {
-      "name": "AutoReboot mode",
-      "description": "to set auto reboot mode please enter -r",
+      "name": "自動再起動モード",
+      "description": "自動再起動モードを設定するには -r を入力してください。",
       "env_variable": "AUTOREBOOT",
       "default_value": "",
       "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T14:24:51+02:00",
     "name": "Clusterio",
     "author": "psychoalex@thevcbc.com",
-    "description": "Clusterio is a clustered Factorio server manager that provides the tooling for implementing cross server interactions in Factorio. It was previously best known for implementing cross server transfer and cloud storage of items via teleporter chests. But this functionality has been pulled out of Clusterio into its own plugin for Clusterio named Subspace Storage.\r\n\r\nBy itself Clusterio doesn't change the gameplay in any way, you could even use Clusterio to manage completely vanilla Factorio servers. Plugins do the work of modding in the visible changes into the game, see the Plugins section for ready-made plugins you can install into a Clusterio cluster.",
+    "description": "Clusterioは、Factorioでサーバー間連携を実装するための機能を提供するクラスタ型サーバーマネージャーです。以前は、テレポーターチェストによるサーバー間転送やクラウド保管機能で知られていましたが、現在それらはSubspace Storageという専用プラグインに分離されています。\r\n\r\nClusterio単体はゲームプレイを変更しないため、完全なバニラFactorioサーバー管理にも利用できます。見えるゲーム内変更はプラグインが担います。導入可能なプラグインはPluginsセクションを参照してください。",
     "features": null,
     "docker_images": {
         "NodeJS 21": "ghcr.io\/ptero-eggs\/yolks:nodejs_21",
@@ -32,8 +32,8 @@
     },
     "variables": [
         {
-            "name": "Server Mode",
-            "description": "Set's the cluster operation mode of the server, can be either \"controller\" or \"host\". This is better thought of as Management or Gameserver nodes.\r\n\r\nRequired on:\r\nAll",
+            "name": "サーバーモード",
+            "description": "サーバーのクラスタ動作モードを設定します。\"controller\" または \"host\" を指定します。管理ノードかゲームサーバーノードかの設定です。\r\n\r\n必須:\r\n全モード",
             "env_variable": "SERVER_MODE",
             "default_value": "controller",
             "user_viewable": true,
@@ -42,8 +42,8 @@
             "field_type": "text"
         },
         {
-            "name": "Log Level",
-            "description": "Options: \"none\", \"fatal\", \"error\", \"warn\", \"audit\", \"info\", \"verbose\"\r\n\r\nRequired on:\r\nAll",
+            "name": "ログレベル",
+            "description": "選択肢: \"none\", \"fatal\", \"error\", \"warn\", \"audit\", \"info\", \"verbose\"\r\n\r\n必須:\r\n全モード",
             "env_variable": "LOG_LEVEL",
             "default_value": "info",
             "user_viewable": true,
@@ -52,8 +52,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Admin",
-            "description": "Superadmin account name\r\n\r\nRequired on:\r\nController",
+            "name": "サーバー管理者",
+            "description": "スーパー管理者アカウント名です。\r\n\r\n必須:\r\nController",
             "env_variable": "ADMIN_STRING",
             "default_value": "",
             "user_viewable": true,
@@ -62,8 +62,8 @@
             "field_type": "text"
         },
         {
-            "name": "Host Name",
-            "description": "Host name in the Controller Web UI\r\n\r\nRequired on:\r\nHost",
+            "name": "ホスト名",
+            "description": "Controller Web UIに表示されるホスト名です。\r\n\r\n必須:\r\nHost",
             "env_variable": "HOST_NAME",
             "default_value": "Your Sub-Server",
             "user_viewable": true,
@@ -73,7 +73,7 @@
         },
         {
             "name": "Controller URL",
-            "description": "Connection URL to the Controller server, can be an internal address if you have allocated an additional internal port to the Controller Server.\r\nExample: http:\/\/yourip:yourport\r\nRequired on:\r\nHost",
+            "description": "Controllerサーバーへの接続URLです。Controllerに追加の内部ポートを割り当てている場合は内部アドレスも使用できます。\r\n例: http:\/\/yourip:yourport\r\n必須:\r\nHost",
             "env_variable": "CONTROLLER_URL",
             "default_value": "",
             "user_viewable": true,
@@ -82,8 +82,8 @@
             "field_type": "text"
         },
         {
-            "name": "Controller Token",
-            "description": "Authentication token used to connect to the Controller server, generated through the Controller Web UI.\r\n\r\nRequired on:\r\nHost",
+            "name": "Controllerトークン",
+            "description": "Controllerサーバー接続に使用する認証トークンです。Controller Web UIで生成します。\r\n\r\n必須:\r\nHost",
             "env_variable": "CONTROLLER_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -92,8 +92,8 @@
             "field_type": "text"
         },
         {
-            "name": "Plugins",
-            "description": "Clusterio Plugins to install, space separate list.\r\n\r\nExample:\r\n@clusterio\/plugin-subspace_storage @clusterio\/plugin-global_chat @clusterio\/plugin-research_sync @clusterio\/plugin-inventory_sync\r\n\r\nRequired on:\r\nAll",
+            "name": "プラグイン",
+            "description": "インストールするClusterioプラグインをスペース区切りで指定します。\r\n\r\n例:\r\n@clusterio\/plugin-subspace_storage @clusterio\/plugin-global_chat @clusterio\/plugin-research_sync @clusterio\/plugin-inventory_sync\r\n\r\n必須:\r\n全モード",
             "env_variable": "PLUGINS",
             "default_value": "",
             "user_viewable": true,
@@ -102,8 +102,8 @@
             "field_type": "text"
         },
         {
-            "name": "Cluster Name",
-            "description": "The Name of your Controller server cluster.\r\n\r\nRequired:\r\nController",
+            "name": "クラスタ名",
+            "description": "Controllerサーバークラスタの名前です。\r\n\r\n必須:\r\nController",
             "env_variable": "CLUSTER_NAME",
             "default_value": "Your Cluster",
             "user_viewable": true,

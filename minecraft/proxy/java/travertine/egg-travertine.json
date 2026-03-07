@@ -7,7 +7,7 @@
     "exported_at": "2025-01-11T09:35:02+00:00",
     "name": "Travertine",
     "author": "parker@parkervcp.com",
-    "description": "Travertine is a fork of Waterfall with 1.7 protocol support. Waterfall is a fork of the well-known BungeeCord server teleportation suite.",
+    "description": "Travertineは、1.7プロトコル対応を追加したWaterfallのフォークです。WaterfallはBungeeCord系プロキシのフォークです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft that water was built to support.",
+            "name": "Minecraftバージョン",
+            "description": "対応するMinecraftバージョンです。",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Travertine Jar File",
-            "description": "The name of the jar file to use when running Travertine.",
+            "name": "Travertine Jarファイル",
+            "description": "Travertine起動時に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "travertine.jar",
             "user_viewable": true,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Link",
-            "description": "A link to the server jar to download the Travertine jar.",
+            "name": "ダウンロードリンク",
+            "description": "Travertine jarをダウンロードするサーバーjarのURLです。",
             "env_variable": "DL_LINK",
             "default_value": "",
             "user_viewable": true,
@@ -68,8 +68,8 @@
             "field_type": "text"
         },
         {
-            "name": "Travertine build number",
-            "description": "Default is latest.\r\n\r\nif set to latest or an invalid version will grab the latest build number.",
+            "name": "Travertineビルド番号",
+            "description": "デフォルトは latest です。\r\n\r\nlatest または無効な値を指定した場合、最新ビルド番号を取得します。",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,

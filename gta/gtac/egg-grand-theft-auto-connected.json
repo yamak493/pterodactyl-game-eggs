@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T11:32:04+02:00",
     "name": "Grand Theft Auto Connected",
     "author": "admin@softwarenoob.com",
-    "description": "Grand Theft Auto Connected is a custom scriptable multiplayer modification for multiple Grand Theft Auto games.",
+    "description": "Grand Theft Auto Connectedは、複数のGrand Theft Auto作品向けに作られた、スクリプト可能なカスタムマルチプレイMODです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Game type",
-            "description": "Sets the game this server will support. Available options: gta:iii, gta:vc, gta:sa, gta:ug, gta:iv, gta:eflc",
+            "name": "ゲームタイプ",
+            "description": "このサーバーで対応するゲームを設定します。利用可能: gta:iii, gta:vc, gta:sa, gta:ug, gta:iv, gta:eflc",
             "env_variable": "GAMETYPE",
             "default_value": "gta:iv",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server, which appears in the server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示されるサーバー名です。",
             "env_variable": "SERVERNAME",
             "default_value": "Pterodactyl Server",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "serverbrowser",
-            "description": "Whether to show the server in the server browser, set to true or false",
+            "name": "サーバーブラウザ表示",
+            "description": "サーバーブラウザに表示するかどうかを設定します。true または false を指定します。",
             "env_variable": "SERVERBROWSER",
             "default_value": "true",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Version",
-            "description": "The version of GATC to install such as 1.2.10, enter latest for the latest version.",
+            "name": "サーバーバージョン",
+            "description": "インストールするGTACのバージョンです（例: 1.2.10）。最新は latest を指定します。",
             "env_variable": "DL_VERSION",
             "default_value": "latest",
             "user_viewable": true,

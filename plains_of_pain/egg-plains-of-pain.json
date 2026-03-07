@@ -7,7 +7,7 @@
     "exported_at": "2025-11-15T17:56:59+00:00",
     "name": "Plains of Pain",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Survive a brutal open world alone or with friends. Explore a procedural wasteland scorched by chaos. Build and defend your base, trade for what you need, complete deadly quests, and fight to claim faction outposts before someone else does.",
+    "description": "過酷なオープンワールドをソロまたは仲間と生き延びましょう。混沌に焼かれた手続き生成の荒野を探索し、拠点を築いて防衛し、必要物資を取引し、危険なクエストを達成し、他者より先に勢力拠点を奪い取りましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "This name will appear in the server list in the game",
+            "name": "サーバー名",
+            "description": "この名前はゲーム内のサーバー一覧に表示されます。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If present, protects server with password",
+            "name": "サーバーパスワード",
+            "description": "指定すると、サーバーをパスワードで保護します。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max number of players",
+            "name": "最大プレイヤー数",
+            "description": "プレイヤー最大人数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "World ID",
-            "description": "Selected World ID, (will be created for any new number)",
+            "name": "ワールドID",
+            "description": "選択したワールドIDです（新しい番号を指定すると作成されます）。",
             "env_variable": "WORLD_ID",
             "default_value": "1",
             "user_viewable": true,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "World Size",
+            "name": "ワールドサイズ",
             "description": "11 = S\r\n21 = M\r\n31 = L\r\n41 = XL\r\n51 = XXL",
             "env_variable": "WORLD_SIZE",
             "default_value": "21",
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "0 = Tourist\r\n1 = Rookies\r\n2 = True\r\nWastelander\r\n3 = Veteran\r\n4 = Overlord",
+            "name": "難易度",
+            "description": "0 = Tourist\r\n1 = Rookies\r\n2 = True Wastelander\r\n3 = Veteran\r\n4 = Overlord",
             "env_variable": "DIFFICULTY",
             "default_value": "1",
             "user_viewable": true,
@@ -91,7 +91,7 @@
             "field_type": "text"
         },
         {
-            "name": "Map ID",
+            "name": "マップID",
             "description": "",
             "env_variable": "MAP_ID",
             "default_value": "256",
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Seed",
-            "description": "Seed for world generator",
+            "name": "ワールドシード",
+            "description": "ワールド生成用シード値です。",
             "env_variable": "SEED",
             "default_value": "12345",
             "user_viewable": true,
@@ -111,7 +111,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Automatically update the search on boot",
+            "name": "自動更新",
+            "description": "起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

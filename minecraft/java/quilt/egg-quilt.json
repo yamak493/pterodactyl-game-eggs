@@ -7,7 +7,7 @@
     "exported_at": "2025-04-20T21:46:27+00:00",
     "name": "Quilt",
     "author": "diedyesterdaywashere@gmail.com",
-    "description": "The Quilt project is an open-source, community-driven modding toolchain designed primarily for Minecraft. By focusing on speed, ease of use and modularity, Quilt aims to provide a sleek and modern modding toolchain with an open ecosystem.",
+    "description": "Quiltプロジェクトは、主にMinecraft向けに設計されたオープンソースでコミュニティ主導のMOD開発ツールチェーンです。速度、使いやすさ、モジュール性に重点を置き、開かれたエコシステムを備えた洗練された現代的なツールチェーンの提供を目指しています。",
     "features": null,
     "docker_images": {
         "Java 8": "ghcr.io\/ptero-eggs\/yolks:java_8",
@@ -34,8 +34,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "Version of Minecraft that will be installed. You can only choose the exact version number, for example \"1.20.2\", \"latest\" won't work!",
+            "name": "Minecraftバージョン",
+            "description": "インストールされるMinecraftのバージョンです。例: \"1.20.2\" のように正確なバージョン番号のみ指定可能で、\"latest\" は使用できません。",
             "env_variable": "MC_VERSION",
             "default_value": "1.20.2",
             "user_viewable": true,
@@ -44,8 +44,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the jarfile that will be ran on server launch.",
+            "name": "サーバーJarファイル",
+            "description": "サーバー起動時に実行されるjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,

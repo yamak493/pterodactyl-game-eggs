@@ -7,7 +7,7 @@
     "exported_at": "2024-06-01T19:40:19+00:00",
     "name": "The 1.12.2 Pack",
     "author": "contact@irequire.dev",
-    "description": "The 1.12.2 Pack",
+    "description": "The 1.12.2 Packです。",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
-            "description": "Version of the modpack to use",
+            "name": "Modpackバージョン",
+            "description": "使用するModpackのバージョンです。",
             "env_variable": "MODPACK_VERSION",
             "default_value": "1.5.5",
             "user_viewable": true,

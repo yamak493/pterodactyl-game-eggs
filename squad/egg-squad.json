@@ -7,7 +7,7 @@
     "exported_at": "2024-05-15T10:32:11+00:00",
     "name": "Squad",
     "author": "brycea@terrahost.cloud",
-    "description": "Squad is a 50 vs 50 multiplayer first-person shooter that aims to capture combat realism through communication and teamplay. Major features include vehicle-based combined arms gameplay, large scale environments, base building, and integrated positional VoIP for proximity talking & radio.",
+    "description": "Squadは、50対50のマルチプレイヤー一人称シューティングゲームです。コミュニケーションとチームプレイを通じてリアルな戦闘体験を目指します。車両を含む諸兵科連携、大規模マップ、拠点構築、近距離会話と無線に対応した位置連動VoIPが主な特徴です。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Query Port",
-            "description": "Query port for your Squad server.",
+            "name": "クエリポート",
+            "description": "Squadサーバー用クエリポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27165",
             "user_viewable": true,
@@ -42,7 +42,7 @@
         },
         {
             "name": "ld lib path",
-            "description": "this is needed for some reason",
+            "description": "動作上必要な設定です。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": "\/home\/container\/linux64\/",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲームID",
+            "description": "SRCDSでダウンロード・実行するゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "403240",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name for the server in the server list",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です。",
             "env_variable": "servername",
             "default_value": "Squad Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Sets the maximum number of players.",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数を設定します。",
             "env_variable": "maxplayers",
             "default_value": "80",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow Team Change",
-            "description": "Allow players to change teams ( true \/ false )",
+            "name": "チーム変更を許可",
+            "description": "プレイヤーのチーム変更を許可します（ true \/ false ）。",
             "env_variable": "allowteamchange",
             "default_value": "true",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Advertise Server",
-            "description": "Have the server report to the public server list ( true \/ false )",
+            "name": "サーバー公開",
+            "description": "公開サーバーリストへ登録します（ true \/ false ）。",
             "env_variable": "advertise",
             "default_value": "true",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reserved Slots",
-            "description": "The number of reserved slots for admins \/ mods",
+            "name": "予約スロット",
+            "description": "管理者\/モデレーター用の予約スロット数です。",
             "env_variable": "reservedslots",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Prevent Team Change If Unbalanced",
-            "description": "This will prevent players from changing teams if they're already unbalanced ( true \/ false )",
+            "name": "不均衡時のチーム変更防止",
+            "description": "チームが不均衡な場合にチーム変更を禁止します（ true \/ false ）。",
             "env_variable": "ptciu",
             "default_value": "true",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Team Balance",
-            "description": "This will FORCE team balance if the teams are too uneven ( true \/ false )",
+            "name": "チームバランス強制",
+            "description": "チーム差が大きい場合にバランス調整を強制します（ true \/ false ）。",
             "env_variable": "teambal",
             "default_value": "true",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Record Demos",
-            "description": "This will record demos of the players ( true \/ false )",
+            "name": "デモ録画",
+            "description": "プレイヤーのデモを録画します（ true \/ false ）。",
             "env_variable": "recorddemos",
             "default_value": "true",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beacon Port",
-            "description": "Beacon port for your Squad server.",
+            "name": "Beaconポート",
+            "description": "Squadサーバー用Beaconポートです。",
             "env_variable": "BEACON_PORT",
             "default_value": "15000",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download Workshops Items",
-            "description": "Workshop file ids separated by a comma \",\" (1111111,222222) \r\nReinstall Required to install mods",
+            "name": "Workshopアイテムをダウンロード",
+            "description": "WorkshopファイルIDをカンマ区切りで指定します（1111111,222222）。\r\nModインストールには再インストールが必要です。",
             "env_variable": "WORKSHOP_ITEMS",
             "default_value": "",
             "user_viewable": true,

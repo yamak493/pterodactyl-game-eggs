@@ -7,7 +7,7 @@
     "exported_at": "2024-04-05T01:20:18+02:00",
     "name": "Stationeers (BepInEx)",
     "author": "eggs@goover.dev",
-    "description": "Stationeers Server with very basic BepInEx support",
+    "description": "基本的なBepInEx対応を含むStationeersサーバーです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl Hosted Server",
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Available Maps: Moon, Mars, Europa, Europa2, Mimas, Vulcan, Vulcan2, Space, Loulan, Venus",
+            "name": "ワールド名",
+            "description": "利用可能マップ: Moon, Mars, Europa, Europa2, Mimas, Vulcan, Vulcan2, Space, Loulan, Venus",
             "env_variable": "WORLD_NAME",
             "default_value": "moon",
             "user_viewable": true,
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWD",
             "default_value": "",
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "Name of the save of your world.\r\nAuto save & auto load worlds on server startup.",
+            "name": "セーブ名",
+            "description": "ワールドのセーブ名です。\r\nサーバー起動時にワールドを自動保存・自動読込します。",
             "env_variable": "SAVE_NAME",
             "default_value": "stationeers_1",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save",
-            "description": "Turn Autosave on and off",
+            "name": "自動保存",
+            "description": "自動保存の有効\/無効を切り替えます。",
             "env_variable": "AUTOSAVE",
             "default_value": "true",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Interval",
-            "description": "Sets the server\u2019s auto-save interval in seconds.",
+            "name": "保存間隔",
+            "description": "サーバーの自動保存間隔を秒単位で設定します。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "300",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "Steam App ID",
-            "description": "Required for automatic updates.",
+            "description": "自動更新に必要です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "600760",
             "user_viewable": false,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -131,7 +131,7 @@
             "field_type": "text"
         },
         {
-            "name": "Update Port",
+            "name": "更新ポート",
             "description": "",
             "env_variable": "UPDATE_PORT",
             "default_value": "27014",
@@ -141,7 +141,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Branch",
+            "name": "ベータブランチ",
             "description": "",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",

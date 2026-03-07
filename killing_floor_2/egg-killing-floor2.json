@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:20:07+02:00",
     "name": "Killing Floor 2",
     "author": "parker@parkervcp.com",
-    "description": "In KILLING FLOOR 2, players descend into continental Europe after it has been overrun by horrific, murderous clones called Zeds that were created by the corporation Horzine. The Zed outbreak caused by Horzine Biotech\u2019s failed experiments has quickly spread with unstoppable momentum, paralyzing the European Union. Only a month ago, the first Zed outbreak from the original KILLING FLOOR ripped through London; now the specimen clones are everywhere.",
+    "description": "KILLING FLOOR 2 では、企業 Horzine が生み出した凶悪なクローン「Zed」によって壊滅した欧州大陸へプレイヤーが降り立ちます。Horzine Biotech の実験失敗で発生した Zed の大流行は止めようのない勢いで拡大し、EU は機能不全に陥りました。わずか1か月前、初代 KILLING FLOOR の最初の Zed 発生がロンドンを襲ったばかりですが、今や実験体クローンは至る所に存在します。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Steam Username",
-            "description": "A steam username to use to install the server.\r\n\r\nOnly needed for games that need a user that owns the server",
+            "name": "Steam ユーザー名",
+            "description": "サーバーインストールに使用する Steam ユーザー名です。\r\n\r\nサーバー所有アカウントが必要なゲームでのみ必要です",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Password for the Steam account to install a server.",
+            "name": "Steam パスワード",
+            "description": "サーバーインストールに使用する Steam アカウントのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Will most likely time out before it gets used.",
+            "name": "Steam 認証コード",
+            "description": "使用される前にタイムアウトする可能性が高いです。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Server App ID",
-            "description": "The App ID for the Server",
+            "name": "Steam サーバー App ID",
+            "description": "サーバー用 App ID です",
             "env_variable": "SRCDS_APPID",
             "default_value": "232130",
             "user_viewable": false,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Extra Flags",
-            "description": "Only needed for specific situations.",
+            "name": "追加フラグ",
+            "description": "特定の状況でのみ必要です。",
             "env_variable": "EXTRA_FLAGS",
             "default_value": "",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Name",
-            "description": "The map to load when the server starts\r\n\r\ndefault - 'kf-bioticslab'",
+            "name": "マップ名",
+            "description": "サーバー起動時に読み込むマップです\r\n\r\n既定値 - 'kf-bioticslab'",
             "env_variable": "MAP_NAME",
             "default_value": "kf-bioticslab",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "The port steam will use to query the server.",
+            "name": "クエリポート",
+            "description": "Steam がサーバー照会に使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -101,7 +101,7 @@
             "field_type": "text"
         },
         {
-            "name": "Enable WebAdmin (beta)",
+            "name": "WebAdmin を有効化（ベータ）",
             "description": "",
             "env_variable": "WEB_ADMIN",
             "default_value": "false",
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "An admin password for the server.",
+            "name": "管理者パスワード",
+            "description": "サーバー管理者用パスワードです。",
             "env_variable": "ADMIN_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "This is the displayed server name to all players in the server and the server browser",
+            "name": "サーバー名",
+            "description": "サーバー内およびサーバーブラウザーで全プレイヤーに表示されるサーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Difficulty",
-            "description": "0 = Normal, 1 = Hard, 2 = Suicidal, 3 = Hell on Earth",
+            "name": "サーバー難易度",
+            "description": "0 = Normal、1 = Hard、2 = Suicidal、3 = Hell on Earth",
             "env_variable": "DIFFICULTY",
             "default_value": "0",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Web Admin Port",
-            "description": "The port the webadmin panel should use. This is a beta feature.",
+            "name": "WebAdmin ポート",
+            "description": "WebAdmin パネルで使用するポートです。これはベータ機能です。",
             "env_variable": "WEB_ADMIN_PORT",
             "default_value": "8089",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "起動時にサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

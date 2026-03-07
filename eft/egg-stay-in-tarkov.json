@@ -7,7 +7,7 @@
     "exported_at": "2024-04-24T16:58:22+02:00",
     "name": "Stay In Tarkov",
     "author": "dino@papertots.page",
-    "description": "The Stay in Tarkov project was born due to Battlestate Games' (BSG) reluctance to create the pure PvE version of Escape from Tarkov. The project's aim is simple, create a Cooperation PvE experience that retains progression.",
+    "description": "Stay in Tarkov プロジェクトは、Battlestate Games（BSG）が Escape from Tarkov の純粋な PvE 版を作ることに消極的だったことをきっかけに生まれました。目的はシンプルで、進行要素を維持した協力型 PvE 体験を実現することです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "SITCoop Version",
-            "description": "Version of the SIT co-op mod for the server. Use \"latest\" for latest release, or the github release\/tag\/hash.\r\n\r\nSITCoop: https:\/\/github.com\/stayintarkov\/SIT.Aki-Server-Mod",
+            "name": "SITCoop バージョン",
+            "description": "サーバー用 SIT 協力 MOD のバージョンです。最新リリースは \"latest\"、または GitHub の release\/tag\/hash を指定してください。\r\n\r\nSITCoop: https:\/\/github.com\/stayintarkov\/SIT.Aki-Server-Mod",
             "env_variable": "SIT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "SIT Mod Github Package",
-            "description": "Github package for the SIT Aki server co-op mod. \r\n\r\nSITCoop: https:\/\/github.com\/stayintarkov\/SIT.Aki-Server-Mod",
+            "name": "SIT MOD GitHub パッケージ",
+            "description": "SIT Aki サーバー協力 MOD の GitHub パッケージです。\r\n\r\nSITCoop: https:\/\/github.com\/stayintarkov\/SIT.Aki-Server-Mod",
             "env_variable": "SIT_PACKAGE",
             "default_value": "stayintarkov\/SIT.Aki-Server-Mod",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "SIT Mod asset name",
-            "description": "SIT mod release file's asset name.",
+            "name": "SIT MOD アセット名",
+            "description": "SIT MOD リリースファイルのアセット名です。",
             "env_variable": "SIT_NAME",
             "default_value": "SITCoop.tar.gz",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Github Username",
-            "description": "Optional, a github username to use to avoid Github API rate limit",
+            "name": "GitHub ユーザー名",
+            "description": "任意。GitHub API のレート制限を回避するために使用する GitHub ユーザー名です",
             "env_variable": "GITHUB_USER",
             "default_value": "",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Github OAuth token",
-            "description": "Optional, A Github OAuth token to use to avoid API rate limit.",
+            "name": "GitHub OAuth トークン",
+            "description": "任意。API レート制限回避のために使用する GitHub OAuth トークンです。",
             "env_variable": "GITHUB_OAUTH_TOKEN",
             "default_value": "",
             "user_viewable": false,

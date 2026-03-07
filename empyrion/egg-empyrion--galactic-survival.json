@@ -7,7 +7,7 @@
     "exported_at": "2025-01-25T15:56:40+00:00",
     "name": "Empyrion: Galactic Survival",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Build and explore in a true space sandbox survival adventure. Construct mighty capital vessels, sprawling planetary settlements, and vast space stations in your galactic journey to discover the mysteries of Empyrion!",
+    "description": "本格的な宇宙サンドボックス・サバイバルで建築と探索を楽しみましょう。銀河を巡る旅の中で、巨大な主力艦、広大な惑星拠点、そして壮大な宇宙ステーションを築き、Empyrion の謎を解き明かしてください。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
+            "name": "Windows インストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wine デバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Telnet Port",
-            "description": "DO NOT expose to the internet. Used internally for console connection.",
+            "name": "Telnet ポート",
+            "description": "インターネットへ公開しないでください。コンソール接続用の内部用途です。",
             "env_variable": "TELNET_PORT",
             "default_value": "1030",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Server name to show in the server list.",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示するサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Server info, can contain [b]bold[\/b] text or a [u][url=empyriongame.com]link[\/url][\/u].",
+            "name": "サーバー説明",
+            "description": "サーバー情報です。[b]太字[\/b] や [u][url=empyriongame.com]リンク[\/url][\/u] を含められます。",
             "env_variable": "SERVER_DESCRIPTION",
             "default_value": "An Empyrion Galactic Survival server hosted on Pterodactyl.",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Seed",
-            "description": "The seed determines how the world is procedurally generated - the same seed means the same world",
+            "name": "シード",
+            "description": "シードはワールドの自動生成内容を決定します。同じシードなら同じワールドになります",
             "env_variable": "GAME_SEED",
             "default_value": "1011345",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max number of players",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数です",
             "env_variable": "MAX_PLAYERS",
             "default_value": "8",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public",
-            "description": "Disable if you want to hide your server in the Server Browser. If server is not visible you can connect via IP or via joining a friend's game.",
+            "name": "公開設定",
+            "description": "サーバーブラウザーで非表示にしたい場合は無効化します。表示されない場合でも、IP 接続またはフレンド参加で接続できます。",
             "env_variable": "SERVER_PUBLIC",
             "default_value": "true",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required to enter the server.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -130,7 +130,7 @@
         },
         {
             "name": "Steam Beta ID",
-            "description": "Installs beta branch if specified.",
+            "description": "指定した場合、ベータブランチをインストールします。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allowed Blueprints",
-            "description": "None = Blueprint system completely disabled, StockOnly = only stock blueprints can be produced, All = all types allowed (default)",
+            "name": "許可ブループリント",
+            "description": "None = ブループリント機能を完全無効化、StockOnly = 標準ブループリントのみ生成可、All = すべて許可（既定）",
             "env_variable": "ALLOWED_BLUEPRINTS",
             "default_value": "All",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Heartbeat",
-            "description": "Timeout in seconds after which a playfield server process will be killed (and all players on it disconnected) if it does no longer send heartbeat messages to the dedi. Set 0 to disable this feature",
+            "name": "サーバーハートビート",
+            "description": "dedi へハートビート送信が止まったプレイフィールドサーバープロセスを、指定秒数後に停止（接続中プレイヤーも切断）します。0 で無効化します",
             "env_variable": "SERVER_HEARTBEAT",
             "default_value": "15",
             "user_viewable": true,
@@ -159,8 +159,8 @@
             "field_type": "text"
         },
         {
-            "name": "Timeout Booting PfServer",
-            "description": "Monitors booting playfield server processes, kills them if they time out (time in seconds, 0 = disabled). This is a conservative default, for faster servers 60 seconds should be ok",
+            "name": "PfServer 起動タイムアウト",
+            "description": "起動中のプレイフィールドサーバープロセスを監視し、タイムアウト時に停止します（秒指定、0 = 無効）。この既定値は安全寄りで、高速サーバーなら 60 秒程度でも問題ありません",
             "env_variable": "TIMEOUT_BOOTING_PF_SERVER",
             "default_value": "90",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Survival or Creative.",
+            "name": "ゲームモード",
+            "description": "Survival または Creative。",
             "env_variable": "GAME_MODE",
             "default_value": "Survival",
             "user_viewable": true,
@@ -179,7 +179,7 @@
             "field_type": "text"
         },
         {
-            "name": "EAC Active",
+            "name": "EAC 有効化",
             "description": "",
             "env_variable": "EAC_ACTIVE",
             "default_value": "true",
@@ -189,8 +189,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Allowed Size Class",
-            "description": "Restrict allowed Blueprint size class: restricted types are not allowed to be produced or spawned 1 = allow only small blueprints, ... , 10 = allow very large blueprints, ..., 50 = allow gigantic blueprints, ... , 0 = no limits. Warning: large blueprints can have very strong performance impact!",
+            "name": "許可サイズクラス上限",
+            "description": "許可するブループリントのサイズクラスを制限します。制限対象は生成・出現不可です。1 = 小型のみ許可、...、10 = 非常に大型まで許可、...、50 = 超巨大まで許可、...、0 = 無制限。注意: 大型ブループリントは性能へ大きな影響を与える場合があります。",
             "env_variable": "MAX_ALLOWED_SIZE_CLASS",
             "default_value": "10",
             "user_viewable": true,
@@ -199,8 +199,8 @@
             "field_type": "text"
         },
         {
-            "name": "Custom Scenario",
-            "description": "Enable custom scenario. Name of custom scenario from folder Content\\Scenarios.",
+            "name": "カスタムシナリオ",
+            "description": "カスタムシナリオを有効化します。Content\\Scenarios フォルダ内のシナリオ名を指定します。",
             "env_variable": "CUSTOM_SCENARIO",
             "default_value": "Default Multiplayer",
             "user_viewable": true,
@@ -209,8 +209,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "Determines name of the save game.",
+            "name": "セーブ名",
+            "description": "セーブゲーム名を決定します。",
             "env_variable": "GAME_NAME",
             "default_value": "DediGame",
             "user_viewable": true,

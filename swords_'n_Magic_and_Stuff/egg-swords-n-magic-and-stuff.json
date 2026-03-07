@@ -7,7 +7,7 @@
     "exported_at": "2025-11-08T12:12:07+01:00",
     "name": "Swords 'n Magic and Stuff",
     "author": "josdekurk@gmail.com",
-    "description": "Grab your friends and set out for adventure in a world of swords, magic, and stuff. Discover tons of cool loot, uncover hidden secrets, and meet new friends and foes along the way. Make your mark and find a place to call home in this cute, multiplayer, open world RPG",
+    "description": "フレンドと一緒に、剣と魔法と冒険に満ちた世界へ旅立ちましょう。大量の戦利品を見つけ、隠された秘密を解き明かし、旅の中で新たな仲間や敵に出会えます。かわいいマルチプレイヤーのオープンワールドRPGで、自分の居場所を築きましょう。",
     "features": null,
     "docker_images": {
         "Wine": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "App id",
+            "name": "App ID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "2058450",
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query port",
-            "description": "The port that Steam uses for clients to query the server (ping, etc)",
+            "name": "クエリポート",
+            "description": "Steamがクライアントからサーバー照会（ping等）に使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "This is the server name used for your server.\r\n\r\nYou must pick between 2 and 5 UNIQUE words (no duplicate words).\r\nThe words are case insensitive \r\nThe list of approved words changes can be found: `SNM2020\/Saved\/Logs\/Allowed-Words.txt`",
+            "name": "サーバー名",
+            "description": "サーバーで使用する名前です。\r\n\r\n2〜5個のユニークな単語（重複なし）を指定してください。\r\n大文字小文字は区別されません。\r\n使用可能語一覧: `SNM2020\/Saved\/Logs\/Allowed-Words.txt`",
             "env_variable": "SNM_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin steam id",
-            "description": "This the Steam ID of the owner\/admin of this server.",
+            "name": "管理者Steam ID",
+            "description": "このサーバーのオーナー\/管理者のSteam IDです。",
             "env_variable": "SNM_OWNER_STEAM_ID",
             "default_value": "",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server password",
-            "description": "This is the server password; it is disabled by default.",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードです。デフォルトでは無効です。",
             "env_variable": "SNM_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
-            "description": "You can specify the maximum number of players",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数を指定できます。",
             "env_variable": "SNM_MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reset time",
-            "description": "This is the number of days between resets.",
+            "name": "リセット間隔日数",
+            "description": "リセット間の経過日数です。",
             "env_variable": "SNM_DAYS_UNTIL_RESET",
             "default_value": "1",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reset time",
-            "description": "This is the local time of day when the server will\r\nreset. The format is HH:MM, and it is 24 hour format.\r\nMidnight => 00:00, 10:30AM => 10:30, 4:30PM => 16:30",
+            "name": "リセット時刻",
+            "description": "サーバーがリセットされるローカル時刻です。\r\n形式は HH:MM（24時間表記）です。\r\n真夜中 => 00:00、午前10:30 => 10:30、午後4:30 => 16:30",
             "env_variable": "SNM_RESET_TIME_OF_DAY",
             "default_value": "00:00",
             "user_viewable": true,

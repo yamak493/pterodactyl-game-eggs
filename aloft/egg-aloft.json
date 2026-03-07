@@ -7,7 +7,7 @@
     "exported_at": "2025-01-19T10:12:33+00:00",
     "name": "Aloft",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Soar the skies in Aloft, the co-op sandbox survival game set in a world of floating islands. Build any island into a skyship, your home in the clouds. Find lost knowledge, cure the fungal corruption, and brave the hurricane to restore the ecosystem.",
+    "description": "Aloft は、浮遊島の世界を舞台に空を駆ける協力型サンドボックスサバイバルゲームです。どの島でも空飛ぶ船に作り替え、雲上の拠点にできます。失われた知識を探し、菌類の汚染を浄化し、嵐を乗り越えて生態系を取り戻しましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "SRCDS_APPID",
-            "description": "Steam App ID to install",
+            "description": "Steam App ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "1660080",
             "user_viewable": false,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Winetricks",
-            "description": "",
+            "description": "サーバーの実行に必要な Winetricks コマンドです。変更しないでください。",
             "env_variable": "WINETRICKS_RUN",
             "default_value": "mono vcrun2022 wmp11 mf sound=disabled",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Name",
-            "description": "Map name is the name of the map and save file you want to create. No spaces allowed.",
+            "name": "マップ名",
+            "description": "作成するマップとセーブファイルの名前です。スペースは使用できません。",
             "env_variable": "SAVE_NAME",
             "default_value": "Aloft",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server to appear in the server list. Currently doesn't support spaces.",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です。現在はスペースに対応していません。",
             "env_variable": "SERVER_NAME",
             "default_value": "A_Pterodactyl_Hosted_Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Number of players allowed on the server at any one time. Max 8.",
+            "name": "最大プレイヤー数",
+            "description": "同時にサーバーへ接続できるプレイヤー数です。最大 8 人。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "8",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Creative Mode",
-            "description": "Whether the game is set in creative mode or not. Only applies when the world is first generated.",
+            "name": "クリエイティブモード",
+            "description": "ゲームをクリエイティブモードにするかどうか。ワールド初回生成時のみ適用されます。",
             "env_variable": "CREATIVE_MODE",
             "default_value": "0",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Number of Islands",
-            "description": "The number of islands in the map. Only applies when the world is first generated.",
+            "name": "島の数",
+            "description": "マップ内の島の数です。ワールド初回生成時のみ適用されます。",
             "env_variable": "NUM_ISLANDS",
             "default_value": "500",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin IDs",
-            "description": "One or more Steam64ID numbers. Multiple admin IDs can be provided by separating with spaces.",
+            "name": "管理者 ID",
+            "description": "1つ以上の Steam64ID を指定します。複数指定する場合はスペースで区切ってください。",
             "env_variable": "ADMIN_IDS",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Is Visible",
-            "description": "If your server is going to be visible through the lobby browser or just accessible through a code.",
+            "name": "公開設定",
+            "description": "サーバーをロビーブラウザーに表示するか、コード経由のみでアクセス可能にするかを設定します。",
             "env_variable": "IS_VISIBLE",
             "default_value": "true",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Private Islands",
-            "description": "If home island spawning is protected or not in game.",
+            "name": "プライベート島",
+            "description": "ゲーム内でホーム島のスポーン保護を有効にするかどうか。",
             "env_variable": "PRIVATE_ISLANDS",
             "default_value": "false",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam User",
-            "description": "Steam username used to install the server",
+            "name": "Steam ユーザー",
+            "description": "サーバーのインストールに使用する Steam ユーザー名",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam account password used to install the server",
+            "name": "Steam パスワード",
+            "description": "サーバーのインストールに使用する Steam アカウントのパスワード",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "Flag to install windows depot from steam",
+            "name": "Windows インストール",
+            "description": "Steam から Windows 用 depot をインストールするためのフラグ",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Path",
-            "description": "Stores the save path for use in the startup command",
+            "name": "セーブパス",
+            "description": "起動コマンドで使用するセーブデータのパスを保持します",
             "env_variable": "SAVE_PATH",
             "default_value": ".wine\/drive_c\/users\/container\/AppData\/LocalLow\/Astrolabe Interactive\/Aloft\/Data01\/Saves",
             "user_viewable": false,
@@ -171,7 +171,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wine デバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",

@@ -7,7 +7,7 @@
     "exported_at": "2025-06-16T15:45:13+02:00",
     "name": "Soldat 2",
     "author": "ptero@redbananaofficial.com",
-    "description": "Soldat 2 is a 2D deathmatch shooter with real guns, ragdoll violence and physics-based movement.",
+    "description": "Soldat 2は、実銃、ラグドール表現、物理ベースの移動を備えた2Dデスマッチシューターです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server name",
-            "description": "The name of your server (this will show in the master list) Do not include spaces",
+            "name": "サーバー名",
+            "description": "サーバー名です（マスターリストに表示されます）。スペースは含めないでください。",
             "env_variable": "SERVER_NAME",
             "default_value": "PterodactylServer",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The amount of players that can join your server at once. Maximum is 12.",
+            "name": "最大プレイヤー数",
+            "description": "同時に参加できるプレイヤー数です。最大12人。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "12",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "WebSockets Port",
-            "description": "WebSockets port (optional). Use 0 to disable.",
+            "name": "WebSocketsポート",
+            "description": "WebSockets用ポート（任意）。0で無効化します。",
             "env_variable": "WEBSOCKETS_PORT",
             "default_value": "0",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON WebSockets Port",
-            "description": "RCON WebSocket port (optional). Use 0 to disable.",
+            "name": "RCON WebSocketsポート",
+            "description": "RCON WebSocket用ポート（任意）。0で無効化します。",
             "env_variable": "RCON_PORT",
             "default_value": "0",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "The password for RCON access.",
+            "name": "RCONパスワード",
+            "description": "RCONアクセス用パスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "RconPassword",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Greet Message",
-            "description": "This message is shown to players when they join.",
+            "name": "歓迎メッセージ",
+            "description": "プレイヤー参加時に表示されるメッセージです。",
             "env_variable": "GREET_MESSAGE",
             "default_value": "Welcome! Be friendly and have fun!",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin PlayFab ID",
-            "description": "Your Playfab ID will show up in the server logs as 1 YOUR_NAME joined the server [YOUR_PLAYFAB_ID])",
+            "name": "管理者PlayFab ID",
+            "description": "あなたのPlayFab IDは、サーバーログに 1 YOUR_NAME joined the server [YOUR_PLAYFAB_ID]) の形式で表示されます。",
             "env_variable": "ADMIN_PLAYFAB_ID",
             "default_value": "IDHere",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If set, players must enter this password to join.",
+            "name": "サーバーパスワード",
+            "description": "設定すると、参加時にこのパスワード入力が必要になります。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "ServerPassword",
             "user_viewable": true,

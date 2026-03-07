@@ -7,7 +7,7 @@
     "exported_at": "2025-11-11T10:40:06+01:00",
     "name": "Enshrouded",
     "author": "ptero@redbananaofficial.com",
-    "description": "Enshrouded is a game of survival, crafting, and Action RPG combat, set within a sprawling voxel-based continent. As you journey across the mountains and deserts of an open world, you are free to choose your path and shape your destiny.",
+    "description": "Enshrouded は、広大なボクセルベースの大陸を舞台にした、サバイバル・クラフト・アクションRPG戦闘のゲームです。オープンワールドの山岳や砂漠を旅しながら、自分の道を選び、運命を切り拓けます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "[SERVER] Server Name",
-            "description": "Name of the server",
+            "name": "[SERVER] サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SRV_NAME",
             "default_value": "My Enshrouded Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Max Players",
-            "description": "Maximum number of players allowed",
+            "name": "[SERVER] 最大プレイヤー数",
+            "description": "許可する最大プレイヤー数です",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "[USER GROUP] ''Admin'' Group Password",
-            "description": "Password for the Admin user-group.\r\nPlayers using this password get:\r\n- canAccessInventories: true\r\n- canEditBase: true\r\n- canExtendBase: true\r\n- canKickBan: true.\r\nThe passwords for the usergroups can not all be the same\/empty\/only numerical",
+            "name": "[USER GROUP] ''Admin'' グループパスワード",
+            "description": "Admin ユーザーグループ用のパスワードです。\r\nこのパスワードを使うプレイヤーには以下権限が付与されます:\r\n- canAccessInventories: true\r\n- canEditBase: true\r\n- canExtendBase: true\r\n- canKickBan: true\r\nユーザーグループのパスワードは、すべて同一・空欄・数字のみにはできません",
             "env_variable": "SRV_PW",
             "default_value": "ChangeMe1",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "[USER GROUP] ''Friend'' Group Password",
-            "description": "Password for the Friend user-group.\r\nPlayers using this password get:\r\n- canAccessInventories: true\r\n- canEditBase: true\r\n- canExtendBase: true\r\n- canKickBan: false.\r\nThe passwords for the usergroups can not all be the same\/empty\/only numerical",
+            "name": "[USER GROUP] ''Friend'' グループパスワード",
+            "description": "Friend ユーザーグループ用のパスワードです。\r\nこのパスワードを使うプレイヤーには以下権限が付与されます:\r\n- canAccessInventories: true\r\n- canEditBase: true\r\n- canExtendBase: true\r\n- canKickBan: false\r\nユーザーグループのパスワードは、すべて同一・空欄・数字のみにはできません",
             "env_variable": "SRV_PW2",
             "default_value": "ChangeMe2",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "[USER GROUP] ''Guest'' Group Password",
-            "description": "Password for the Guest user-group.\r\nPlayers using this password get:\r\n- canAccessInventories: false\r\n- canEditBase: false\r\n- canExtendBase: false\r\n- canKickBan: false.\r\nThe passwords for the usergroups can not all be the same\/empty\/only numerical",
+            "name": "[USER GROUP] ''Guest'' グループパスワード",
+            "description": "Guest ユーザーグループ用のパスワードです。\r\nこのパスワードを使うプレイヤーには以下権限が付与されます:\r\n- canAccessInventories: false\r\n- canEditBase: false\r\n- canExtendBase: false\r\n- canKickBan: false\r\nユーザーグループのパスワードは、すべて同一・空欄・数字のみにはできません",
             "env_variable": "SRV_PW3",
             "default_value": "ChangeMe3",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[USER GROUP] ''Visitor'' Group Password",
-            "description": "Password for the Visitor user-group.\r\nPlayers using this password get:\r\n- canAccessInventories: false\r\n- canEditBase: false\r\n- canExtendBase: false\r\n- canKickBan: false\r\n- canEditWorld: false\r\nThe passwords for the usergroups can not all be the same\/empty\/only numerical",
+            "name": "[USER GROUP] ''Visitor'' グループパスワード",
+            "description": "Visitor ユーザーグループ用のパスワードです。\r\nこのパスワードを使うプレイヤーには以下権限が付与されます:\r\n- canAccessInventories: false\r\n- canEditBase: false\r\n- canExtendBase: false\r\n- canKickBan: false\r\n- canEditWorld: false\r\nユーザーグループのパスワードは、すべて同一・空欄・数字のみにはできません",
             "env_variable": "SRV_PW4",
             "default_value": "ChangeMe4",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SYSTEM] Windows Install",
-            "description": "Whether to install the Windows version",
+            "name": "[SYSTEM] Windows 版インストール",
+            "description": "Windows 版をインストールするかどうか",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SYSTEM] Auto Update",
-            "description": "Enable automatic updates on boot",
+            "name": "[SYSTEM] 自動更新",
+            "description": "起動時の自動更新を有効にします",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SYSTEM] Validate",
-            "description": "Validate the server files through Steam",
+            "name": "[SYSTEM] 検証",
+            "description": "Steam 経由でサーバーファイルを検証します",
             "env_variable": "VALIDATE",
             "default_value": "0",
             "user_viewable": true,

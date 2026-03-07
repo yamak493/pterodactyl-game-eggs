@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:33:33+00:00",
     "name": "Modrinth Generic",
     "author": "contact@chromozone.dev",
-    "description": "A generic egg for a Modrinth modpack.",
+    "description": "ModrinthのModpack向け汎用Eggです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Project ID",
-            "description": "This is the modpack project ID from the Modrinth site.\r\n\r\nFor example, the project ID of 'https:\/\/modrinth.com\/modpack\/fabulously-optimized\/' is 1KVo5zza",
+            "name": "ModpackプロジェクトID",
+            "description": "Modrinthサイト上のModpackプロジェクトIDです。\r\n\r\n例: 'https:\/\/modrinth.com\/modpack\/fabulously-optimized\/' のプロジェクトIDは 1KVo5zza です。",
             "env_variable": "PROJECT_ID",
             "default_value": "",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Modpack Version ID",
-            "description": "This is the modpack version ID from the Modrinth site.\r\n\r\nFor example, the version ID of 'https:\/\/modrinth.com\/modpack\/fabulously-optimized\/version\/4.7.4' is P9wA6exe",
+            "name": "ModpackバージョンID",
+            "description": "Modrinthサイト上のModpackバージョンIDです。\r\n\r\n例: 'https:\/\/modrinth.com\/modpack\/fabulously-optimized\/version\/4.7.4' のバージョンIDは P9wA6exe です。",
             "env_variable": "VERSION_ID",
             "default_value": "latest",
             "user_viewable": true,

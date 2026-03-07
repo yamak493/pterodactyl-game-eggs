@@ -7,7 +7,7 @@
   "exported_at": "2022-10-24T19:25:32+02:00",
   "name": "Veloren",
   "author": "parker@parkervcp.com",
-  "description": "Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.",
+  "description": "VelorenはRustで書かれたマルチプレイヤーのボクセルRPGです。Cube World、ゼルダの伝説 ブレス オブ ザ ワイルド、Dwarf Fortress、Minecraftなどに着想を得ています。",
   "features": null,
   "docker_images": {
     "Ubuntu": "ghcr.io/ptero-eggs/yolks:ubuntu_24.04"
@@ -29,8 +29,8 @@
   },
   "variables": [
     {
-      "name": "Version",
-      "description": "weekly = download the latest weekly build.\r\nnightly = download the latest nightly build.",
+      "name": "バージョン",
+      "description": "weekly = 最新のweeklyビルドをダウンロードします。\r\nnightly = 最新のnightlyビルドをダウンロードします。",
       "env_variable": "VERSION",
       "default_value": "weekly",
       "user_viewable": true,
@@ -39,8 +39,8 @@
       "field_type": "text"
     },
     {
-      "name": "Server name",
-      "description": "The name your server will be displaying",
+      "name": "サーバー名",
+      "description": "サーバーに表示される名前です。",
       "env_variable": "SERVER_NAME",
       "default_value": "A pterodactyl hosted server",
       "user_viewable": true,
@@ -49,8 +49,8 @@
       "field_type": "text"
     },
     {
-      "name": "Metrics port",
-      "description": "Game port +1",
+      "name": "メトリクスポート",
+      "description": "ゲームポート +1 です。",
       "env_variable": "METRICS_PORT",
       "default_value": "14005",
       "user_viewable": true,

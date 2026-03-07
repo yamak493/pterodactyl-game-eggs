@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:33:48+00:00",
     "name": "Glowstone",
     "author": "support@pterodactyl.io",
-    "description": "Glowstone is an open-source server implementation for Minecraft: Java Edition 1.12.2 and up.",
+    "description": "Glowstoneは、Minecraft: Java Edition 1.12.2以降向けのオープンソースサーバー実装です。",
     "features": null,
     "docker_images": {
         "Java 8": "ghcr.io\/ptero-eggs\/yolks:java_8",
@@ -34,8 +34,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "glowstone.jar",
             "user_viewable": true,
@@ -44,8 +44,8 @@
             "field_type": "text"
         },
         {
-            "name": "Glowstone Version",
-            "description": "The version of Glowstone to download. If it ends in SNAPSHOT, it will attempt to download from the maven repository.",
+            "name": "Glowstoneバージョン",
+            "description": "ダウンロードするGlowstoneのバージョンです。SNAPSHOTで終わる場合は、Mavenリポジトリからのダウンロードを試みます。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -54,8 +54,8 @@
             "field_type": "text"
         },
         {
-            "name": "GitHub User",
-            "description": "GitHub user to use for api calls.\r\n\r\nThis only needs to be set if you hit the GitHub API too often across multiple servers.",
+            "name": "GitHubユーザー",
+            "description": "API呼び出しに使用するGitHubユーザーです。\r\n\r\n複数サーバーでGitHub APIの呼び出し回数制限に達する場合にのみ設定が必要です。",
             "env_variable": "GITHUB_USER",
             "default_value": "",
             "user_viewable": false,
@@ -64,8 +64,8 @@
             "field_type": "text"
         },
         {
-            "name": "GitHub OAuth Token",
-            "description": "This can be either an OAuth or a Personal Access Token.\r\n\r\nThis is required for the install is you set a user.",
+            "name": "GitHub OAuthトークン",
+            "description": "OAuthトークンまたはPersonal Access Tokenのいずれかを指定できます。\r\n\r\nGitHubユーザーを設定する場合、インストール時に必須です。",
             "env_variable": "GITHUB_OAUTH_TOKEN",
             "default_value": "",
             "user_viewable": false,
@@ -74,8 +74,8 @@
             "field_type": "text"
         },
         {
-            "name": "GitHub Package",
-            "description": "The repository to download from.",
+            "name": "GitHubパッケージ",
+            "description": "ダウンロード元のリポジトリです。",
             "env_variable": "GITHUB_PACKAGE",
             "default_value": "GlowstoneMC\/Glowstone",
             "user_viewable": true,
@@ -84,8 +84,8 @@
             "field_type": "text"
         },
         {
-            "name": "Match",
-            "description": "",
+            "name": "一致条件",
+            "description": "ダウンロード対象ファイルを判定するための一致文字列です。",
             "env_variable": "MATCH",
             "default_value": "glowstone.jar",
             "user_viewable": false,

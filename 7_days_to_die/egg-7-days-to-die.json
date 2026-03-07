@@ -7,7 +7,7 @@
     "exported_at": "2023-02-20T02:33:05+01:00",
     "name": "7 Days To Die",
     "author": "kristoffer.norman@bahnhof.se",
-    "description": "7 days to die server",
+    "description": "7 Days to Die サーバー",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "Maximum Concurrent Players",
+            "name": "最大プレイヤー数",
+            "description": "同時接続できる最大プレイヤー数",
             "env_variable": "MAX_PLAYERS",
             "default_value": "8",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Difficulty",
-            "description": "0 - 5, 0=easiest, 5=hardest",
+            "name": "ゲーム難易度",
+            "description": "0 - 5（0=最も易しい、5=最も難しい）",
             "env_variable": "GAME_DIFFICULTY",
             "default_value": "2",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Source AppID",
-            "description": "This is the app id for 7dtd please no step on snek.",
+            "description": "ゲームのApp IDです。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "294420",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "This is to auto update the server on start.\r\n\r\nOptions are 0 or 1\r\nDefault is 1",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。\r\n\r\n指定値は 0 または 1\r\n既定値は 1",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "ld lib path",
-            "description": "This is really annoying that more games are doing this.",
+            "name": "LD ライブラリパス",
+            "description": "近年この設定を必要とするゲームが増えています。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Branch",
-            "description": "Installs beta branch if specified. For example, latest_experimental would install the latest experimental branch release. Requires a reinstall to switch branches properly.",
+            "name": "ベータブランチ",
+            "description": "指定した場合はベータブランチをインストールします。例: latest_experimental を指定すると最新の実験版ブランチをインストールします。ブランチを正しく切り替えるには再インストールが必要です。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Telnet Password",
-            "description": "Telnet listens on a local interface by default without a password. However, you can specify a password if  you wish to expose telnet.",
+            "name": "Telnet パスワード",
+            "description": "Telnet は既定でローカルインターフェイス上でパスワードなしで待ち受けます。外部公開する場合はパスワードを設定できます。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -101,7 +101,7 @@
             "field_type": "text"
         },
         {
-            "name": "Telnet Port",
+            "name": "Telnet ポート",
             "description": "",
             "env_variable": "TELNET_PORT",
             "default_value": "8081",
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Network Protocols",
-            "description": "Networking protocols that should NOT be used. Separated by comma. Possible values: LiteNetLib, SteamNetworking. Dedicated servers should disable SteamNetworking if there is no NAT router in between your users and the server or when port-forwarding is set up correctly. lets it empty if you are connecting your self hosted server behind a NAT",
+            "name": "ネットワークプロトコル",
+            "description": "使用しないネットワークプロトコルを指定します。カンマ区切り。指定可能値: LiteNetLib, SteamNetworking。ユーザーとサーバーの間に NAT ルーターがない場合、またはポートフォワーディングが正しく設定されている場合は、専用サーバーで SteamNetworking を無効化してください。NAT 配下でセルフホストサーバーに接続する場合は空欄のままにしてください。",
             "env_variable": "SERVER_DISABLED_NETWORK_PROTOCOLS",
             "default_value": "",
             "user_viewable": true,

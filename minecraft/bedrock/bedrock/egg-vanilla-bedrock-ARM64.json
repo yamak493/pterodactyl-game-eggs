@@ -7,7 +7,7 @@
     "exported_at": "2024-09-24T13:43:50-07:00",
     "name": "Vanilla Bedrock ARM64",
     "author": "josdekurk@gmail.com",
-    "description": "Bedrock Edition (also known as the Bedrock Version, Bedrock Codebase, Bedrock Engine or just Bedrock) refers to the multi-platform family of editions of Minecraft developed by Mojang AB, Microsoft Studios, 4J Studios, and SkyBox Labs. Prior to this term, as the engine originated with Pocket Edition, this entire product family was referred to as \"Pocket Edition\", \"MCPE\", or \"Pocket\/Windows 10 Edition\".",
+    "description": "Bedrock Editionは、Mojang AB、Microsoft Studios、4J Studios、SkyBox Labsが開発するMinecraftのマルチプラットフォーム版ファミリーを指します。以前はPocket Edition由来の名称として、\"Pocket Edition\"、\"MCPE\"、\"Pocket\/Windows 10 Edition\"とも呼ばれていました。",
     "features": [
         "pid_limit"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Bedrock Version",
-            "description": "The version of bedrock. (Ex. 1.7.0.13)\r\n\r\nDefault version is latest.",
+            "name": "Bedrockバージョン",
+            "description": "Bedrockのバージョンです。（例: 1.7.0.13）\r\n\r\nデフォルトは latest です。",
             "env_variable": "BEDROCK_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "ld lib path",
-            "description": "Dumb reasons to need this",
+            "name": "LDライブラリパス",
+            "description": "ライブラリ読み込みのために必要です。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name for the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVERNAME",
             "default_value": "Bedrock Dedicated Server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Allowed values: \"survival\", \"creative\", or \"adventure\"",
+            "name": "ゲームモード",
+            "description": "使用可能値: \"survival\"、\"creative\"、\"adventure\"",
             "env_variable": "GAMEMODE",
             "default_value": "survival",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Allowed values: \"peaceful\", \"easy\", \"normal\", or \"hard\"",
+            "name": "難易度",
+            "description": "使用可能値: \"peaceful\"、\"easy\"、\"normal\"、\"hard\"",
             "env_variable": "DIFFICULTY",
             "default_value": "easy",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow cheats",
-            "description": "If true then cheats like commands can be used.\r\n\r\nAllowed values: \"true\" or \"false\"",
+            "name": "チート許可",
+            "description": "true の場合、コマンドなどのチート機能を使用できます。\r\n\r\n使用可能値: \"true\" または \"false\"",
             "env_variable": "CHEATS",
             "default_value": "false",
             "user_viewable": true,

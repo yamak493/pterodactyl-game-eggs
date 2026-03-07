@@ -7,7 +7,7 @@
     "exported_at": "2025-09-14T17:11:56+02:00",
     "name": "SCUM",
     "author": "eggs@purpleflaghosting.com",
-    "description": "SCUM is the hardest and most realistic open world survival game, where every aspect of survival is done in important details. From inventory management, weapon maintenance, stamina management to the most detailed metabolism system ever created in a video game. Think you have what it takes? Deploy on the island and find out!",
+    "description": "SCUMは非常に高難易度でリアルなオープンワールドサバイバルゲームです。インベントリ管理、武器の整備、スタミナ管理、さらにゲーム史上屈指の詳細な代謝システムまで、あらゆる要素が緻密に作られています。あなたは生き残れるか？島へ降り立って確かめましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
+            "name": "サーバー説明",
             "description": "",
             "env_variable": "SERVER_DESCRIPTION",
             "default_value": "A Pterodactyl Hosted Server",
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Player limit",
+            "name": "最大プレイヤー数",
+            "description": "プレイヤー上限です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "64",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Playstyle",
-            "description": "PVP or PVE",
+            "name": "サーバープレイスタイル",
+            "description": "PVP または PVE を指定します。",
             "env_variable": "SERVER_PLAYSTYLE",
             "default_value": "PVP",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Enable automatic updates on server start",
+            "name": "自動更新",
+            "description": "サーバー起動時の自動更新を有効化します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -121,7 +121,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wineデバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -131,7 +131,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
@@ -142,7 +142,7 @@
         },
         {
             "name": "Xvfb",
-            "description": "Enable\/Disable Xvfb",
+            "description": "Xvfbの有効\/無効を設定します。",
             "env_variable": "XVFB",
             "default_value": "0",
             "user_viewable": false,

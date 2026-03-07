@@ -7,7 +7,7 @@
     "exported_at": "2025-08-22T09:45:14+00:00",
     "name": "Automobilista 2",
     "author": "admin@theorderofdarkness.eu",
-    "description": "Egg for Automobilista 2",
+    "description": "Automobilista 2",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Decide if you want to update your server",
+            "name": "自動更新",
+            "description": "サーバーを更新するかどうかを設定します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -59,7 +59,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wine デバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -69,7 +69,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "Ptero Default",
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "",
@@ -89,7 +89,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Port",
+            "name": "Steam ポート",
             "description": "",
             "env_variable": "STEAM_PORT",
             "default_value": "",
@@ -99,7 +99,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
@@ -109,7 +109,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",

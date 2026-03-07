@@ -7,7 +7,7 @@
     "exported_at": "2024-03-31T18:27:28-04:00",
     "name": "DDNet",
     "author": "imkringle@proton.me",
-    "description": "Want to play the hardest cooperative 2D platformer ever? Want to finish no map ever? Want to be in pain for hours and cry, getting nothing in return? Come play DDNet with a large community of other sufferers!",
+    "description": "最高難度の協力型 2D プラットフォーマーに挑みたいですか？マップをまったくクリアできなくても構いませんか？何時間も苦しんで泣いても、それでも挑戦したいですか？同じ苦難を楽しむ大規模コミュニティと一緒に DDNet を遊びましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Auto Update",
-            "description": "Updates server on startup",
+            "name": "自動更新",
+            "description": "起動時にサーバーを更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Steam AppID",
-            "description": "",
+            "description": "DDNetのSteam AppIDです",
             "env_variable": "SRCDS_APPID",
             "default_value": "412220",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam User",
-            "description": "Required for File Installation",
+            "name": "Steam ユーザー",
+            "description": "ファイルインストール時に必要です",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Required for File Installation",
+            "name": "Steam パスワード",
+            "description": "ファイルインストール時に必要です",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl DDNet Server",
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASS",
             "default_value": "",
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Map",
-            "description": "Map used on Startup - https:\/\/ddnet.org\/settingscommands\/#server-settings",
+            "name": "サーバーマップ",
+            "description": "起動時に使用するマップです - https:\/\/ddnet.org\/settingscommands\/#server-settings",
             "env_variable": "SERVER_MAP",
             "default_value": "Sunny Side Up",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public Server",
-            "description": "1 for Public \/\/ 0 for Private",
+            "name": "公開サーバー",
+            "description": "1 = 公開 \/\/ 0 = 非公開",
             "env_variable": "PUBLIC_SERVER",
             "default_value": "0",
             "user_viewable": true,
@@ -111,7 +111,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "64",

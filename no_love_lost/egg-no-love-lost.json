@@ -7,7 +7,7 @@
     "exported_at": "2024-03-15T11:03:18+01:00",
     "name": "No Love Lost",
     "author": "imkringle@proton.me",
-    "description": "Grab your ragtag crew & take up the Nectar Raiding trade on a dangerous planet that\u2019s become all the rage! In this PvPvE extraction game for 1-10 players, compete against enemy crews to harvest as much Nectar as possible before night falls. But watch out, you're not the only one roaming this planet!",
+    "description": "寄せ集めのクルーを率いて、話題沸騰中の危険な惑星でネクター略奪稼業に乗り出しましょう。1〜10人向けのPvPvE脱出ゲームで、夜が来る前にできるだけ多くのネクターを回収するため敵クルーと競い合います。ただし、この惑星を徘徊しているのはあなたたちだけではありません。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Auto Update",
-            "description": "Updates server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Windows Install",
+            "name": "[詳細設定] Windowsインストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam AppID",
+            "name": "Steam App ID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "2833050",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",

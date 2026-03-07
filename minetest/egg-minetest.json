@@ -7,7 +7,7 @@
     "exported_at": "2025-01-25T22:16:18+00:00",
     "name": "Minetest",
     "author": "support@pterodactyl.io",
-    "description": "An open source voxel game engine. Play one of our many games, mod a game to your liking, make your own game, or play on a multiplayer server.",
+    "description": "オープンソースのボクセルゲームエンジンです。多数のゲームを遊んだり、好みに合わせて改造したり、自分でゲームを作成したり、マルチプレイサーバーで遊んだりできます。",
     "features": null,
     "docker_images": {
         "Minetest": "ghcr.io\/ptero-eggs\/games:minetest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Name of the admin player.",
-            "description": "When running a server, clients connecting with this name are admins.",
+            "name": "管理者プレイヤー名",
+            "description": "サーバー実行時、この名前で接続したクライアントは管理者になります。",
             "env_variable": "SERVER_ADMIN_NAME",
             "default_value": "changeme",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "Name of the server, to be displayed when players join and in the serverlist.",
+            "name": "サーバー名",
+            "description": "プレイヤー参加時およびサーバー一覧に表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Minetest server",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Description of the server",
-            "description": "Description of server, to be displayed when players join and in the serverlist.",
+            "name": "サーバーの説明",
+            "description": "プレイヤー参加時およびサーバー一覧に表示されるサーバー説明です。",
             "env_variable": "SERVER_DESC",
             "default_value": "mine here",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Domain name of the server",
-            "description": "Domain name of server, to be displayed in the serverlist.",
+            "name": "サーバーのドメイン名",
+            "description": "サーバー一覧に表示されるサーバーのドメイン名です。",
             "env_variable": "SERVER_DOMAIN",
             "default_value": "game.minetest.net",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server url",
-            "description": "Homepage of server, to be displayed in the serverlist.",
+            "name": "サーバーURL",
+            "description": "サーバー一覧に表示されるサーバーのホームページURLです。",
             "env_variable": "SERVER_URL",
             "default_value": "https:\/\/minetest.net",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Show in server list",
-            "description": "Automatically report to the serverlist.",
+            "name": "サーバー一覧に表示",
+            "description": "サーバー一覧へ自動的に通知します。",
             "env_variable": "SERVER_ANNOUNCE",
             "default_value": "true",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Announce serverlist",
-            "description": "Announce to this serverlist.",
+            "name": "通知先サーバー一覧",
+            "description": "このサーバー一覧に通知します。",
             "env_variable": "SERVER_LIST_URL",
             "default_value": "servers.minetest.net",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "message of the day",
-            "description": "Message of the day displayed to players connecting.",
+            "name": "今日のメッセージ",
+            "description": "接続するプレイヤーに表示される今日のメッセージです。",
             "env_variable": "SERVER_MOTD",
             "default_value": "",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players that can be connected simultaneously.",
+            "name": "最大プレイヤー数",
+            "description": "同時接続できるプレイヤーの最大人数です。",
             "env_variable": "SERVER_MAX_USERS",
             "default_value": "15",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server password",
-            "description": "New users need to input this password.",
+            "name": "サーバーパスワード",
+            "description": "新規ユーザーはこのパスワードの入力が必要です。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "World name",
-            "description": "The name of the world",
+            "name": "ワールド名",
+            "description": "ワールドの名前です。",
             "env_variable": "WORLD_NAME",
             "default_value": "world",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game name",
-            "description": "Default game when creating a new world. Only change if you have already uploaded the game!",
+            "name": "ゲーム名",
+            "description": "新しいワールド作成時のデフォルトゲームです。ゲームをアップロード済みの場合のみ変更してください。",
             "env_variable": "DEFAULT_GAME",
             "default_value": "minetest",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "Community download",
-            "description": "Download a community game.\r\nNeeds COMMUNITY_GAME_NAME and COMMUNITY_GAME_AUTOR",
+            "name": "コミュニティゲームのダウンロード",
+            "description": "コミュニティゲームをダウンロードします。\r\nCOMMUNITY_GAME_NAME と COMMUNITY_GAME_AUTOR が必要です。",
             "env_variable": "COMMUNITY_DOWNLOAD",
             "default_value": "1",
             "user_viewable": true,
@@ -159,8 +159,8 @@
             "field_type": "text"
         },
         {
-            "name": "Community game name",
-            "description": "Case sensitive!\r\nExample: https:\/\/content.minetest.net\/packages\/Wuzzy\/mineclone2\/\r\nthen this should be mineclone2",
+            "name": "コミュニティゲーム名",
+            "description": "大文字小文字を区別します。\r\n例: https:\/\/content.minetest.net\/packages\/Wuzzy\/mineclone2\/\r\nこの場合は mineclone2 を指定します。",
             "env_variable": "COMMUNITY_GAME_NAME",
             "default_value": "minetest_game",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "Community game author",
-            "description": "Case-sensitive!\r\nExample: https:\/\/content.minetest.net\/packages\/Wuzzy\/mineclone2\/\r\nthen this should be Wuzzy",
+            "name": "コミュニティゲーム作者",
+            "description": "大文字小文字を区別します。\r\n例: https:\/\/content.minetest.net\/packages\/Wuzzy\/mineclone2\/\r\nこの場合は Wuzzy を指定します。",
             "env_variable": "COMMUNITY_GAME_AUTOR",
             "default_value": "Minetest",
             "user_viewable": true,
@@ -179,8 +179,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game PATH",
-            "description": "",
+            "name": "ゲームPATH",
+            "description": "ゲームのインストール先です。変更しないでください。",
             "env_variable": "MINETEST_GAME_PATH",
             "default_value": "\/home\/container\/.minetest\/games",
             "user_viewable": false,

@@ -7,7 +7,7 @@
     "exported_at": "2025-10-28T17:57:19+01:00",
     "name": "NeoForge",
     "author": "glorantv@icloud.com",
-    "description": "NeoForge Server. NeoForge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other. NeoForge is a fork of Minecraft Forge.",
+    "description": "NeoForgeサーバーです。NeoForgeはMOD開発用API（Application Programming Interface）で、MODの作成を容易にし、MOD同士の互換性を確保しやすくします。NeoForgeはMinecraft Forgeのフォークです。",
     "features": [
         "eula",
         "java_version",
@@ -35,8 +35,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft you want to install for.\r\n\r\nLeaving latest will install the latest version.",
+            "name": "Minecraftバージョン",
+            "description": "インストール対象のMinecraftバージョンです。\r\n\r\nlatestのままにすると最新バージョンがインストールされます。",
             "env_variable": "MC_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -45,8 +45,8 @@
             "field_type": "text"
         },
         {
-            "name": "NeoForge Version",
-            "description": "The full exact version.\r\n\r\nEx. 20.4.194 \r\nhttps:\/\/projects.neoforged.net\/neoforged\/neoforge\r\n\r\nIf it fails to download the server files it will fail to install.",
+            "name": "NeoForgeバージョン",
+            "description": "完全一致の正確なバージョンを指定します。\r\n\r\n例: 20.4.194 \r\nhttps:\/\/projects.neoforged.net\/neoforged\/neoforge\r\n\r\nサーバーファイルのダウンロードに失敗した場合、インストールも失敗します。",
             "env_variable": "NEOFORGE_VERSION",
             "default_value": "",
             "user_viewable": true,

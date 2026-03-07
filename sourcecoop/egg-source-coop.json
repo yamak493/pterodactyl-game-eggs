@@ -7,7 +7,7 @@
     "exported_at": "2024-05-15T11:48:44-07:00",
     "name": "SourceCoop",
     "author": "red_thirten@yahoo.com",
-    "description": "SourceCoop is a cooperative server-side-only mod for multi-player Source Engine games (like Black Mesa), that enables players to play together on single-player campaigns or maps. This Egg currently supports official Black Mesa maps only, but can be easily modified to support more (see Egg README for details).",
+    "description": "SourceCoopは、Source Engine系マルチプレイヤーゲーム（Black Mesaなど）向けのサーバーサイド専用協力プレイModです。シングルプレイヤー用キャンペーンやマップを複数人で遊べるようにします。現在このEggは公式Black Mesaマップのみ対応ですが、簡単に拡張可能です（詳細はEgg READMEを参照）。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Server name to show in server list.",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Black Mesa: Coop",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed on your game server.",
+            "name": "最大プレイヤー数",
+            "description": "ゲームサーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password required to join the server. Set to 0 to have no password.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。パスワードなしにする場合は 0 を設定します。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "0",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Starting Map",
-            "description": "Map name for the server to load when it starts. Please use the following link for a guide on Black Mesa's map names: https:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=1920599249",
+            "name": "開始マップ",
+            "description": "サーバー起動時に読み込むマップ名です。Black Mesaマップ名ガイド: https:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=1920599249",
             "env_variable": "STARTING_MAP",
             "default_value": "bm_c0a0a",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Friendly Fire",
-            "description": "(1 Enable | 0 Disable)",
+            "name": "フレンドリーファイア有効化",
+            "description": "(1 有効 | 0 無効)",
             "env_variable": "FRIENDLY_FIRE",
             "default_value": "0",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Enable `mod_forcetouchdata`",
-            "description": "Enables pre-caching of map data (eg. models, etc.). Disabling this may resolve crashing\/hanging on certain maps (namely `bm_c4a4a` - Nihilanth), but may cause performance issues on other maps.",
+            "name": "[Advanced] `mod_forcetouchdata` を有効化",
+            "description": "マップデータ（モデル等）の事前キャッシュを有効化します。無効化すると一部マップ（例: `bm_c4a4a` - Nihilanth）のクラッシュ\/フリーズが改善する場合がありますが、他マップで性能問題が出る可能性があります。",
             "env_variable": "MOD_FORCETOUCHDATA",
             "default_value": "1",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Black Mesa Dedicated Server App ID",
-            "description": "Steam App ID used for installation and updates. Rarely needs to be changed.",
+            "name": "[Advanced] Black Mesa専用サーバー App ID",
+            "description": "インストールと更新に使用する Steam App ID です。通常は変更不要です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "346680",
             "user_viewable": false,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Update Black Mesa Dedicated Server",
-            "description": "Checks for any Black Mesa dedicated server updates on startup, and updates if necessary. This is off by default, because an update of the Black Mesa server will typically require an update of SourceCoop as well (which requires re-installing the server). An update of SourceCoop may also require an update of Metamod and SourceMod (see these settings for more info). Note: Clients that have updated may not be able to join an outdated server. (1 Enable | 0 Disable)",
+            "name": "[Advanced] Black Mesa専用サーバーを更新",
+            "description": "起動時にBlack Mesa専用サーバー更新を確認し、必要なら更新します。通常はSourceCoopやMetamod\/SourceMod側の更新も必要になりやすいため既定では無効です。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] SourceCoop Release Version Tag",
-            "description": "Which SourceCoop release (based on tag) to download from https:\/\/github.com\/ampreeT\/SourceCoop\/releases during install\/re-install. Note: If using `latest`, ensure you have specified the recommended Metamod and SourceMod builds (see these settings for more details).",
+            "name": "[Advanced] SourceCoopリリースバージョンタグ",
+            "description": "インストール\/再インストール時に https:\/\/github.com\/ampreeT\/SourceCoop\/releases からダウンロードするSourceCoopリリース（タグ指定）です。`latest` を使う場合は推奨Metamod\/SourceModビルドを設定してください。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] SourceCoop Release Build Tag",
-            "description": "Which SourceCoop build (based on keyword in release asset) to download from https:\/\/github.com\/ampreeT\/SourceCoop\/releases during install\/re-install. Note: Only Black Mesa is currently supported.",
+            "name": "[Advanced] SourceCoopリリースビルドタグ",
+            "description": "インストール\/再インストール時に https:\/\/github.com\/ampreeT\/SourceCoop\/releases からダウンロードするSourceCoopビルド（アセット名キーワード指定）です。現在はBlack Mesaのみ対応です。",
             "env_variable": "MATCH",
             "default_value": "bms",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] Metamod:Source Build",
-            "description": "Which Metamod:Source 1.11 build number to download during install\/re-install. May need to be changed if SourceCoop updates, but otherwise rarely needs to be changed. Refer to the following link for the latest recommended build: https:\/\/github.com\/ampreeT\/SourceCoop?tab=readme-ov-file#installation-guide",
+            "name": "[Advanced] Metamod:Sourceビルド",
+            "description": "インストール\/再インストール時にダウンロードする Metamod:Source 1.11 のビルド番号です。SourceCoop更新時に変更が必要な場合があります。推奨ビルド: https:\/\/github.com\/ampreeT\/SourceCoop?tab=readme-ov-file#installation-guide",
             "env_variable": "MMS_BUILD",
             "default_value": "1148",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Advanced] SourceMod Build",
-            "description": "Which SourceMod 1.11 build number to download during install\/re-install. May need to be changed if SourceCoop updates, but otherwise rarely needs to be changed. Refer to the following link for the latest recommended build: https:\/\/github.com\/ampreeT\/SourceCoop?tab=readme-ov-file#installation-guide",
+            "name": "[Advanced] SourceModビルド",
+            "description": "インストール\/再インストール時にダウンロードする SourceMod 1.11 のビルド番号です。SourceCoop更新時に変更が必要な場合があります。推奨ビルド: https:\/\/github.com\/ampreeT\/SourceCoop?tab=readme-ov-file#installation-guide",
             "env_variable": "SM_BUILD",
             "default_value": "6960",
             "user_viewable": true,

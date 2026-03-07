@@ -7,7 +7,7 @@
     "exported_at": "2023-05-17T20:11:37+02:00",
     "name": "Liteloader Bedrock Dedicated Server",
     "author": "frizth_tatierra@informatics.edu.ph",
-    "description": "LiteLoaderBDS - Epoch-making & Cross-language Bedrock Dedicated Servers Plugin Loader\r\n\r\nLiteLoaderBDS is an unofficial plugin loader that provides basic API support for Bedrock Dedicated Server, with a massive API, lots of packed utility interfaces, a rich event system and powerful basic interface support.",
+    "description": "LiteLoaderBDS - Bedrock Dedicated Server向けのクロス言語プラグインローダーです。\r\n\r\nLiteLoaderBDSは、Bedrock Dedicated Serverへ基本APIサポートを提供する非公式プラグインローダーで、豊富なAPI、ユーティリティ、イベントシステムを備えています。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Bedrock Dedicated Server Version",
-            "description": "Insert BDS Version",
+            "name": "Bedrock Dedicated Serverバージョン",
+            "description": "BDSバージョンを入力します。",
             "env_variable": "BDS_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Liteloader Version",
-            "description": "Insert Liteloader Version from Github Releases",
+            "name": "Liteloaderバージョン",
+            "description": "GitHub Releases のLiteloaderバージョンを入力します。",
             "env_variable": "LL_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name for the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVERNAME",
             "default_value": "Bedrock Dedicated Server",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Allowed values: \"survival\", \"creative\", or \"adventure\"",
+            "name": "ゲームモード",
+            "description": "使用可能値: \"survival\"、\"creative\"、\"adventure\"",
             "env_variable": "GAMEMODE",
             "default_value": "survival",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Allowed values: \"peaceful\", \"easy\", \"normal\", or \"hard\"",
+            "name": "難易度",
+            "description": "使用可能値: \"peaceful\"、\"easy\"、\"normal\"、\"hard\"",
             "env_variable": "DIFFICULTY",
             "default_value": "easy",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
-            "description": "Maximum players to join on the server",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数です。",
             "env_variable": "MAXPLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "World\/Level name to use for the server",
+            "name": "ワールド名",
+            "description": "サーバーで使用するワールド\/レベル名です。",
             "env_variable": "WORLDNAME",
             "default_value": "Bedrock level",
             "user_viewable": true,

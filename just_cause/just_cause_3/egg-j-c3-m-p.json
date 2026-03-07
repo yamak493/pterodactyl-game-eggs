@@ -7,7 +7,7 @@
     "exported_at": "2025-12-28T17:10:03+01:00",
     "name": "Just Cause 3 Multiplayer",
     "author": "brainshead@gmail.com",
-    "description": "Dedicated server for Just Cause 3 Multiplayer (JC3:MP)  Using the Just Cause\u2122 3: Multiplayer Mod.",
+    "description": "Just Cause 3 Multiplayer（JC3:MP）用の専用サーバーです。Just Cause\u2122 3: Multiplayer Mod を使用します。",
     "features": null,
     "docker_images": {
         "Ubuntu": "ghcr.io\/ptero-eggs\/yolks:ubuntu"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Steam User",
-            "description": "This is a required setting and cannot be set to anonymous.",
+            "name": "Steam ユーザー",
+            "description": "必須設定です。anonymous には設定できません。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steam パスワード",
+            "description": "Steam ユーザーのパスワードです",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam account auth code, required if 2FA is enabled",
+            "name": "Steam 認証コード",
+            "description": "Steam アカウント認証コードです。2FA 有効時は必須です",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "Automatically update the game server",
+            "name": "サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
-            "description": "Maximum number of players allowed on the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYER",
             "default_value": "32",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Set server password",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードを設定します",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Port",
-            "description": "port used for Steam communication (default is 4202)",
+            "name": "Steam ポート",
+            "description": "Steam 通信に使用するポートです（既定値は 4202）",
             "env_variable": "STEAM_PORT",
             "default_value": "4202",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tickrate",
-            "description": "maximum FPS for the server (default is 60)",
+            "name": "ティックレート",
+            "description": "サーバーの最大 FPS です（既定値は 60）",
             "env_variable": "TICK_RATE",
             "default_value": "60",
             "user_viewable": false,
@@ -109,7 +109,7 @@
             "field_type": "text"
         },
         {
-            "name": "QUERY PORT",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "",
@@ -119,7 +119,7 @@
             "field_type": "text"
         },
         {
-            "name": "HTTP_PORT",
+            "name": "HTTP ポート",
             "description": "",
             "env_variable": "HTTP_PORT",
             "default_value": "",
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Server name shown in the browser.",
+            "name": "サーバー名",
+            "description": "ブラウザーに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Server Description.",
+            "name": "サーバー説明",
+            "description": "サーバーの説明です。",
             "env_variable": "SERVER_DESCRIPTION",
             "default_value": "",
             "user_viewable": true,

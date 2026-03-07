@@ -7,7 +7,7 @@
     "exported_at": "2025-07-16T10:03:10+00:00",
     "name": "Ark: Survival Evolved",
     "author": "dev@shepper.fr",
-    "description": "As a man or woman stranded, naked, freezing, and starving on the unforgiving shores of a mysterious island called ARK, use your skill and cunning to kill or tame and ride the plethora of leviathan dinosaurs and other primeval creatures roaming the land. Hunt, harvest resources, craft items, grow crops, research technologies, and build shelters to withstand the elements and store valuables, all while teaming up with (or preying upon) hundreds of other players to survive, dominate... and escape! \u2014 Gamepedia: ARK",
+    "description": "ARK と呼ばれる謎の島の過酷な海岸に、裸で寒さと飢えに苦しむ状態で取り残されたあなたは、知恵と技術を駆使して大群の巨大恐竜や太古の生物を狩るか手なずけ、騎乗して生き抜かなければなりません。狩猟、資源採取、クラフト、農業、技術研究、拠点建設を行い、他の多数のプレイヤーと協力するか敵対しながら、生存し、支配し、そして脱出を目指します。 — Gamepedia: ARK",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Password",
-            "description": "If specified, players must provide this password to join the server.",
+            "name": "サーバーパスワード",
+            "description": "指定した場合、プレイヤーはこのパスワードを入力しないとサーバーに参加できません。",
             "env_variable": "ARK_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "If specified, players must provide this password (via the in-game console) to gain access to administrator commands on the server.",
+            "name": "管理者パスワード",
+            "description": "指定した場合、プレイヤーはこのパスワードを（ゲーム内コンソール経由で）入力して管理者コマンドにアクセスします。",
             "env_variable": "ARK_ADMIN_PASSWORD",
             "default_value": "PleaseChangeMe",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Map",
-            "description": "Available Maps: TheIsland, TheCenter, Ragnarok, ScorchedEarth_P, Aberration_P, Extinction, Valguero_P, Genesis, CrystalIsles, Gen2, Fjordur",
+            "name": "サーバーマップ",
+            "description": "利用可能マップ: TheIsland, TheCenter, Ragnarok, ScorchedEarth_P, Aberration_P, Extinction, Valguero_P, Genesis, CrystalIsles, Gen2, Fjordur",
             "env_variable": "SERVER_MAP",
             "default_value": "TheIsland",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "ARK server name",
+            "name": "サーバー名",
+            "description": "ARK サーバー名",
             "env_variable": "SESSION_NAME",
             "default_value": "A Pterodactyl Hosted ARK Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Port",
-            "description": "ARK rcon port used by rcon tools.",
+            "name": "RCON ポート",
+            "description": "RCON ツールで使用する ARK の RCON ポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "27020",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "ARK query port used by steam server browser and ark client server browser.",
+            "name": "クエリポート",
+            "description": "Steam サーバーブラウザーおよび ARK クライアントのサーバーブラウザーで使用するクエリポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "Enable auto-updating from steam",
+            "name": "サーバー自動更新",
+            "description": "Steam からの自動更新を有効化します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Battle Eye",
-            "description": "Enable BattleEye",
+            "name": "BattleEye",
+            "description": "BattleEye を有効化",
             "env_variable": "BATTLE_EYE",
             "default_value": "1",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "App ID",
-            "description": "ARK steam app id for auto updates. Leave blank to avoid auto update.",
+            "description": "自動更新用の ARK Steam App ID です。自動更新を無効化する場合は空欄にしてください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "376030",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments",
-            "description": "Specify additional launch parameters such as -crossplay. You must include a dash - and separate each parameter with space: -crossplay -exclusivejoin",
+            "name": "追加引数",
+            "description": "-crossplay などの追加起動パラメータを指定します。各パラメータは先頭に - を付け、スペースで区切ってください: -crossplay -exclusivejoin",
             "env_variable": "ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Mods",
-            "description": "Specifies the order and which mods are loaded. ModIDs need to be comma-separated such as: ModID1,ModID2",
+            "name": "MOD",
+            "description": "読み込む MOD と読み込み順を指定します。ModID はカンマ区切りで入力してください（例: ModID1,ModID2）。",
             "env_variable": "MOD_ID",
             "default_value": "",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Specifies the maximum amount of players able to join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "12",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Branch",
-            "description": "Installs beta branch if specified.",
+            "name": "ベータブランチ",
+            "description": "指定した場合はベータブランチをインストールします。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,

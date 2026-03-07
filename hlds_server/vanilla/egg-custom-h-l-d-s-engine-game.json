@@ -7,7 +7,7 @@
     "exported_at": "2023-12-16T13:44:10+01:00",
     "name": "Custom HLDS Engine Game",
     "author": "parker@parkervcp.com",
-    "description": "This option allows modifying the startup arguments and other details to run a custom HLDS based game on the panel.",
+    "description": "このオプションでは、起動引数や各種設定を変更して、パネル上でカスタム HLDS ベースゲームを実行できます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using HLDS.\r\n\r\nThe HLDS server ID is 90. This should not be changed.",
+            "name": "ゲーム ID",
+            "description": "HLDS でダウンロード・実行するゲームに対応する ID です。\r\n\r\nHLDS サーバー ID は 90 です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "90",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "The name corresponding to the game to download and run using HLDS.\r\n\r\nall the HLDS server names are here - https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Server_Name_Enumeration",
+            "name": "ゲーム名",
+            "description": "HLDS でダウンロード・実行するゲームに対応する名称です。\r\n\r\nHLDS サーバー名一覧: https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Server_Name_Enumeration",
             "env_variable": "HLDS_GAME",
             "default_value": "cstrike",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "The default map for the server.",
+            "name": "マップ",
+            "description": "サーバーのデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "de_dust2",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "VAC port",
-            "description": "Specifies the VAC port the server should use. Default is 26900.",
+            "name": "VAC ポート",
+            "description": "サーバーが使用する VAC ポートを指定します。既定値は 26900 です。",
             "env_variable": "VAC_PORT",
             "default_value": "26900",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Username",
-            "description": "Steam account used to download files (Defaults to anonymous)",
+            "name": "Steam ユーザー名",
+            "description": "ファイルダウンロードに使用する Steam アカウントです（既定は anonymous）。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Password for Steam account",
+            "name": "Steam パスワード",
+            "description": "Steam アカウントのパスワードです",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam Guard 2FA code for account",
+            "name": "Steam 認証コード",
+            "description": "アカウント用 Steam Guard 2FA コードです",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch",
-            "description": "Leave empty for the public branch, for the legacy version select steam_legacy.",
+            "name": "ベータブランチ",
+            "description": "公開ブランチは空欄のままにします。レガシー版は steam_legacy を選択します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update on restart",
+            "name": "自動更新",
+            "description": "再起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,

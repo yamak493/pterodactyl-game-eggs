@@ -7,7 +7,7 @@
     "exported_at": "2024-11-14T17:57:27+02:00",
     "name": "Tekkit",
     "author": "contact@zennodes.dk",
-    "description": "Tekkit is set to reignite the same sort of wonder and awe that we all received from booting up Minecraft for the first time. With the skies open, the moon ready to be colonized (by force if need be) and dimensional mysteries to be plied, with tesseracts to be networked, \u201cmeat\u201d to be processed, items to be digitized, and power suits to be manufactured, there is virtually limitless engineering projects to be assembled.",
+    "description": "Tekkitは、初めてMinecraftを起動したときに感じたような驚きと感動を再び呼び起こすために作られています。広がる空、（必要なら力ずくでも）植民地化できる月、次元の謎、ネットワーク化するテッセラクト、処理される\"meat\"、デジタル化されるアイテム、製造されるパワードスーツなど、組み上げられる工学プロジェクトはほぼ無限です。",
     "features": [
         "eula",
         "java_version",
@@ -33,7 +33,7 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
+            "name": "Modpackバージョン",
             "description": "",
             "env_variable": "MODPACK_VERSION",
             "default_value": "v1.2.9g-2",

@@ -7,7 +7,7 @@
     "exported_at": "2024-03-24T15:18:00+01:00",
     "name": "Sons Of The Forest",
     "author": "eggs@goover.dev",
-    "description": "Sons of the Forest is a horror survival game and sequel to The Forest by Endnight Games, Ltd.. Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape. Craft, build, and struggle to survive, alone or with friends.",
+    "description": "Sons of the Forestは、Endnight Games, Ltd.による『The Forest』の続編となるホラーサバイバルゲームです。行方不明の大富豪を捜して孤島に向かったあなたは、食人族がはびこる地獄のような環境に放り込まれます。クラフトし、建築し、ソロでもフレンドとも生き延びましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "QueryPort",
-            "description": "UDP port used by Steam to list the server and enable the discovery services.",
+            "name": "クエリポート",
+            "description": "Steamがサーバーを一覧表示し、検出サービスを有効化するためのUDPポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "BlobSyncPort",
-            "description": "BlobSyncPort UDP port used by the BlobSync system to initialize game systems and exchange data.",
+            "name": "BlobSyncポート",
+            "description": "BlobSyncシステムがゲームシステム初期化とデータ交換に使用するUDPポートです。",
             "env_variable": "BLOBSYNC_PORT",
             "default_value": "9700",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server visible in the server list, and in the Steam contacts.",
+            "name": "サーバー名",
+            "description": "サーバー一覧およびSteam連絡先に表示されるサーバー名です。",
             "env_variable": "SRV_NAME",
             "default_value": "Pterodactyl hosted Server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum number of players allowed simultaneously on the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに同時参加できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
+            "name": "パスワード",
             "description": "",
             "env_variable": "SRV_PW",
             "default_value": "changeme",
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Sets the difficulty game mode when creating a new save. This parameter is ignored if loading a save (save mode set to \u201ccontinue\u201d with a save that exists on the slot). If the game mode is set to \u201ccustom\u201d, then the custom game mode settings will be read from CustomGameModeSettings option, described later.",
+            "name": "ゲームモード",
+            "description": "新規セーブ作成時の難易度ゲームモードを設定します。既存セーブを読み込む場合（セーブモードが \u201ccontinue\u201d でスロットにセーブがある場合）はこの値は無視されます。ゲームモードを \u201ccustom\u201d にした場合は、後述の CustomGameModeSettings の設定が適用されます。",
             "env_variable": "GAME_MODE",
             "default_value": "normal",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Skip network Test",
-            "description": "if you have problems to connect to your server, set this to TRUE",
+            "name": "ネットワークテストをスキップ",
+            "description": "サーバーに接続できない問題がある場合は TRUE に設定してください。",
             "env_variable": "SKIP_TESTS",
             "default_value": "false",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Slot",
-            "description": "If you uploaded an existing save from your PC you can enter the save slot number here.",
+            "name": "セーブスロット",
+            "description": "PCから既存セーブをアップロードした場合、ここにセーブスロット番号を入力できます。",
             "env_variable": "SAVE_SLOT",
             "default_value": "0000000001",
             "user_viewable": true,

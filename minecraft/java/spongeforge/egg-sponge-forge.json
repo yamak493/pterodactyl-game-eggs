@@ -7,7 +7,7 @@
     "exported_at": "2025-11-06T06:47:00+00:00",
     "name": "SpongeForge",
     "author": "ptero@redbananaofficial.com",
-    "description": "A community-driven open source Minecraft: Java Edition modding platform.",
+    "description": "コミュニティ主導のオープンソースMinecraft: Java Edition向けMOD開発プラットフォームです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the Jarfile to use when running Forge Mod.",
+            "name": "サーバーJarファイル",
+            "description": "Forge Mod実行時に使用するJarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Spongeforge Minecraft Version",
-            "description": "Either use a full version such as: 1.20.6-50.0.22-11.0.0-RC1633 to fetch an exact version\r\nOr just use the Minecraft version such as: 1.20.6, 1.19.4, etc. to get the recommended version\r\nSupported versions can be found here: https:\/\/spongepowered.org\/downloads\/spongeforge",
+            "name": "Spongeforge Minecraftバージョン",
+            "description": "正確なバージョンを取得するには、1.20.6-50.0.22-11.0.0-RC1633 のような完全なバージョンを指定してください。\r\nまたは 1.20.6、1.19.4 などMinecraftバージョンのみを指定すると推奨バージョンが取得されます。\r\n対応バージョンはこちら: https:\/\/spongepowered.org\/downloads\/spongeforge",
             "env_variable": "SF_MC_VERSION",
             "default_value": "1.20.6",
             "user_viewable": true,

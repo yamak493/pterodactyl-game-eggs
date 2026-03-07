@@ -7,7 +7,7 @@
     "exported_at": "2025-11-27T08:13:04+00:00",
     "name": "Purpur-Geyser-Floodgate",
     "author": "purpur@birdflop.com",
-    "description": "A drop-in replacement for Paper servers designed for configurability, and new fun and exciting gameplay features, with the addition of GeyserMC and Floodgate",
+    "description": "Paperサーバーの置き換えとして利用できる、設定性と新しいゲームプレイ機能を備えたPurpurに、GeyserMCとFloodgateを追加した構成です。",
     "features": [
         "eula",
         "java_version",
@@ -41,8 +41,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "Minecraftバージョン",
+            "description": "ダウンロードするMinecraftのバージョンです。\r\n\r\nlatest のままにすると常に最新版を取得します。無効な値は latest にフォールバックします。",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the .jar file to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバー起動に使用する .jar ファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Build Number",
-            "description": "The build number for the Purpur release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest-stable.\r\n\r\nAccepted values: 'latest-stable' 'latest-successful'",
+            "name": "ビルド番号",
+            "description": "Purpurリリースのビルド番号です。\r\n\r\nlatest のままにすると常に最新版を取得します。無効な値は latest-stable にフォールバックします。\r\n\r\n使用可能値: 'latest-stable' 'latest-successful'",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,

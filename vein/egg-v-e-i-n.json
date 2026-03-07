@@ -7,7 +7,7 @@
     "exported_at": "2024-03-03T13:47:56+01:00",
     "name": "VEIN",
     "author": "josdekurk@gmail.com",
-    "description": "VEIN is a post-apocalyptic survival multiplayer sandbox game. Gather supplies to survive, explore abandoned buildings, combat bandits, defend your home, assist friendly NPCs, and rebuild society with friends.",
+    "description": "VEINは終末世界を舞台にしたサバイバル系マルチプレイヤーサンドボックスゲームです。物資を集め、廃墟を探索し、盗賊と戦い、拠点を守り、友好的なNPCを助け、仲間と社会を再建しましょう。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "App ID",
-            "description": "",
+            "description": "インストールに使用するApp IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "2131400",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on start",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新を行います。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "",
+            "name": "クエリポート",
+            "description": "サーバークエリに使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
-            "description": "",
+            "name": "最大プレイヤー数",
+            "description": "同時接続可能な最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -70,7 +70,7 @@
         },
         {
             "name": "Public Server",
-            "description": "Change this to false if you don\u2019t want your game to be listed in the server browser",
+            "description": "サーバーブラウザに表示したくない場合はfalseに設定してください。",
             "env_variable": "PUBLIC_SERVER",
             "default_value": "True",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Vein Server",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加時に必要なパスワードです。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2025-05-02T12:50:37+00:00",
     "name": "Foundry VTT",
     "author": "pterodactyl@demi.cloud",
-    "description": "Foundry VTT is a standalone application built for experiencing multiplayer tabletop RPGs using a feature-rich and modern self-hosted application where your players connect directly through the browser.",
+    "description": "Foundry VTT は、機能豊富でモダンなセルフホスト型アプリケーションを使い、プレイヤーがブラウザーから直接接続してマルチプレイのテーブルトークRPGを体験するために作られたスタンドアロンアプリです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:nodejs_22": "ghcr.io\/ptero-eggs\/yolks:nodejs_22"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "Timed URL",
-            "description": "This is required to download the foundry files. Available in your https:\/\/foundryvtt.com\/ profile after you've purchased a license. This link generally lasts for about 5 minutes.",
+            "description": "Foundry ファイルのダウンロードに必要です。ライセンス購入後、https:\/\/foundryvtt.com\/ のプロフィールで取得できます。このリンクの有効時間は通常約5分です。",
             "env_variable": "TIMED_URL",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Language",
-            "description": "As may be expected, this setting configures the localization of the program and can be leveraged by localization modules to ensure that the interface is translated to the language of your choosing wherever possible.",
+            "name": "言語",
+            "description": "この設定はプログラムのローカライズを構成します。ローカライズモジュールと併用することで、可能な限りインターフェースを選択した言語へ翻訳できます。",
             "env_variable": "FOUNDRY_LANGUAGE",
             "default_value": "en.core",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Update Channel",
-            "description": "Select what channel you want to use for automatic updates",
+            "name": "更新チャンネル",
+            "description": "自動更新に使用するチャンネルを選択します",
             "env_variable": "UPDATE_CHANNEL",
             "default_value": "release",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2025-07-16T16:54:26-04:00",
     "name": "Brickadia",
     "author": "odie.identity@gmail.com",
-    "description": "Brickadia is a next-generation sandbox game with immense flexibility. Every creative tool - building, scripting, and more - is used right in the game, in real-time multiplayer. Build massive worlds, intricate physics contraptions, and entirely new game modes together with your friends without ever leaving the action.",
+    "description": "Brickadia は、極めて高い自由度を備えた次世代サンドボックスゲームです。建築、スクリプトなどの創作ツールはすべてゲーム内で使え、リアルタイムマルチプレイで共同作業できます。プレイを中断することなく、仲間と巨大な世界や複雑な物理ギミック、まったく新しいゲームモードを作り上げられます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:mono_latest": "ghcr.io\/ptero-eggs\/yolks:mono_latest"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on restart",
+            "name": "自動更新",
+            "description": "再起動時にサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Dedicated Server Hosting Token",
-            "description": "Your Brickadia Dedicated Server Hosting Token. This comes from https:\/\/brickadia.com\/account -> \"Create Server Hosting Token\"",
+            "name": "専用サーバーホスティングトークン",
+            "description": "Brickadia の専用サーバーホスティングトークンです。https:\/\/brickadia.com\/account の \"Create Server Hosting Token\" から取得します。",
             "env_variable": "SERVER_HOSTING_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "World",
-            "description": "(Optional) Argument which will auto-load the world with the given name on server startup, as well as auto-saving to it. The world MUST exist in \/home\/container\/.config\/Epic\/Brickadia\/Saved\/Worlds\/ before this will work. The simplest way to add a new world to this directory is to run `br.world.saveas <world name>` in the console once the server is booted. You can then use `world name` for this variable.",
+            "name": "ワールド",
+            "description": "（任意）サーバー起動時に指定名のワールドを自動読み込みし、そのワールドへ自動保存する引数です。動作には、対象ワールドが事前に \/home\/container\/.config\/Epic\/Brickadia\/Saved\/Worlds\/ に存在している必要があります。新規ワールドを追加する最も簡単な方法は、サーバー起動後にコンソールで `br.world.saveas <world name>` を実行することです。その後 `world name` をこの変数に指定できます。",
             "env_variable": "WORLD_NAME",
             "default_value": "world",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of your server on the public server list.",
+            "name": "サーバー名",
+            "description": "公開サーバーリストに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "(Optional) Server password that players must enter to join. Leave blank for none.",
+            "name": "サーバーパスワード",
+            "description": "（任意）プレイヤーが参加時に入力するサーバーパスワードです。不要な場合は空欄にしてください。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "List Server Publicly",
-            "description": "Whether or not to include the server in the public server listing.",
+            "name": "公開リストに掲載",
+            "description": "サーバーを公開サーバー一覧に掲載するかどうか。",
             "env_variable": "SERVER_LIST_PUBLIC",
             "default_value": "True",
             "user_viewable": true,

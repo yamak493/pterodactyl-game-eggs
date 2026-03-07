@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:12:35+02:00",
     "name": "Mordhau Wine",
     "author": "parker@parkervcp.com",
-    "description": "Mordhau is a multiplayer medieval hack 'n slash video game, developed by Slovenian independent studio Triternion, with a prominent aspect of skill-based competitive play and customization.",
+    "description": "Mordhauは、スロベニアのインディースタジオTriternionが開発した中世マルチプレイヤー・ハックアンドスラッシュゲームです。スキルベースの対戦要素とカスタマイズ性が特徴です。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "Steam Server App ID",
-            "description": "",
+            "description": "サーバーのインストールと更新に使用するSteam App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "629800",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "",
+            "name": "クエリポート",
+            "description": "サーバークエリに使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beacon Port",
-            "description": "Mordhau Beacon Port",
+            "name": "Beaconポート",
+            "description": "Mordhauで使用するBeaconポートです。",
             "env_variable": "BEACON_PORT",
             "default_value": "15000",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install Flag",
-            "description": "Required for windows game server installs",
+            "name": "Windowsインストールフラグ",
+            "description": "Windows版ゲームサーバーのインストールに必要です。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "",
+            "name": "管理者パスワード",
+            "description": "管理者操作に使用するパスワードです。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "aP@55word",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Password",
-            "description": "",
+            "name": "ゲームパスワード",
+            "description": "サーバー参加時に使用するパスワードです。",
             "env_variable": "GAME_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "",
+            "name": "デフォルトマップ",
+            "description": "サーバー起動時に読み込むマップです。",
             "env_variable": "DEFAULT_MAP",
             "default_value": "\/Game\/Mordhau\/Maps\/Contraband\/FFA_Contraband",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max Players for the server",
+            "name": "最大プレイヤー数",
+            "description": "サーバーの最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "24",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Decide if you want the server to auto update",
+            "name": "自動更新",
+            "description": "サーバーの自動更新を有効化するか設定します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Extra variables for install",
-            "description": "",
+            "name": "インストール追加変数",
+            "description": "インストール時に追加で渡す変数です。",
             "env_variable": "EXTRA_FLAGS",
             "default_value": "",
             "user_viewable": false,

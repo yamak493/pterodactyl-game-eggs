@@ -7,7 +7,7 @@
     "exported_at": "2023-07-30T10:56:35+02:00",
     "name": "AssaultCube",
     "author": "holeintheseat@gmail.com",
-    "description": "AssaultCube is a FREE, multiplayer, first-person shooter game, based on the CUBE engine.\r\n\r\nTaking place in realistic environments, with fast, arcade gameplay, it's addictive and fun!",
+    "description": "AssaultCube は CUBE エンジンをベースにした無料のマルチプレイ一人称シューティングゲームです。\r\n\r\nリアルな環境を舞台に、テンポの速いアーケードライクなゲームプレイを楽しめます。",
     "features": null,
     "docker_images": {
         "Debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Auth Key",
-            "description": "You must provide your own key for the server to register on the masterserver.\r\nTo generate a key you can run the client and issue the command:\r\n\r\n            authkey new server \r\n        \r\nSee: (https:\/\/assault.cubers.net\/docs\/server.html)",
+            "name": "サーバー認証キー",
+            "description": "サーバーをマスターサーバーに登録するには、自分のキーを指定する必要があります。\r\nキーを生成するにはクライアントで次のコマンドを実行します:\r\n\r\n            authkey new server \r\n        \r\n参照: (https:\/\/assault.cubers.net\/docs\/server.html)",
             "env_variable": "ASSAULT_SERVER_KEY",
             "default_value": "",
             "user_viewable": true,
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
+            "name": "サーバー説明",
             "description": "",
             "env_variable": "ASSAULT_SERVER_DESCRIPTION",
             "default_value": "",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Message of the Day",
+            "name": "今日のメッセージ（MOTD）",
             "description": "",
             "env_variable": "ASSAULT_SERVER_MOTD",
             "default_value": "",
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Set the limit on amount of players able to join (MAX 16)",
+            "name": "最大プレイヤー数",
+            "description": "参加可能プレイヤー数の上限を設定します（最大 16）",
             "env_variable": "ASSAULT_SERVER_MAXPLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -69,7 +69,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ASSAULT_SERVER_ADMINPASSWORD",
             "default_value": "",
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Player Password",
-            "description": "Password need to join the server.",
+            "name": "プレイヤーパスワード",
+            "description": "サーバー参加に必要なパスワードです。",
             "env_variable": "ASSAULT_SERVER_PLAYERPASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Master Server",
-            "description": "Forces the server to register with the hostname or IP address of a different masterserver.\r\nThe default is ms.cubers.net\r\nIf you want your server to be hidden and not report to the masterserver, use -mlocalhost",
+            "name": "マスターサーバー",
+            "description": "別のマスターサーバーのホスト名または IP アドレスでサーバー登録を強制します。\r\n既定値は ms.cubers.net です。\r\nサーバーを非表示にしてマスターサーバーへ通知しない場合は -mlocalhost を使用してください。",
             "env_variable": "ASSAULT_SERVER_MASTERSERVER",
             "default_value": "ms.cubers.net",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "The version of the engine you want to download.",
+            "name": "バージョン",
+            "description": "ダウンロードするエンジンのバージョンです。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

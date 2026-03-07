@@ -7,7 +7,7 @@
     "exported_at": "2025-04-24T15:11:44+00:00",
     "name": "Team Fortress 2 Classic",
     "author": "eggs@scattergun.io",
-    "description": "Team Fortress 2 Classic is a free mod of the 2007 game Team Fortress 2, developed by Eminoma and utilizing the Source engine.",
+    "description": "Team Fortress 2 Classicは、Eminomaが開発しSourceエンジンを使用した、2007年のTeam Fortress 2向け無料Modです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS.",
+            "name": "ゲームID",
+            "description": "SRCDSでダウンロード・実行するゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "244310",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "The name corresponding to the game to download and run using SRCDS.",
+            "name": "ゲーム名",
+            "description": "SRCDSでダウンロード・実行するゲームに対応する名称です。",
             "env_variable": "SRCDS_GAME",
             "default_value": "tf2classic",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Default Map",
-            "description": "The default map to use when starting the server.",
+            "name": "デフォルトマップ",
+            "description": "サーバー起動時に使用するデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "ctf_2fort",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Version",
-            "description": "Version of TF2C to download.",
+            "name": "ゲームバージョン",
+            "description": "ダウンロードするTF2Cのバージョンです。",
             "env_variable": "GAMEVERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed on the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAXPLAYERS",
             "default_value": "24",
             "user_viewable": true,
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Beta ID",
+            "name": "SteamベータID",
             "description": "",
             "env_variable": "SRCDS_BETAID",
             "default_value": "previous2021",

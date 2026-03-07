@@ -7,7 +7,7 @@
     "exported_at": "2025-07-07T17:48:25+02:00",
     "name": "Banana Shooter",
     "author": "ptero@redbananaofficial.com",
-    "description": "Banana Shooter is a free-to-play action game that offers a unique twist to the traditional survival RPG genre.",
+    "description": "Banana Shooter は、従来のサバイバル RPG ジャンルに独自のひねりを加えた基本プレイ無料のアクションゲームです。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Server will check for updates on every restart. Use 0 to disable.",
+            "name": "自動更新",
+            "description": "サーバーは再起動ごとに更新を確認します。無効化する場合は 0 を指定してください。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Username",
-            "description": "This dedicated server requires a steam account that own a copy of the game",
+            "name": "Steam ユーザー名",
+            "description": "この専用サーバーには、ゲームを所有している Steam アカウントが必要です",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "This dedicated server requires a steam account that own a copy of the game",
+            "name": "Steam パスワード",
+            "description": "この専用サーバーには、ゲームを所有している Steam アカウントが必要です",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Authenticaton",
-            "description": "This dedicated server requires a steam account that own a copy of the game",
+            "name": "Steam 認証コード",
+            "description": "この専用サーバーには、ゲームを所有している Steam アカウントが必要です",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Server Login Token",
-            "description": "Listing your server on the in-game list requires a Login Token to be set.\r\nhttps:\/\/bs-docs.readthedocs.io\/en\/latest\/server\/game-server-login-tokens.html",
+            "name": "ゲームサーバーログイントークン",
+            "description": "ゲーム内サーバーリストに掲載するにはログイントークンの設定が必要です。\r\nhttps:\/\/bs-docs.readthedocs.io\/en\/latest\/server\/game-server-login-tokens.html",
             "env_variable": "STEAM_GSLT",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "The name of the server as shown in the server list",
+            "name": "サーバー名",
+            "description": "サーバーリストに表示されるサーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "BananaShooter",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server",
-            "description": "Do not change this",
+            "name": "サーバー",
+            "description": "ここは変更しないでください",
             "env_variable": "SERVER",
             "default_value": "PterodactylServer",
             "user_viewable": true,

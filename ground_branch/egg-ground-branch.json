@@ -7,7 +7,7 @@
     "exported_at": "2023-08-01T20:51:33+00:00",
     "name": "Ground Branch",
     "author": "red_thirten@yahoo.com",
-    "description": "From one of the developers behind the original Rainbow Six\u00ae and Ghost Recon\u00ae games, comes a thinking-man's first-person shooter featuring in-depth character and weapon customization. Take your time. Think ahead. Get the job done.",
+    "description": "オリジナル版 Rainbow Six\u00ae と Ghost Recon\u00ae の開発者の一人が手がけた、奥深いキャラクターと武器のカスタマイズを備える戦術的 FPS です。焦らず、先を読み、任務を遂行しましょう。",
     "features": null,
     "docker_images": {
         "Wine [Latest]": "ghcr.io\/ptero-eggs\/yolks:wine_latest",
@@ -30,8 +30,8 @@
     },
     "variables": [
         {
-            "name": "[REQUIRED] Server Query Port",
-            "description": "This is the port that your clients will type in and use to connect to the lobby (not the game world). Ensure this port matches your externally forwarded port, and is distanced from other running Ground Branch servers in Pterodactyl (increments of 100 are recommended). This is also true for the Primary\/Game Port!",
+            "name": "[必須] サーバークエリポート",
+            "description": "クライアントが入力してロビー（ゲームワールドではない）へ接続するためのポートです。外部公開している転送ポートと一致させ、Pterodactyl 上で動作中の他の Ground Branch サーバーとは十分に離してください（100刻み推奨）。これは Primary\/Game Port にも当てはまります。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -40,8 +40,8 @@
             "field_type": "text"
         },
         {
-            "name": "Automatic Updates",
-            "description": "Quickly checks for any server updates on startup, and updates if necessary. (1 ON | 0 OFF)",
+            "name": "自動更新",
+            "description": "起動時にサーバー更新を確認し、必要であれば更新します。（1 ON | 0 OFF）",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -50,8 +50,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server that will appear in the server list.",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Unnamed Ground Branch Server",
             "user_viewable": true,
@@ -60,8 +60,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed to connect to the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに接続できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -70,8 +70,8 @@
             "field_type": "text"
         },
         {
-            "name": "[Repair] Validate Server Files",
-            "description": "Leave empty (no value) for OFF or type \"true\" or \"1\" for ON. Validates all server files when Automatic Updates is enabled. Note: This will significantly increase server startup times, so it is recommended to only enable this when needed.",
+            "name": "[修復] サーバーファイル検証",
+            "description": "OFF にする場合は空欄、ON にする場合は \"true\" または \"1\" を入力します。自動更新有効時にサーバーファイルをすべて検証します。注意: 起動時間が大幅に増えるため、必要時のみ有効化を推奨します。",
             "env_variable": "VALIDATE",
             "default_value": "",
             "user_viewable": true,
@@ -81,7 +81,7 @@
         },
         {
             "name": "[System] Ground Branch Dedicated Server App ID",
-            "description": "Steam App ID used for installation and updates. Cannot be changed.",
+            "description": "インストールと更新に使用する Steam App ID です。変更できません。",
             "env_variable": "SRCDS_APPID",
             "default_value": "476400",
             "user_viewable": false,
@@ -90,8 +90,8 @@
             "field_type": "text"
         },
         {
-            "name": "[System] Use Windows Branch",
-            "description": "Tells the installer\/updater to only download the Windows branch of the server (the only branch currently available) so that it can run on Wine. Cannot be changed.",
+            "name": "[System] Windows ブランチを使用",
+            "description": "Wine で実行できるよう、インストーラー\/アップデーターに Windows ブランチ（現在利用可能な唯一のブランチ）のみをダウンロードさせます。変更できません。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -101,7 +101,7 @@
         },
         {
             "name": "[System] WINEDEBUG",
-            "description": "Used to suppress WINE FIXME messages. Rarely needs to be changed.",
+            "description": "WINE の FIXME メッセージ抑制に使用します。通常は変更不要です。",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
             "user_viewable": false,
@@ -111,7 +111,7 @@
         },
         {
             "name": "[System] WINEARCH",
-            "description": "Used for compatibility. Cannot be changed.",
+            "description": "互換性のために使用します。変更できません。",
             "env_variable": "WINEARCH",
             "default_value": "win64",
             "user_viewable": false,
@@ -121,7 +121,7 @@
         },
         {
             "name": "[System] WINEPATH",
-            "description": "Used for compatibility. Cannot be changed.",
+            "description": "互換性のために使用します。変更できません。",
             "env_variable": "WINEPATH",
             "default_value": "\/home\/container",
             "user_viewable": false,

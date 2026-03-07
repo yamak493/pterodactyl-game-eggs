@@ -7,7 +7,7 @@
     "exported_at": "2023-10-21T17:16:27+02:00",
     "name": "Mount & Blade II: Bannerlord",
     "author": "josdekurk@gmail.com",
-    "description": "A strategy\/action RPG. Create a character, engage in diplomacy, craft, trade and conquer new lands in a vast medieval sandbox. Raise armies to lead into battle and command and fight alongside your troops in massive real-time battles using a deep but intuitive skill-based combat system.",
+    "description": "戦略とアクションを融合したRPGです。キャラクターを作成し、外交、クラフト、交易を行い、広大な中世サンドボックスで新たな土地を征服します。奥深く直感的なスキルベース戦闘システムで軍を率い、リアルタイムの大規模戦闘に挑みます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "App id",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "1863440",
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on restart.",
+            "name": "自動更新",
+            "description": "サーバー再起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -60,7 +60,7 @@
         },
         {
             "name": "[SYSTEM] WINEDEBUG",
-            "description": "don't change this !!!",
+            "description": "変更しないでください!!!",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
             "user_viewable": false,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auth token",
-            "description": "See: https:\/\/www.youtube.com\/watch?v=9Hvuz12Bfzg",
+            "name": "認証トークン",
+            "description": "参照: https:\/\/www.youtube.com\/watch?v=9Hvuz12Bfzg",
             "env_variable": "AUTH_TOKEN",
             "default_value": "",
             "user_viewable": true,

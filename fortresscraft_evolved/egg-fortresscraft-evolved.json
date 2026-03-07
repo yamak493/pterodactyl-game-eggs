@@ -7,7 +7,7 @@
     "exported_at": "2025-12-18T02:47:27+01:00",
     "name": "Fortresscraft Evolved",
     "author": "brainshead@gmail.com",
-    "description": "FortressCraft Evolved is a unique blend of Voxel Landscapes, Tower Defense, Crafting, Logistics, Exploration, Combat and Assembly lines. Players begin by crash-landing on a strange alien world, left with only a small handful of starting machines..",
+    "description": "FortressCraft Evolved は、ボクセル地形、タワーディフェンス、クラフト、物流、探索、戦闘、そして生産ラインを融合したユニークなゲームです。プレイヤーは奇妙な異星世界へ不時着し、わずかな初期機械だけを頼りに始まります。",
     "features": null,
     "docker_images": {
         "Debian STEAMCMD": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "[STEAM] Steam User",
-            "description": "This is a required setting and cannot be set to anonymous.",
+            "name": "[STEAM] Steam ユーザー",
+            "description": "必須設定です。anonymous には設定できません。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Steam Password",
-            "description": "Steam User Password",
+            "name": "[STEAM] Steam パスワード",
+            "description": "Steam ユーザーのパスワードです",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS",
+            "name": "[STEAM] ゲーム ID",
+            "description": "SRCDS でダウンロード・実行する対象ゲームに対応する ID です",
             "env_variable": "SRCDS_APPID",
             "default_value": "443600",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Steam Auth",
-            "description": "Steam account auth code. Required if you have 2fa enabled",
+            "name": "[STEAM] Steam 認証コード",
+            "description": "Steam アカウントの認証コードです。2FA 有効時は必須です",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM]  Auto Update Server",
-            "description": "This is to auto-update the game server",
+            "name": "[STEAM] サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "[STEAM] Beta Branch",
-            "description": "Installs beta branch if specified.",
+            "name": "[STEAM] ベータブランチ",
+            "description": "指定した場合、ベータブランチをインストールします。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "linux_server_headless",
             "user_viewable": false,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Name",
-            "description": "Server name",
+            "name": "[SERVER] サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl Dedicated Server World",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] RCON port",
-            "description": "RCON Port",
+            "name": "[SERVER] RCON ポート",
+            "description": "RCON ポートです",
             "env_variable": "RCON_PORT",
             "default_value": "27001",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] RCON Password",
-            "description": "RCON Password",
+            "name": "[SERVER] RCON パスワード",
+            "description": "RCON パスワードです",
             "env_variable": "RCON_PASSWORD",
             "default_value": "changeme",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Max Players",
-            "description": "Max Players (default is 64)",
+            "name": "[SERVER] 最大プレイヤー数",
+            "description": "最大プレイヤー数です（既定値は 64）",
             "env_variable": "MAX_PLAYERS",
             "default_value": "64",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] World Name",
-            "description": "Specific World to load by the server at startup",
+            "name": "[SERVER] ワールド名",
+            "description": "サーバー起動時に読み込むワールド名です",
             "env_variable": "WORLDNAME",
             "default_value": "WorldName",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Public",
-            "description": "Should the Server list itself on the Publicserverlist? If you set this to true everybody might join. Griefers might\/will do what they want on the server, be sure to take measures.",
+            "name": "[SERVER] 公開設定",
+            "description": "サーバーを公開サーバー一覧へ表示するかどうか。true にすると誰でも参加できる可能性があります。荒らし対策を行ってください。",
             "env_variable": "PUBLIC",
             "default_value": "false",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Auto Pause",
-            "description": "Should the server go to sleep when nobody is on it?",
+            "name": "[SERVER] 自動一時停止",
+            "description": "誰も接続していないときにサーバーをスリープさせますか？",
             "env_variable": "AUTO_PAUSE",
             "default_value": "true",
             "user_viewable": true,
@@ -159,8 +159,8 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] Resources",
-            "description": "Choices are : Rapid, Plentiful, Scarce, Greg",
+            "name": "[GAME WORLD] 資源量",
+            "description": "選択肢: Rapid, Plentiful, Scarce, Greg",
             "env_variable": "G_RESOURCE",
             "default_value": "scarce",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] Conveyors",
-            "description": "Speed of conveyors : Slow, Fast",
+            "name": "[GAME WORLD] コンベア",
+            "description": "コンベア速度: Slow, Fast",
             "env_variable": "G_CONVEYOR",
             "default_value": "slow",
             "user_viewable": true,
@@ -179,8 +179,8 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] Power",
-            "description": "Power Choices : Scarce, Plentiful",
+            "name": "[GAME WORLD] 電力",
+            "description": "電力設定: Scarce, Plentiful",
             "env_variable": "G_POWER",
             "default_value": "scarce",
             "user_viewable": true,
@@ -189,8 +189,8 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] Day",
-            "description": "Day Choices : Eternal, Normal, Night",
+            "name": "[GAME WORLD] 昼夜設定",
+            "description": "昼夜設定: Eternal, Normal, Night",
             "env_variable": "G_DAY",
             "default_value": "normal",
             "user_viewable": true,
@@ -199,7 +199,7 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] CarePackage",
+            "name": "[GAME WORLD] ケアパッケージ",
             "description": "",
             "env_variable": "G_CAREPACKAGE",
             "default_value": "false",
@@ -209,7 +209,7 @@
             "field_type": "text"
         },
         {
-            "name": "[GAME WORLD] Flat land",
+            "name": "[GAME WORLD] 平坦地形",
             "description": "",
             "env_variable": "G_FLATLAND",
             "default_value": "false",

@@ -7,7 +7,7 @@
     "exported_at": "2023-07-12T01:39:04+03:00",
     "name": "Counter-Strike: Source",
     "author": "diedyesterdaywashere@gmail.com",
-    "description": "Counter-Strike: Source blends Counter-Strike's award-winning teamplay action with the advanced technology of Source\u2122 technology.",
+    "description": "Counter-Strike: Source は、Counter-Strike の受賞歴あるチームプレイアクションと Source™ の先進技術を融合した作品です。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Steam Username",
-            "description": "Username you log into Steam with.",
+            "name": "Steam ユーザー名",
+            "description": "Steam にログインする際のユーザー名です。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Password you log into steam with.",
+            "name": "Steam パスワード",
+            "description": "Steam にログインする際のパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Guard Code",
-            "description": "Your Steam 2FA on your mobile phone. (Not really needed anymore as you get Approve requests now)",
+            "name": "Steam Guard コード",
+            "description": "モバイルの Steam 2FA コードです。（現在は承認リクエスト方式のため、通常は不要です）",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "Default map",
+            "name": "マップ",
+            "description": "デフォルトマップ",
             "env_variable": "SRCDS_MAP",
             "default_value": "de_dust2",
             "user_viewable": true,
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Game Login Token",
+            "name": "Steam ゲームログイントークン",
             "description": "https:\/\/steamcommunity.com\/dev\/managegameservers",
             "env_variable": "STEAM_TOKEN",
             "default_value": "",

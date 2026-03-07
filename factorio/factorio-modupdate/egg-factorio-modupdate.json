@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:04:03+02:00",
     "name": "Factorio-ModUpdate",
     "author": "tueye@tuworld.de",
-    "description": "The vanilla Factorio server. With automatic Mod Updates after ReInstall.\r\n\r\nhttps:\/\/www.factorio.com\/",
+    "description": "バニラのFactorioサーバーです。再インストール後にModを自動更新します。\r\n\r\nhttps:\/\/www.factorio.com\/",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Factorio Version",
-            "description": "Which version of Factorio to install and use.",
+            "name": "Factorioバージョン",
+            "description": "インストールして使用するFactorioのバージョンです。",
             "env_variable": "FACTORIO_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Slots",
-            "description": "Total number of slots to allow on the server.",
+            "name": "最大スロット数",
+            "description": "サーバーで許可する合計スロット数です。",
             "env_variable": "MAX_SLOTS",
             "default_value": "20",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "The save name for the server.",
+            "name": "セーブ名",
+            "description": "サーバーで使用するセーブ名です。",
             "env_variable": "SAVE_NAME",
             "default_value": "gamesave",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Token",
-            "description": "Your factorio.com token, it is required for your server to be visible in the public server list.",
+            "name": "サーバートークン",
+            "description": "factorio.comのトークンです。公開サーバーリストに表示するために必要です。",
             "env_variable": "SERVER_TOKEN",
             "default_value": "undefined",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the game as it will appear in the game listing",
+            "name": "サーバー名",
+            "description": "ゲーム一覧に表示されるゲーム名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Factorio Server",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Description of the game that will appear in the listing.",
+            "name": "サーバー説明",
+            "description": "一覧に表示されるゲームの説明です。",
             "env_variable": "SERVER_DESC",
             "default_value": "Description",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Username",
-            "description": "Username used for the server",
+            "name": "サーバーユーザー名",
+            "description": "サーバーで使用するユーザー名です。",
             "env_variable": "SERVER_USERNAME",
             "default_value": "unnamed",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Time between auto saves specified in minutes",
+            "name": "自動セーブ間隔",
+            "description": "自動セーブ間隔（分）です。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "10",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Slots",
-            "description": "The number of auto saves to keep.",
+            "name": "自動セーブ保持数",
+            "description": "保持する自動セーブ数です。",
             "env_variable": "SAVE_SLOTS",
             "default_value": "5",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "AFK Kick",
-            "description": "Time specified in minutes to kick AFK players.\r\n0 is off",
+            "name": "AFKキック",
+            "description": "AFKプレイヤーをキックするまでの時間（分）です。\r\n0で無効です。",
             "env_variable": "AFK_KICK",
             "default_value": "0",
             "user_viewable": true,

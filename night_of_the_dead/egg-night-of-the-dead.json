@@ -7,7 +7,7 @@
     "exported_at": "2024-06-15T18:59:35+02:00",
     "name": "Night Of The Dead",
     "author": "marshals@gmail.com",
-    "description": "Build defenses against nightly waves of zombies. Survive and escape the island.",
+    "description": "毎晩押し寄せるゾンビの波に備えて防衛を築き、生き延びて島から脱出しましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on start",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl",
@@ -91,7 +91,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
@@ -101,7 +101,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Admin Password",
+            "name": "サーバー管理者パスワード",
             "description": "",
             "env_variable": "SERVER_ADMIN_PASSWORD",
             "default_value": "",
@@ -111,7 +111,7 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
+            "name": "難易度",
             "description": "",
             "env_variable": "DIFFICULTY",
             "default_value": "Normal",
@@ -131,7 +131,7 @@
             "field_type": "text"
         },
         {
-            "name": "Savegame Name",
+            "name": "セーブデータ名",
             "description": "",
             "env_variable": "SERVER_SAVEGAME",
             "default_value": "savedgame1",
@@ -161,7 +161,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server MOTD",
+            "name": "サーバーMOTD",
             "description": "",
             "env_variable": "SERVER_MOTD",
             "default_value": "Welcome to the server.",
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "Extra Args",
-            "description": "other arguments added to command line.",
+            "name": "追加引数",
+            "description": "コマンドラインに追加するその他の引数です。",
             "env_variable": "OTHER_ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -182,7 +182,7 @@
         },
         {
             "name": "XVFB",
-            "description": "Start XVFB in the background.",
+            "description": "XVFBをバックグラウンドで起動します。",
             "env_variable": "XVFB",
             "default_value": "1",
             "user_viewable": false,

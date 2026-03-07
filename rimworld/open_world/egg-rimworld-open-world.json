@@ -7,7 +7,7 @@
     "exported_at": "2023-05-27T13:03:41+03:00",
     "name": "Rimworld: Open World",
     "author": "kyle@williquette.us",
-    "description": "The Open World mod allows you to create and join servers to play with people all around the world, it introduces plenty of new features including trading, gifting, bartering, PvP and so much more!\r\n\r\nhttps:\/\/github.com\/D12-Dev\/OpenWorld",
+    "description": "Open World Modではサーバーを作成・参加して世界中の人と遊べます。取引、ギフト、物々交換、PvPなど多くの新機能が追加されます。\r\n\r\nhttps:\/\/github.com\/D12-Dev\/OpenWorld",
     "features": null,
     "docker_images": {
         "Dotnet 3.1": "ghcr.io\/ptero-eggs\/yolks:dotnet_3.1",
@@ -30,7 +30,7 @@
     },
     "variables": [
         {
-            "name": "Open World Version",
+            "name": "Open Worldバージョン",
             "description": "",
             "env_variable": "VERSION",
             "default_value": "latest",
@@ -40,8 +40,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "sets the maximum number of players allowed to connect at once.",
+            "name": "最大プレイヤー数",
+            "description": "同時接続を許可する最大プレイヤー数を設定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -50,8 +50,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Mods",
-            "description": "This forces players to use the mods listed in the the \"Mods Enforced\" folder, with this disabled it will allow players to join with any mods they would like",
+            "name": "Mod強制",
+            "description": "有効にすると、\"Mods Enforced\" フォルダー内のMod使用をプレイヤーに強制します。無効にすると任意のModで参加できます。",
             "env_variable": "ENFORCE_MODS",
             "default_value": "false",
             "user_viewable": true,
@@ -60,8 +60,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use Mod Blacklist",
-            "description": "enabled you to blacklist mods from being used, usually used when enforced mods are disabled.",
+            "name": "Modブラックリストを使用",
+            "description": "使用禁止のModをブラックリスト化します。通常はMod強制を無効にしたときに使用します。",
             "env_variable": "USE_MOD_BLACKLIST",
             "default_value": "false",
             "user_viewable": true,
@@ -70,8 +70,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use Custom Difficulty",
-            "description": "forces all players to use the difficulty setting set in the \"Difficulty\" file. MAKE SURE YOU GIVE A VALUE TO EVERYTHING OR IT WILL BE AT 0%",
+            "name": "カスタム難易度を使用",
+            "description": "\"Difficulty\" ファイルで設定した難易度を全プレイヤーに強制します。未設定項目があると0%になるため、すべて設定してください。",
             "env_variable": "USE_CUSTOM_DIFF",
             "default_value": "false",
             "user_viewable": true,
@@ -80,8 +80,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use Whitelist",
-            "description": "allows only the usernames listed in the \"Whitelist\" file to join the server.",
+            "name": "ホワイトリストを使用",
+            "description": "\"Whitelist\" ファイルに記載されたユーザー名のみサーバーに参加できます。",
             "env_variable": "WHITELIST",
             "default_value": "false",
             "user_viewable": true,
@@ -90,8 +90,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow Custom Scenarios",
-            "description": "allows people to create custom scenarios when creating their save on the server.",
+            "name": "カスタムシナリオを許可",
+            "description": "サーバー上でセーブを作成する際にカスタムシナリオの作成を許可します。",
             "env_variable": "CUSTOM_SCEN",
             "default_value": "false",
             "user_viewable": true,
@@ -100,8 +100,8 @@
             "field_type": "text"
         },
         {
-            "name": "Player Version",
-            "description": "version the server will accept clients joining in with.\r\n\r\nTO see the latest:\r\nhttps:\/\/discord.com\/channels\/992806266109964319\/992881103071354890\r\n\r\nfor example for v1.12 you would write 1.12",
+            "name": "プレイヤーバージョン",
+            "description": "サーバーが受け入れるクライアントのバージョンです。\r\n\r\n最新バージョンの確認:\r\nhttps:\/\/discord.com\/channels\/992806266109964319\/992881103071354890\r\n\r\n例: v1.12 の場合は 1.12 と入力します。",
             "env_variable": "PLAYER_VERSION",
             "default_value": "1.2",
             "user_viewable": true,

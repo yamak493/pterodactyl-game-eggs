@@ -7,7 +7,7 @@
     "exported_at": "2024-02-16T13:34:36+01:00",
     "name": "Urban Terror",
     "author": "Juli199696@web.de",
-    "description": "Urban Terror started as a realism based \"total conversion\" mod for Quake III Arena. Nowadays, Urban Terror is played using the free, stand-alone, ioquake3 engine modified, which doesn't require Quake III Arena, in addition to being an add-on to id Software's Quake III Arena.",
+    "description": "Urban Terrorは、Quake III Arena向けのリアリズム重視\"トータルコンバージョン\"MODとして始まりました。現在は、Quake III Arena本体を必要としない無料の独立版改造ioquake3エンジンでプレイできます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "Version",
-            "description": "32bit \/ 64bit server version. it is recommended to use the 64bit server, unless you are experiencing issues.",
+            "description": "32bit \/ 64bit のサーバーバージョンです。問題がない限り64bitサーバーの使用を推奨します。",
             "env_variable": "EXE",
             "default_value": "x86_64",
             "user_viewable": true,
@@ -40,7 +40,7 @@
         },
         {
             "name": "Hunkmegs",
-            "description": "How much memory is allocated during server start up.\r\n\r\nAvailable options:  128, 160, 192, 256 MB",
+            "description": "サーバー起動時に割り当てるメモリ量です。\r\n\r\n選択可能: 128, 160, 192, 256 MB",
             "env_variable": "HUNKMEGS",
             "default_value": "128",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Hostname",
-            "description": "Put your Servername into here.",
+            "name": "サーバーホスト名",
+            "description": "ここにサーバー名を入力します。",
             "env_variable": "SERVER_NAME",
             "default_value": "My Awesome Pterodactyl Server",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Join Message",
-            "description": "The message the player will receive when joining the server.",
+            "name": "参加メッセージ",
+            "description": "プレイヤーがサーバー参加時に受け取るメッセージです。",
             "env_variable": "JOIN_MESSAGE",
             "default_value": "Welcome to this Server, have fun!",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum players that can connect to the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに接続できる最大プレイヤー数です。",
             "env_variable": "SERVER_MAXCLIENTS",
             "default_value": "16",
             "user_viewable": true,
@@ -80,7 +80,7 @@
         },
         {
             "name": "RCON Password",
-            "description": "Set the Rcon Password for Admin commands.\r\nCan be empty to disable RCON.",
+            "description": "管理者コマンド用のRCONパスワードを設定します。\r\n空欄にするとRCONは無効になります。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -90,7 +90,7 @@
         },
         {
             "name": "Server Password",
-            "description": "If you want to set a password to connect on the server set this here.",
+            "description": "サーバー接続用パスワードを設定する場合はここに入力します。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "Choose the initial Map the server should start with. \r\n(ONLY CHANGE IF YOU KNOW THE MAP IS EXISTING) Server wont start without it!",
+            "name": "マップ",
+            "description": "サーバー起動時の初期マップを選択します。\r\n（存在するマップが分かる場合のみ変更してください）無効な場合サーバーは起動しません。",
             "env_variable": "SERVER_MAP",
             "default_value": "ut4_casa",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gametype \/ Gamemode",
-            "description": "Sets the Gamemode you want to play. \r\n1 = Last Man Standing, \r\n2 = Free For All, \r\n3 = Team DeathMatch, \r\n4 = Team Survivor, \r\n5 = Follow The Leader, \r\n6 = Capture And Hold, \r\n7 = Capture The Flag, \r\n8 = Bomb Mode, \r\n9 = Jump, \r\n10 = Freeze Tag, \r\n11 = Gun Game",
+            "name": "ゲームタイプ \/ ゲームモード",
+            "description": "プレイしたいゲームモードを設定します。\r\n1 = Last Man Standing, \r\n2 = Free For All, \r\n3 = Team DeathMatch, \r\n4 = Team Survivor, \r\n5 = Follow The Leader, \r\n6 = Capture And Hold, \r\n7 = Capture The Flag, \r\n8 = Bomb Mode, \r\n9 = Jump, \r\n10 = Freeze Tag, \r\n11 = Gun Game",
             "env_variable": "SERVER_GAMETYPE",
             "default_value": "3",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Bots",
-            "description": "Want to have bots in your game select how many you want. \r\n(More than 16 bots tend to crash the server or add lag, use with caution!)\r\nDisclaimer: \"Bots are not officialy supported by FS!!!\"",
+            "name": "ボット数",
+            "description": "ゲーム内で使用するボット数を設定します。\r\n（16体を超えるとサーバークラッシュやラグの原因になりやすいため注意）\r\n注意: \"Bots are not officialy supported by FS!!!\"",
             "env_variable": "BOT_MINPLAYERS",
             "default_value": "0",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Timelimit",
-            "description": "Time in minutes before map is over. (0 = never)",
+            "name": "マップ制限時間",
+            "description": "マップ終了までの時間（分）です。（0 = 無制限）",
             "env_variable": "SERVER_TIMELIMIT",
             "default_value": "10",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Friendlyfire",
-            "description": "Sets if friendlyfire is on or off. (Teamkill your teammates is bad hmmkay?)",
+            "name": "フレンドリーファイア",
+            "description": "フレンドリーファイアの有効\/無効を設定します。（味方への誤射に注意）",
             "env_variable": "SERVER_FRIENDLYFIRE",
             "default_value": "1",
             "user_viewable": true,

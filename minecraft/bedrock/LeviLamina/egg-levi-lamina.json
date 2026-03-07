@@ -7,7 +7,7 @@
     "exported_at": "2026-02-01T03:39:39+00:00",
     "name": "LeviLamina",
     "author": "eggs@purpleflaghosting.com",
-    "description": "LeviLamina is an unofficial mod loader designed to offer indispensable API support for Minecraft Bedrock Edition. It boasts a comprehensive API, an array of utility interfaces, a robust event system, and comprehensive support for basic interfaces. LeviLamina provides an expansive API, a powerful event system, and a wealth of encapsulated development infrastructure interfaces, forming a solid foundation for augmenting the Minecraft Bedrock Edition with additional gameplay features and functionalities. By leveraging mods, the process of extending Bedrock functionality becomes effortless, with a user-friendly development process and an adaptable approach.",
+    "description": "LeviLaminaは、Minecraft Bedrock Edition向けに重要なAPIサポートを提供する非公式MODローダーです。包括的なAPI、豊富なユーティリティインターフェース、強力なイベントシステムを備え、追加機能開発の基盤を提供します。MODを活用することで、Bedrock機能拡張を柔軟かつ効率的に行えます。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Wine Debug",
+            "name": "Wineデバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "Version of LeviLamina to install in x.y.z format. Blank or \"latest\" will install the latest release.",
+            "name": "バージョン",
+            "description": "インストールするLeviLaminaのバージョン（x.y.z形式）です。空欄または \"latest\" で最新リリースをインストールします。",
             "env_variable": "VERSION",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name for the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVERNAME",
             "default_value": "Bedrock Dedicated Server",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Allowed values: \"survival\", \"creative\", or \"adventure\"",
+            "name": "ゲームモード",
+            "description": "使用可能値: \"survival\"、\"creative\"、\"adventure\"",
             "env_variable": "GAMEMODE",
             "default_value": "survival",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Allowed values: \"peaceful\", \"easy\", \"normal\", or \"hard\"",
+            "name": "難易度",
+            "description": "使用可能値: \"peaceful\"、\"easy\"、\"normal\"、\"hard\"",
             "env_variable": "DIFFICULTY",
             "default_value": "easy",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
-            "description": "Maximum players to join on the server",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数です。",
             "env_variable": "MAXPLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "World\/Level name to use for the server",
+            "name": "ワールド名",
+            "description": "サーバーで使用するワールド\/レベル名です。",
             "env_variable": "WORLDNAME",
             "default_value": "Bedrock level",
             "user_viewable": true,

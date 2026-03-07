@@ -7,7 +7,7 @@
     "exported_at": "2023-03-26T16:13:26+02:00",
     "name": "OpenTTD Server",
     "author": "admin@justmyrandomstuff.com",
-    "description": "OpenTTD is an open source simulation game based upon the popular Microprose game \"Transport Tycoon Deluxe\", written by Chris Sawyer. It attempts to mimic the original game as closely as possible while extending it with new features.\r\n\r\nOpenTTD is modelled after the original Transport Tycoon game by Chris Sawyer and enhances the game experience dramatically. Many features were inspired by TTDPatch while others are original.",
+    "description": "OpenTTDは、Chris Sawyer作の人気Microproseゲーム\"Transport Tycoon Deluxe\"を基にしたオープンソースのシミュレーションゲームです。原作を可能な限り忠実に再現しつつ、新機能を追加しています。\r\n\r\nOpenTTDはChris SawyerのオリジナルTransport Tycoonをベースにしており、ゲーム体験を大きく向上させています。多くの機能はTTDPatchに着想を得ており、一部は独自実装です。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The name shown in the serverlist",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示される名前です。",
             "env_variable": "srv_name",
             "default_value": "OpenTTD Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Show in masterlist?",
-            "description": "Show the server in the serverlist on the client, true or false",
+            "name": "マスターリストに表示しますか？",
+            "description": "クライアントのサーバー一覧に表示するかどうか（true または false）。",
             "env_variable": "srv_advertise",
             "default_value": "true",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "OpenTTD Version",
-            "description": "The version of OpenTTD i.e. 12.2",
+            "name": "OpenTTDバージョン",
+            "description": "OpenTTDのバージョン（例: 12.2）。",
             "env_variable": "OPENTTD_VERSION",
             "default_value": "13.0-RC2",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "OpenGFX Version",
-            "description": "The OpenGFX Version i.e. 7.1",
+            "name": "OpenGFXバージョン",
+            "description": "OpenGFXのバージョン（例: 7.1）。",
             "env_variable": "OPENGFX_VERSION",
             "default_value": "7.1",
             "user_viewable": true,

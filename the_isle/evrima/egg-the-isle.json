@@ -7,7 +7,7 @@
     "exported_at": "2023-12-14T22:50:42+01:00",
     "name": "The Isle",
     "author": "fredrik.johansenfuun@gmail.com",
-    "description": "The Isle is an open beta with an open-world survival game where players choose from three factions in an attempt to survive a fierce island. Hunt. Prey. Survive.",
+    "description": "The Isleは、プレイヤーが3つの勢力から選んで過酷な島で生き延びるオープンワールド型サバイバルゲームのオープンベータです。狩り、狙われ、生き残れ。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "Server Name",
-            "description": "Sets the name for the server",
+            "description": "サーバー名を設定します。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl server",
             "user_viewable": true,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Player Count",
-            "description": "",
+            "description": "同時接続可能なプレイヤー数です。",
             "env_variable": "PLAYER_COUNT",
             "default_value": "100",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Allow Replay",
-            "description": "Enable or disable Replay",
+            "description": "リプレイ機能を有効または無効にします。",
             "env_variable": "ALLOW_REPLAY",
             "default_value": "false",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "Humans",
-            "description": "Enable or disable humans",
+            "description": "人間キャラクターを有効または無効にします。",
             "env_variable": "HUMANS",
             "default_value": "false",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "Enable Dynamic weather",
-            "description": "Enable or disable dynamic weather",
+            "description": "動的天候を有効または無効にします。",
             "env_variable": "DYNAMIC_WEATHER",
             "default_value": "true",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "RCON",
-            "description": "Enable RCON",
+            "description": "RCONを有効にします。",
             "env_variable": "RCON",
             "default_value": "false",
             "user_viewable": true,
@@ -92,7 +92,7 @@
         },
         {
             "name": "Rcon Port",
-            "description": "",
+            "description": "RCON接続に使用するポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "44000",
             "user_viewable": true,
@@ -102,7 +102,7 @@
         },
         {
             "name": "RCON Password",
-            "description": "",
+            "description": "RCON接続用パスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "Enable Queue",
-            "description": "Enable the queue",
+            "description": "待機キューを有効にします。",
             "env_variable": "ENABLE_QUEUE",
             "default_value": "true",
             "user_viewable": true,
@@ -122,7 +122,7 @@
         },
         {
             "name": "Queue Port",
-            "description": "",
+            "description": "キュー機能に使用するポートです。",
             "env_variable": "QUEUE_PORT",
             "default_value": "44000",
             "user_viewable": true,
@@ -132,7 +132,7 @@
         },
         {
             "name": "Discord",
-            "description": "",
+            "description": "Discord表示名または識別子です。",
             "env_variable": "DISCORD",
             "default_value": "norden",
             "user_viewable": true,
@@ -142,7 +142,7 @@
         },
         {
             "name": "Server Password",
-            "description": "Enable server password",
+            "description": "サーバーパスワード保護を有効にします。",
             "env_variable": "SERVER_PASSWORD_ENABLED",
             "default_value": "false",
             "user_viewable": true,
@@ -152,7 +152,7 @@
         },
         {
             "name": "Server Password",
-            "description": "The password of the server",
+            "description": "サーバーのパスワードです。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "No password",
             "user_viewable": true,
@@ -162,7 +162,7 @@
         },
         {
             "name": "Auto Update",
-            "description": "Auto update on restart",
+            "description": "再起動時に自動更新を実行します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -172,7 +172,7 @@
         },
         {
             "name": "Beta branch of a steam app.",
-            "description": "",
+            "description": "Steamアプリのベータブランチです。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "evrima",
             "user_viewable": false,
@@ -182,7 +182,7 @@
         },
         {
             "name": "App id",
-            "description": "",
+            "description": "Steam App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "412680",
             "user_viewable": false,

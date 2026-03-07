@@ -7,7 +7,7 @@
     "exported_at": "2025-08-06T01:23:58+02:00",
     "name": "Sunkenland",
     "author": "brainshead@gmail.com",
-    "description": "Get ready for a Waterworld-themed survival game with modular base building, sunken city scavenging, crafting, base defense, and invasions of NPC clans for resources and territory. Ready for the water apocalypse?",
+    "description": "モジュール式拠点建築、沈没都市の探索、クラフト、拠点防衛、資源と領土を巡るNPCクラン襲撃を備えたWaterworldテーマのサバイバルゲームです。水没世界の終末に備えましょう。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "App ID",
-            "description": "The ID corresponding to the game to download.",
+            "description": "ダウンロードするゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "2667530",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "This is to auto-update the game server.",
+            "name": "サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
-            "description": "This is required to install the correct version. Removing or touching this will overwrite the files with a non-existing Linux releases.",
+            "name": "Windowsインストール",
+            "description": "正しいバージョンをインストールするために必要です。変更すると存在しないLinux版で上書きされる可能性があります。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "World GUID",
-            "description": "The world GUID is the later part of the world save file, for example, in this save file\r\n'YourWorldName~11223344-5566-7788-99aa-bbccffeeff00', \r\nthe part after '~' symbol is the guid, i.e.'11223344-5566-7788-99aa-bbccffeeff00'.\r\nSpecify Which World to start the game, if the world save file with\r\nentered GUID cannot be found, the server will fail to start and shut down itself",
+            "name": "ワールドGUID",
+            "description": "ワールドGUIDはセーブファイル名の後半です。例:\r\n'YourWorldName~11223344-5566-7788-99aa-bbccffeeff00' の '~' 以降がGUIDです。\r\n起動するワールドを指定します。指定GUIDのセーブが見つからない場合、サーバーは起動失敗して停止します。",
             "env_variable": "WORLD_GUID",
             "default_value": "11223344-5566-7788-99aa-bbccddeeff00",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Region",
-            "description": "Set the custom Region. Default is ASIA. Please check Region Code Table below.\r\nAsia=asia, Chinese Mainland=cn, Japan=jp, Europe=eu, South America=sa\r\nSouth Korea=kr, USA, East=us, USA, West=usw",
+            "name": "リージョン",
+            "description": "カスタムリージョンを設定します。デフォルトは ASIA です。\r\nAsia=asia, Chinese Mainland=cn, Japan=jp, Europe=eu, South America=sa\r\nSouth Korea=kr, USA, East=us, USA, West=usw",
             "env_variable": "REGION",
             "default_value": "asia",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Player",
-            "description": "Set the Max Player Count. The minimum value is 3\r\nand the maximum value is 15. Default is 3",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数を設定します。最小3、最大15、デフォルト3です。",
             "env_variable": "MAX_PLAYER",
             "default_value": "3",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Set the password. Default is empty; Note that\r\nusing characters other than ASCII may result in password\r\nverification failure. The length limit is 8",
+            "name": "サーバーパスワード",
+            "description": "パスワードを設定します。デフォルトは空です。\r\nASCII以外の文字を使うと認証に失敗する場合があります。\r\n長さ上限は8文字です。",
             "env_variable": "PASSWORD",
             "default_value": "12345678",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl World",
             "user_viewable": true,

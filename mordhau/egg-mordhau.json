@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:09:44+02:00",
     "name": "Mordhau",
     "author": "trey@chazx.cc",
-    "description": "Mordhau is a multiplayer medieval hack 'n slash video game, developed by Slovenian independent studio Triternion, with a prominent aspect of skill-based competitive play and customization.",
+    "description": "Mordhau は、スロベニアのインディースタジオ Triternion が開発した中世マルチプレイのハックアンドスラッシュゲームで、スキルベースの対戦要素とカスタマイズ性が特徴です。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "Max Players",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "48",
             "user_viewable": true,
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password for managing server from in game",
+            "name": "管理者パスワード",
+            "description": "ゲーム内からサーバーを管理するためのパスワードです。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name to show in the server Browser",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password to get on the server",
+            "name": "サーバーパスワード",
+            "description": "サーバーに参加するためのパスワードです。",
             "env_variable": "GAME_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "DEFAULT_MAP",
-            "description": "First map to load.  Format Expected is \"MAPNAME\/TYPE_NAME\".  Examples in Readme",
+            "name": "デフォルトマップ",
+            "description": "最初に読み込むマップです。形式は \"MAPNAME\/TYPE_NAME\" です。例は Readme を参照してください。",
             "env_variable": "DEFAULT_MAP",
             "default_value": "Grad\/FL_Grad",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beacon Port",
-            "description": "Beacon Port required",
+            "name": "ビーコンポート",
+            "description": "必要なビーコンポートです。",
             "env_variable": "BEACON_PORT",
             "default_value": "15000",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto-update server on start.\r\n\r\nSet 0 to disable, default is 1.",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2023-01-30T15:13:30+11:00",
     "name": "Rust Staging",
     "author": "root@smc.li",
-    "description": "The only aim in Rust is to survive. To do this you will need to overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals for meat. Protect yourself from other players, and kill them for meat. Create alliances with other players and form a town. Do whatever it takes to survive.",
+    "description": "Rustでの唯一の目的は生き残ることです。そのためには空腹、渇き、寒さなどの困難を乗り越える必要があります。火を起こし、拠点を作り、動物を狩って食料を確保しましょう。他プレイヤーから身を守り、ときには戦い、同盟を組んで町を作ることもできます。生き残るためにあらゆる手段を尽くしましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The name of your server in the public server list.",
+            "name": "サーバー名",
+            "description": "公開サーバーリストに表示されるサーバー名です。",
             "env_variable": "HOSTNAME",
             "default_value": "A Rust Staging Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Level",
-            "description": "The world file for Rust to use.",
+            "name": "レベル",
+            "description": "Rustで使用するワールドファイルです。",
             "env_variable": "LEVEL",
             "default_value": "Procedural Map",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Description",
-            "description": "The description under your server title. Commonly used for rules & info. Use \\n for newlines.",
+            "name": "説明",
+            "description": "サーバータイトル下に表示される説明文です。ルールや案内によく使われます。改行には \\n を使用してください。",
             "env_variable": "DESCRIPTION",
             "default_value": "Powered by Pterodactyl",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "URL",
-            "description": "The URL for your server. This is what comes up when clicking the \"Visit Website\" button.",
+            "description": "サーバーのURLです。\"Visit Website\" ボタンを押した際に開かれます。",
             "env_variable": "SERVER_URL",
             "default_value": "http:\/\/pterodactyl.io",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Size",
-            "description": "The world size for a procedural map.",
+            "name": "ワールドサイズ",
+            "description": "手続き生成マップのワールドサイズです。",
             "env_variable": "WORLD_SIZE",
             "default_value": "3000",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Seed",
-            "description": "The seed for a procedural map.",
+            "name": "ワールドシード",
+            "description": "手続き生成マップのシード値です。",
             "env_variable": "WORLD_SEED",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed in the server at once.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに同時接続できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "50",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Image",
-            "description": "The header image for the top of your server listing.",
+            "name": "サーバー画像",
+            "description": "サーバー一覧上部に表示されるヘッダー画像です。",
             "env_variable": "SERVER_IMG",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Port for RCON connections.",
+            "name": "RCONポート",
+            "description": "RCON接続に使用するポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "28016",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "RCON access password.",
+            "name": "RCONパスワード",
+            "description": "RCONアクセス用パスワードです。",
             "env_variable": "RCON_PASS",
             "default_value": "CHANGEME",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Interval",
-            "description": "Sets the server\u2019s auto-save interval in seconds.",
+            "name": "保存間隔",
+            "description": "サーバーの自動保存間隔を秒単位で設定します。",
             "env_variable": "SAVEINTERVAL",
             "default_value": "60",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Branch",
-            "description": "Select the branch to install, such as staging or workcart",
+            "name": "ブランチ",
+            "description": "staging や workcart など、インストールするブランチを選択します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "staging",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "App Port",
-            "description": "Port for the Rust+ App. -1 to disable.",
+            "name": "アプリポート",
+            "description": "Rust+アプリ用ポートです。-1で無効化します。",
             "env_variable": "APP_PORT",
             "default_value": "28082",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Logo",
-            "description": "The circular server logo for the Rust+ app.",
+            "name": "サーバーロゴ",
+            "description": "Rust+アプリで表示される円形サーバーロゴです。",
             "env_variable": "SERVER_LOGO",
             "default_value": "",
             "user_viewable": true,

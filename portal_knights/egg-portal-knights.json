@@ -7,7 +7,7 @@
     "exported_at": "2023-03-05T17:26:48+01:00",
     "name": "Portal Knights",
     "author": "josdekurk@gmail.com",
-    "description": "The world of Elysia needs YOU! Join this cooperative, 3D sandbox action RPG to level up your character, craft epic weapons, conquer enemies in real-time, and build almost anything! Craft your adventure. Forge your hero. Become the ultimate Portal Knight!",
+    "description": "エリシアの世界はあなたを必要としています! 協力型3DサンドボックスアクションRPGに参加し、キャラクターを育成し、強力な武器をクラフトし、リアルタイムで敵を打ち倒し、ほぼ何でも建築しましょう。冒険を作り、英雄を鍛え、究極のPortal Knightになりましょう!",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "Steam user",
+            "name": "Steamユーザー",
             "description": "",
             "env_variable": "STEAM_USER",
             "default_value": "",
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam password",
+            "name": "Steamパスワード",
             "description": "",
             "env_variable": "STEAM_PASS",
             "default_value": "",
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Install windows version",
+            "name": "Windows版をインストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "App id",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "374040",
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update server on startup.",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name off the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Servername",
             "user_viewable": true,
@@ -111,7 +111,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ADMIN_PASS",
             "default_value": "admin_password_please_change",
@@ -121,7 +121,7 @@
             "field_type": "text"
         },
         {
-            "name": "User password",
+            "name": "ユーザーパスワード",
             "description": "",
             "env_variable": "USER_PASS",
             "default_value": "",
@@ -131,7 +131,7 @@
             "field_type": "text"
         },
         {
-            "name": "Guest password",
+            "name": "ゲストパスワード",
             "description": "",
             "env_variable": "GUEST_PASS",
             "default_value": "",
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game mode",
-            "description": "The game play mode for the dedicated server.",
+            "name": "ゲームモード",
+            "description": "専用サーバーのゲームプレイモードです。",
             "env_variable": "GAMEMODE",
             "default_value": "Adventure",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Universe size",
-            "description": "The universe size for the dedicated server.",
+            "name": "ユニバースサイズ",
+            "description": "専用サーバーのユニバースサイズです。",
             "env_variable": "UNIVERSE_SIZE",
             "default_value": "Normal",
             "user_viewable": true,

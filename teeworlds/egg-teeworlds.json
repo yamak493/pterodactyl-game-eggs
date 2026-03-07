@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:44:15+02:00",
     "name": "Teeworlds",
     "author": "parker@parkervcp.com",
-    "description": "Teeworlds is a free online multiplayer game, available for all major operating systems. Battle with up to 16 players in a variety of game modes, including Team Deathmatch and Capture The Flag. You can even design your own maps!",
+    "description": "Teeworldsは主要OSで遊べる無料オンラインマルチプレイヤーゲームです。Team DeathmatchやCapture The Flagを含む多彩なモードで最大16人対戦が可能で、独自マップの作成もできます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The Display Name for the server",
+            "name": "サーバー名",
+            "description": "サーバーの表示名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Teeworlds Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server MotD",
-            "description": "Server Message of the Day displayed to all users.",
+            "name": "サーバーMotD",
+            "description": "全ユーザーに表示されるサーバーの今日のメッセージです。",
             "env_variable": "SERVER_MOTD",
             "default_value": "A Pterodactyl Hosted Teeworlds Server",
             "user_viewable": true,

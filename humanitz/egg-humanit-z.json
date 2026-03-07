@@ -7,7 +7,7 @@
     "exported_at": "2024-02-26T18:43:46+01:00",
     "name": "HumanitZ",
     "author": "engels74@marx.ps",
-    "description": "HumanitZ is a co-op, isometric, open world survival game in a world ended by the zombie outbreak. As one of the few human survivors, try to last as long as \u201chumanly\u201d possible. The past can\u2019t be changed, but you can make a difference today for the future of humanity.",
+    "description": "HumanitZ は、ゾンビの大流行で終焉を迎えた世界を舞台にした、協力型・アイソメトリック視点のオープンワールドサバイバルゲームです。数少ない生存者の一人として、可能な限り長く生き延びましょう。過去は変えられなくても、人類の未来のために今日できることはあります。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "[REQUIRED] Steam App ID",
-            "description": "Steam App ID of HumanitZ Server",
+            "name": "[必須] Steam App ID",
+            "description": "HumanitZ サーバーの Steam App ID です",
             "env_variable": "SRCDS_APPID",
             "default_value": "2728330",
             "user_viewable": false,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Enable automatic updates on boot",
+            "name": "自動更新",
+            "description": "起動時の自動更新を有効化します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "[REQUIRED] Steam Beta Branch",
-            "description": "This ensures the script will grab the Linux version of the server",
+            "name": "[必須] Steam ベータブランチ",
+            "description": "スクリプトが Linux 版サーバーを取得するために必要です",
             "env_variable": "SRCDS_BETAID",
             "default_value": "linuxbranch",
             "user_viewable": false,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "[REQUIRED] Steam Query Port",
-            "description": "Steam Query Port",
+            "name": "[必須] Steam クエリポート",
+            "description": "Steam クエリポートです",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です",
             "env_variable": "SERVER_NAME",
             "default_value": "HumanitZ [Dedicated]",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server password (if any)",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワード（設定する場合）",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "Name of the save-file for the server",
+            "name": "セーブ名",
+            "description": "サーバー用セーブファイル名です",
             "env_variable": "SAVE_NAME",
             "default_value": "DedicatedSaveMP",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password for the admin",
+            "name": "管理者パスワード",
+            "description": "管理者用パスワードです",
             "env_variable": "ADMIN_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed",
+            "name": "最大プレイヤー数",
+            "description": "許可する最大プレイヤー数です",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Only Allowed Players",
-            "description": "Restrict server to allowed players only",
+            "name": "許可プレイヤーのみ",
+            "description": "許可済みプレイヤーのみにサーバー参加を制限します",
             "env_variable": "ONLY_ALLOWED_PLAYERS",
             "default_value": "0",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Saving World Interval",
-            "description": "Save game every x seconds.",
+            "name": "ワールド保存間隔",
+            "description": "x 秒ごとにゲームを保存します。",
             "env_variable": "SAVE_INTERVAL_SEC",
             "default_value": "300",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Permanent Death",
-            "description": "0=Off, 1=Individual perma-death, 2=All players experience perma-death",
+            "name": "永久死亡",
+            "description": "0=無効、1=個別に永久死亡、2=全プレイヤーが永久死亡",
             "env_variable": "PERMA_DEATH",
             "default_value": "0",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "On Death",
-            "description": "0=Only lose backpack, and weapon in hand, 1=Previous + pockets, and backpack, 2=All previous + Equipment",
+            "name": "死亡時設定",
+            "description": "0=手持ち武器とバックパックのみ喪失、1=前設定 + ポケットとバックパック、2=前設定すべて + 装備",
             "env_variable": "ON_DEATH",
             "default_value": "2",
             "user_viewable": true,
@@ -160,7 +160,7 @@
         },
         {
             "name": "PvP",
-            "description": "0\/1 Off\/On. Enable or disable Player vs Player.",
+            "description": "0\/1 = OFF\/ON。プレイヤー同士の戦闘を有効化または無効化します。",
             "env_variable": "PVP",
             "default_value": "1",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "Clear Infection",
-            "description": "0=Respawning does not rid you of the infection, 1=You lose it upon respawning",
+            "name": "感染除去",
+            "description": "0=リスポーンしても感染は治らない、1=リスポーン時に感染が消える",
             "env_variable": "CLEAR_INFECTION",
             "default_value": "1",
             "user_viewable": true,
@@ -180,7 +180,7 @@
         },
         {
             "name": "Eagle Eye",
-            "description": "1=Able to purchase the eagle eye skill, 0=You can't",
+            "description": "1=Eagle Eye スキルを購入可能、0=購入不可",
             "env_variable": "EAGLE_EYE",
             "default_value": "1",
             "user_viewable": true,
@@ -189,8 +189,8 @@
             "field_type": "text"
         },
         {
-            "name": "Air Drop",
-            "description": "1=Enabled, 0=Disabled. Controls whether air drops are enabled.",
+            "name": "エアドロップ",
+            "description": "1=有効、0=無効。エアドロップの有効／無効を設定します。",
             "env_variable": "AIR_DROP",
             "default_value": "1",
             "user_viewable": true,
@@ -199,8 +199,8 @@
             "field_type": "text"
         },
         {
-            "name": "Weapon Durability",
-            "description": "1=Weapons break when reaching 0% durability except crowbar, 0=Only improvised weapons break at 0% durability",
+            "name": "武器耐久",
+            "description": "1=バールを除き耐久 0% で武器が壊れる、0=即席武器のみ耐久 0% で壊れる",
             "env_variable": "WEAPON_BREAK",
             "default_value": "1",
             "user_viewable": true,
@@ -209,8 +209,8 @@
             "field_type": "text"
         },
         {
-            "name": "Multiplayer Sleep",
-            "description": "1=Time passes if everyone performs the sleep emote at the same time, 0=Passing time is disabled",
+            "name": "マルチプレイ睡眠",
+            "description": "1=全員が同時に睡眠エモートを行うと時間経過、0=時間経過は無効",
             "env_variable": "MULTIPLAYER_SLEEP",
             "default_value": "0",
             "user_viewable": true,
@@ -219,8 +219,8 @@
             "field_type": "text"
         },
         {
-            "name": "Building Health",
-            "description": "Health multiplier of player placed buildings. By default set to \"1\".",
+            "name": "建築物耐久",
+            "description": "プレイヤー設置建築物の耐久倍率です。既定値は \"1\" です。",
             "env_variable": "BUILDING_HEALTH",
             "default_value": "1",
             "user_viewable": true,
@@ -229,8 +229,8 @@
             "field_type": "text"
         },
         {
-            "name": "Loot Respawn",
-            "description": "1=Loot does respawn, 0=Never respawn",
+            "name": "ルート再出現",
+            "description": "1=ルートが再出現する、0=再出現しない",
             "env_variable": "LOOT_RESPAWN",
             "default_value": "1",
             "user_viewable": true,
@@ -239,8 +239,8 @@
             "field_type": "text"
         },
         {
-            "name": "Loot Respawn Timer",
-            "description": "If loot respawns how long does it take in minutes",
+            "name": "ルート再出現タイマー",
+            "description": "ルート再出現までの時間（分）です",
             "env_variable": "LOOT_RESPAWN_TIMER",
             "default_value": "60",
             "user_viewable": true,
@@ -249,8 +249,8 @@
             "field_type": "text"
         },
         {
-            "name": "Pickup Respawn Timer",
-            "description": "Time in minutes it takes to respawn pickups, 0 to disable.",
+            "name": "拾得物再出現タイマー",
+            "description": "拾得物が再出現するまでの時間（分）です。0 で無効化。",
             "env_variable": "PICKUP_RESPAWN_TIMER",
             "default_value": "90",
             "user_viewable": true,
@@ -259,8 +259,8 @@
             "field_type": "text"
         },
         {
-            "name": "Loot Rarity",
-            "description": "0=Scarce, 1=Low, 2=Default, 3=Plentiful, 4=Abundant",
+            "name": "ルート希少度",
+            "description": "0=Scarce、1=Low、2=Default、3=Plentiful、4=Abundant",
             "env_variable": "LOOT_RARITY",
             "default_value": "2",
             "user_viewable": true,
@@ -269,8 +269,8 @@
             "field_type": "text"
         },
         {
-            "name": "Air Drop Interval",
-            "description": "Air drop every X day",
+            "name": "エアドロップ間隔",
+            "description": "X 日ごとにエアドロップを行います",
             "env_variable": "AIR_DROP_INTERVAL",
             "default_value": "1",
             "user_viewable": true,
@@ -279,8 +279,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Difficulty (Health)",
-            "description": "0=Very Easy, 1=Easy, 2=Default, 3=Hard, 4=Very Hard, 5=Nightmare",
+            "name": "ゾンビ難易度（体力）",
+            "description": "0=Very Easy、1=Easy、2=Default、3=Hard、4=Very Hard、5=Nightmare",
             "env_variable": "ZOMBIE_DIFF_HEALTH",
             "default_value": "1",
             "user_viewable": true,
@@ -289,8 +289,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Difficulty (Speed)",
-            "description": "0=Very Easy, 1=Easy, 2=Default, 3=Hard, 4=Very Hard, 5=Nightmare",
+            "name": "ゾンビ難易度（速度）",
+            "description": "0=Very Easy、1=Easy、2=Default、3=Hard、4=Very Hard、5=Nightmare",
             "env_variable": "ZOMBIE_DIFF_SPEED",
             "default_value": "2",
             "user_viewable": true,
@@ -299,8 +299,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Difficulty (Damage)",
-            "description": "0=Very Easy, 1=Easy, 2=Default, 3=Hard, 4=Very Hard, 5=Nightmare",
+            "name": "ゾンビ難易度（ダメージ）",
+            "description": "0=Very Easy、1=Easy、2=Default、3=Hard、4=Very Hard、5=Nightmare",
             "env_variable": "ZOMBIE_DIFF_DAMAGE",
             "default_value": "3",
             "user_viewable": true,
@@ -309,8 +309,8 @@
             "field_type": "text"
         },
         {
-            "name": "Human Difficulty",
-            "description": "0=Very Easy, 1=Easy, 2=Default, 3=Hard, 4=Very Hard, 5=Nightmare",
+            "name": "人間敵難易度",
+            "description": "0=Very Easy、1=Easy、2=Default、3=Hard、4=Very Hard、5=Nightmare",
             "env_variable": "HUMAN_DIFFICULTY",
             "default_value": "3",
             "user_viewable": true,
@@ -319,8 +319,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Amount Multiplier",
-            "description": "Zombie spawn count multiplier",
+            "name": "ゾンビ出現数倍率",
+            "description": "ゾンビ出現数の倍率です",
             "env_variable": "ZOMBIE_AMOUNT_MULTI",
             "default_value": "1",
             "user_viewable": true,
@@ -329,8 +329,8 @@
             "field_type": "text"
         },
         {
-            "name": "Human Amount Multiplier",
-            "description": "Hostile humans spawn count multiplier",
+            "name": "敵対人間出現数倍率",
+            "description": "敵対的な人間の出現数倍率です",
             "env_variable": "HUMAN_AMOUNT_MULTI",
             "default_value": "1",
             "user_viewable": true,
@@ -339,8 +339,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Dog Multiplier",
-            "description": "Zombie dog spawn count multiplier",
+            "name": "ゾンビ犬出現数倍率",
+            "description": "ゾンビ犬の出現数倍率です",
             "env_variable": "ZOMBIE_DOG_MULTI",
             "default_value": "1",
             "user_viewable": true,
@@ -349,8 +349,8 @@
             "field_type": "text"
         },
         {
-            "name": "Zombie Respawn Timer",
-            "description": "Time in minutes for zombies to respawn",
+            "name": "ゾンビ再出現タイマー",
+            "description": "ゾンビが再出現するまでの時間（分）です",
             "env_variable": "ZOMBIE_RESPAWN_TIMER",
             "default_value": "90",
             "user_viewable": true,
@@ -359,8 +359,8 @@
             "field_type": "text"
         },
         {
-            "name": "Human Respawn Timer",
-            "description": "Time in minutes for hostile humans to respawn",
+            "name": "敵対人間再出現タイマー",
+            "description": "敵対的な人間が再出現するまでの時間（分）です",
             "env_variable": "HUMAN_RESPAWN_TIMER",
             "default_value": "90",
             "user_viewable": true,
@@ -369,8 +369,8 @@
             "field_type": "text"
         },
         {
-            "name": "Animal Respawn Timer",
-            "description": "Time in minutes for animals to respawn",
+            "name": "動物再出現タイマー",
+            "description": "動物が再出現するまでの時間（分）です",
             "env_variable": "ANIMAL_RESPAWN_TIMER",
             "default_value": "90",
             "user_viewable": true,
@@ -379,8 +379,8 @@
             "field_type": "text"
         },
         {
-            "name": "Starting Season",
-            "description": "0=Summer, 1=Autum, 2=Winter, 3=Spring",
+            "name": "開始季節",
+            "description": "0=Summer、1=Autum、2=Winter、3=Spring",
             "env_variable": "STARTING_SEASON",
             "default_value": "1",
             "user_viewable": true,
@@ -389,8 +389,8 @@
             "field_type": "text"
         },
         {
-            "name": "Days Per Season",
-            "description": "How many days each season lasts",
+            "name": "1季節の日数",
+            "description": "各季節が何日続くかを設定します",
             "env_variable": "DAYS_PER_SEASON",
             "default_value": "5",
             "user_viewable": true,
@@ -399,8 +399,8 @@
             "field_type": "text"
         },
         {
-            "name": "Day Duration",
-            "description": "Day duration in minutes",
+            "name": "昼の長さ",
+            "description": "昼時間の長さ（分）です",
             "env_variable": "DAY_DUR",
             "default_value": "40",
             "user_viewable": true,
@@ -409,8 +409,8 @@
             "field_type": "text"
         },
         {
-            "name": "Night Duration",
-            "description": "Night duration in minutes",
+            "name": "夜の長さ",
+            "description": "夜時間の長さ（分）です",
             "env_variable": "NIGHT_DUR",
             "default_value": "20",
             "user_viewable": true,
@@ -419,8 +419,8 @@
             "field_type": "text"
         },
         {
-            "name": "Vital Drain",
-            "description": "How fast your vitals drain 0=Slow, 1=Normal, 2=Fast",
+            "name": "バイタル減少速度",
+            "description": "バイタルが減る速度です 0=Slow、1=Normal、2=Fast",
             "env_variable": "VITAL_DRAIN",
             "default_value": "1",
             "user_viewable": true,
@@ -429,8 +429,8 @@
             "field_type": "text"
         },
         {
-            "name": "Dog Companions Enabled",
-            "description": "Enable finding dog companions you can recruit",
+            "name": "犬コンパニオン有効化",
+            "description": "仲間にできる犬コンパニオンの出現を有効化します",
             "env_variable": "DOG_ENABLED",
             "default_value": "1",
             "user_viewable": true,
@@ -439,8 +439,8 @@
             "field_type": "text"
         },
         {
-            "name": "Dog Companion Amount",
-            "description": "Number of companion dogs that could spawn randomly",
+            "name": "犬コンパニオン数",
+            "description": "ランダム出現する犬コンパニオンの数です",
             "env_variable": "DOG_NUM",
             "default_value": "8",
             "user_viewable": true,
@@ -449,8 +449,8 @@
             "field_type": "text"
         },
         {
-            "name": "Recruit Companion Dogs",
-            "description": "Allow players to recruit companion dog",
+            "name": "犬コンパニオン勧誘",
+            "description": "プレイヤーが犬コンパニオンを仲間にできるようにします",
             "env_variable": "RECRUIT_DOG",
             "default_value": "1",
             "user_viewable": true,
@@ -459,8 +459,8 @@
             "field_type": "text"
         },
         {
-            "name": "Companion Health",
-            "description": "Dog companion health - 0=Low 1=Default 2=High",
+            "name": "コンパニオン体力",
+            "description": "犬コンパニオンの体力 - 0=Low 1=Default 2=High",
             "env_variable": "COMPANION_HEALTH",
             "default_value": "1",
             "user_viewable": true,
@@ -469,8 +469,8 @@
             "field_type": "text"
         },
         {
-            "name": "Companion Damage",
-            "description": "Dog companion damage - 0=Low 1=Default 2=High",
+            "name": "コンパニオンダメージ",
+            "description": "犬コンパニオンのダメージ - 0=Low 1=Default 2=High",
             "env_variable": "COMPANION_DMG",
             "default_value": "1",
             "user_viewable": true,
@@ -479,8 +479,8 @@
             "field_type": "text"
         },
         {
-            "name": "No Death Feedback",
-            "description": "0 to enable player died notification in chat - 1 to disable player died notification in chat.",
+            "name": "死亡通知なし",
+            "description": "0=チャットに死亡通知を表示、1=チャットの死亡通知を無効化。",
             "env_variable": "NO_DEATH_FEEDBACK",
             "default_value": "0",
             "user_viewable": true,
@@ -489,8 +489,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow Dismantle",
-            "description": "1 = Enable players to dismantle their own buildings, 0 = Disable",
+            "name": "解体許可",
+            "description": "1=プレイヤーが自分の建築物を解体可能、0=無効",
             "env_variable": "ALLOW_DISMANTLE",
             "default_value": "1",
             "user_viewable": true,
@@ -499,8 +499,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow House Dismantle",
-            "description": "1 = Players are able to dismantle house props, 0 = Disable",
+            "name": "家屋解体許可",
+            "description": "1=プレイヤーが家屋の小物を解体可能、0=無効",
             "env_variable": "ALLOW_HOUSE_DISMANTLE",
             "default_value": "1",
             "user_viewable": true,
@@ -509,8 +509,8 @@
             "field_type": "text"
         },
         {
-            "name": "Territory",
-            "description": "1 = Enabled. In PVE you are not allowed to build in someone's spawn point area. Only non recruit clan members can. 0 = Disable",
+            "name": "テリトリー",
+            "description": "1=有効。PVE では他人のスポーンポイントエリアに建築できません（同クランの非勧誘メンバーのみ可）。0=無効",
             "env_variable": "TERRITORY",
             "default_value": "1",
             "user_viewable": true,
@@ -519,8 +519,8 @@
             "field_type": "text"
         },
         {
-            "name": "Decay",
-            "description": "By default 3600, the crafted \"Spawn Point\" loses 1 durability every 1 hour. This is used to deal with territory build restrictions, so players have to repair their spawn point.",
+            "name": "劣化",
+            "description": "既定値 3600。クラフトした \"Spawn Point\" は 1 時間ごとに耐久を 1 失います。テリトリー建築制限のため、プレイヤーはスポーンポイントを修理する必要があります。",
             "env_variable": "DECAY",
             "default_value": "3600",
             "user_viewable": true,
@@ -529,8 +529,8 @@
             "field_type": "text"
         },
         {
-            "name": "Pickup Cleanup",
-            "description": "How long in minutes it takes for dropped pickups to be destroyed (Pickups part of the world will not be considered), a value of 0 means no cleanup is done.",
+            "name": "拾得物クリーンアップ",
+            "description": "ドロップされた拾得物が破棄されるまでの時間（分）です（ワールド固定の拾得物は対象外）。0 の場合はクリーンアップしません。",
             "env_variable": "PICKUP_CLEANUP",
             "default_value": "3000",
             "user_viewable": true,
@@ -539,8 +539,8 @@
             "field_type": "text"
         },
         {
-            "name": "Fake Building Cleanup",
-            "description": "How long in minutes it takes for the white blueprint building to be destroyed, a value of 0 means no cleanup is done.",
+            "name": "仮建築クリーンアップ",
+            "description": "白いブループリント建築物が破棄されるまでの時間（分）です。0 の場合はクリーンアップしません。",
             "env_variable": "FAKE_BUILDING_CLEANUP",
             "default_value": "3000",
             "user_viewable": true,

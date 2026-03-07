@@ -7,7 +7,7 @@
     "exported_at": "2022-10-24T20:12:31+02:00",
     "name": "Solace Crafting",
     "author": "eggs@goover.dev",
-    "description": "Open-world fantasy survival RPG. Borderless distance-based difficulty with player built fast-travel, modular-building, and town management.",
+    "description": "オープンワールドのファンタジーサバイバルRPGです。距離ベースで変化するシームレスな難易度、プレイヤー構築の高速移動、モジュール建築、街の管理要素を備えています。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/games:source": "ghcr.io\/ptero-eggs\/games:source"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

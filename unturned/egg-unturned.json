@@ -7,7 +7,7 @@
     "exported_at": "2023-08-03T09:39:35+02:00",
     "name": "Unturned",
     "author": "parker@parkervcp.com",
-    "description": "Vanilla Unturned with the included RockerMod.",
+    "description": "RockerModを同梱したVanilla Unturnedサーバーです。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SRV_NAME",
             "default_value": "Pterodactyl hosted Server",
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SRV_PW",
             "default_value": "",
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server ID",
-            "description": "ID of the server for savegames",
+            "name": "サーバーID",
+            "description": "セーブデータに使用されるサーバーIDです。",
             "env_variable": "SRV_ID",
             "default_value": "PterodactylUnturned",
             "user_viewable": false,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update on restart",
+            "name": "自動更新",
+            "description": "再起動時に自動更新を実行します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "Steam App ID",
-            "description": "Steam App ID require for install and startup update",
+            "description": "インストールおよび起動時アップデートに必要なSteam App IDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1110390",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "ld lib path",
-            "description": "This is needed to load specific libraries",
+            "name": "LDライブラリパス",
+            "description": "特定ライブラリを読み込むために必要です。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".\/Unturned_Headless_Data\/Plugins\/x86_64\/",
             "user_viewable": false,

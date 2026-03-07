@@ -7,7 +7,7 @@
     "exported_at": "2023-12-16T13:44:48+01:00",
     "name": "Custom ReHLDS Engine Game",
     "author": "shigbeard@ndlee.com",
-    "description": "This option allows modifying the startup arguments and other details to run a custom HLDS based game on the panel, substituting the official Valve engine binaries with the ReHLDS binaries.",
+    "description": "このオプションでは、起動引数などを調整してパネル上でカスタムHLDSベースのゲームを実行できます。公式ValveエンジンバイナリをReHLDSバイナリに置き換えて動作させます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using HLDS.\r\n\r\nThe HLDS server ID is 90. This should not be changed.",
+            "name": "ゲームID",
+            "description": "HLDSでダウンロード・実行するゲームに対応するIDです。\r\n\r\nHLDSサーバーIDは90です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "90",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "The name corresponding to the game to download and run using HLDS.\r\n\r\nall the HLDS server names are here - https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Server_Name_Enumeration",
+            "name": "ゲーム名",
+            "description": "HLDSでダウンロード・実行するゲーム名です。\r\n\r\nHLDSサーバー名一覧: https:\/\/developer.valvesoftware.com\/wiki\/Dedicated_Server_Name_Enumeration",
             "env_variable": "HLDS_GAME",
             "default_value": "valve",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "The default map for the server.",
+            "name": "マップ",
+            "description": "サーバーのデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "crossfire",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "VAC port",
-            "description": "Specifies the VAC port the server should use. Default is 26900.",
+            "name": "VACポート",
+            "description": "サーバーが使用するVACポートを指定します。デフォルトは26900です。",
             "env_variable": "VAC_PORT",
             "default_value": "26900",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "ReHLDS Version",
-            "description": "The version of ReHLDS to install, or 'latest' for the latest release.",
+            "name": "ReHLDSバージョン",
+            "description": "インストールするReHLDSのバージョンです。最新リリースは 'latest' を指定します。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Validate",
-            "description": "Validate game files on update. Recommended to turn off with ReHLDS due to SteamCMD overwriting its changes",
+            "name": "検証",
+            "description": "更新時にゲームファイルを検証します。ReHLDSではSteamCMDにより変更が上書きされるため、無効化推奨です。",
             "env_variable": "VALIDATE",
             "default_value": "0",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Username",
-            "description": "Username associated wanted to be used. Not needed.",
+            "name": "Steamユーザー名",
+            "description": "使用したいSteamアカウントのユーザー名です。通常は不要です。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam Password for account.",
+            "name": "Steamパスワード",
+            "description": "Steamアカウントのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam authenticator code for the account",
+            "name": "Steam認証コード",
+            "description": "Steamアカウント用の認証コードです。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch",
-            "description": "Leave empty for the public branch, for the legacy version select steam_legacy.",
+            "name": "ベータブランチ",
+            "description": "公開ブランチは空欄、レガシーバージョンは steam_legacy を選択します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update on restart",
+            "name": "自動更新",
+            "description": "再起動時に自動更新を実行します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,

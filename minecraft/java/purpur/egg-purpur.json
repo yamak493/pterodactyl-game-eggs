@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:32:40+00:00",
     "name": "Purpur",
     "author": "purpur@birdflop.com",
-    "description": "A drop-in replacement for Paper servers designed for configurability, and new fun and exciting gameplay features.",
+    "description": "設定の柔軟性と新しい楽しいゲームプレイ機能を重視して設計された、Paperサーバーの互換置き換えです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "The version of Minecraft to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "Minecraftバージョン",
+            "description": "ダウンロードするMinecraftのバージョンです。\r\n\r\nlatestのままにすると常に最新バージョンを取得します。無効なバージョンはlatestが使用されます。",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the .jar file to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用する.jarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -58,8 +58,8 @@
             "field_type": "text"
         },
         {
-            "name": "Build Number",
-            "description": "The build number for the Purpur release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "ビルド番号",
+            "description": "Purpurリリースのビルド番号です。\r\n\r\nlatestのままにすると常に最新バージョンを取得します。無効なバージョンはlatestが使用されます。",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,

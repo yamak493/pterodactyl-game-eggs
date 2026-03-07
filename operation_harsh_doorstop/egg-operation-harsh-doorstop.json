@@ -7,7 +7,7 @@
     "exported_at": "2023-03-11T19:59:13+01:00",
     "name": "Operation Harsh Doorstop",
     "author": "josdekurk@gmail.com",
-    "description": "Operation: Harsh Doorstop is an Unreal Engine powered shooter sandbox similar to mod-friendly games like Ravenfield and Garry's Mod but with roots in tactical shooters like Squad and Arma III. Our game is entirely donation funded, completely free, and has full Steam workshop support!",
+    "description": "Operation: Harsh Doorstop はUnreal Engine製のシューターサンドボックスで、RavenfieldやGarry's ModのようなMODフレンドリー作品に近い一方、SquadやArma IIIのようなタクティカルシューターの系譜を持っています。本作は寄付のみで運営され、完全無料かつSteam Workshopを全面サポートしています。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Autop update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -41,7 +41,7 @@
             "field_type": "text"
         },
         {
-            "name": "app id",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "950900",
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed by this server.",
+            "name": "最大プレイヤー数",
+            "description": "このサーバーで許可される最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "Defines the display or host name of the game server when listed in a server browser",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示されるゲームサーバーの表示名（ホスト名）を定義します。",
             "env_variable": "SERVER_NAME",
             "default_value": "Harsh Doorstop Dedicated Server",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query port",
-            "description": "Defines port for Steam master server traffic",
+            "name": "クエリポート",
+            "description": "Steamマスターサーバー通信用ポートを定義します。",
             "env_variable": "QUERY_PORT",
             "default_value": "27005",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Port",
-            "description": "Defines port for RCON server traffic",
+            "name": "RCONポート",
+            "description": "RCONサーバー通信用ポートを定義します。",
             "env_variable": "RCON_PORT",
             "default_value": "7779",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Max Auth Attempts",
-            "description": "Defines the maximum number of authentication attempts an RCON connection can make before being forcibly disconnected",
+            "name": "RCON最大認証試行回数",
+            "description": "RCON接続が強制切断されるまでに許可される認証試行回数の上限を定義します。",
             "env_variable": "RCON_MAX_AUTH_ATTEMPTS",
             "default_value": "3",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Password",
-            "description": "Defines the password used for authenticating with the RCON server",
+            "name": "RCONパスワード",
+            "description": "RCONサーバー認証に使用するパスワードを定義します。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon Max Connections",
-            "description": "Maximum number of concurrent RCON connections",
+            "name": "RCON最大接続数",
+            "description": "同時RCON接続の最大数です。",
             "env_variable": "RCON_MAX_CONNECTIONS",
             "default_value": "5",
             "user_viewable": true,

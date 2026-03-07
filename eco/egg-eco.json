@@ -7,7 +7,7 @@
     "exported_at": "2024-09-20T09:14:59+02:00",
     "name": "Eco",
     "author": "eggs@goover.dev",
-    "description": "Eco is an online world from Strange Loop Games where players must build civilization using resources from an ecosystem that can be damaged and destroyed. The world of Eco is an incredibly reactive one, and whatever any player does in the world affects the underlying ecosystem.",
+    "description": "Eco は Strange Loop Games が提供するオンライン世界で、プレイヤーは損傷・破壊されうる生態系の資源を使って文明を築かなければなりません。Eco の世界は非常に反応的で、プレイヤーの行動はすべて基盤となる生態系に影響を与えます。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Webserver Port",
-            "description": "Port for the Webserver",
+            "name": "[SERVER] Web サーバーポート",
+            "description": "Web サーバー用のポートです",
             "env_variable": "WEB_PORT",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Public Server",
-            "description": "Set to True to have the server listed in the Eco client",
+            "name": "[SERVER] 公開サーバー",
+            "description": "Eco クライアントのサーバー一覧に表示する場合は True に設定します",
             "env_variable": "PUB_SRV",
             "default_value": "false",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Password",
-            "description": "Set a password for the server, or leave this blank to not require a password. Players on the whitelist will not have to enter a password.",
+            "name": "[SERVER] サーバーパスワード",
+            "description": "サーバーのパスワードを設定します。パスワード不要の場合は空欄にしてください。ホワイトリスト登録済みプレイヤーはパスワード入力が不要です。",
             "env_variable": "SRV_PW",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Name",
-            "description": "Sets the name of your server in the client server browser. Chat_Commands#Text_markup can be used to add color or modify the appearance of the text.",
+            "name": "[SERVER] サーバー名",
+            "description": "クライアントのサーバーブラウザーに表示されるサーバー名を設定します。Chat_Commands#Text_markup を使用して色付けや表示変更ができます。",
             "env_variable": "SRV_NAME",
             "default_value": "Hosted by Pterodactyl",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Auto Update",
-            "description": "",
+            "name": "[SERVER] 自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Webserver URL",
-            "description": "your webserver url.",
+            "name": "[SERVER] Web サーバー URL",
+            "description": "あなたの Web サーバー URL です。",
             "env_variable": "WEBSRVURL",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Max Connections",
-            "description": "Maximum number of concurrent players (-1 no limits).",
+            "name": "[SERVER] 最大接続数",
+            "description": "同時接続プレイヤーの最大数です（-1 で無制限）。",
             "env_variable": "MAX_CON",
             "default_value": "-1",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Playtime",
-            "description": "This is automatically filled in if you created the server in the Eco client and made a Timetable (schedule of preferred playtimes). If this is blank, the best way to fill it in is to \u201cSet Playtime\u201d through the Game Menu (Esc), and copy and paste the data from playtime.eco.",
+            "name": "[SERVER] プレイ時間",
+            "description": "Eco クライアントでサーバーを作成し Timetable（推奨プレイ時間のスケジュール）を設定すると自動入力されます。空欄の場合は、ゲームメニュー（Esc）の \u201cSet Playtime\u201d で設定し、playtime.eco のデータをコピー＆ペーストする方法が最適です。",
             "env_variable": "PLAYTIME",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Detailed Description",
-            "description": "Sets the long-form description of your server when people click on it in the server browser. Adding this description helps the server show up more prominently in the browser.",
+            "name": "[SERVER] 詳細説明",
+            "description": "サーバーブラウザーでサーバーがクリックされた際に表示される長文説明を設定します。この説明を追加すると、ブラウザー上でサーバーが目立ちやすくなります。",
             "env_variable": "DEDES",
             "default_value": "",
             "user_viewable": true,
@@ -141,7 +141,7 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] RCON Port",
+            "name": "[SERVER] RCON ポート",
             "description": "",
             "env_variable": "RCON_PORT",
             "default_value": "",
@@ -151,7 +151,7 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] RCON Password",
+            "name": "[SERVER] RCON パスワード",
             "description": "",
             "env_variable": "RCON_PW",
             "default_value": "",
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Discord Server",
-            "description": "Invite link ID for a Discord server (the ID after the \u201cdiscord.gg\/\u201d).",
+            "name": "[SERVER] Discord サーバー",
+            "description": "Discord サーバーの招待リンク ID（\u201cdiscord.gg\/\u201d の後ろの ID）です。",
             "env_variable": "DISCORD_SRV",
             "default_value": "",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Category",
-            "description": "Choose from 1 of 4 categories that will show up when players first click on \u201cNew Game\u201d in the Eco client. Selecting a category makes it much more likely new players will join your server. Strings available for this option are: None; Beginner; Established; BeginnerHard; Strange",
+            "name": "[SERVER] サーバーカテゴリ",
+            "description": "Eco クライアントでプレイヤーが最初に \u201cNew Game\u201d を押した際に表示されるカテゴリを選択します。カテゴリ設定により新規プレイヤー参加の可能性が高まります。指定可能な文字列: None; Beginner; Established; BeginnerHard; Strange",
             "env_variable": "SRV_CAT",
             "default_value": "None",
             "user_viewable": true,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Language",
-            "description": "Defines the language.",
+            "name": "[SERVER] 言語",
+            "description": "言語を設定します。",
             "env_variable": "LANGUAGE",
             "default_value": "English",
             "user_viewable": true,
@@ -191,7 +191,7 @@
             "field_type": "text"
         },
         {
-            "name": "[ACCOUNT] SLG Username",
+            "name": "[ACCOUNT] SLG ユーザー名",
             "description": "",
             "env_variable": "SLG_USER",
             "default_value": "",
@@ -201,7 +201,7 @@
             "field_type": "text"
         },
         {
-            "name": "[ACCOUNT] SLG Pasword",
+            "name": "[ACCOUNT] SLG パスワード",
             "description": "",
             "env_variable": "SLG_PW",
             "default_value": "",

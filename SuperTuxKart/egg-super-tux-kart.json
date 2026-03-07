@@ -7,7 +7,7 @@
     "exported_at": "2024-03-24T19:19:23+01:00",
     "name": "SuperTuxKart",
     "author": "mattamn107@github.com",
-    "description": "Egg for hosting a SuperTuxKart Server.",
+    "description": "SuperTuxKartサーバーをホストするためのEggです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The Name of the Server",
+            "name": "サーバー名",
+            "description": "サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl_Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Config File Name",
-            "description": "Name of the Config File.",
+            "name": "設定ファイル名",
+            "description": "設定ファイルの名前です。",
             "env_variable": "CONFIG_NAME",
             "default_value": "config.xml",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Mode",
-            "description": "0 = Normal Race\r\n1 = Time Trial\r\n2 = Battle\r\n3 = Soccer\r\n4 = Follow The Leader\r\n5 = Capture the Flag",
+            "name": "モード",
+            "description": "0 = ノーマルレース\r\n1 = タイムトライアル\r\n2 = バトル\r\n3 = サッカー\r\n4 = 先導者を追え\r\n5 = キャプチャー・ザ・フラッグ",
             "env_variable": "MODE",
             "default_value": "0",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Speed of the carts and AI difficulty\r\n0 = Beginner\r\n1 = Intermediate\r\n2 = Expert\r\n3 = SuperTux",
+            "name": "難易度",
+            "description": "カート速度とAI難易度\r\n0 = 初級\r\n1 = 中級\r\n2 = 上級\r\n3 = SuperTux",
             "env_variable": "DIFFICULTY",
             "default_value": "0",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "How many players can there be in the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できるプレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "8",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Message of the Day",
-            "description": "Message of the Day displayed in the server.",
+            "name": "今日のメッセージ",
+            "description": "サーバー内に表示されるメッセージです。",
             "env_variable": "MOTD",
             "default_value": "",
             "user_viewable": true,

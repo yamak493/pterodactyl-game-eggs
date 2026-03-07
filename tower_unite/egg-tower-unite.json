@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:43:32+02:00",
     "name": "Tower Unite",
     "author": "teamwuffy@gmail.com",
-    "description": "Tower Unite\r\n\r\nDefault Port: 7778\r\nDefault Query Port: 27016\r\n\r\nConfig Path: Tower\/Saved\/Config\/TowerServer.ini",
+    "description": "Tower Unite\r\n\r\nデフォルトポート: 7778\r\nデフォルトクエリポート: 27016\r\n\r\n設定ファイルパス: Tower\/Saved\/Config\/TowerServer.ini",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Steam Login Token",
-            "description": "Login and generate a token for the app-id: 394690\r\nhttps:\/\/steamcommunity.com\/dev\/managegameservers",
+            "name": "Steamログイントークン",
+            "description": "ログインして app-id: 394690 のトークンを生成してください。\r\nhttps:\/\/steamcommunity.com\/dev\/managegameservers",
             "env_variable": "STEAM_LOGIN_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Admin ID",
-            "description": "Note that your admin id is only a number!",
+            "name": "Steam管理者ID",
+            "description": "管理者IDは数字のみです。",
             "env_variable": "STEAM_ADMIN_ID",
             "default_value": "",
             "user_viewable": true,
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Title",
+            "name": "サーバータイトル",
             "description": "",
             "env_variable": "SERVER_TITLE",
             "default_value": "Tower Unite Server",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "SERVER_MAX_PLAYER",
             "default_value": "40",
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新を行います。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

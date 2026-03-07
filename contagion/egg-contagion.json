@@ -7,7 +7,7 @@
     "exported_at": "2025-04-22T19:59:52+00:00",
     "name": "Contagion",
     "author": "Fashdey@fustarmy.net",
-    "description": "Contagion isn't your average Zombie Shooter but instead takes a more realistic and different approach to the popular genre with unique characters, environments, weapons, items, and a built in system that makes every round completely unpredictable with resources, objectives, and paths ever changing.",
+    "description": "Contagion は一般的なゾンビシューターとは異なり、人気ジャンルにより現実的で独自のアプローチを取った作品です。個性的なキャラクター、環境、武器、アイテムに加え、資源・目標・進行ルートが毎回変化し、各ラウンドが予測不能になる組み込みシステムを備えています。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "App id",
-            "description": "The ID corresponding to the game to download.",
+            "name": "App ID",
+            "description": "ダウンロードするゲームに対応する ID です。",
             "env_variable": "SRCDS_APPID",
             "default_value": "293030",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Decide if you want to update your server",
+            "name": "自動更新",
+            "description": "サーバーを更新するかどうかを設定します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Startup Map",
-            "description": "Which map server starts on boot",
+            "name": "起動マップ",
+            "description": "サーバー起動時に開始するマップを指定します",
             "env_variable": "SRV_MAP",
             "default_value": "ce_barlowe",
             "user_viewable": true,
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "SRV_MAXPLAYERS",
             "default_value": "8",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Config",
+            "name": "サーバー設定ファイル",
             "description": "",
             "env_variable": "SRV_CONFIG",
             "default_value": "server.cfg",
@@ -122,7 +122,7 @@
         },
         {
             "name": "WINEARCH",
-            "description": "WINEARCH=win32\r\nor\r\nWINEARCH=win64",
+            "description": "WINEARCH=win32\r\nまたは\r\nWINEARCH=win64",
             "env_variable": "WINEARCH",
             "default_value": "win32",
             "user_viewable": false,

@@ -7,7 +7,7 @@
     "exported_at": "2024-12-29T02:37:09+00:00",
     "name": "tshock",
     "author": "parker@parkervcp.com",
-    "description": "The t-shock modded terraria server.\r\n\r\nhttps:\/\/tshock.co\/",
+    "description": "t-shock導入済みTerrariaサーバーです。\r\n\r\nhttps:\/\/tshock.co\/",
     "features": null,
     "docker_images": {
         "Dotnet 6": "ghcr.io\/ptero-eggs\/yolks:dotnet_6"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "The maximum number of players a server will hold.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーが保持する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "8",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Size",
-            "description": "Defines the worlds size. 3 sizes 1 (small), 2 (medium), 3 (large).",
+            "name": "ワールドサイズ",
+            "description": "ワールドサイズを定義します。1（小）、2（中）、3（大）。",
             "env_variable": "WORLD_SIZE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "The name for the world file.",
+            "name": "ワールド名",
+            "description": "ワールドファイル名です。",
             "env_variable": "WORLD_NAME",
             "default_value": "world",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Tshock Version",
-            "description": "The version on tshock that will be installed. default is latest non-pre-release",
+            "name": "Tshockバージョン",
+            "description": "インストールするtshockのバージョンです。デフォルトは最新の非プレリリース版です。",
             "env_variable": "TSHOCK_VERSION",
             "default_value": "latest",
             "user_viewable": true,

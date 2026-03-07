@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:05:24+02:00",
     "name": "Mindustry",
     "author": "sir3lit@gmail.com",
-    "description": "Mindustry is a hybrid tower-defense sandbox factory game. Create elaborate supply chains of conveyor belts to feed ammo into your turrets, produce materials to use for building, and defend your structures from waves of enemies.",
+    "description": "Mindustry は、タワーディフェンスとサンドボックス工場運営を組み合わせたハイブリッドゲームです。精巧なコンベア供給網を作ってタレットへ弾薬を送り、建築資材を生産し、押し寄せる敵の波から拠点を守りましょう。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:java_11": "ghcr.io\/ptero-eggs\/yolks:java_11"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Version",
-            "description": "The version to download. Example \"v96\" NOT \"4.0v96\" (default is latest)\r\n\r\nThis would also be the github tag for the release",
+            "name": "バージョン",
+            "description": "ダウンロードするバージョンです。例: \"v96\"（\"4.0v96\" ではありません、既定は latest）\r\n\r\nこれは GitHub リリースタグでもあります",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The server name that shows up in the server list\r\n\r\n(Default: Pterodactyl Testing Server)",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です\r\n\r\n（既定: Pterodactyl Testing Server）",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Name",
-            "description": "Default Maps Available: Ancient Caldera, Fork, Fortress, Glacier, Islands, Labyrinth, Maze, Shattered, Tendrils, Triad, Veins, Wasteland.\r\n\r\n(Default: Tendrils)",
+            "name": "マップ名",
+            "description": "利用可能なデフォルトマップ: Ancient Caldera, Fork, Fortress, Glacier, Islands, Labyrinth, Maze, Shattered, Tendrils, Triad, Veins, Wasteland。\r\n\r\n（既定: Tendrils）",
             "env_variable": "MAPNAME",
             "default_value": "Tendrils",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:02:57+02:00",
     "name": "Post Scriptum",
     "author": "admin@softwarenoob.com",
-    "description": "Post Scriptum is a WW2-themed first-person tactical shooter that provides an authentic WWII combat experience. Focusing on historical accuracy, large-scale battles, and a challenging battlefield demands an intense need for cohesion, communication, and teamwork.",
+    "description": "Post Scriptum は、第二次世界大戦をテーマにした一人称タクティカルシューターで、リアルなWWII戦闘体験を提供します。史実性、大規模戦闘、過酷な戦場環境に重点を置き、連携・コミュニケーション・チームワークが強く求められます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Query Port",
-            "description": "Server Query port",
+            "name": "サーバークエリポート",
+            "description": "サーバーのクエリポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "10037",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Port used for RCON connections",
+            "name": "RCONポート",
+            "description": "RCON接続に使用するポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "21114",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "Password for RCON connections, leave empty to disable.",
+            "name": "RCONパスワード",
+            "description": "RCON接続用パスワードです。空欄で無効化されます。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto-update the game each time server is started, enter value 0 to disable.",
+            "name": "自動更新",
+            "description": "サーバー起動時にゲームを自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name that will be displayed in the server browser list",
+            "name": "サーバー名",
+            "description": "サーバーブラウザ一覧に表示される名前です。",
             "env_variable": "hostname",
             "default_value": "Pterodactyl Server",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Sets the maximum number of players.",
+            "name": "最大プレイヤー数",
+            "description": "最大プレイヤー数を設定します。",
             "env_variable": "maxplayers",
             "default_value": "80",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Allow Team Change",
-            "description": "Allow players to change teams  (true\/false)",
+            "name": "チーム変更を許可",
+            "description": "プレイヤーのチーム変更を許可します（true\/false）。",
             "env_variable": "allowteamchange",
             "default_value": "true",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Advertise Server",
-            "description": "Display the server in the public server browser list (true\/false)",
+            "name": "サーバー公開",
+            "description": "公開サーバーブラウザ一覧に表示します（true\/false）。",
             "env_variable": "advertise",
             "default_value": "true",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reserved Slots",
-            "description": "The number of reserved slots",
+            "name": "予約スロット数",
+            "description": "予約スロットの数です。",
             "env_variable": "reservedslots",
             "default_value": "0",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Prevent team change",
-            "description": "This will prevent players from changing teams when teams are not balanced (true\/false)",
+            "name": "チーム変更防止",
+            "description": "チームバランスが崩れている時にチーム変更を防止します（true\/false）。",
             "env_variable": "team_change",
             "default_value": "true",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Team Balance",
-            "description": "This will force team balance if the teams are uneven, by default 3 player difference. (true\/false)",
+            "name": "チームバランス強制",
+            "description": "チーム人数差がある場合にバランス調整を強制します（デフォルト差分3人）（true\/false）。",
             "env_variable": "teambalance",
             "default_value": "true",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Record Demos",
-            "description": "This will record demos of the players (true\/false)",
+            "name": "デモ記録",
+            "description": "プレイヤーのデモを記録します（true\/false）。",
             "env_variable": "demo_recording",
             "default_value": "true",
             "user_viewable": true,
@@ -152,7 +152,7 @@
         },
         {
             "name": "ld lib path",
-            "description": "This is required, do not touch it",
+            "description": "必須項目です。変更しないでください。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".",
             "user_viewable": false,
@@ -161,7 +161,7 @@
             "field_type": "text"
         },
         {
-            "name": "App ID",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "746200",

@@ -7,7 +7,7 @@
     "exported_at": "2025-01-09T17:43:24+00:00",
     "name": "America's Army: Proving Grounds",
     "author": "eggs@purpleflaghosting.com",
-    "description": "America\u2019s Army: Proving Grounds is the official game of the U.S. Army and part of the highly acclaimed America\u2019s Army game series. This free military game focuses on small unit tactical maneuvers and puts you to the test in a wide variety of new America\u2019s Army maps and AA fan favorites.",
+    "description": "America’s Army: Proving Grounds は米陸軍公式ゲームであり、高い評価を受ける America’s Army シリーズの一作です。この無料ミリタリーゲームは小規模部隊での戦術機動に重点を置き、多彩な新規マップや人気の AA マップで腕を試せます。",
     "features": [],
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Query",
+            "name": "Steam クエリ",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auth Port",
-            "description": "Steam authentication port",
+            "name": "認証ポート",
+            "description": "Steam 認証ポート",
             "env_variable": "AUTH_PORT",
             "default_value": "7780",
             "user_viewable": true,
@@ -60,7 +60,7 @@
         },
         {
             "name": "SRCDS_APPID",
-            "description": "The steam App ID to install",
+            "description": "Steam App ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "203300",
             "user_viewable": false,

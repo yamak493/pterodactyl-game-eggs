@@ -7,7 +7,7 @@
     "exported_at": "2023-11-18T14:02:28+01:00",
     "name": "SCP:SL",
     "author": "eggs@goover.dev",
-    "description": "Egg for SCP: Secret Laboratory Dedicated Linux Server",
+    "description": "SCP: Secret Laboratory Linux専用サーバー用Eggです。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Dotnet Bundle",
-            "description": "Only used for EXILED Framework Updater.",
+            "name": "Dotnetバンドル",
+            "description": "EXILED Framework Updaterでのみ使用します。",
             "env_variable": "DOTNET_BUNDLE_EXTRACT_BASE_DIR",
             "default_value": ".\/dotnet-bundle",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Branch",
-            "description": "Use this to instruct your panel whether to use a branch of SCP: SL (typically used for testing versions). To install the branch, you need to click \"Reinstall Server\" to execute the installation script.",
+            "name": "ブランチ",
+            "description": "SCP: SLのブランチ（主にテスト版）を使用するかを指定します。ブランチをインストールするには \"Reinstall Server\" を実行してください。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Branch password",
-            "description": "Branch password (optional)",
+            "name": "ブランチパスワード",
+            "description": "ブランチ用パスワード（任意）",
             "env_variable": "SRCDS_BETAPASS",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on restart",
+            "name": "自動更新",
+            "description": "サーバー再起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

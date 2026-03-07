@@ -7,7 +7,7 @@
     "exported_at": "2024-01-12T15:34:50+01:00",
     "name": "Quake Live",
     "author": "patz.michael@gmail.com",
-    "description": "Quake Live is a first-person shooter video game by id Software. It is an updated version of Quake III Arena that was originally designed as a free-to-play game launched via a web browser plug-in. On September 17, 2014, the game was re-launched as a standalone title on Steam.",
+    "description": "Quake Live は id Software の一人称シューティングゲームです。元々はWebブラウザプラグイン経由で提供される基本プレイ無料タイトルとして設計された Quake III Arena のアップデート版で、2014年9月17日にSteamでスタンドアロン版として再リリースされました。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The Name that will show up in the Serverbrowser",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Quake Live Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Type",
-            "description": "0 = Offline, 1 = LAN, 2 = Internet",
+            "name": "サーバータイプ",
+            "description": "0 = Offline、1 = LAN、2 = Internet",
             "env_variable": "SERVER_TYPE",
             "default_value": "2",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Set a server-wide password, and stop all users from connecting without it",
+            "name": "サーバーパスワード",
+            "description": "サーバー全体のパスワードを設定し、未入力ユーザーの接続を拒否します。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "FPS",
-            "description": "Change how many frames the server runs per second. WARNING: Has not been tested extensively, and will have a direct impact on CPU and network usage!",
+            "description": "サーバーの1秒あたりフレーム数を変更します。警告: 十分な検証はされておらず、CPUとネットワーク使用量に直接影響します!",
             "env_variable": "FPS",
             "default_value": "40",
             "user_viewable": true,
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "App ID",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "349090",
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,

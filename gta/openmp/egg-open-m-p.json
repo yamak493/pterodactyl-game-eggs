@@ -7,7 +7,7 @@
     "exported_at": "2023-07-01T11:37:31+02:00",
     "name": "OpenMP",
     "author": "vedrancappone@gmail.com",
-    "description": "A multiplayer mod for Grand Theft Auto: San Andreas that is fully backwards compatible with San Andreas Multiplayer.",
+    "description": "Grand Theft Auto: San Andreas 向けのマルチプレイMODで、San Andreas Multiplayerとの完全な後方互換性があります。",
     "features": null,
     "docker_images": {
         "Samp": "ghcr.io\/ptero-eggs\/games:samp"
@@ -30,7 +30,7 @@
     "variables": [
         {
             "name": "RCON Password",
-            "description": "The password for RCON",
+            "description": "RCON用のパスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "The version you want to install",
+            "name": "バージョン",
+            "description": "インストールするバージョンを指定します。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

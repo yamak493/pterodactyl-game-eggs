@@ -7,7 +7,7 @@
     "exported_at": "2024-02-02T22:25:49-05:00",
     "name": "Rust Autowipe",
     "author": "support@pterodactyl.io",
-    "description": "The only aim in Rust is to survive. To do this you will need to overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals for meat. Protect yourself from other players, and kill them for meat. Create alliances with other players and form a town. Do whatever it takes to survive.",
+    "description": "Rustでの唯一の目的は生き残ることです。そのためには空腹、渇き、寒さなどの困難を乗り越える必要があります。火を起こし、拠点を作り、動物を狩って食料を確保しましょう。他プレイヤーから身を守り、ときには戦い、同盟を組んで町を作ることもできます。生き残るためにあらゆる手段を尽くしましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players allowed in the server at once.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに同時接続できる最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "40",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of your server in the public server list.",
+            "name": "サーバー名",
+            "description": "公開サーバーリストに表示されるサーバー名です。",
             "env_variable": "HOSTNAME",
             "default_value": "A Rust Server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Level",
-            "description": "The world file for Rust to use.",
+            "name": "レベル",
+            "description": "Rustで使用するワールドファイルです。",
             "env_variable": "LEVEL",
             "default_value": "Procedural Map",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Description",
-            "description": "The description under your server title. Commonly used for rules & info. Use \\n for newlines.",
+            "name": "説明",
+            "description": "サーバータイトル下に表示される説明文です。ルールや案内によく使われます。改行には \\n を使用してください。",
             "env_variable": "DESCRIPTION",
             "default_value": "Powered by Pterodactyl",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "URL",
-            "description": "The URL for your server. This is what comes up when clicking the \"Visit Website\" button.",
+            "description": "サーバーのURLです。\"Visit Website\" ボタンを押した際に開かれます。",
             "env_variable": "SERVER_URL",
             "default_value": "http:\/\/pterodactyl.io",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Size",
-            "description": "The world size for a procedural map.",
+            "name": "ワールドサイズ",
+            "description": "手続き生成マップのワールドサイズです。",
             "env_variable": "WORLD_SIZE",
             "default_value": "3000",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Seed",
-            "description": "The seed for a procedural map.",
+            "name": "ワールドシード",
+            "description": "手続き生成マップのシード値です。",
             "env_variable": "WORLD_SEED",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Image",
-            "description": "The header image for the top of your server listing.",
+            "name": "サーバー画像",
+            "description": "サーバー一覧上部に表示されるヘッダー画像です。",
             "env_variable": "SERVER_IMG",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Port for RCON connections.",
+            "name": "RCONポート",
+            "description": "RCON接続に使用するポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "28016",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "RCON access password.",
+            "name": "RCONパスワード",
+            "description": "RCONアクセス用パスワードです。",
             "env_variable": "RCON_PASS",
             "default_value": "CHANGEME",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Interval",
-            "description": "Sets the server\u2019s auto-save interval in seconds.",
+            "name": "保存間隔",
+            "description": "サーバーの自動保存間隔を秒単位で設定します。",
             "env_variable": "SAVEINTERVAL",
             "default_value": "60",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments",
-            "description": "Add additional startup parameters to the server.",
+            "name": "追加引数",
+            "description": "サーバー起動時に追加する引数です。",
             "env_variable": "ADDITIONAL_ARGS",
             "default_value": "",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Regen Server",
-            "description": "If the server should have its files removed and regenerate the server seed on reinstall.",
+            "name": "サーバー再生成",
+            "description": "再インストール時にサーバーファイルを削除し、サーバーシードを再生成するかを設定します。",
             "env_variable": "REGEN_SERVER",
             "default_value": "0",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "Files to remove",
-            "description": "A space-separated list of files to remove when regenerating the server on reinstall.",
+            "name": "削除するファイル",
+            "description": "再インストール時にサーバーを再生成する際に削除するファイルを、スペース区切りで指定します。",
             "env_variable": "REMOVE_FILES",
             "default_value": "server\/rust\/player.deaths.*.db server\/rust\/player.identities.*.db server\/rust\/player.states.*.db server\/rust\/player.tokens.db proceduralmap.*.*.*.map server\/rust\/proceduralmap.*.*.*.sav oxide\/data\/Kits_Data.json oxide\/data\/NTeleportationHome.json oxide\/data\/ServerRewards\/player_data.json oxide\/data\/PTTracker\/playtime_data.json",
             "user_viewable": true,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "QUERY PORT",
-            "description": "Port for QUERY connections.",
+            "name": "QUERYポート",
+            "description": "QUERY接続に使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "28017",
             "user_viewable": true,
@@ -191,8 +191,8 @@
             "field_type": "text"
         },
         {
-            "name": "APP PORT",
-            "description": "Port for Rust+ applications. -1 to disable.",
+            "name": "APPポート",
+            "description": "Rust+アプリ用ポートです。-1で無効化します。",
             "env_variable": "APP_PORT",
             "default_value": "28082",
             "user_viewable": true,
@@ -201,8 +201,8 @@
             "field_type": "text"
         },
         {
-            "name": "Custom Map URL",
-            "description": "Overwrites the map with the one from the direct download URL. Invalid URLs will cause the server to crash.",
+            "name": "カスタムマップURL",
+            "description": "直接ダウンロードURLのマップで上書きします。無効なURLはサーバークラッシュの原因になります。",
             "env_variable": "MAP_URL",
             "default_value": "",
             "user_viewable": true,
@@ -211,8 +211,8 @@
             "field_type": "text"
         },
         {
-            "name": "Modding Framework",
-            "description": "The modding framework to be used: carbon, oxide, vanilla.\r\nDefaults to \"vanilla\" for a non-modded server installation.",
+            "name": "Modフレームワーク",
+            "description": "使用するModフレームワーク: carbon、oxide、vanilla。\r\n非Modサーバーとしてインストールする場合は \"vanilla\" が既定値です。",
             "env_variable": "FRAMEWORK",
             "default_value": "vanilla",
             "user_viewable": true,

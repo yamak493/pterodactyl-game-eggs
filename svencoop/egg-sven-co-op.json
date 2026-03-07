@@ -7,7 +7,7 @@
     "exported_at": "2023-07-28T16:36:08+02:00",
     "name": "Sven Co-op",
     "author": "pteroducktyl@yildri.nl",
-    "description": "Sven Co-op is a co-operative game originally based around Valve Software's Half-Life. In this game players must work together against computer controlled enemies and solve puzzles as a team.",
+    "description": "Sven Co-opはValve SoftwareのHalf-Lifeを基にした協力プレイゲームです。プレイヤーはコンピューター制御の敵に協力して立ち向かい、チームでパズルを解いて進みます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Default Map",
-            "description": "The default map for the server.",
+            "name": "デフォルトマップ",
+            "description": "サーバーのデフォルトマップです。",
             "env_variable": "SC_MAP",
             "default_value": "svencoop1",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum amount of players that can play on the server at once.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで同時にプレイできる最大プレイヤー数です。",
             "env_variable": "SC_PLAYERS",
             "default_value": "12",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name your server will appear as on the in Sven Co-op in-game server list.",
+            "name": "サーバー名",
+            "description": "Sven Co-opのゲーム内サーバー一覧に表示される名前です。",
             "env_variable": "SC_NAME",
             "default_value": "Sven Co-op server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Password",
-            "description": "Password required to join the server. Leave blank to disable.",
+            "name": "パスワード",
+            "description": "サーバー参加に必要なパスワードです。空欄で無効になります。",
             "env_variable": "SC_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Region",
-            "description": "The region your server is in. This is used in Steam's server browser, so players can look for servers near by. This does not restrict players from connecting to your server.\r\n\r\n-1: Do not list server in the server browser.\r\n0: USA east coast.\r\n1: USA west coast.\r\n2: South America (continent)\r\n3: Europe.\r\n4: Asia.\r\n5: Australia (continent, aka Oceania)\r\n6: Middle East.\r\n7: Africa.\r\n255: International.",
+            "name": "リージョン",
+            "description": "サーバーの所在リージョンです。Steamサーバーブラウザで近くのサーバー検索に使われますが、接続自体の制限はしません。\r\n\r\n-1: サーバーブラウザ非表示\r\n0: 米国東海岸\r\n1: 米国西海岸\r\n2: 南米\r\n3: 欧州\r\n4: アジア\r\n5: オーストラリア（オセアニア）\r\n6: 中東\r\n7: アフリカ\r\n255: 国際",
             "env_variable": "SC_REGION",
             "default_value": "255",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "Source AppID",
-            "description": "Required for game to update on server restart. Do not modify this.",
+            "description": "サーバー再起動時のゲーム更新に必要です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "276060",
             "user_viewable": false,

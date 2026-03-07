@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:14:22+02:00",
     "name": "NanoLimbo",
     "author": "mail@wuffy.eu",
-    "description": "This is lightweight minecraft limbo server, written on Java with Netty. The main goal of the project is maximum simplicity with a minimum number of sent and processed packets. This limbo is empty, there are no ability to set schematic building since this is not necessary. You can send useful information in chat or BossBar.\r\n\r\nNo plugins, no logs. The server is fully clear. It only able keep a lot of players while the main server is down.",
+    "description": "これはNettyを使用してJavaで書かれた軽量なMinecraft Limboサーバーです。このプロジェクトの主目的は、送受信および処理するパケット数を最小限にしつつ最大限シンプルにすることです。このLimboは空の状態で、必要がないためスキーマティック建築の設定機能はありません。チャットやBossBarで有用な情報を送信できます。\r\n\r\nプラグインなし、ログなし。サーバーは非常にクリーンです。メインサーバーが停止している間に多くのプレイヤーを保持する用途に特化しています。",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Server jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -43,8 +43,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download URL",
-            "description": "A URL to use to download.\r\nThis is optional! Let this field empty for the latest version.",
+            "name": "ダウンロードURL",
+            "description": "ダウンロードに使用するURLです。\r\n任意項目です。最新バージョンを使用する場合はこの項目を空欄にしてください。",
             "env_variable": "DOWNLOAD_URL",
             "default_value": "",
             "user_viewable": true,
@@ -53,8 +53,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "The version of NanoLimbo to download. Use \"latest\" for latest.",
+            "name": "バージョン",
+            "description": "ダウンロードするNanoLimboのバージョンです。最新を使用する場合は\"latest\"を指定してください。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,

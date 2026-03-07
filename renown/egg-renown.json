@@ -7,7 +7,7 @@
     "exported_at": "2025-10-06T22:43:39+02:00",
     "name": "Renown",
     "author": "info@emeraldhost.de",
-    "description": "Renown is an intense medieval multiplayer survival experience set in a vast, ever-evolving world. Whether alone or rallying allies, gather resources, build powerful strongholds, and engage in brutal battles for dominance.",
+    "description": "Renown は、広大で常に変化する世界を舞台にした、濃密な中世マルチプレイサバイバル体験です。単独でも仲間とでも、資源を集め、強力な拠点を築き、覇権をかけた苛烈な戦いに挑みます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:debian": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The name of the server, as shown in the server list",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password used to access to the server, this can also be empty",
+            "name": "サーバーパスワード",
+            "description": "サーバーアクセスに使用するパスワードです。空欄でも可です。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password used for admin access",
+            "name": "管理者パスワード",
+            "description": "管理者アクセスに使用するパスワードです。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "ChangeMe",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
-            "description": "The maximum amount of allowed players",
+            "name": "最大プレイヤー数",
+            "description": "許可される最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "32",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Public Server",
-            "description": "When Public Server is True, set Private Session to False",
+            "name": "公開サーバー",
+            "description": "公開サーバーをTrueにする場合、Private SessionはFalseに設定してください。",
             "env_variable": "PUBLIC",
             "default_value": "True",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Private Session",
-            "description": "When Private Session is False, set Public Server to True",
+            "name": "プライベートセッション",
+            "description": "Private SessionをFalseにする場合、Public ServerはTrueに設定してください。",
             "env_variable": "SERVER_LIST",
             "default_value": "False",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Rotation",
-            "description": "Defines which maps will rotate during gameplay",
+            "name": "マップローテーション",
+            "description": "ゲームプレイ中に循環するマップを定義します。",
             "env_variable": "MAP_ROTATION",
             "default_value": "RSurv-AlgaraIsle_p",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "The name of the save file used by the server",
+            "name": "セーブ名",
+            "description": "サーバーが使用するセーブファイル名です。",
             "env_variable": "SAVE_NAME",
             "default_value": "Save_1",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "First Person Only",
-            "description": "Forces players to use first-person view only",
+            "name": "一人称視点のみ",
+            "description": "プレイヤーを一人称視点のみに固定します。",
             "env_variable": "FIRST_PERSON_ONLY",
             "default_value": "1",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Use First Map",
-            "description": "If set to True, the server loads the first map in rotation on startup",
+            "name": "最初のマップを使用",
+            "description": "Trueにすると、起動時にローテーションの最初のマップを読み込みます。",
             "env_variable": "USE_FIRST_MAP",
             "default_value": "True",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Port used for server query and visibility in the server list",
+            "name": "クエリポート",
+            "description": "サーバークエリとサーバー一覧への表示に使用するポートです。",
             "env_variable": "QUERY_PORT",
             "default_value": "0",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beacon Port",
-            "description": "The server Beacon Port",
+            "name": "ビーコンポート",
+            "description": "サーバーのビーコンポートです。",
             "env_variable": "BEACON_PORT",
             "default_value": "0",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Port used for remote console (RCON) connections",
+            "name": "RCONポート",
+            "description": "リモートコンソール（RCON）接続に使用するポートです。",
             "env_variable": "RCON_PORT",
             "default_value": "0",
             "user_viewable": true,
@@ -159,8 +159,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable RCON",
-            "description": "Enable or disable RCON remote console access",
+            "name": "RCON有効化",
+            "description": "RCONリモートコンソールアクセスを有効または無効にします。",
             "env_variable": "ENABLE_RCON",
             "default_value": "True",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "Password used to log in to the server via RCON",
+            "name": "RCONパスワード",
+            "description": "RCON経由でサーバーにログインするためのパスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "RconPassword",
             "user_viewable": true,
@@ -179,8 +179,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "If set to 1, the server will automatically update on startup",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -190,7 +190,7 @@
         },
         {
             "name": "Steam App ID",
-            "description": "The Steam App ID used for updates and validation",
+            "description": "更新と検証に使用されるSteamアプリIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1512690",
             "user_viewable": true,

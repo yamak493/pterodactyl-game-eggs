@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:33:52+00:00",
     "name": "SpongeVanilla",
     "author": "parker@parkervcp.com",
-    "description": "SpongeVanilla is the implementation of the Sponge API on top of Vanilla Minecraft.",
+    "description": "SpongeVanillaは、Vanilla Minecraft上でSponge APIを実装したサーバーです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "SpongeVanilla Version",
-            "description": "Example 1.12.2-7.1.6\r\n\r\nIf the version fails it defaults to recommended",
+            "name": "SpongeVanillaバージョン",
+            "description": "例: 1.12.2-7.1.6\r\n\r\n指定したバージョンが無効な場合はrecommendedに戻ります。",
             "env_variable": "SV_VERSION",
             "default_value": "recommended",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the Jarfile to use when running Mod.",
+            "name": "サーバーJarファイル",
+            "description": "Mod実行時に使用するJarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,

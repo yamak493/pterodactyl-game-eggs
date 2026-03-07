@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:31:40+00:00",
     "name": "Krypton",
     "author": "callum.seabrook@prevarinite.com",
-    "description": "A fast, lightweight Minecraft server written in Kotlin",
+    "description": "Kotlinで書かれた高速かつ軽量なMinecraftサーバーです。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server JAR File",
-            "description": "The name of the server JAR to run the server with.",
+            "name": "サーバーJARファイル",
+            "description": "サーバーの起動に使用するJARファイル名です。",
             "env_variable": "SERVER_JAR",
             "default_value": "Krypton.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Krypton Version",
-            "description": "The version of Krypton to download and use.",
+            "name": "Kryptonバージョン",
+            "description": "ダウンロードして使用するKryptonのバージョンです。",
             "env_variable": "KRYPTON_VERSION",
             "default_value": "latest",
             "user_viewable": true,

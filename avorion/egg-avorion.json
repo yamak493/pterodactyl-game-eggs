@@ -7,7 +7,7 @@
     "exported_at": "2023-12-16T13:33:18+01:00",
     "name": "Avorion",
     "author": "iamkubi@gmail.com",
-    "description": "A procedural co-op space sandbox where players can build their own space ships out of dynamically scalable blocks. Fight epic space battles, explore, mine, trade, wage wars and build your own empire to save your galaxy from being torn apart by an unknown enemy.",
+    "description": "動的に拡張できるブロックで自分だけの宇宙船を建造できる、手続き生成型の協力プレイ宇宙サンドボックスです。壮大な宇宙戦を繰り広げ、探索・採掘・交易・戦争を行いながら、自分の帝国を築き、未知の敵による銀河崩壊を阻止しましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Galaxy Name",
-            "description": "Name of the Galaxy to create",
+            "name": "銀河名",
+            "description": "作成する銀河の名前",
             "env_variable": "GALAXY_NAME",
             "default_value": "Avorion",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server, shown in the server list.",
+            "name": "サーバー名",
+            "description": "サーバーリストに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Avorion Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin ID",
-            "description": "Steam64 ID for the player to make Server Admin",
+            "name": "管理者 ID",
+            "description": "サーバー管理者にするプレイヤーの Steam64 ID",
             "env_variable": "ADMIN_ID",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum number of players allowed",
+            "name": "最大プレイヤー数",
+            "description": "許可する最大プレイヤー数",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Difficulty",
-            "description": "Difficulty of the server, allowed values are: -3, -2, -1, 0, 1, 2, 3 Default: 0",
+            "name": "ゲーム難易度",
+            "description": "サーバー難易度です。指定可能値: -3, -2, -1, 0, 1, 2, 3。既定値: 0",
             "env_variable": "DIFFICULTY",
             "default_value": "0",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Collision Damage",
-            "description": "A multiplier for damage to colliding objects. Accepts floating-point numbers, e.g. 0.5 is 50% collision damage. 0: no damage, 1: full damage. default: 1",
+            "name": "衝突ダメージ",
+            "description": "衝突時ダメージの倍率です。小数を指定できます（例: 0.5 は 50%）。0 はダメージなし、1 は通常ダメージ。既定値: 1",
             "env_variable": "COLLISION_DMG",
             "default_value": "1",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Interval",
-            "description": "Time between automatic saves in seconds.  Defaults to 300 (5 minutes).",
+            "name": "保存間隔",
+            "description": "自動保存の間隔（秒）です。既定値は 300（5分）です。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "300",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Same Start Sector",
-            "description": "Indicates if all players should start in the same sector. If false, a random empty sector on the outer rim is populated and used as the home sector for each new player.",
+            "name": "同一開始セクター",
+            "description": "すべてのプレイヤーを同じセクターから開始させるかどうかを指定します。false の場合は外縁部のランダムな空セクターが生成され、新規プレイヤーごとのホームセクターになります。",
             "env_variable": "SAME_START_SECTOR",
             "default_value": "true",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Threads",
-            "description": "Number of concurrent threads that are used to update sectors. (Identical to the 'Threads' setting ingame.)",
+            "name": "スレッド数",
+            "description": "セクター更新に使用する同時実行スレッド数です。（ゲーム内の「Threads」設定と同じ）",
             "env_variable": "GAME_THREADS",
             "default_value": "1",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "List Publicly",
-            "description": "Privacy setting. If enabled together with useSteam, the server will show up in public server lists. (Same as the ingame setting 'List Publicly')",
+            "name": "公開リストに表示",
+            "description": "公開設定です。useSteam と併せて有効にすると、サーバーが公開サーバーリストに表示されます。（ゲーム内の「List Publicly」と同じ）",
             "env_variable": "SERVER_LISTED",
             "default_value": "true",
             "user_viewable": true,
@@ -141,7 +141,7 @@
             "field_type": "text"
         },
         {
-            "name": "LD Library Path",
+            "name": "LD ライブラリパス",
             "description": "",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".\/linux64",
@@ -151,7 +151,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Master Port",
+            "name": "Steam マスターポート",
             "description": "",
             "env_variable": "STEAM_MASTER_PORT",
             "default_value": "27021",
@@ -161,7 +161,7 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Query Port",
+            "name": "Steam クエリポート",
             "description": "",
             "env_variable": "STEAM_QUERY_PORT",
             "default_value": "27020",
@@ -171,7 +171,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27003",
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "1 = on; 0 = off",
+            "name": "自動更新",
+            "description": "1 = 有効、0 = 無効",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -191,8 +191,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch",
-            "description": "Leave empty for the public branch, beta for the beta branch.",
+            "name": "ベータブランチ",
+            "description": "公開ブランチを使う場合は空欄、ベータブランチを使う場合は beta を指定します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2023-08-01T16:53:44+02:00",
     "name": "mohaa",
     "author": "th3dilli@gmx.at",
-    "description": "Medal of Honor: Allied Assault",
+    "description": "メダル オブ オナー アライドアサルト",
     "features": null,
     "docker_images": {
         "Mohaa": "ghcr.io\/ptero-eggs\/games:mohaa"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Max clients",
+            "name": "最大クライアント数",
             "description": "",
             "env_variable": "SERVER_MAXCLIENTS",
             "default_value": "14",
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Config URL",
-            "description": "URL from where to get the initial server.cfg",
+            "name": "設定URL",
+            "description": "初期の server.cfg を取得するURLです。",
             "env_variable": "CONFIG_URL",
             "default_value": "https:\/\/raw.githubusercontent.com\/ptero-eggs\/game-eggs\/main\/mohaa\/server.cfg",
             "user_viewable": false,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
-            "description": "The name of the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "MOHAA Server running on Pterodactyl",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon password",
-            "description": "Admin password for rcon",
+            "name": "RCONパスワード",
+            "description": "RCON用の管理者パスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server map",
-            "description": "Select the map",
+            "name": "サーバーマップ",
+            "description": "マップを選択します。",
             "env_variable": "SERVER_MAP",
             "default_value": "dm\/mohdm7",
             "user_viewable": true,
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Logs dir",
+            "name": "ログディレクトリ",
             "description": "",
             "env_variable": "LOG_DIR",
             "default_value": "\/home\/container\/Logs",
@@ -89,7 +89,7 @@
             "field_type": "text"
         },
         {
-            "name": "Base PATH",
+            "name": "ベースPATH",
             "description": "",
             "env_variable": "BASE_PATH",
             "default_value": "\/home\/container",
@@ -99,7 +99,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",

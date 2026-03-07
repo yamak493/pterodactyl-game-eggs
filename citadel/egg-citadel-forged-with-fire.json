@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:29:33+02:00",
     "name": "Citadel: Forged with Fire",
     "author": "eggs@goover.dev",
-    "description": "Citadel: Forged With Fire is a massive online sandbox RPG set in the mystical world of Ignus. Featuring magic, spellcasting, building, exploring and crafting as you fight to make a name for yourself and achieve notoriety across the land.",
+    "description": "Citadel: Forged With Fire は、神秘の世界 Ignus を舞台にした大規模オンラインサンドボックス RPG です。魔法、呪文詠唱、建築、探索、クラフトを駆使しながら、名声を築いて大陸中にその名を轟かせる戦いに挑みます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,7 +31,7 @@
     },
     "variables": [
         {
-            "name": "SRCDS_APPID",
+            "name": "SRCDS APP ID",
             "description": "ID",
             "env_variable": "SRCDS_APPID",
             "default_value": "489650",
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "port",
+            "name": "クエリポート",
+            "description": "ポート",
             "env_variable": "QPORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ADMIN_PASSWD",
             "default_value": "",
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "1 = on; 0 = off",
+            "name": "自動更新",
+            "description": "1 = 有効、0 = 無効",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

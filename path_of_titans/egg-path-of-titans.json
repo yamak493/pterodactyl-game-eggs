@@ -7,7 +7,7 @@
     "exported_at": "2025-04-14T10:05:12+08:00",
     "name": "Path Of Titans",
     "author": "danielivanvladimir.revin@gmail.com",
-    "description": "Path of Titans is a multiplayer dinosaur survival video game. Survive as a dinosaur in a rich ecosystem filled with intelligent AI creatures and up to 200 other players.",
+    "description": "Path of Titans はマルチプレイ恐竜サバイバルゲームです。知的なAI生物と最大200人の他プレイヤーがいる豊かな生態系で、恐竜として生き延びましょう。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Server Map",
+            "name": "サーバーマップ",
             "description": "",
             "env_variable": "SERVER_MAP",
             "default_value": "Island",
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "SERVER_MAX_PLAYERS",
             "default_value": "100",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "YoutServerName",
@@ -60,7 +60,7 @@
         },
         {
             "name": "GUID",
-            "description": "Use https:\/\/guidgenerator.com\/",
+            "description": "https:\/\/guidgenerator.com\/ を使用してください。",
             "env_variable": "SERVER_GUID",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Branch",
-            "description": "Choose between production or demo-public-test",
+            "name": "ブランチ",
+            "description": "production または demo-public-test から選択します。",
             "env_variable": "BETA_BRANCH",
             "default_value": "production",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Database mode",
-            "description": "Server can use a Local or Remote Database. Specified using Local or Remote. We recommend using a Local Database unless you plan on connecting shared character data between servers.",
+            "name": "データベースモード",
+            "description": "サーバーはLocalまたはRemoteデータベースを使用できます。LocalまたはRemoteを指定してください。サーバー間でキャラクターデータ共有を行う予定がない限り、Localを推奨します。",
             "env_variable": "SERVER_DB",
             "default_value": "Local",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auth Token",
-            "description": "Get your AUTH token there https://alderongames.com/oauth/hosting-token !!YOU NEED TO OWN THE GAME!!",
+            "name": "認証トークン",
+            "description": "AUTHトークンは https://alderongames.com/oauth/hosting-token で取得します。!!ゲーム所有が必要です!!",
             "env_variable": "AG_AUTH_TOKEN",
             "default_value": "",
             "user_viewable": true,
@@ -99,7 +99,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "7778",
@@ -109,7 +109,7 @@
             "field_type": "text"
         },
         {
-            "name": "Rcon port",
+            "name": "RCONポート",
             "description": "",
             "env_variable": "RCON_PORT",
             "default_value": "7779",

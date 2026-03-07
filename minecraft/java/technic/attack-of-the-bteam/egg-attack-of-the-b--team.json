@@ -7,7 +7,7 @@
     "exported_at": "2024-06-01T19:39:48+00:00",
     "name": "Attack of the B-Team",
     "author": "support@pterodactyl.io",
-    "description": "This modpack was designed with one thing in mind, crazy mad science! With the help of the B-Team we hand picked the wackiest mods we could find and shoved them all in a modpack for you guys. The result is Attack of the B-Team!",
+    "description": "このModpackは、ぶっ飛んだマッドサイエンスをテーマに設計されています。B-Teamの協力のもと、見つけた中でも最も奇抜なMODを厳選して詰め込んだ結果が、Attack of the B-Teamです。",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
-            "description": "Version of the modpack to use",
+            "name": "Modpackバージョン",
+            "description": "使用するModpackのバージョンです。",
             "env_variable": "MODPACK_VERSION",
             "default_value": "1.0.12c",
             "user_viewable": true,

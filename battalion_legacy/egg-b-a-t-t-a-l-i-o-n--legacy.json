@@ -7,7 +7,7 @@
     "exported_at": "2023-07-13T20:14:32+03:00",
     "name": "BATTALION: Legacy",
     "author": "diedyesterdaywashere@gmail.com",
-    "description": "BATTALION: Legacy recaptures the core of classic shooters in the final iteration of Battalion 1944. Return to the simple days of playing first person shooters with your friends. Grab your bolt action rifle in 'rifles only' mode or compete in 5v5 Search and Destroy.",
+    "description": "BATTALION: Legacy は、Battalion 1944 の最終形としてクラシック FPS の本質を取り戻した作品です。友人と気軽に FPS を楽しんだ時代へ戻りましょう。『rifles only』モードでボルトアクションライフルを使うか、5v5 の Search and Destroy で競い合えます。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Server will check for updates on every restart. Use 0 to disable.",
+            "name": "自動更新",
+            "description": "サーバーは再起動ごとに更新を確認します。無効化する場合は 0 を指定してください。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl hosted Server",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "ADMIN_PW",
             "default_value": "changeme",

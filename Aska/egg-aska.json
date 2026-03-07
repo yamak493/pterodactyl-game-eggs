@@ -7,7 +7,7 @@
     "exported_at": "2025-04-13T14:25:32+00:00",
     "name": "Aska",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Lay claim to unspoiled lands and pave the way for a fierce Viking tribe. Craft the ultimate settlement solo or together with up to x3 friends. Trust in the Gods and the power of the Eye of Odin and summon intelligent NPC villagers to provide camaraderie and relief from the toils of survival",
+    "description": "手つかずの土地を開拓し、屈強なヴァイキング部族の道を切り開きましょう。ひとりで、または最大3人の仲間と共に理想の集落を築けます。神々とオーディンの目の力を信じ、知性ある NPC 村人を召喚して、過酷なサバイバルの負担を和らげましょう。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Display Name",
-            "description": "Display name is the name the session displays in the session list for new saves, for old saves it will take the name from the save itself",
+            "name": "表示名",
+            "description": "新規セーブではセッション一覧に表示される名前です。既存セーブではセーブデータ側の名前が使用されます。",
             "env_variable": "DISPLAY_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Override for the host name that is displayed in the session list. if left blank it will use what would normally be used when hosting from this machine",
+            "name": "サーバー名",
+            "description": "セッション一覧に表示されるホスト名の上書き設定です。空欄の場合はこのマシンで通常ホスト時に使われる名前を使用します。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "The password this session will have",
+            "name": "サーバーパスワード",
+            "description": "このセッションに設定するパスワードです",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Region",
-            "description": "The region to open this session on. Possible options: default, asia, japan, europe, south america, south korea, usa east, usa west, australia, canada east, hong kong, india, turkey, united arab emirates, usa south central.\r\n\r\nLeave default to ping the best region",
+            "name": "サーバー地域",
+            "description": "このセッションを公開する地域です。指定可能: default, asia, japan, europe, south america, south korea, usa east, usa west, australia, canada east, hong kong, india, turkey, united arab emirates, usa south central。\r\n\r\n最適地域を自動選択する場合は default のままにしてください。",
             "env_variable": "SERVER_REGION",
             "default_value": "default",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Server Login Token",
-            "description": "The token needed to authenticate the game server to the steam network.\r\nhttps:\/\/steamcommunity.com\/dev\/managegameservers and use App ID 1898300",
+            "name": "ゲームサーバーログイントークン",
+            "description": "ゲームサーバーを Steam ネットワークへ認証するためのトークンです。\r\nhttps:\/\/steamcommunity.com\/dev\/managegameservers で App ID 1898300 を使用してください。",
             "env_variable": "STEAM_GSLT",
             "default_value": "",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Keep Server World Alive",
-            "description": "If set to true when the session is open, the world is also updating, even without players, if set to false, the world loads when the first player joins and the world unloads when the last player leaves.",
+            "name": "サーバーワールドを常時稼働",
+            "description": "true の場合、セッション公開中はプレイヤー不在でもワールドが更新され続けます。false の場合、最初のプレイヤー参加時にワールドを読み込み、最後のプレイヤー退出時にアンロードします。",
             "env_variable": "KEEP_SERVER_WORLD_ALIVE",
             "default_value": "false",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "SteamAppId",
-            "description": "Required for the game server to connect correctly to the steam API. The game reads this from the environment when connecting to steam.",
+            "description": "ゲームサーバーが Steam API に正しく接続するために必要です。Steam 接続時にゲームが環境変数から読み取ります。",
             "env_variable": "SteamAppId",
             "default_value": "1898300",
             "user_viewable": false,
@@ -121,7 +121,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wine デバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Enable automatic updates on boot.",
+            "name": "自動更新",
+            "description": "起動時の自動更新を有効化します。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

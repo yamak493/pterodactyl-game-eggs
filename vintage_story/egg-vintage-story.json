@@ -7,7 +7,7 @@
     "exported_at": "2025-08-25T22:18:56+02:00",
     "name": "Vintage Story",
     "author": "mail@wuffy.eu",
-    "description": "Vintage Story is an uncompromising wilderness survival sandbox game inspired by lovecraftian horror themes. Find yourself in a ruined world reclaimed by nature and permeated by unnerving temporal disturbances. Relive the advent of human civilization, or take your own path.",
+    "description": "Vintage Storyは、ラヴクラフト風ホラーテーマに着想を得た妥協なき自然サバイバルサンドボックスゲームです。自然に取り戻され、不気味な時間異常が満ちる崩壊世界で、人類文明の黎明を追体験するか、自分だけの道を進みましょう。",
     "features": null,
     "docker_images": {
         "Dotnet 7": "ghcr.io\/ptero-eggs\/yolks:dotnet_7",
@@ -30,7 +30,7 @@
     },
     "variables": [
         {
-            "name": "Start options",
+            "name": "起動オプション",
             "description": "",
             "env_variable": "OPTIONS",
             "default_value": "",
@@ -40,7 +40,7 @@
             "field_type": "text"
         },
         {
-            "name": "Release branch",
+            "name": "リリースブランチ",
             "description": "",
             "env_variable": "FILES_BRANCH",
             "default_value": "stable",
@@ -50,7 +50,7 @@
             "field_type": "text"
         },
         {
-            "name": "Release version",
+            "name": "リリースバージョン",
             "description": "",
             "env_variable": "RELEASE_VERSION",
             "default_value": "latest",
@@ -60,7 +60,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Clients",
+            "name": "最大クライアント数",
             "description": "",
             "env_variable": "MAX_CLIENTS",
             "default_value": "16",
@@ -70,8 +70,8 @@
             "field_type": "text"
         },
         {
-            "name": "Sqlite temporary files directory",
-            "description": "Defines the location for the temporary files in sqlite. This is needed for the \"\/db vacuum\" command (added in 1.19) since else it will use the \/tmp folder which by default only has 100MB and is in memory.",
+            "name": "Sqlite一時ファイルディレクトリ",
+            "description": "sqliteの一時ファイル保存先を指定します。\"\/db vacuum\" コマンド（1.19で追加）に必要です。未指定だとデフォルトでメモリ上の\/tmp（100MB）を使用します。",
             "env_variable": "SQLITE_TMPDIR",
             "default_value": "\/home\/container\/data\/Backups",
             "user_viewable": true,

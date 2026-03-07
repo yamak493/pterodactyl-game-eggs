@@ -7,7 +7,7 @@
     "exported_at": "2023-12-18T17:27:56+01:00",
     "name": "Colony Survival",
     "author": "josdekurk@gmail.com",
-    "description": "Colony Survival is a unique first-person strategy game developed by a two-man team. Build your own colony in a voxel world. Command guards, farmers, miners and other colonists. Defend your colony against the horde of monsters that attacks every night!",
+    "description": "Colony Survival は、2人チームによって開発されたユニークな一人称視点ストラテジーゲームです。ボクセル世界で自分だけのコロニーを築き、警備兵、農民、鉱夫などの入植者を指揮します。毎晩襲来するモンスターの群れからコロニーを守り抜きましょう。",
     "features": null,
     "docker_images": {
         "SteamCMD": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on restart",
+            "name": "自動更新",
+            "description": "再起動時にサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "World name",
+            "name": "ワールド名",
             "description": "",
             "env_variable": "WORLD_NAME",
             "default_value": "Pterodactyl",
@@ -59,7 +59,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl",
@@ -69,7 +69,7 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server steamport",
+            "name": "サーバー Steam ポート",
             "description": "",
             "env_variable": "SERVER_STEAMPORT",
             "default_value": "27005",

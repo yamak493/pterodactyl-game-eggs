@@ -7,7 +7,7 @@
     "exported_at": "2022-10-16T09:21:36+02:00",
     "name": "Rising World Java Legacy",
     "author": "eggs@goover.dev",
-    "description": "Rising World is a voxel based open-world sandbox game, featuring a procedurally generated world, playable in single and multi-player.",
+    "description": "Rising Worldはボクセルベースのオープンワールドサンドボックスゲームで、手続き生成ワールドをシングルプレイとマルチプレイで楽しめます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Name of the server",
+            "name": "サーバー名",
+            "description": "サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Rising World Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Maximum player count for the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーの最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "Overrides the default RCON Port",
+            "name": "RCONポート",
+            "description": "デフォルトのRCONポートを上書きします。",
             "env_variable": "RCON_PORT",
             "default_value": "4253",
             "user_viewable": true,
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
+            "name": "RCONパスワード",
             "description": "",
             "env_variable": "RCON_PASSWORD",
             "default_value": "changeme",
@@ -71,7 +71,7 @@
             "field_type": "text"
         },
         {
-            "name": "LD Library Path",
+            "name": "LDライブラリパス",
             "description": "",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".\/linux64",
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",

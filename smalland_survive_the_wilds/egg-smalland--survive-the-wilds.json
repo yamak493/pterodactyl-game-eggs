@@ -7,7 +7,7 @@
     "exported_at": "2024-01-29T20:58:28-08:00",
     "name": "Smalland: Survive the Wilds",
     "author": "git@robsti.dev",
-    "description": "Experience a big adventure on a tiny scale! Enjoy multiplayer survival in a vast, hazardous world. Preparation is key when you're this small & at the bottom of the food chain. Craft weapons & armour, tame & ride creatures, build encampments & explore a strange new land.\r\n\r\nSteam: https:\/\/store.steampowered.com\/app\/768200\/Smalland_Survive_the_Wilds\/",
+    "description": "小さな体で大きな冒険を体験しよう。広大で危険な世界でマルチプレイサバイバルを楽しめます。食物連鎖の底辺で生きるには準備が鍵です。武器や防具を作り、生き物を手なずけて騎乗し、拠点を築いて未知の土地を探索しましょう。\r\n\r\nSteam: https:\/\/store.steampowered.com\/app\/768200\/Smalland_Survive_the_Wilds\/",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "Name displayed in the server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示される名前です。",
             "env_variable": "SERVERNAME",
             "default_value": "My Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Check for updates on server boot",
+            "name": "自動更新",
+            "description": "サーバー起動時に更新を確認します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
-            "description": "Name of the save game file.",
+            "name": "ワールド名",
+            "description": "セーブデータファイル名です。",
             "env_variable": "WORLDNAME",
             "default_value": "World",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server password required to access the server.",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。",
             "env_variable": "PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Is Private Game",
-            "description": "Flag indicating if this game is private.",
+            "name": "プライベートゲーム",
+            "description": "このゲームをプライベートにするかを示すフラグです。",
             "env_variable": "PRIVATE",
             "default_value": "0",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Friendly Fire Enabled",
-            "description": "Enable\/disable friendly fire.",
+            "name": "フレンドリーファイア有効",
+            "description": "フレンドリーファイアの有効\/無効を設定します。",
             "env_variable": "FRIENDLYFIRE",
             "default_value": "0",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Peaceful Mode Enabled",
-            "description": "Enable\/disable peaceful mode.",
+            "name": "ピースフルモード有効",
+            "description": "ピースフルモードの有効\/無効を設定します。",
             "env_variable": "PEACEFULMODE",
             "default_value": "0",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Keep Inventory Enabled",
-            "description": "Enable\/disable keep inventory.",
+            "name": "インベントリ保持有効",
+            "description": "死亡時のインベントリ保持の有効\/無効を設定します。",
             "env_variable": "KEEPINVENTORY",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Deterioration Enabled",
-            "description": "Enable\/disable deterioration.",
+            "name": "劣化有効",
+            "description": "劣化システムの有効\/無効を設定します。",
             "env_variable": "DETERIORATION",
             "default_value": "1",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Length Of Day",
-            "description": "Length of day in seconds. (ie. 1800 = 30 min.)",
+            "name": "1日の長さ",
+            "description": "1日の長さ（秒）です。（例: 1800 = 30分）",
             "env_variable": "LENGTHOFDAYSECONDS",
             "default_value": "1800",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Length of Seasons",
-            "description": "Length of seasons in seconds. (ie. 1800 = 30 min.)",
+            "name": "季節の長さ",
+            "description": "季節の長さ（秒）です。（例: 1800 = 30分）",
             "env_variable": "LENGTHOFSEASONSECONDS",
             "default_value": "10800",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Creature Health Modifier",
-            "description": "Creature health percentage modifier.",
+            "name": "クリーチャー体力補正",
+            "description": "クリーチャー体力の割合補正値です。",
             "env_variable": "CREATUREHEALTHMODIFIER",
             "default_value": "100",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Creature Damage Modifier",
-            "description": "Creature damage percentage modifier.",
+            "name": "クリーチャー攻撃力補正",
+            "description": "クリーチャー攻撃力の割合補正値です。",
             "env_variable": "CREATUREDAMAGEMODIFIER",
             "default_value": "100",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Nourishment Loss Modifier",
-            "description": "Nourishment loss percentage modifier.",
+            "name": "栄養減少補正",
+            "description": "栄養減少率の補正値です。",
             "env_variable": "NOURISHMENTLOSSMODIFIER",
             "default_value": "100",
             "user_viewable": true,

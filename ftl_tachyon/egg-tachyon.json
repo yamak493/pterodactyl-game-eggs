@@ -7,7 +7,7 @@
     "exported_at": "2023-02-23T17:52:24+01:00",
     "name": "Tachyon",
     "author": "alex.chang-lam@protonmail.com",
-    "description": "A multiplayer version of FTL.",
+    "description": "FTL のマルチプレイ版です。",
     "features": null,
     "docker_images": {
         "Java_11": "ghcr.io\/pterodactyl\/yolks:java_11"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Version",
+            "name": "バージョン",
             "description": "",
             "env_variable": "VERSION",
             "default_value": "latest",

@@ -7,7 +7,7 @@
     "exported_at": "2023-12-30T14:42:14-05:00",
     "name": "Hogwarp",
     "author": "imkringle@proton.me",
-    "description": "A Pterodactyl egg for the Hogwarts Legacy mod Hogwarp - For more info see their Nexus: https:\/\/www.nexusmods.com\/hogwartslegacy\/mods\/1378",
+    "description": "Hogwarts Legacy 用 MOD「Hogwarp」の Pterodactyl egg です。詳細は Nexus を参照してください: https:\/\/www.nexusmods.com\/hogwartslegacy\/mods\/1378",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:wine_latest": "ghcr.io\/ptero-eggs\/yolks:wine_latest"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Hogwarp API Key",
-            "description": "A API required to boot - https:\/\/presence.hogwarp.com\/login\r\n- If not set on install it will fail. Set API Key then Reinstall Files",
+            "name": "Hogwarp API キー",
+            "description": "起動に必要な API キーです - https:\/\/presence.hogwarp.com\/login\r\n- インストール時に未設定だと失敗します。API キーを設定してからファイルを再インストールしてください",
             "env_variable": "API_KEY",
             "default_value": "CHANGEME",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "A name that displays on the Hogwarp list",
+            "name": "サーバー名",
+            "description": "Hogwarp の一覧に表示される名前です",
             "env_variable": "SERV_NAME",
             "default_value": "Ptero Hogwarp Server",
             "user_viewable": true,
@@ -60,7 +60,7 @@
         },
         {
             "name": "WineARCH",
-            "description": "Arch type for Wine",
+            "description": "Wine 用アーキテクチャ種別です",
             "env_variable": "WINEARCH",
             "default_value": "win64",
             "user_viewable": false,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Max players for a server, this depends on your Patreon level for Hogwarp\r\nhttps:\/\/www.patreon.com\/tiltedphoques - ( 4, 8, 16, No Limit ) In that order.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーの最大プレイヤー数です。Hogwarp の Patreon レベルに依存します\r\nhttps:\/\/www.patreon.com\/tiltedphoques -（4、8、16、無制限）の順です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Icon URL",
-            "description": "The icon that displays on Hogwarps multiplayer listing",
+            "name": "サーバーアイコン URL",
+            "description": "Hogwarp のマルチプレイ一覧に表示されるアイコンです",
             "env_variable": "SERV_ICON",
             "default_value": "",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "The description that shows on the Multiplayer list",
+            "name": "サーバー説明",
+            "description": "マルチプレイ一覧に表示される説明です",
             "env_variable": "SERV_DESC",
             "default_value": "",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Download URL",
-            "description": "URL to pull the files from\r\n- Files can be found in their Discord (https:\/\/discord.com\/invite\/hogwarp). Default URL will pull from there as well\r\n- These files can be outdated! Be sure to check for an update in the event it has a version mismatch with the client.",
+            "name": "ダウンロード URL",
+            "description": "ファイル取得元 URL です\r\n- ファイルは Discord（https:\/\/discord.com\/invite\/hogwarp）で取得できます。既定 URL も同じ取得元です\r\n- これらのファイルは古い場合があります。クライアントとバージョン不一致の場合は更新を確認してください。",
             "env_variable": "DOWNLOAD_URL",
             "default_value": "https:\/\/cdn.discordapp.com\/attachments\/1076580539751993444\/1118295980597575810\/Server.zip",
             "user_viewable": false,

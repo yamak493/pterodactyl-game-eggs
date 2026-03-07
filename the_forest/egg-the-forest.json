@@ -7,7 +7,7 @@
     "exported_at": "2024-04-09T22:08:25-04:00",
     "name": "The Forest",
     "author": "admin@softwarenoob.com",
-    "description": "As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first-person survival horror simulator.",
+    "description": "旅客機墜落事故の唯一の生存者となったあなたは、謎めいた森で人食いミュータントの集団と戦いながら生き延びなければなりません。建築し、探索し、生存する、一人称視点のサバイバルホラーです。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "APP ID",
-            "description": "The ID corresponding to the game to download.",
+            "description": "ダウンロードするゲームに対応するIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "556450",
             "user_viewable": false,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Server Name",
-            "description": "Name of the server, appears in Steam browser.",
+            "description": "Steamブラウザに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl Forest Server",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Steam Port",
-            "description": "Steam port",
+            "description": "Steamポートです。",
             "env_variable": "STEAM_PORT",
             "default_value": "8766",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "[Connection Port] Query Port",
-            "description": "Query port, this port is also used for connecting to the server",
+            "description": "クエリポートです。このポートはサーバー接続にも使用されます。",
             "env_variable": "QUERY_PORT",
             "default_value": "27016",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "Max Players",
-            "description": "Server player cap",
+            "description": "サーバーの最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -82,7 +82,7 @@
         },
         {
             "name": "Difficulty",
-            "description": "Server difficulty setting, Peaceful, Normal or Hard.",
+            "description": "サーバー難易度設定です。Peaceful、Normal、Hardから選択します。",
             "env_variable": "SERVER_DIFFICULTY",
             "default_value": "Normal",
             "user_viewable": true,
@@ -92,7 +92,7 @@
         },
         {
             "name": "Steam Account Token",
-            "description": "The Steam Account Token is required for the server to save player progress. Use APP ID 242760 for the token generation. \r\n\r\nYou can generate the token on steam at https:\/\/steamcommunity.com\/dev\/managegameservers",
+            "description": "サーバーでプレイヤー進行状況を保存するにはSteamアカウントトークンが必要です。トークン生成にはAPP ID 242760を使用してください。\r\n\r\nトークンは https:\/\/steamcommunity.com\/dev\/managegameservers で生成できます。",
             "env_variable": "STEAM_ACC",
             "default_value": "",
             "user_viewable": true,
@@ -102,7 +102,7 @@
         },
         {
             "name": "Server Password",
-            "description": "Password protects the server if set, any player must enter the password to join",
+            "description": "設定するとサーバーにパスワード保護がかかり、参加時に全プレイヤーがパスワード入力を求められます。",
             "env_variable": "SERVER_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -112,7 +112,7 @@
         },
         {
             "name": "Admin Password",
-            "description": "A password that will be used to gain admin access to the server in-game",
+            "description": "ゲーム内でサーバー管理者権限を取得するためのパスワードです。",
             "env_variable": "ADMIN_PASS",
             "default_value": "cHanGetHePaSwWord",
             "user_viewable": true,
@@ -122,7 +122,7 @@
         },
         {
             "name": "Enable VAC",
-            "description": "",
+            "description": "VACを有効または無効にします。",
             "env_variable": "VAC",
             "default_value": "off",
             "user_viewable": true,
@@ -132,7 +132,7 @@
         },
         {
             "name": "Windows Install",
-            "description": "This is required to install the correct Forest version. Removing or touching this will overwrite the files with a non-existing Linux releases.",
+            "description": "正しいThe Forestバージョンをインストールするために必要です。削除または変更すると、存在しないLinux版でファイルが上書きされます。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -142,7 +142,7 @@
         },
         {
             "name": "Auto-Update",
-            "description": "0 disables auto-update on each server startup, while 1 enables it.",
+            "description": "サーバー起動時の自動更新設定です。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -152,7 +152,7 @@
         },
         {
             "name": "[SYSTEM] WINEDEBUG",
-            "description": "don't change this !!!",
+            "description": "変更しないでください。",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
             "user_viewable": false,
@@ -162,7 +162,7 @@
         },
         {
             "name": "[SYSTEM] WINEARCH",
-            "description": "",
+            "description": "Wineアーキテクチャ設定です。",
             "env_variable": "WINEARCH",
             "default_value": "win64",
             "user_viewable": false,
@@ -172,7 +172,7 @@
         },
         {
             "name": "Init Type",
-            "description": "Init Type when starting server. \r\nNew to start fresh or Continue to preload the saved game",
+            "description": "サーバー起動時の初期化タイプです。\r\nNewで新規開始、Continueで既存セーブを読み込みます。",
             "env_variable": "INIT_TYPE",
             "default_value": "New",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-05T12:07:19+02:00",
     "name": "BeamMP Servers",
     "author": "noah@noahserver.online",
-    "description": "This is the server for the multiplayer mod BeamMP for the game BeamNG.drive. The server is the point through which all clients communicate. You can write lua mods for the server, detailed instructions on the BeamMP Wiki.",
+    "description": "これは BeamNG.drive 用マルチプレイ MOD『BeamMP』のサーバーです。すべてのクライアント通信はこのサーバーを経由します。サーバー向けの Lua MOD を作成でき、詳細は BeamMP Wiki に記載されています。",
     "features": null,
     "docker_images": {
         "Debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The name of your server. This is what appears on the server list.",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。サーバーリストに表示されます。",
             "env_variable": "NAME",
             "default_value": "BeamMP Server",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Description",
-            "description": "Sets the server description",
+            "name": "サーバー説明",
+            "description": "サーバー説明を設定します",
             "env_variable": "DESCRIPTION",
             "default_value": "BeamMP Default Description",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "BeamMP Server Version",
-            "description": "The BeamMP server version to be installed. Latest or invalid versions will default to latest. See all available versions at https:\/\/github.com\/BeamMP\/BeamMP-Server\/releases\r\n\r\nexample: v3.1.0 or  v2.2.0 or latest",
+            "name": "BeamMP サーバーバージョン",
+            "description": "インストールする BeamMP サーバーバージョンです。latest または無効な値を指定した場合は最新版になります。利用可能な全バージョン: https:\/\/github.com\/BeamMP\/BeamMP-Server\/releases\r\n\r\n例: v3.1.0 / v2.2.0 / latest",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Authentication Key",
-            "description": "The authentication key for your server. A key can be obtained from the BeamMP keymaster at https:\/\/keymaster.beammp.com",
+            "name": "認証キー",
+            "description": "サーバー用の認証キーです。キーは BeamMP Keymaster（https:\/\/keymaster.beammp.com）で取得できます。",
             "env_variable": "AUTHKEY",
             "default_value": "",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "The maximum number of players allowed on the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーで許可する最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "6",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Private",
-            "description": "Should the server be private?",
+            "name": "非公開設定",
+            "description": "サーバーを非公開にしますか？",
             "env_variable": "PRIVATE",
             "default_value": "false",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Cars",
-            "description": "The maximum number of cars allowed to be spawned per player.",
+            "name": "最大車両数",
+            "description": "プレイヤー1人あたりにスポーン可能な最大車両数です。",
             "env_variable": "MAX_CARS",
             "default_value": "1",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "The map for your server. Stock maps are listed below.\r\n\r\n\/levels\/gridmap_v2\/info.json\r\n\/levels\/automation_test_track\/info.json\r\n\/levels\/east_coast_usa\/info.json\r\n\/levels\/hirochi_raceway\/info.json\r\n\/levels\/italy\/info.json\r\n\/levels\/jungle_rock_island\/info.json\r\n\/levels\/industrial\/info.json\r\n\/levels\/small_island\/info.json\r\n\/levels\/smallgrid\/info.json\r\n\/levels\/utah\/info.json\r\n\/levels\/west_coast_usa\/info.json\r\n\/levels\/driver_training\/info.json\r\n\/levels\/derby\/info.json",
+            "name": "マップ",
+            "description": "サーバーで使用するマップです。標準マップは以下の通りです。\r\n\r\n\/levels\/gridmap_v2\/info.json\r\n\/levels\/automation_test_track\/info.json\r\n\/levels\/east_coast_usa\/info.json\r\n\/levels\/hirochi_raceway\/info.json\r\n\/levels\/italy\/info.json\r\n\/levels\/jungle_rock_island\/info.json\r\n\/levels\/industrial\/info.json\r\n\/levels\/small_island\/info.json\r\n\/levels\/smallgrid\/info.json\r\n\/levels\/utah\/info.json\r\n\/levels\/west_coast_usa\/info.json\r\n\/levels\/driver_training\/info.json\r\n\/levels\/derby\/info.json",
             "env_variable": "MAP",
             "default_value": "\/levels\/gridmap_v2\/info.json",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Chat logging",
-            "description": "Enable chat logging by the server",
+            "name": "チャットログ",
+            "description": "サーバーによるチャットログ記録を有効化します",
             "env_variable": "LOGCHAT",
             "default_value": "true",
             "user_viewable": true,

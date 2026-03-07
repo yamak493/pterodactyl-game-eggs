@@ -7,7 +7,7 @@
     "exported_at": "2025-04-03T09:14:57+00:00",
     "name": "Xonotic",
     "author": "parker@parkervcp.com",
-    "description": "This is for the default xonotic setup.",
+    "description": "デフォルトのXonoticセットアップ用Eggです。",
     "features": null,
     "docker_images": {
         "SteamCMD (Debian)": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Max Players",
-            "description": "Max players allowed on the server",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加可能な最大プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "16",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Version",
-            "description": "",
+            "name": "バージョン",
+            "description": "インストールするXonoticのバージョンです。",
             "env_variable": "VERSION",
             "default_value": "0.8.6",
             "user_viewable": true,

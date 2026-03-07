@@ -7,7 +7,7 @@
     "exported_at": "2026-02-01T03:48:16+00:00",
     "name": "The Lord of the Rings: Return to Moria",
     "author": "eggs@purpleflaghosting.com",
-    "description": "The only survival crafting game set in the Fourth Age of Middle-earth\u2122. Embark on an epic journey to reclaim the Dwarven homeland of Moria, and explore, craft, and build in procedurally generated worlds. Play as a solo adventurer, or join friends in co-op gameplay for up to 8 players.",
+    "description": "中つ国第四紀を舞台にした唯一のサバイバルクラフトゲーム。ドワーフの故郷モリアを取り戻す壮大な旅に出て、手続き生成ワールドを探索・クラフト・建築しましょう。ソロでも、最大8人の協力プレイでも楽しめます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "World Name",
-            "description": "Name of the saved world to load",
+            "name": "ワールド名",
+            "description": "読み込む保存済みワールド名です。",
             "env_variable": "WORLD_NAME",
             "default_value": "A Pterodactyl Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If a password is specified, players will need to enter a password to join the server. Case-sensitive.",
+            "name": "サーバーパスワード",
+            "description": "パスワードを指定すると、参加時に入力が必要になります。大文字小文字は区別されます。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
+            "name": "Windowsインストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -81,7 +81,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wineデバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Specify world difficulty",
+            "name": "難易度",
+            "description": "ワールド難易度を指定します。",
             "env_variable": "DIFFICULTY",
             "default_value": "normal",
             "user_viewable": true,

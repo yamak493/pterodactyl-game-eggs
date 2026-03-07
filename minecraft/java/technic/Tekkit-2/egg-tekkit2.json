@@ -7,7 +7,7 @@
     "exported_at": "2024-12-24T13:57:40+00:00",
     "name": "Tekkit 2",
     "author": "josdekurk@gmail.com",
-    "description": "Those of you who are nostalgic for the early days of Tekkit (now known as Tekkit Classic), will love what awaits you in Tekkit 2!\r\n\r\nWith a collection of nostalgic mods and plenty of new improvements, Tekkit 2 is sure to capture the feeling of possibility and consequence that you felt while exploring the world of machines and contraptions that made the original fun. Keep an eye out for classics such as IndustrialCraft, ProjectE (Equivalent Exchange), Project Red (RedPower) and BuildCraft, alongside additions such as Galacticraft and Tekkit Jaffa Cakes! The world is yours to bend and exploit to your will, whether through alchemy or sprawling factories and mines.\r\n\r\nWhat fresh horrors will you create?",
+    "description": "Tekkitの初期時代（現在のTekkit Classic）に懐かしさを感じる方なら、Tekkit 2で待つ体験をきっと気に入るでしょう。\r\n\r\n懐かしいMODのコレクションに加えて多くの新しい改良が施され、Tekkit 2は、オリジナルを楽しくしていた機械と装置の世界を探索したときに感じた可能性と結果の手触りを再び呼び起こします。IndustrialCraft、ProjectE（Equivalent Exchange）、Project Red（RedPower）、BuildCraftといった定番に加え、GalacticraftやTekkit Jaffa Cakesなどの追加要素にも注目です。錬金術でも、大規模な工場や鉱山でも、世界を思いのままに作り変えて活用できます。\r\n\r\nあなたはどんな新たな恐怖を生み出しますか？",
     "features": [
         "eula",
         "java_version"
@@ -32,7 +32,7 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
+            "name": "Modpackバージョン",
             "description": "",
             "env_variable": "MODPACK_VERSION",
             "default_value": "v1.0.5",

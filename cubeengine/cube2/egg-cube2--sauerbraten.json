@@ -7,7 +7,7 @@
     "exported_at": "2023-07-30T11:20:16+02:00",
     "name": "Cube 2: Sauerbraten",
     "author": "holeintheseat@gmail.com",
-    "description": "Cube 2: Sauerbraten is a free multiplayer & singleplayer first person shooter, the successor of the Cube FPS.\r\nMuch like the original Cube, the aim of this game is fun, old school deathmatch gameplay and also to allow map\/geometry editing to be done cooperatively in-game.",
+    "description": "Cube 2: Sauerbraten は、Cube FPS の後継にあたる無料のシングル／マルチプレイ対応一人称シューティングです。\r\n初代 Cube と同様に、昔ながらのデスマッチの楽しさを重視しつつ、ゲーム内で協力しながらマップ／地形編集ができることを目指しています。",
     "features": null,
     "docker_images": {
         "Debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Server Description",
+            "name": "サーバー説明",
             "description": "",
             "env_variable": "CUBE_SERVERDESCRIPTION",
             "default_value": "",
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Sets the max number of clients to N. The default is 4. If you want to set it higher, be aware that bandwidth usage almost doubles with each extra client, so only do this if the server runs on a serious pipe (not your home DSL or Cable connection).",
+            "name": "最大プレイヤー数",
+            "description": "最大クライアント数 N を設定します。既定値は 4 です。これより多く設定する場合、クライアント1人増えるごとに帯域使用量がほぼ倍増するため、十分な回線環境でのみ設定してください（家庭用 DSL やケーブル回線は非推奨）。",
             "env_variable": "CUBE_MAXPLAYERS",
             "default_value": "4",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Master Server",
-            "description": "Sets the master server to use for either server (registering) and client (updating) to S. (default: sauerbraten.org).",
+            "name": "マスターサーバー",
+            "description": "サーバー（登録）およびクライアント（更新）で使用するマスターサーバー S を設定します。（既定: sauerbraten.org）",
             "env_variable": "CUBE_MASTERSERVER",
             "default_value": "sauerbraten.org",
             "user_viewable": true,
@@ -59,7 +59,7 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
+            "name": "管理者パスワード",
             "description": "",
             "env_variable": "CUBE_ADMINPASSWORD",
             "default_value": "",

@@ -7,7 +7,7 @@
     "exported_at": "2025-04-20T21:46:27+00:00",
     "name": "Nukkit",
     "author": "parker@parkervcp.com",
-    "description": "Nukkit is a nuclear-powered server software for Minecraft Bedrock Edition\r\n\r\nhttps:\/\/cloudburstmc.org",
+    "description": "NukkitはMinecraft Bedrock Edition向けの高性能サーバーソフトウェアです。\r\n\r\nhttps:\/\/cloudburstmc.org",
     "features": null,
     "docker_images": {
         "Java 21": "ghcr.io\/ptero-eggs\/yolks:java_21",
@@ -32,8 +32,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the Nukkit jar file to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "Nukkitサーバー起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -42,8 +42,8 @@
             "field_type": "text"
         },
         {
-            "name": "Nukkit Version",
-            "description": "The snapshot version of Nukkit to download (e.g. 1.0-20250805.172443-1219). Use \"latest\" for latest or leave empty and download manually.",
+            "name": "Nukkitバージョン",
+            "description": "ダウンロードするNukkitのスナップショット版です（例: 1.0-20250805.172443-1219）。最新は \"latest\" を指定し、空欄の場合は手動ダウンロードしてください。",
             "env_variable": "NUKKIT_VERSION",
             "default_value": "latest",
             "user_viewable": true,

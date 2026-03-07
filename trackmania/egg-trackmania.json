@@ -7,7 +7,7 @@
     "exported_at": "2025-04-24T20:44:10+00:00",
     "name": "Trackmania",
     "author": "eggs@purpleflaghosting.com",
-    "description": "Trackmania combines easy-to-learn, hard-to-master gameplay with a wide diversity of tracks and skin customization, in addition to regular seasons & live events.",
+    "description": "Trackmaniaは、覚えやすく極めがいのあるゲームプレイに、多彩なトラックやスキンカスタマイズ、さらに定期シーズンとライブイベントを組み合わせたレースゲームです。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Master Server Login",
-            "description": "Master Server username. Obtained from https:\/\/www.trackmania.com\/player\/dedicated-servers",
+            "name": "マスターサーバーログイン",
+            "description": "マスターサーバーのユーザー名です。https:\/\/www.trackmania.com\/player\/dedicated-servers で取得できます。",
             "env_variable": "MASTERSERVER_LOGIN",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Master Server Password",
-            "description": "Password for the servers master server account. Obtained from Obtained from https:\/\/www.trackmania.com\/player\/dedicated-servers",
+            "name": "マスターサーバーパスワード",
+            "description": "サーバーのマスターサーバーアカウント用パスワードです。https:\/\/www.trackmania.com\/player\/dedicated-servers で取得できます。",
             "env_variable": "MASTERSERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Config FIle",
-            "description": "Location of the game config file",
+            "name": "ゲーム設定ファイル",
+            "description": "ゲーム設定ファイルの場所です。",
             "env_variable": "GAME_CONFIG",
             "default_value": "MatchSettings\\example.txt",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "",
+            "name": "サーバー名",
+            "description": "サーバー一覧に表示される名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Comment",
-            "description": "",
+            "name": "サーバーコメント",
+            "description": "サーバーに表示する説明文です。",
             "env_variable": "SERVER_COMMENT",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加時に必要なパスワードです。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,

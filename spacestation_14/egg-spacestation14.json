@@ -7,7 +7,7 @@
     "exported_at": "2025-04-18T22:29:49+01:00",
     "name": "Spacestation 14",
     "author": "josdekurk@gmail.com",
-    "description": "Space Station 14 tells the story of an ordinary shift on a space station gone wrong. Immerse yourself into your role, tinker with detailed systems, and survive the chaos in this round-based multiplayer role playing game.",
+    "description": "Space Station 14は、宇宙ステーションでの平凡な勤務が破綻していく物語を描くゲームです。ラウンド制マルチプレイヤーRPGで役割になりきり、緻密なシステムを扱いながら混乱を生き延びましょう。",
     "features": null,
     "docker_images": {
         "Dotnet 9": "ghcr.io\/ptero-eggs\/yolks:dotnet_9"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server name",
-            "description": "The server hostname",
+            "name": "サーバー名",
+            "description": "サーバーのホスト名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "MyServer",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server tickrate",
-            "description": "The tickrate of the server. Default is 60",
+            "name": "サーバーティックレート",
+            "description": "サーバーのティックレートです。デフォルトは60です。",
             "env_variable": "SERVER_TICK",
             "default_value": "60",
             "user_viewable": true,
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "SERVER_MAX_PLAYERS",
             "default_value": "256",

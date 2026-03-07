@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T13:16:40+02:00",
     "name": "OpenArena",
     "author": "parker@parkervcp.com",
-    "description": "OpenArena is a community-produced deathmatch FPS based on GPL idTech3 technology.\r\n\r\nhttp:\/\/www.openarena.ws\/",
+    "description": "OpenArena は、GPLのidTech3技術をベースにコミュニティ主導で制作されたデスマッチFPSです。\r\n\r\nhttp:\/\/www.openarena.ws\/",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Game Map",
-            "description": "The map to load when the server starts.\r\nSee here for all maps available by default - https:\/\/openarena.fandom.com\/wiki\/Maps",
+            "name": "ゲームマップ",
+            "description": "サーバー起動時に読み込むマップです。\r\nデフォルトで利用可能な全マップ: https:\/\/openarena.fandom.com\/wiki\/Maps",
             "env_variable": "GAME_MAP",
             "default_value": "aggressor",
             "user_viewable": true,

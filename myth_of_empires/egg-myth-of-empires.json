@@ -7,7 +7,7 @@
     "exported_at": "2024-02-27T16:19:43+01:00",
     "name": "Myth of Empires",
     "author": "josdekurk@gmail.com",
-    "description": "Myth of Empires is a multiplayer war sandbox game featuring a high degree of freedom. Players must survive, craft, create, and lead troops in their quest to conquer territory and build their own empire.",
+    "description": "Myth of Empires は高い自由度を備えたマルチプレイ戦争サンドボックスゲームです。プレイヤーは生き延び、クラフトし、創造し、軍勢を率いて領土を征服し、自らの帝国を築きます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/steamcmd:proton": "ghcr.io\/ptero-eggs\/steamcmd:proton"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "App ID",
+            "name": "アプリID",
             "description": "",
             "env_variable": "SRCDS_APPID",
             "default_value": "1794810",
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Install Windows version",
+            "name": "Windows版をインストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -59,7 +59,7 @@
             "field_type": "text"
         },
         {
-            "name": "Map Name",
+            "name": "マップ名",
             "description": "",
             "env_variable": "MAP_NAME",
             "default_value": "LargeTerrain_Central_Main",
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "The name of the server",
+            "name": "サーバー名",
+            "description": "サーバーの名前です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted server",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable PVP",
-            "description": "Enable or disable PVP",
+            "name": "PVP有効化",
+            "description": "PVPを有効または無効にします。",
             "env_variable": "PVP",
             "default_value": "1",
             "user_viewable": true,
@@ -89,7 +89,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "MAX_PLAYERS",
             "default_value": "25",
@@ -99,7 +99,7 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
+            "name": "クエリポート",
             "description": "",
             "env_variable": "QUERY_PORT",
             "default_value": "12888",
@@ -109,7 +109,7 @@
             "field_type": "text"
         },
         {
-            "name": "Shutdown Service",
+            "name": "シャットダウンサービス",
             "description": "",
             "env_variable": "SHUTDOWN_SERVICE",
             "default_value": "1",
@@ -119,7 +119,7 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
+            "name": "RCONポート",
             "description": "",
             "env_variable": "RCON_PORT",
             "default_value": "13888",
@@ -129,7 +129,7 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
+            "name": "RCONパスワード",
             "description": "",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin ID's",
-            "description": "Steam admin ID list",
+            "name": "管理者ID一覧",
+            "description": "Steam管理者IDの一覧です。",
             "env_variable": "ADMIN_IDS",
             "default_value": "",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "Extra Flags",
-            "description": "Extra flags.All starting with a -\r\nexample: -ServerLevelAddMul=1.01",
+            "name": "追加フラグ",
+            "description": "追加フラグです。すべて - で始めてください。\r\n例: -ServerLevelAddMul=1.01",
             "env_variable": "EXTRA_FLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -159,7 +159,7 @@
             "field_type": "text"
         },
         {
-            "name": "Cluster ID",
+            "name": "クラスターID",
             "description": "",
             "env_variable": "CLUSTER_ID",
             "default_value": "1",
@@ -169,7 +169,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server ID",
+            "name": "サーバーID",
             "description": "",
             "env_variable": "SERVER_ID",
             "default_value": "100",

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:45:20+02:00",
     "name": "Wine Generic",
     "author": "parker@parkervcp.com",
-    "description": "a generic egg to run servers with wine",
+    "description": "Wineでサーバーを実行するための汎用Eggです。",
     "features": null,
     "docker_images": {
         "Wine (Latest)": "ghcr.io\/ptero-eggs\/yolks:wine_latest",
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Download URL",
-            "description": "URL to use to download a servers files.",
+            "name": "サーバーダウンロードURL",
+            "description": "サーバーファイルのダウンロードに使用するURLです。",
             "env_variable": "DOWNLOAD_URL",
             "default_value": "https:\/\/beamng-mp.com\/server\/BeamMP_Server.zip",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Executable",
-            "description": "The server executable to run.",
+            "name": "サーバー実行ファイル",
+            "description": "実行するサーバー実行ファイルです。",
             "env_variable": "SERVER_EXECUTABLE",
             "default_value": "BeamMP-Server.exe",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "sub directory to install into",
-            "description": "for example is the server needs to get installed into \/home\/container\/server\/bin\/\r\n\r\nuse server\/bin\/",
+            "name": "インストール先サブディレクトリ",
+            "description": "例: サーバーを \/home\/container\/server\/bin\/ にインストールしたい場合\r\n\r\nserver\/bin\/ を指定します。",
             "env_variable": "INSTALL_DIR",
             "default_value": "",
             "user_viewable": false,

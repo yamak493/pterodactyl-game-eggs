@@ -7,7 +7,7 @@
     "exported_at": "2022-10-07T17:08:45+02:00",
     "name": "Craftopia",
     "author": "eggs@goover.dev",
-    "description": "Craftopia is the brand new multiplayer survival action game made in Japan. We combined many features we find enjoyable, such as hunting, farming, hack-and-slash, building, automation to develop this game.",
+    "description": "Craftopia は日本発の新作マルチプレイ・サバイバルアクションゲームです。狩り、農業、ハックアンドスラッシュ、建築、自動化など、さまざまな要素を組み合わせて開発されています。",
     "features": [
         "steam_disk_space"
     ],
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "",
+            "name": "自動更新",
+            "description": "1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -51,7 +51,7 @@
             "field_type": "text"
         },
         {
-            "name": "World Name",
+            "name": "ワールド名",
             "description": "",
             "env_variable": "WORLD_NAME",
             "default_value": "Pterodactyl Server",

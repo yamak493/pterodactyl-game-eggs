@@ -7,7 +7,7 @@
     "exported_at": "2025-11-06T06:47:00+00:00",
     "name": "VanillaCord",
     "author": "support@pterodactyl.io",
-    "description": "Minecraft is a game about placing blocks and going on adventures. Explore randomly generated worlds and build amazing things from the simplest of homes to the grandest of castles. Play in Creative Mode with unlimited resources or mine deep in Survival Mode, crafting weapons and armor to fend off dangerous mobs. Do all this alone or with friends.\r\n\r\nVanillaCord adds support for BungeeCord's ip_forward setting.",
+    "description": "Minecraftは、ブロックを置いて冒険するゲームです。ランダム生成された世界を探索し、質素な家から壮大な城まで驚くような建築を作れます。無限の資源が使えるクリエイティブモードで遊ぶことも、サバイバルモードで地下深くを採掘し、武器や防具を作って危険なモブに立ち向かうこともできます。これらを一人でも、友達と一緒でも楽しめます。\r\n\r\nVanillaCordは、BungeeCordのip_forward設定をサポートします。",
     "features": [
         "eula",
         "java_version",
@@ -38,8 +38,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "サーバーJarファイル",
+            "description": "サーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -48,8 +48,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Version",
-            "description": "The version of Minecraft Vanilla to install. Use \"latest\" to install the latest version.",
+            "name": "サーバーバージョン",
+            "description": "インストールするMinecraft Vanillaのバージョンです。最新をインストールするには\"latest\"を指定してください。",
             "env_variable": "VANILLA_VERSION",
             "default_value": "latest",
             "user_viewable": true,

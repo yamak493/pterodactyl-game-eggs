@@ -7,7 +7,7 @@
     "exported_at": "2025-07-04T16:45:10+02:00",
     "name": "Soulmask",
     "author": "josdekurk@gmail.com",
-    "description": "Escaping a deadly sacrificial ritual, you find an ancient mystical mask on your journey. This mask holds potent knowledge, changing the world you knew. Face the harsh challenges of nature, survive, rally followers, and build your own tribe. Explore and unveil the truths behind the enigmatic mask.",
+    "description": "命がけの生贄儀式から逃れたあなたは、旅の途中で古代の神秘的な仮面を見つけます。その仮面には強大な知識が宿り、あなたの知る世界を一変させます。過酷な自然環境に立ち向かい、生き延び、仲間を集め、自分だけの部族を築きましょう。探索を重ね、謎めいた仮面の真実を解き明かしてください。",
     "features": null,
     "docker_images": {
         "SteamCMD": "ghcr.io\/ptero-eggs\/steamcmd:debian"
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update",
-            "description": "Auto update the server on start",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Specifies the name of the game instance displayed in the server list",
+            "name": "サーバー名",
+            "description": "サーバーリストに表示されるゲームインスタンス名を指定します。",
             "env_variable": "SERVER_NAME",
             "default_value": "Soulmask Server",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map Players",
-            "description": "Specifies the maximum number of players the game instance can support.",
+            "name": "最大プレイヤー数",
+            "description": "ゲームインスタンスがサポートする最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "60",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Backup Interval",
-            "description": "Specifies the interval for writing the game database to disk (unit: seconds).",
+            "name": "バックアップ間隔",
+            "description": "ゲームデータベースをディスクへ書き込む間隔を指定します（単位: 秒）。",
             "env_variable": "BACKUP_TIME",
             "default_value": "960",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Time Interval",
-            "description": "Specifies the interval for writing game objects to the database (unit: seconds).",
+            "name": "セーブ間隔",
+            "description": "ゲームオブジェクトをデータベースへ書き込む間隔を指定します（単位: 秒）。",
             "env_variable": "SAVE_TIME",
             "default_value": "600",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Query Port",
-            "description": "Specifies the Steam query port, UDP, needs to be open to the public.",
+            "name": "クエリポート",
+            "description": "Steamクエリ用UDPポートを指定します。外部公開が必要です。",
             "env_variable": "QUERY_PORT",
             "default_value": "27015",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "Echo Port",
-            "description": "Maintenance port, used for local telnet server maintenance, TCP, does not need to be open.",
+            "name": "Echoポート",
+            "description": "保守用ポートです。ローカルtelnetサーバー保守（TCP）に使用し、外部公開は不要です。",
             "env_variable": "ECHO_PORT",
             "default_value": "18888",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Server password, private servers can specify a password, players must enter the password to enter the server.",
+            "name": "サーバーパスワード",
+            "description": "サーバーパスワードです。プライベートサーバーでは設定可能で、参加時に入力が必要です。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "GM activation password.Open GM Panel (gm key [password])",
+            "name": "管理者パスワード",
+            "description": "GM有効化用パスワードです。GMパネルを開くには (gm key [password]) を使用します。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -130,7 +130,7 @@
         },
         {
             "name": "Mods",
-            "description": "Specifies the order and which mods are loaded. ModIDs need to be comma-separated such as: ModID1,ModID2,ModID3",
+            "description": "読み込むModの順序と対象を指定します。ModIDは ModID1,ModID2,ModID3 のようにカンマ区切りで入力します。",
             "env_variable": "MOD_ID",
             "default_value": "",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Region",
-            "description": "1= Asia 2=North America 3=Europe 4=Mainland China 5=South America 6=Oceania 7=Africa",
+            "name": "リージョン",
+            "description": "1=アジア 2=北米 3=ヨーロッパ 4=中国本土 5=南米 6=オセアニア 7=アフリカ",
             "env_variable": "region",
             "default_value": "1",
             "user_viewable": true,

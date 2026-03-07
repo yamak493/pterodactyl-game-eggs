@@ -7,7 +7,7 @@
     "exported_at": "2025-10-25T18:35:30+02:00",
     "name": "IW4x",
     "author": "brainshead@gmail.com",
-    "description": "IW4x is a community-driven modification for Call of Duty Modern Warfare 2 (2009) that enhances the game with improved security, dedicated servers, and extensive modding capabilities.",
+    "description": "IW4x は、Call of Duty Modern Warfare 2（2009）向けのコミュニティ主導 MOD です。セキュリティ強化、専用サーバー対応、幅広い MOD 機能によってゲーム体験を拡張します。",
     "features": null,
     "docker_images": {
         "Wine Latest ": " ghcr.io\/ptero-eggs\/yolks:wine_latest",
@@ -30,8 +30,8 @@
     },
     "variables": [
         {
-            "name": "Steam User",
-            "description": "This is a required setting and cannot be set to anonymous.",
+            "name": "Steam ユーザー",
+            "description": "必須設定です。anonymous にはできません。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -40,8 +40,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Password",
-            "description": "Steam User Password",
+            "name": "Steam パスワード",
+            "description": "Steam ユーザーパスワード",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -50,8 +50,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using SRCDS",
+            "name": "ゲーム ID",
+            "description": "SRCDS を使用してダウンロード・実行するゲームに対応する ID です",
             "env_variable": "SRCDS_APPID",
             "default_value": "10190",
             "user_viewable": true,
@@ -60,8 +60,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auth",
-            "description": "Steam account auth code. Required if you have 2fa enabled",
+            "name": "Steam 認証コード",
+            "description": "Steam アカウントの認証コードです。2FA を有効にしている場合は必須です",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -70,8 +70,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "This is to auto-update the game server",
+            "name": "サーバー自動更新",
+            "description": "ゲームサーバーを自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -80,7 +80,7 @@
             "field_type": "text"
         },
         {
-            "name": "Windows Install",
+            "name": "Windows インストール",
             "description": "",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
@@ -100,7 +100,7 @@
             "field_type": "text"
         },
         {
-            "name": "Wine Debug",
+            "name": "Wine デバッグ",
             "description": "",
             "env_variable": "WINEDEBUG",
             "default_value": "-all",
@@ -110,8 +110,8 @@
             "field_type": "text"
         },
         {
-            "name": "Mod Dir",
-            "description": "Name of the Dir where the mod are.",
+            "name": "MOD ディレクトリ",
+            "description": "MOD が配置されているディレクトリ名です。",
             "env_variable": "MOD_DIR",
             "default_value": "",
             "user_viewable": true,
@@ -120,8 +120,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Sets the server hostname. \r\n SERVER  COLORS \r\n^1 = Red, ^2 = Green, ^3 = Yellow, ^4 = Blue, ^5 = Cyan, ^6 = Pink, ^7 = White, ^8 = Depends on the team colors playing.,  ^9 = Grey, ^0 = Black, ^: = Rainbow colors.",
+            "name": "サーバー名",
+            "description": "サーバーのホスト名を設定します。\r\n サーバーカラー \r\n^1 = Red, ^2 = Green, ^3 = Yellow, ^4 = Blue, ^5 = Cyan, ^6 = Pink, ^7 = White, ^8 = プレイ中チームカラーに依存, ^9 = Grey, ^0 = Black, ^: = Rainbow colors。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl IW4X",
             "user_viewable": true,
@@ -130,8 +130,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password Protected Server. Leave blank if you want players to join or set password if you want to keep public out.",
+            "name": "サーバーパスワード",
+            "description": "サーバーをパスワード保護します。誰でも参加可能にする場合は空欄、公開を制限する場合はパスワードを設定してください。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,

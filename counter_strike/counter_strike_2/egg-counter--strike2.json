@@ -7,7 +7,7 @@
     "exported_at": "2025-10-04T11:01:41+02:00",
     "name": "Counter-Strike 2",
     "author": "admin@ballaual.de",
-    "description": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.",
+    "description": "20年以上にわたり、Counter-Strike は世界中の数百万のプレイヤーに磨かれた、最高峰の競技体験を提供してきました。そして今、CS の新たな章が始まろうとしています。これが Counter-Strike 2 です。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Map",
-            "description": "The default map for the server.\r\nExamples:\r\n\r\nBomb:\r\nde_dust2, de_mirage, de_nuke, de_overpass, de_inferno, de_ancient, de_vertigo, de_anubis\r\n\r\nHostage:\r\ncs_italy, cs_office\r\n\r\nArms Race:\r\nar_baggage, ar_shoots",
+            "name": "マップ",
+            "description": "サーバーのデフォルトマップです。\r\n例:\r\n\r\nBomb:\r\nde_dust2, de_mirage, de_nuke, de_overpass, de_inferno, de_ancient, de_vertigo, de_anubis\r\n\r\nHostage:\r\ncs_italy, cs_office\r\n\r\nArms Race:\r\nar_baggage, ar_shoots",
             "env_variable": "SRCDS_MAP",
             "default_value": "de_dust2",
             "user_viewable": true,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Source AppID",
-            "description": "Required for game to update on server restart. Do not modify this.",
+            "description": "サーバー再起動時のゲーム更新に必要です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "730",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Specifies the maximum amount of players that are able to join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "12",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "This is to enable \/ disable auto-updating your server on restart.\r\n\r\nBy default this is set to enabled.",
+            "name": "サーバー自動更新",
+            "description": "再起動時のサーバー自動更新を有効化／無効化します。\r\n\r\n既定では有効です。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "SourceTV Port",
-            "description": "SourceTV port used for connections to spectates games on your server.",
+            "name": "SourceTV ポート",
+            "description": "サーバー上の試合観戦接続で使用する SourceTV ポートです。",
             "env_variable": "TV_PORT",
             "default_value": "27020",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Gameserver Login Token",
-            "description": "The Steam Account Token required for the server to be displayed public. The token can be acquired here: https:\/\/steamcommunity.com\/dev\/managegameservers",
+            "name": "Steam ゲームサーバーログイントークン",
+            "description": "サーバーを公開表示するために必要な Steam アカウントトークンです。取得先: https:\/\/steamcommunity.com\/dev\/managegameservers",
             "env_variable": "STEAM_GSLT",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable VAC",
-            "description": "Enable \/ Disable VAC (Valve Anti Cheat) on your server. By default this will be enabled.",
+            "name": "VAC を有効化",
+            "description": "サーバーで VAC（Valve Anti Cheat）を有効化／無効化します。既定では有効です。",
             "env_variable": "VAC_ENABLED",
             "default_value": "1",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable RCON",
-            "description": "Enable \/ Disable RCON for using RCON commands with external tools. By default this will be disabled.",
+            "name": "RCON を有効化",
+            "description": "外部ツールから RCON コマンドを使うために RCON を有効化／無効化します。既定では無効です。",
             "env_variable": "RCON_ENABLED",
             "default_value": "0",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Sets the server name listed in the steam server browser.",
+            "name": "サーバー名",
+            "description": "Steam サーバーブラウザーに表示されるサーバー名を設定します。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted CS2 Server",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "If specified, players must provide this password to join the server.",
+            "name": "サーバーパスワード",
+            "description": "指定した場合、プレイヤーはこのパスワードを入力しないとサーバーに参加できません。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Password",
-            "description": "To gain access to administrator commands on the server.",
+            "name": "RCON パスワード",
+            "description": "サーバーの管理者コマンドにアクセスするためのパスワードです。",
             "env_variable": "RCON_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gamemode",
-            "description": "Defines the Gamemode and Gametype to be set at the start of the next round.\r\nExamples:\r\n\r\nCompetitive:\r\ngame_mode 1\r\ngame_type 0\r\n\r\nWingman:\r\ngame_mode 2\r\ngame_type 0\r\n\r\nCasual:\r\ngame_mode 0\r\ngame_type 0\r\n\r\nDeathmatch:\r\ngame_mode 2\r\ngame_type 1\r\n\r\nArms Race:\r\ngame_mode 0\r\ngame_type 1\r\n\r\nCustom:\r\ngame_mode 0\r\ngame_type 3",
+            "name": "ゲームモード",
+            "description": "次ラウンド開始時に設定するゲームモードとゲームタイプを定義します。\r\n例:\r\n\r\nCompetitive:\r\ngame_mode 1\r\ngame_type 0\r\n\r\nWingman:\r\ngame_mode 2\r\ngame_type 0\r\n\r\nCasual:\r\ngame_mode 0\r\ngame_type 0\r\n\r\nDeathmatch:\r\ngame_mode 2\r\ngame_type 1\r\n\r\nArms Race:\r\ngame_mode 0\r\ngame_type 1\r\n\r\nCustom:\r\ngame_mode 0\r\ngame_type 3",
             "env_variable": "GAME_MODE",
             "default_value": "1",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Gametype",
-            "description": "Defines the Gamemode and Gametype to be set at the start of the next round.\r\nExamples:\r\n\r\nCompetitive:\r\ngame_mode 1\r\ngame_type 0\r\n\r\nWingman:\r\ngame_mode 2\r\ngame_type 0\r\n\r\nCasual:\r\ngame_mode 0\r\ngame_type 0\r\n\r\nDeathmatch:\r\ngame_mode 2\r\ngame_type 1\r\n\r\nArms Race:\r\ngame_mode 0\r\ngame_type 1\r\n\r\nCustom:\r\ngame_mode 0\r\ngame_type 3",
+            "name": "ゲームタイプ",
+            "description": "次ラウンド開始時に設定するゲームモードとゲームタイプを定義します。\r\n例:\r\n\r\nCompetitive:\r\ngame_mode 1\r\ngame_type 0\r\n\r\nWingman:\r\ngame_mode 2\r\ngame_type 0\r\n\r\nCasual:\r\ngame_mode 0\r\ngame_type 0\r\n\r\nDeathmatch:\r\ngame_mode 2\r\ngame_type 1\r\n\r\nArms Race:\r\ngame_mode 0\r\ngame_type 1\r\n\r\nCustom:\r\ngame_mode 0\r\ngame_type 3",
             "env_variable": "GAME_TYPE",
             "default_value": "0",
             "user_viewable": true,

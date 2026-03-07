@@ -7,7 +7,7 @@
     "exported_at": "2025-11-06T06:47:00+00:00",
     "name": "CurseForge Generic",
     "author": "contact@chromozone.dev",
-    "description": "A generic egg for a CurseForge modpack.",
+    "description": "CurseForgeモッドパック向けの汎用Eggです。",
     "features": [
         "eula",
         "java_version",
@@ -39,8 +39,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Project ID",
-            "description": "The modpack project ID from the CurseForge site on the pack page, or 'zip' if installing from an uploaded server.zip file.\r\n\r\nFor example, the project Id of https:\/\/www.curseforge.com\/minecraft\/modpacks\/bofa-mods ID is 375152",
+            "name": "モッドパックプロジェクトID",
+            "description": "CurseForgeサイトのパックページにあるモッドパックのプロジェクトIDです。アップロードした server.zip からインストールする場合は 'zip' を指定します。\r\n\r\n例: https:\/\/www.curseforge.com\/minecraft\/modpacks\/bofa-mods のプロジェクトIDは 375152 です。",
             "env_variable": "PROJECT_ID",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Modpack File ID",
-            "description": "The file ID belonging to a specific version of a modpack. Can either be the main file or the file ID associated with the server pack.\r\n\r\nIf not provided the script will attempt to retrieve the latest server pack or client pack available.",
+            "name": "モッドパックファイルID",
+            "description": "モッドパックの特定バージョンに対応するファイルIDです。メインファイルIDまたはサーバーパックのファイルIDを指定できます。\r\n\r\n未指定の場合、スクリプトは利用可能な最新のサーバーパックまたはクライアントパックを取得します。",
             "env_variable": "VERSION_ID",
             "default_value": "latest",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "CurseForge API Key",
-            "description": "A CurseForge API key is required to use this egg. You can get an API key here: https:\/\/console.curseforge.com",
+            "name": "CurseForge APIキー",
+            "description": "このEggの利用にはCurseForge APIキーが必要です。APIキー取得先: https:\/\/console.curseforge.com",
             "env_variable": "API_KEY",
             "default_value": "",
             "user_viewable": true,

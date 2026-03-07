@@ -7,7 +7,7 @@
     "exported_at": "2024-12-19T11:42:05+02:00",
     "name": "ARK: Survival Ascended",
     "author": "blood@darkartsgaming.com",
-    "description": "ARK is reimagined from the ground-up into the next-generation of video game technology with Unreal Engine 5! Form a tribe, tame & breed hundreds of unique dinosaurs and primeval creatures, explore, craft, build, and fight your way to the top of the food-chain. Your new world awaits!",
+    "description": "ARK が Unreal Engine 5 で基礎から再構築され、次世代のゲーム体験として生まれ変わりました。部族を作り、数百種のユニークな恐竜や太古の生物を手なずけて繁殖させ、探索・クラフト・建築・戦闘を重ねて食物連鎖の頂点を目指しましょう。新たな世界があなたを待っています。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Map",
-            "description": "Available Maps: TheIsland_WP",
+            "name": "サーバーマップ",
+            "description": "利用可能マップ: TheIsland_WP",
             "env_variable": "SERVER_MAP",
             "default_value": "TheIsland_WP",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "\"Unofficial\" dedicated server name",
+            "name": "サーバー名",
+            "description": "「非公式」専用サーバー名",
             "env_variable": "SESSION_NAME",
             "default_value": "A Pterodactyl Hosted Server",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "This is to enable auto-updating for servers on restart\/re-install.",
+            "name": "サーバー自動更新",
+            "description": "再起動または再インストール時の自動更新を有効化します。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Battle Eye",
-            "description": "Enable BattleEye \/ Anti-Cheat",
+            "name": "BattleEye",
+            "description": "BattleEye（アンチチート）を有効化",
             "env_variable": "BATTLE_EYE",
             "default_value": "1",
             "user_viewable": true,
@@ -72,7 +72,7 @@
         },
         {
             "name": "App ID",
-            "description": "app id required for server download\/updates. end users should not see this.",
+            "description": "サーバーのダウンロード／更新に必要な App ID です。エンドユーザーには表示しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "2430930",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments (PARAMS)",
-            "description": "params (?ServerPassword=...) are supported here but params need to be touching. (i.e): ?ServerPassword=MyP4SsWoRd?ServerAdminPassword=sUpRp4ssW0rd",
+            "name": "追加引数（PARAMS）",
+            "description": "ここでは params（?ServerPassword=...）を指定できますが、パラメータ同士は連続して記述する必要があります。（例）?ServerPassword=MyP4SsWoRd?ServerAdminPassword=sUpRp4ssW0rd",
             "env_variable": "ARGS_PARAMS",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Specifies the maximum amount of players able to join the server.",
+            "name": "最大プレイヤー数",
+            "description": "サーバーに参加できる最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "70",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Admin Password",
-            "description": "Used for RCON (remote and in-browser console) as well as in-game EnableCheats",
+            "name": "サーバー管理者パスワード",
+            "description": "RCON（リモート／ブラウザ内コンソール）およびゲーム内の EnableCheats で使用します",
             "env_variable": "ARK_ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments (FLAGS)",
-            "description": "flags (-UseBattleEye) are supported here without them touching. (i.e): -crossplay -mods=1234,1235,1236",
+            "name": "追加引数（FLAGS）",
+            "description": "flags（-UseBattleEye）をここで指定できます。こちらは連結不要です。（例）-crossplay -mods=1234,1235,1236",
             "env_variable": "ARGS_FLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server PvE",
-            "description": "ON = Player-vs-Environment (PvE), OFF = Player-vs-Player (PvP); Default is ON",
+            "name": "サーバー PvE",
+            "description": "ON = プレイヤー対環境（PvE）、OFF = プレイヤー対プレイヤー（PvP）。既定値は ON です。",
             "env_variable": "SERVER_PVE",
             "default_value": "1",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "required password to enter the server, leave blank for public server",
+            "name": "サーバーパスワード",
+            "description": "サーバー参加に必要なパスワードです。公開サーバーにする場合は空欄にします。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "RCON Port",
-            "description": "required for console commands and proper server shutdown (saveworld\/exit), doesn't have to be open to the public",
+            "name": "RCON ポート",
+            "description": "コンソールコマンドと正常なサーバー停止（saveworld／exit）に必要です。外部公開は不要です。",
             "env_variable": "RCON_PORT",
             "default_value": "37015",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "MOD IDs",
-            "description": "https:\/\/www.curseforge.com\/ark-survival-ascended ; ProjectID is is the MOD_ID on the right-side of the mod-view page ; leave blank to disable mods ; separate only by comma ( , ) without spaces! (i.e.) 1234,1235,1236",
+            "name": "MOD ID",
+            "description": "https:\/\/www.curseforge.com\/ark-survival-ascended を参照してください。ProjectID が mod ページ右側の MOD_ID です。MOD を無効化する場合は空欄にします。複数指定はスペースなしのカンマ区切りのみです。（例）1234,1235,1236",
             "env_variable": "MOD_IDS",
             "default_value": "",
             "user_viewable": true,

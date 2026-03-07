@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "App ID",
-            "description": "app id required for server download\/updates. end users should not see this.",
+            "description": "サーバーのダウンロードと更新に必要なApp IDです。通常、エンドユーザーが変更する必要はありません。",
             "env_variable": "SRCDS_APPID",
             "default_value": "2533070",
             "user_viewable": false,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Server Password",
-            "description": "required password to enter the server, leave blank for public server",
+            "description": "サーバー参加時に必要なパスワードです。空欄にすると公開サーバーになります。",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "Max Players",
-            "description": "Specifies the maximum amount of players able to join the server.",
+            "description": "サーバーに参加できる最大プレイヤー数を指定します。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "6",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "[Advanced] Use Windows Branch",
-            "description": "Tells the installer\/updater to only download the Windows branch of the server (the only branch currently available) so that it can run on Wine. Cannot be changed.",
+            "description": "インストーラー\/アップデーターにWindows版ブランチ（現在利用可能なのはこのブランチのみ）だけをダウンロードさせ、Wine上で実行できるようにします。変更できません。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,
@@ -72,7 +72,7 @@
         },
         {
             "name": "Auto Update",
-            "description": "Auto update the server on startup.",
+            "description": "サーバー起動時に自動更新を行います。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

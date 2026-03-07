@@ -7,7 +7,7 @@
     "exported_at": "2025-10-10T20:39:59+02:00",
     "name": "Subnautica",
     "author": "ptero@redbananaofficial.com",
-    "description": "Subnautica is an open world survival action-adventure video game developed and published by Unknown Worlds Entertainment. In it, players are free to explore the ocean on an alien planet, known as planet 4546B, after their spaceship, the Aurora, crashes on the planet's surface.\r\n\r\nNote: NitroxMod version >=1.7.0.0 is required",
+    "description": "SubnauticaはUnknown Worlds Entertainmentが開発・販売するオープンワールド型サバイバルアクションアドベンチャーです。宇宙船Auroraが惑星4546Bに墜落した後、プレイヤーは異星の海を自由に探索します。\r\n\r\n注意: NitroxMod バージョン >=1.7.0.0 が必要です。",
     "features": [
         "steam_disk_space"
     ],
@@ -32,7 +32,7 @@
     "variables": [
         {
             "name": "APP ID",
-            "description": "The ID corresponding to the game to download.",
+            "description": "ダウンロードするゲームに対応するIDです。",
             "env_variable": "APPID",
             "default_value": "264710",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam-Username",
-            "description": "Your Steam-Account SUername",
+            "name": "Steamユーザー名",
+            "description": "あなたのSteamアカウントのユーザー名です。",
             "env_variable": "STEAM_USERNAME",
             "default_value": "",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam-Password",
-            "description": "Your Steam Account Password",
+            "name": "Steamパスワード",
+            "description": "あなたのSteamアカウントのパスワードです。",
             "env_variable": "STEAM_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam-GuardCode",
-            "description": "Yout Steam Guard Code",
+            "name": "Steam Guardコード",
+            "description": "あなたのSteam Guardコードです。",
             "env_variable": "STEAM_GUARDCODE",
             "default_value": "",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Nitrox Version",
-            "description": "Which version of Nitrox to install and use. Use the version e.g. 1.5.0.1 or latest for the newest release",
+            "name": "Nitroxバージョン",
+            "description": "インストールして使用するNitroxのバージョンです。例: 1.5.0.1。最新を使う場合は latest を指定してください。",
             "env_variable": "NITROX_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Time between auto saves specified in milliseconds",
+            "name": "自動保存間隔",
+            "description": "自動保存の間隔（ミリ秒）です。",
             "env_variable": "SAVE_INTERVAL",
             "default_value": "120000",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Disable Auto Save",
-            "description": "Disables Auto Save: False \/ True",
+            "name": "自動保存を無効化",
+            "description": "自動保存を無効化します: False \/ True",
             "env_variable": "SAVE_DISABLE",
             "default_value": "False",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Save Name",
-            "description": "The save name for the server.",
+            "name": "セーブ名",
+            "description": "サーバーのセーブ名です。",
             "env_variable": "SAVE_NAME",
             "default_value": "world",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "Password neccessary for connecting to the Server",
+            "name": "サーバーパスワード",
+            "description": "サーバー接続に必要なパスワードです。",
             "env_variable": "SUBNAUTICA_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "If specified, players must provide this password to gain access to administrator commands on the server.",
+            "name": "管理者パスワード",
+            "description": "指定すると、管理者コマンドを使うためにこのパスワード入力が必要になります。",
             "env_variable": "SUBNAUTICA_ADMIN_PASSWORD",
             "default_value": "PleaseChangeMe",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Mode",
-            "description": "Game Mode setting: SURVIVAL, FREEDOM, HARDCORE, CREATIVE",
+            "name": "ゲームモード",
+            "description": "ゲームモード設定: SURVIVAL, FREEDOM, HARDCORE, CREATIVE",
             "env_variable": "SERVER_MODE",
             "default_value": "SURVIVAL",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Portforward via UPnP",
-            "description": "If set to true, the server will try to open port on your router via UPnP",
+            "name": "UPnPで自動ポート開放",
+            "description": "true に設定すると、サーバーがUPnP経由でルーターのポート開放を試みます。",
             "env_variable": "PORTFORWARD_ENABLE",
             "default_value": "False",
             "user_viewable": false,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "Serializer Mode",
-            "description": "Switch between savegame formats.\r\nPossible values: PROTOBUF, JSON",
+            "name": "シリアライザーモード",
+            "description": "セーブ形式を切り替えます。\r\n指定可能値: PROTOBUF, JSON",
             "env_variable": "SERIALIZER_MODE",
             "default_value": "JSON",
             "user_viewable": false,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "Subnautica Installation Path",
-            "description": "Leave this as is",
+            "name": "Subnauticaインストールパス",
+            "description": "このまま変更しないでください。",
             "env_variable": "SUBNAUTICA_INSTALLATION_PATH",
             "default_value": "\/home\/container\/subnautica",
             "user_viewable": true,
@@ -172,7 +172,7 @@
         },
         {
             "name": "XDG Config Home",
-            "description": "Leave this as is",
+            "description": "このまま変更しないでください。",
             "env_variable": "XDG_CONFIG_HOME",
             "default_value": "\/home\/container\/.config",
             "user_viewable": true,

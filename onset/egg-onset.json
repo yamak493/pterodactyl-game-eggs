@@ -7,7 +7,7 @@
     "exported_at": "2024-04-01T12:05:07+02:00",
     "name": "Onset",
     "author": "parker@parkervcp.com",
-    "description": "Onset is an open world multiplayer sandbox without predefined goals. Create and host your very own experience in Onset using scripting functions. Whether that is Roleplay, Cops and Robbers or classic Freeroam. Or just enjoy the different gamemodes created by other players.",
+    "description": "Onset は事前に定義された目標のないオープンワールド型マルチプレイサンドボックスです。スクリプト機能を使って、ロールプレイ、警察と泥棒、クラシックなフリーロームなど、独自の体験を作成してホストできます。ほかのプレイヤーが作成した多様なゲームモードを楽しむこともできます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "App ID",
-            "description": "ARK steam app id for auto updates. Leave blank to avoid auto update.",
+            "name": "アプリID",
+            "description": "自動更新に使用するARKのSteamアプリIDです。自動更新を回避する場合は空欄にしてください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "1204170",
             "user_viewable": false,
@@ -42,7 +42,7 @@
         },
         {
             "name": "ld lib path",
-            "description": "required to load server libraries.",
+            "description": "サーバーライブラリの読み込みに必要です。",
             "env_variable": "LD_LIBRARY_PATH",
             "default_value": ".",
             "user_viewable": false,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Update Server",
-            "description": "This flag will auto update the server on restart. (default is 1) \r\n\r\nSet to 1 to update\r\nSet to 0 to no update",
+            "name": "サーバー自動更新",
+            "description": "このフラグは再起動時にサーバーを自動更新します（デフォルトは1）。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-04-02T11:01:56+02:00",
     "name": "KissMP Server",
     "author": "me@weilbyte.dev",
-    "description": "Server for the KISS Multiplayer BeamNG.drive mod",
+    "description": "BeamNG.drive 用 KISS Multiplayer MOD のサーバーです",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"

@@ -7,7 +7,7 @@
     "exported_at": "2025-04-10T13:11:33+02:00",
     "name": "Counter Strike 1.6 - ReHLDS",
     "author": "ptero@redbananaofficial.com",
-    "description": "CS 1.6 ReHLDS binaries egg.\r\n\r\nReHLDS is a reverse-engineered, optimized version of HLDS.\r\nDeveloped by third-party modders to improve stability, performance, and security.\r\nFully compatible with MetaMod, AMX Mod X, and other plugins.\r\n\r\nIncluded modules are rehlds, reunion, amxmodx, metamod-r, reapi and ReGameDLL_CS",
+    "description": "CS 1.6 ReHLDS バイナリ用 Egg です。\r\n\r\nReHLDS は HLDS をリバースエンジニアリングして最適化したバージョンです。\r\nサードパーティ製 MOD 開発者によって、安定性・性能・セキュリティの向上を目的に開発されています。\r\nMetaMod、AMX Mod X、その他プラグインと完全互換です。\r\n\r\n同梱モジュール: rehlds, reunion, amxmodx, metamod-r, reapi, ReGameDLL_CS",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "ReHLDS Version",
-            "description": "The version of ReHLDS to install, or 'latest' for the latest release.",
+            "name": "ReHLDS バージョン",
+            "description": "インストールする ReHLDS のバージョンです。最新リリースを使う場合は 'latest' を指定します。",
             "env_variable": "VERSION",
             "default_value": "latest",
             "user_viewable": false,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Available Modules",
-            "description": "Available Modules: rehlds, reunion, amxmodx, metamod-r, reapi and ReGameDLL_CS",
+            "name": "利用可能モジュール",
+            "description": "利用可能モジュール: rehlds, reunion, amxmodx, metamod-r, reapi, ReGameDLL_CS",
             "env_variable": "INSTALL_MODULES",
             "default_value": "rehlds,reunion,amxmodx,metamod-r,reapi,ReGameDLL_CS",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Hostname",
-            "description": "This sets the hostname of the server. Example: \"My Custom CS 1.6 Server\"",
+            "name": "サーバーホスト名",
+            "description": "サーバーのホスト名を設定します。例: \"My Custom CS 1.6 Server\"",
             "env_variable": "HOSTNAME",
             "default_value": "Counter-Strike 1.6 Server",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "Map",
-            "description": "The default map for the server.",
+            "name": "マップ",
+            "description": "サーバーのデフォルトマップです。",
             "env_variable": "SRCDS_MAP",
             "default_value": "de_dust2",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update on restart",
+            "name": "自動更新",
+            "description": "再起動時に自動更新します",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game ID",
-            "description": "The ID corresponding to the game to download and run using HLDS.\r\n\r\nThe HLDS server ID is 90. This should not be changed.",
+            "name": "ゲーム ID",
+            "description": "HLDS を使用してダウンロード・実行するゲームに対応する ID です。\r\n\r\nHLDS サーバー ID は 90 です。変更しないでください。",
             "env_variable": "SRCDS_APPID",
             "default_value": "90",
             "user_viewable": false,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Name",
-            "description": "The name corresponding to the game to download and run using HLDS",
+            "name": "ゲーム名",
+            "description": "HLDS を使用してダウンロード・実行するゲーム名です",
             "env_variable": "HLDS_GAME",
             "default_value": "cstrike",
             "user_viewable": false,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch",
-            "description": "Leave empty for the public branch, for the legacy version select steam_legacy.",
+            "name": "ベータブランチ",
+            "description": "公開ブランチを使う場合は空欄、レガシーバージョンを使う場合は steam_legacy を選択します。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "steam_legacy",
             "user_viewable": false,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "VAC port",
-            "description": "Specifies the VAC port the server should use. Default is 26900.",
+            "name": "VAC ポート",
+            "description": "サーバーが使用する VAC ポートを指定します。既定値は 26900 です。",
             "env_variable": "VAC_PORT",
             "default_value": "26900",
             "user_viewable": false,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Validate",
-            "description": "Validate game files on update. Keep it disabled with ReHLDS due to SteamCMD overwriting its changes",
+            "name": "検証",
+            "description": "更新時にゲームファイルを検証します。SteamCMD が ReHLDS の変更を上書きするため、ReHLDS では無効のままにしてください",
             "env_variable": "VALIDATE",
             "default_value": "0",
             "user_viewable": false,

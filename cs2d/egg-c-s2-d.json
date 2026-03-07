@@ -7,7 +7,7 @@
     "exported_at": "2025-02-08T04:02:20+00:00",
     "name": "CS2D",
     "author": "josdekurk@gmail.com",
-    "description": "Plant and defuse bombs, rescue hostages or accomplish new missions like capture the flag or domination! Use a huge arsenal of weapons and equipment including crazy stuff like portal guns, lasers, RPGs, turrets and much more! You can even build things!",
+    "description": "爆弾の設置・解除、人質救出、キャプチャー・ザ・フラッグやドミネーションなどのミッションを遂行しましょう。ポータルガン、レーザー、RPG、タレットなどを含む膨大な武器と装備が使えます。建築要素も楽しめます。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/games:source": "ghcr.io\/ptero-eggs\/games:source"
@@ -29,7 +29,7 @@
     },
     "variables": [
         {
-            "name": "Server Name",
+            "name": "サーバー名",
             "description": "",
             "env_variable": "SERVER_NAME",
             "default_value": "CS2D Server",
@@ -39,7 +39,7 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
+            "name": "サーバーパスワード",
             "description": "",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
@@ -49,7 +49,7 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
+            "name": "最大プレイヤー数",
             "description": "",
             "env_variable": "SERVER_PLAYERS",
             "default_value": "12",

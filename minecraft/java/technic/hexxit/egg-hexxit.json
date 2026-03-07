@@ -7,7 +7,7 @@
     "exported_at": "2024-06-01T19:39:46+00:00",
     "name": "Hexxit",
     "author": "aevum@decess.us",
-    "description": "Gear up and set forth on a campaign worthy of legend, for Hexxit has been unearthed! Dark dungeons, towering spires, weathered ruins and musty tomes lay before you. Lay claim to riches or create your own artifacts, tame beasts and carve out your own story in endless wonder. Alone or with friends, adventure awaits in Hexxit.\r\n\r\nHexxit is a new collection of mods for Minecraft that put adventure above all else, in the style of old Dungeons and Dragons campaigns. Exploration is interesting, the dangers are greater and the sense of satisfaction of clearing out a dungeon is intense. The modlist is full of quality content from some very talented individuals. Be sure to head over to the donate page and show your appreciation!\r\n\r\nhttps://www.technicpack.net/modpack/hexxit.552552",
+    "description": "装備を整え、伝説にふさわしい冒険へ旅立ちましょう。Hexxitが発掘されました。暗いダンジョン、そびえ立つ塔、風化した遺跡、古びた書物があなたを待っています。財宝を手に入れるもよし、自分だけのアーティファクトを作るもよし、獣を手懐け、果てしない驚きの中で自分の物語を切り開けます。一人でも友達とでも、Hexxitには冒険が待っています。\r\n\r\nHexxitは、昔ながらのDungeons and Dragonsキャンペーンのように、何よりも冒険を重視したMinecraft向けMODコレクションです。探索は刺激的で危険も大きく、ダンジョンを攻略したときの達成感は格別です。MODリストには才能ある多くの開発者による高品質なコンテンツが詰まっています。ぜひ寄付ページで感謝を示してください。\r\n\r\nhttps://www.technicpack.net/modpack/hexxit.552552",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
-            "description": "Version of the modpack to use",
+            "name": "Modpackバージョン",
+            "description": "使用するModpackのバージョンです。",
             "env_variable": "MODPACK_VERSION",
             "default_value": "1.0.11",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-12-12T20:12:08+02:00",
     "name": "Project Zomboid",
     "author": "iamkubi@gmail.com",
-    "description": "Project Zomboid is an open world survival horror video game in alpha stage development by British and Canadian independent developer, The Indie Stone. The game is set in a post apocalyptic, zombie infested world where the player is challenged to survive for as long as possible before inevitably dying.",
+    "description": "Project Zomboid は、英国とカナダのインディー開発会社 The Indie Stone が開発するアルファ段階のオープンワールド・サバイバルホラーゲームです。ゾンビに汚染された終末世界で、プレイヤーはいずれ訪れる死まで可能な限り長く生き延びることを求められます。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Name",
-            "description": "The internal server name used for save\/ config files.",
+            "name": "サーバー名",
+            "description": "セーブ\/設定ファイルで使用される内部サーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "Pterodactyl",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Username",
-            "description": "Username for the admin account",
+            "name": "管理者ユーザー名",
+            "description": "管理者アカウントのユーザー名です。",
             "env_variable": "ADMIN_USER",
             "default_value": "admin",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "Admin Password",
-            "description": "Password for the admin account",
+            "name": "管理者パスワード",
+            "description": "管理者アカウントのパスワードです。",
             "env_variable": "ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -61,8 +61,8 @@
             "field_type": "text"
         },
         {
-            "name": "SteamPort",
-            "description": "Sets the UDPPort option",
+            "name": "Steamポート",
+            "description": "UDPPortオプションを設定します。",
             "env_variable": "STEAM_PORT",
             "default_value": "16262",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "PZ Steam App ID",
-            "description": "PZ Steam App ID",
+            "name": "PZ SteamアプリID",
+            "description": "PZ SteamアプリIDです。",
             "env_variable": "SRCDS_APPID",
             "default_value": "380870",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Beta Branch [requires reinstall]",
-            "description": "Beta branch to install, such as b41multiplayer. Leave blank to install normal branch",
+            "name": "Steamベータブランチ [再インストール必要]",
+            "description": "インストールするベータブランチです（例: b41multiplayer）。空欄で通常ブランチをインストールします。",
             "env_variable": "SRCDS_BETAID",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Auto Update",
-            "description": "Enable or disable auto-update on startup. 0 to disable and 1 to enable.",
+            "name": "Steam自動更新",
+            "description": "起動時の自動更新を有効または無効にします。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,

@@ -7,7 +7,7 @@
     "exported_at": "2024-09-12T21:48:20+02:00",
     "name": "Tekkit SMP",
     "author": "lovinoes@lovinoes.de",
-    "description": "Tekkit SMP contains the full range of mods from Tekkit 2, plus the extra mods that were originally dropped in the transition from Technic SSP (to Technic SMP) to Tekkit, in favour of multiplayer and Bukkit support: mainly Thaumcraft, Mystcraft, and Mo' Creatures. The new Tekkit SMP expands on that with various carefully selected Thaumcraft and Mystcraft addons, alongside Mo' Creatures Extended, and smaller custom additions such as Re-Crystallized Wing. Electro-Magic Tools is another starring mod, being an addon to both Industrial Craft and Thaumcraft, combining the worlds of tech and magic.",
+    "description": "Tekkit SMPにはTekkit 2のMOD一式に加えて、Technic SSP（Technic SMP）からTekkitへ移行する際に、マルチプレイおよびBukkit対応を優先して一度除外された追加MODが含まれています。主にThaumcraft、Mystcraft、Mo' Creaturesです。新しいTekkit SMPでは、厳選されたThaumcraft/Mystcraftアドオン、Mo' Creatures Extended、Re-Crystallized Wingのような小規模カスタム追加を加えてさらに拡張されています。Electro-Magic Toolsも注目MODで、Industrial CraftとThaumcraft双方のアドオンとして、技術と魔法の世界を結び付けます。",
     "features": [
         "eula",
         "java_version",
@@ -34,8 +34,8 @@
     },
     "variables": [
         {
-            "name": "Modpack Version",
-            "description": "The version of Tekkit SMP to download. \r\n\r\nOverrides BUILD TYPE, if set.",
+            "name": "Modpackバージョン",
+            "description": "ダウンロードするTekkit SMPのバージョンです。\r\n\r\n設定されている場合、BUILD_TYPEより優先されます。",
             "env_variable": "MODPACK_VERSION",
             "default_value": "",
             "user_viewable": true,
@@ -44,8 +44,8 @@
             "field_type": "text"
         },
         {
-            "name": "Build Type",
-            "description": "The type of server jar to download from Technic Solder.",
+            "name": "ビルドタイプ",
+            "description": "Technic Solderからダウンロードするサーバーjarの種類です。",
             "env_variable": "BUILD_TYPE",
             "default_value": "recommended",
             "user_viewable": true,

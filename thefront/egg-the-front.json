@@ -7,7 +7,7 @@
     "exported_at": "2023-10-18T15:46:21+02:00",
     "name": "The Front",
     "author": "eggs@goover.dev",
-    "description": "The Front is a survival open-world crafting shooter. You play the role of a resistance fighter sent back in time to stop the rise of a tyrannical empire.",
+    "description": "The Frontはサバイバル型オープンワールドのクラフトシューターです。圧政帝国の台頭を止めるため、過去に送り込まれたレジスタンス戦士として戦います。",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "[SERVER] Server Name",
-            "description": "no spaces und special signs",
+            "name": "[SERVER] サーバー名",
+            "description": "スペースや特殊文字は使用しないでください。",
             "env_variable": "SRV_NAME",
             "default_value": "Pterodactyl hosted Server",
             "user_viewable": true,
@@ -41,8 +41,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Max Players",
-            "description": "The max number of players on your server.",
+            "name": "[SERVER] 最大プレイヤー数",
+            "description": "サーバーの最大同時接続プレイヤー数です。",
             "env_variable": "MAX_PLAYERS",
             "default_value": "10",
             "user_viewable": true,
@@ -51,8 +51,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Config Name",
-            "description": "Name of the savefile. NO SPACE or SPECIAL signs",
+            "name": "[SERVER] 設定名",
+            "description": "セーブファイル名です。スペースや特殊文字は使用しないでください。",
             "env_variable": "CFG_NAME",
             "default_value": "new",
             "user_viewable": true,
@@ -61,7 +61,7 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Password",
+            "name": "[SERVER] サーバーパスワード",
             "description": "",
             "env_variable": "SRV_PW",
             "default_value": "",
@@ -72,7 +72,7 @@
         },
         {
             "name": "[SERVER] PvE",
-            "description": "off = PvP; on = PvE",
+            "description": "off = PvP、on = PvE",
             "env_variable": "GAMEMODE",
             "default_value": "0",
             "user_viewable": true,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Use Steam Socket",
-            "description": "Use Steam servers for network penetration. Enable this if you don't have a public IP but you want to allow players from outside your network to join your server. If disabled, only you and other players on your LAN can join. If you have a public IP, you do not need to enable this. Enabling this feature will affect latency. When Steam servers are busy, you may not be able to join this server.",
+            "name": "[SERVER] Steam Socketを使用",
+            "description": "ネットワーク越え通信にSteamサーバーを使用します。公開IPがないが外部ネットワークから参加を許可したい場合に有効化してください。無効時はLAN内のプレイヤーのみ参加可能です。公開IPがある場合は有効化不要です。この機能を有効にすると遅延に影響する場合があります。Steamサーバーが混雑していると参加できないことがあります。",
             "env_variable": "STEAMSOCKET",
             "default_value": "0",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Damage self?",
-            "description": "Allows players to damage themselves.",
+            "name": "[SERVER] 自傷ダメージ",
+            "description": "プレイヤーが自分にダメージを与えられるようにします。",
             "env_variable": "SELFDMG",
             "default_value": "true",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Damage allies?",
-            "description": "Allows squadmates to damage each other.",
+            "name": "[SERVER] 味方へのダメージ",
+            "description": "分隊メンバー同士でダメージを与えられるようにします。",
             "env_variable": "DMGALLIES",
             "default_value": "true",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Server Admins",
-            "description": "Enter a 17-digit Steam ID. Use semicolons between each ID. GM level defaults to highest level (Lv. 25)",
+            "name": "[SERVER] サーバー管理者",
+            "description": "17桁のSteam IDを入力してください。複数IDはセミコロンで区切ります。GMレベルはデフォルトで最高レベル（Lv.25）です。",
             "env_variable": "SRV_ADMIN",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Label admin",
-            "description": "Toggles special admin icon.",
+            "name": "[ADVANCED] 管理者ラベル",
+            "description": "管理者用の特別アイコン表示を切り替えます。",
             "env_variable": "ADMIN_LABEL",
             "default_value": "false",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Server save interval",
-            "description": "Server archive interval (in seconds)",
+            "name": "[ADVANCED] サーバー保存間隔",
+            "description": "サーバーアーカイブの間隔（秒）です。",
             "env_variable": "SRV_SAVETIME",
             "default_value": "300",
             "user_viewable": true,
@@ -141,8 +141,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Enable novice protection?",
-            "description": "When enabled, new characters will receive novice protection.",
+            "name": "[ADVANCED] 初心者保護を有効化",
+            "description": "有効時、新規キャラクターに初心者保護が適用されます。",
             "env_variable": "GREENHAND",
             "default_value": "true",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Server Tags",
-            "description": "MAX 5 -> \r\n\r\n0= PVP |   \r\n1= PVE | \r\n2= EXP Multiplikator |  \r\n3= GatheringRate |  \r\n4= KeepInventory |  \r\n5= 45d wipe |  \r\n6= 15d wipe |  \r\n7= 30d wipe |  \r\n8= 60d wipe |",
+            "name": "[ADVANCED] サーバータグ",
+            "description": "最大5個まで設定可能 -> \r\n\r\n0= PVP |   \r\n1= PVE | \r\n2= 経験値倍率 |  \r\n3= 採集倍率 |  \r\n4= インベントリ保持 |  \r\n5= 45日ワイプ |  \r\n6= 15日ワイプ |  \r\n7= 30日ワイプ |  \r\n8= 60日ワイプ |",
             "env_variable": "SRV_TAGS",
             "default_value": "",
             "user_viewable": true,
@@ -161,8 +161,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Enable anticheat?",
-            "description": "Toggles anticheat.",
+            "name": "[ADVANCED] アンチチートを有効化",
+            "description": "アンチチート機能を切り替えます。",
             "env_variable": "ANTI_CHEAT",
             "default_value": "true",
             "user_viewable": true,
@@ -171,8 +171,8 @@
             "field_type": "text"
         },
         {
-            "name": "[ADVANCED] Enable profanity?",
-            "description": "When disable, profanity will be blocked.",
+            "name": "[ADVANCED] 不適切語フィルターを有効化",
+            "description": "無効化すると、不適切語がブロックされます。",
             "env_variable": "SENSITIVE_WORDS",
             "default_value": "true",
             "user_viewable": true,
@@ -181,8 +181,8 @@
             "field_type": "text"
         },
         {
-            "name": "[SERVER] Auto Update",
-            "description": "Autoupdate your Server on start\/restart",
+            "name": "[SERVER] 自動更新",
+            "description": "サーバー起動\/再起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "0",
             "user_viewable": true,
@@ -202,7 +202,7 @@
         },
         {
             "name": "[SERVER] BeaconPort",
-            "description": "port+1",
+            "description": "サーバーポート+1です。",
             "env_variable": "BEACON_PORT",
             "default_value": "27016",
             "user_viewable": true,
@@ -212,7 +212,7 @@
         },
         {
             "name": "[SERVER] QueryPort",
-            "description": "port+2",
+            "description": "サーバーポート+2です。",
             "env_variable": "QUERY_PORT",
             "default_value": "27017",
             "user_viewable": true,
@@ -222,7 +222,7 @@
         },
         {
             "name": "[SERVER] ShutDownServicePort",
-            "description": "port +3",
+            "description": "サーバーポート+3です。",
             "env_variable": "SHUTDOWN_PORT",
             "default_value": "27017",
             "user_viewable": true,
@@ -232,7 +232,7 @@
         },
         {
             "name": "WINDOWS_INSTALL",
-            "description": "DO NOT REMOVE !!!",
+            "description": "削除しないでください。",
             "env_variable": "WINDOWS_INSTALL",
             "default_value": "1",
             "user_viewable": false,

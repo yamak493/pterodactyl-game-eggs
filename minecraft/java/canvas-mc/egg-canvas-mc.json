@@ -7,7 +7,7 @@
     "exported_at": "2025-04-25T21:40:46+02:00",
     "name": "CanvasMC",
     "author": "ptero@redbananaofficial.com",
-    "description": "Supercharge your Minecraft server with multithreaded dimension ticking, improved chunk generation, optimized entity handling and many more powerful optimizations.",
+    "description": "マルチスレッド次元ティック、改良されたチャンク生成、最適化されたエンティティ処理など、さまざまな最適化でMinecraftサーバーを高速化します。",
     "features": [
         "eula",
         "java_version",
@@ -33,8 +33,8 @@
     },
     "variables": [
         {
-            "name": "Canvas MC Version",
-            "description": "CanvasMC-Minecraft version (example: 1.21.4). Set to 'latest' to use latest version",
+            "name": "CanvasMCバージョン",
+            "description": "CanvasMCのMinecraftバージョンです（例: 1.21.4）。最新を使用する場合は 'latest' を指定します。",
             "env_variable": "MC_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -43,8 +43,8 @@
             "field_type": "text"
         },
         {
-            "name": "CanvasMC Build Number",
-            "description": "Build number from https:\/\/jenkins.canvasmc.io\/job\/Canvas\/. Set to 'latest' to get the newest build",
+            "name": "CanvasMCビルド番号",
+            "description": "https:\/\/jenkins.canvasmc.io\/job\/Canvas\/ のビルド番号です。最新ビルドを使う場合は 'latest' を指定します。",
             "env_variable": "CANVAS_BUILD",
             "default_value": "latest",
             "user_viewable": true,

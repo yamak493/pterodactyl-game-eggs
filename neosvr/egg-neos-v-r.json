@@ -7,7 +7,7 @@
     "exported_at": "2023-06-03T13:33:19-04:00",
     "name": "NeosVR",
     "author": "espeon@espeon.dev",
-    "description": "Neos VR is a metaverse engineered for the unknown! It\u2019s one of the most versatile and feature rich metaverses for virtual reality, designed so everybody can find something interesting or useful to do in a social setting.",
+    "description": "Neos VR は未知に向けて設計されたメタバースです。非常に柔軟で機能豊富なVR向けメタバースの1つであり、誰もがソーシャルな場で興味深いことや有用なことを見つけられるように設計されています。",
     "features": null,
     "docker_images": {
         "Mono": "ghcr.io\/ptero-eggs\/yolks:mono_latest"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Steam Account User",
-            "description": "The username for your Steam account.",
+            "name": "Steamアカウントユーザー",
+            "description": "Steamアカウントのユーザー名です。",
             "env_variable": "STEAM_USER",
             "default_value": "",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Account Password",
-            "description": "The password for your Steam account.",
+            "name": "Steamアカウントパスワード",
+            "description": "Steamアカウントのパスワードです。",
             "env_variable": "STEAM_PASS",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Steam Account Token\/Code",
-            "description": "The Steam Guard code or Login Token emailed to you.",
+            "name": "Steamアカウントトークン\/コード",
+            "description": "メールで届くSteam Guardコードまたはログイントークンです。",
             "env_variable": "STEAM_AUTH",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enable Mod Loader",
-            "description": "See: https:\/\/github.com\/neos-modding-group\/NeosModLoader for more information on Neos Mod Loader.",
+            "name": "Mod Loaderを有効化",
+            "description": "Neos Mod Loader の詳細は次を参照してください: https:\/\/github.com\/neos-modding-group\/NeosModLoader",
             "env_variable": "ENABLE_MODLOADER",
             "default_value": "false",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Beta Password",
-            "description": "This is the \"Beta Password\" that is only acquired by going to the Neos Patreon, subscribing to the \"Gunter\" level, and linking your Patreon to Discord. Then you will be able to see the #headless-client channel and the password will be pinned in the command after -betapassword.",
+            "name": "ベータパスワード",
+            "description": "これは \"Beta Password\" です。NeosのPatreonで \"Gunter\" レベルに加入し、PatreonをDiscordに連携すると取得できます。その後 #headless-client チャンネルを閲覧でき、-betapassword の後に付けるパスワードがピン留めされています。",
             "env_variable": "SRCDS_BETAPASS",
             "default_value": "",
             "user_viewable": true,
@@ -79,7 +79,7 @@
             "field_type": "text"
         },
         {
-            "name": "Beta branch name",
+            "name": "ベータブランチ名",
             "description": "",
             "env_variable": "SRCDS_BETAID",
             "default_value": "headless-client",
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto update",
-            "description": "Auto update the server on startup",
+            "name": "自動更新",
+            "description": "サーバー起動時に自動更新します。1に設定すると、サーバー起動時に自動的に更新が行われます。0に設定すると、自動更新が無効になります。",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,

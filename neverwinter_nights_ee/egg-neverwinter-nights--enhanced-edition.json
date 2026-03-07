@@ -7,7 +7,7 @@
     "exported_at": "2024-01-30T23:02:22-08:00",
     "name": "Neverwinter Nights: Enhanced Edition",
     "author": "git@robsti.dev",
-    "description": "Return to the Forgotten Realms in this bestselling Dungeons & Dragons roleplaying game. Combines all the content of Neverwinter Nights Diamond Edition with all-new enhanced features. Includes 100+ hours of award-winning adventures and the tools to create your own!",
+    "description": "大ヒットしたDungeons & Dragonsロールプレイングゲームで、フォーゴトン・レルムへ再び旅立ちましょう。Neverwinter Nights Diamond Editionの全コンテンツに、新たな強化機能を追加。100時間を超える受賞歴のある冒険と、自作コンテンツ作成ツールを収録しています。",
     "features": null,
     "docker_images": {
         "ghcr.io\/ptero-eggs\/yolks:debian": "ghcr.io\/ptero-eggs\/yolks:debian"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Game Version",
-            "description": "Version of the game to install",
+            "name": "ゲームバージョン",
+            "description": "インストールするゲームのバージョンです。",
             "env_variable": "NWN_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -39,8 +39,8 @@
             "field_type": "text"
         },
         {
-            "name": "Module Name",
-            "description": "Name of the module we want to load. Official modules are stored in `~\/data` and custom modules need to be stored in `~\/user`. Must match the file name exactly without the extension.",
+            "name": "モジュール名",
+            "description": "読み込むモジュール名です。公式モジュールは `~\/data`、カスタムモジュールは `~\/user` に配置してください。拡張子を除いたファイル名と完全一致する必要があります。",
             "env_variable": "MODULE_NAME",
             "default_value": "",
             "user_viewable": true,
@@ -49,8 +49,8 @@
             "field_type": "text"
         },
         {
-            "name": "Load Slot #",
-            "description": "Save game slot number to load on boot.",
+            "name": "読み込みスロット番号",
+            "description": "起動時に読み込むセーブスロット番号です。",
             "env_variable": "SAVE_SLOT",
             "default_value": "",
             "user_viewable": true,
@@ -59,8 +59,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Number Of Clients",
-            "description": "Maximum number of connections to the game server.",
+            "name": "最大クライアント数",
+            "description": "ゲームサーバーへの最大接続数です。",
             "env_variable": "MAX_CLIENTS",
             "default_value": "96",
             "user_viewable": true,
@@ -69,8 +69,8 @@
             "field_type": "text"
         },
         {
-            "name": "Minimum Level",
-            "description": "Minimum character level required to access the game server.",
+            "name": "最小レベル",
+            "description": "ゲームサーバーへの接続に必要な最小キャラクターレベルです。",
             "env_variable": "MIN_LEVEL",
             "default_value": "1",
             "user_viewable": true,
@@ -79,8 +79,8 @@
             "field_type": "text"
         },
         {
-            "name": "Maximum Level",
-            "description": "Maximum character level required to access the game server.",
+            "name": "最大レベル",
+            "description": "ゲームサーバーへの接続に必要な最大キャラクターレベルです。",
             "env_variable": "MAX_LEVEL",
             "default_value": "100",
             "user_viewable": true,
@@ -89,8 +89,8 @@
             "field_type": "text"
         },
         {
-            "name": "Pause And Play",
-            "description": "Toggle game pausing permissions.\r\n0 = game can only be paused by DM\r\n1 = game can by paused by players",
+            "name": "一時停止設定",
+            "description": "ゲームの一時停止権限を切り替えます。\r\n0 = DMのみ一時停止可能\r\n1 = プレイヤーも一時停止可能",
             "env_variable": "PAUSE_AND_PLAY",
             "default_value": "1",
             "user_viewable": true,
@@ -99,8 +99,8 @@
             "field_type": "text"
         },
         {
-            "name": "PvP Mode",
-            "description": "The mode of PvP enabled.\r\n0 = none\r\n1 = party\r\n2 = full",
+            "name": "PvPモード",
+            "description": "有効化するPvPモードです。\r\n0 = なし\r\n1 = パーティー\r\n2 = フル",
             "env_variable": "PVP",
             "default_value": "2",
             "user_viewable": true,
@@ -109,8 +109,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Vault Mode",
-            "description": "0 = local characters only\r\n1 = server characters only",
+            "name": "サーバーヴォールトモード",
+            "description": "0 = ローカルキャラクターのみ\r\n1 = サーバーキャラクターのみ",
             "env_variable": "SERVER_VAULT",
             "default_value": "1",
             "user_viewable": true,
@@ -119,8 +119,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Legal Characters",
-            "description": "Toggle enforcement of legal characters.",
+            "name": "適正キャラクターを強制",
+            "description": "適正キャラクター制限の有効\/無効を切り替えます。",
             "env_variable": "ELC",
             "default_value": "1",
             "user_viewable": true,
@@ -129,8 +129,8 @@
             "field_type": "text"
         },
         {
-            "name": "Enforce Item Level Restrictions",
-            "description": "Toggle enforcement of item level restrictions.",
+            "name": "アイテムレベル制限を強制",
+            "description": "アイテムレベル制限の有効\/無効を切り替えます。",
             "env_variable": "ILR",
             "default_value": "1",
             "user_viewable": true,
@@ -139,8 +139,8 @@
             "field_type": "text"
         },
         {
-            "name": "Game Type",
-            "description": "Set which game room to post the game to. This only applies if the game is public.",
+            "name": "ゲームタイプ",
+            "description": "ゲームを公開するゲームルームを設定します。公開ゲームの場合のみ有効です。",
             "env_variable": "GAME_TYPE",
             "default_value": "0",
             "user_viewable": true,
@@ -149,8 +149,8 @@
             "field_type": "text"
         },
         {
-            "name": "Toggle Single Parties",
-            "description": "Toggle if multiple parties are allowed.",
+            "name": "単一パーティー切替",
+            "description": "複数パーティーを許可するかを切り替えます。",
             "env_variable": "ONE_PARTY",
             "default_value": "0",
             "user_viewable": true,
@@ -159,8 +159,8 @@
             "field_type": "text"
         },
         {
-            "name": "Difficulty",
-            "description": "Game difficulty selection.\r\n1 = easy\r\n2 = normal\r\n3 = D&D hardcore\r\n4 = very difficult",
+            "name": "難易度",
+            "description": "ゲーム難易度の選択です。\r\n1 = easy\r\n2 = normal\r\n3 = D&D hardcore\r\n4 = very difficult",
             "env_variable": "DIFFICULTY",
             "default_value": "3",
             "user_viewable": true,
@@ -169,8 +169,8 @@
             "field_type": "text"
         },
         {
-            "name": "Auto Save Interval",
-            "description": "Interval between autosaves in minutes.",
+            "name": "自動セーブ間隔",
+            "description": "自動セーブの間隔（分）です。",
             "env_variable": "AUTO_SAVE_INTERVAL",
             "default_value": "0",
             "user_viewable": true,
@@ -179,8 +179,8 @@
             "field_type": "text"
         },
         {
-            "name": "Player Password",
-            "description": "Password needed to join the server as a player.",
+            "name": "プレイヤーパスワード",
+            "description": "プレイヤーとしてサーバーに参加するためのパスワードです。",
             "env_variable": "PLAYER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -189,8 +189,8 @@
             "field_type": "text"
         },
         {
-            "name": "DM Password",
-            "description": "Password needed to join the server as a DM.",
+            "name": "DMパスワード",
+            "description": "DMとしてサーバーに参加するためのパスワードです。",
             "env_variable": "DM_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -199,8 +199,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "Name of the server as shown on the server browser.",
+            "name": "サーバー名",
+            "description": "サーバーブラウザに表示されるサーバー名です。",
             "env_variable": "SERVER_NAME",
             "default_value": "A Pterodactyl hosted server",
             "user_viewable": true,
@@ -209,8 +209,8 @@
             "field_type": "text"
         },
         {
-            "name": "Is Public Game",
-            "description": "Toggle indicating if this is a public or private game.",
+            "name": "公開ゲーム設定",
+            "description": "このゲームを公開または非公開にする設定です。",
             "env_variable": "IS_PUBLIC",
             "default_value": "0",
             "user_viewable": true,
@@ -219,8 +219,8 @@
             "field_type": "text"
         },
         {
-            "name": "Reload When Empty",
-            "description": "Determines if the module state is persistent when the server is empty.",
+            "name": "空時リロード",
+            "description": "サーバーが空のときにモジュール状態を保持するかを決定します。",
             "env_variable": "RELOAD_WHEN_EMPTY",
             "default_value": "0",
             "user_viewable": true,

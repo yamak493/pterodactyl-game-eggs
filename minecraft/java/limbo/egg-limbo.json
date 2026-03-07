@@ -7,7 +7,7 @@
     "exported_at": "2023-05-17T23:20:29+01:00",
     "name": "Limbo",
     "author": "xEfinax@protonmail.com",
-    "description": "Standalone server program Limbo.",
+    "description": "スタンドアロンのサーバープログラム Limbo です。",
     "features": null,
     "docker_images": {
         "ghcr.io\/pterodactyl\/yolks:java_17": "ghcr.io\/pterodactyl\/yolks:java_17"
@@ -29,8 +29,8 @@
     },
     "variables": [
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the Limbo server with.",
+            "name": "サーバーJarファイル",
+            "description": "Limboサーバーの起動に使用するjarファイル名です。",
             "env_variable": "SERVER_JARFILE",
             "default_value": "Limbo.jar",
             "user_viewable": true,
